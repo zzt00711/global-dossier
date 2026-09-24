@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Dossier 全球专利审查文件批量下载</title>
+<script src="./jszip.min.js"></script>
+<style>
+  :root {
+    --navy: #1b3a6b; --blue: #2b6cb0; --bg: #f2f5f9; --line: #dde5ef;
+    --ok: #1a7f37; --warn: #b7791f; --err: #c53030;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: #21303f;
+         font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; }
+  header { background: linear-gradient(120deg, var(--navy), var(--blue)); color: #fff; padding: 26px 20px 30px; }
+  header h1 { margin: 0 0 6px; font-size: 22px; }
+  header p { margin: 0; opacity: .85; font-size: 13px; }
+  main { max-width: 1080px; margin: -14px auto 60px; padding: 0 16px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px;
+          padding: 18px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(20,40,80,.06); }
+  label.f { display:block; font-size:13px; color:#51606f; margin-bottom:6px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  input[type=text], select { border: 1px solid #b9c6d6; border-radius: 7px; padding: 10px 12px; font-size: 15px; }
+  input[type=text]:focus { outline: 2px solid #9dbcf0; border-color: #6f9fe0; }
+  #q { flex: 1 1 260px; text-transform: uppercase; }
+  select { min-width: 130px; }
+  .btn { border: 0; border-radius: 7px; padding: 11px 18px; font-size: 14px; cursor: pointer;
+         background: var(--blue); color: #fff; }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .btn.ghost { background: #e8eefc; color: #2a4f8d; }
+  .btn.green { background: var(--ok); }
+  .num { width: 84px; }
+  .muted { color: #6a7a8a; font-size: 12.5px; }
+  .opts { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 12px; font-size: 13.5px; }
+  .opts label { display: flex; gap: 6px; align-items: center; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { padding: 8px 9px; border-bottom: 1px solid var(--line); text-align: left; }
+  th { background: #f6f9fd; color: #44566c; font-weight: 600; white-space: nowrap; }
+  tr.IP5 td { background: #fffdf2; }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 11.5px; background: #e3ecfa; color: #2a4f8d; }
+  .badge.ip5 { background: #fdf1cf; color: #8a6410; }
+  .cnt { font-weight: 700; }
+  .cnt.err { color: var(--err); font-weight: 400; }
+  #status { margin-top: 10px; font-size: 14px; min-height: 20px; }
+  #status.ok { color: var(--ok); } #status.err { color: var(--err); }
+  .pwrap { background: #e6ecf4; border-radius: 99px; height: 16px; overflow: hidden; margin: 12px 0 6px; }
+  .pbar { height: 100%; width: 0%; background: linear-gradient(90deg, #2f855a, #38a169); transition: width .25s; }
+  #log { background: #101826; color: #b8c7dd; font: 12px/1.55 Consolas, Menlo, monospace;
+         border-radius: 8px; padding: 12px; height: 240px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; }
+  .hide { display: none !important; }
+  details { margin-top: 10px; }
+  summary { cursor: pointer; font-size: 13px; color: #4a5c70; }
+  footer { text-align: center; font-size: 12px; color: #7d8ea1; padding-bottom: 40px; }
+  footer a { color: #4a6fa5; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid #fff; border-top-color:transparent;
+             border-radius:50%; animation: sp .7s linear infinite; vertical-align:-2px; margin-right:6px; }
+  @keyframes sp { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Global Dossier 全球专利审查文件批量下载</h1>
+  <p>输入一个专利公开号，自动获取其在美国、欧洲、日本、韩国、中国等所有参与局的同族专利审查过程文件（File Wrapper），并打包为 ZIP 下载。</p>
+</header>
+<main>
+  <!-- 搜索卡片 -->
+  <div class="card">
+    <label class="f">专利公开号 / 申请号 / 专利号（支持 US、EP、JP、CN、KR、WO 等局）</label>
+    <div class="row">
+      <input id="q" type="text" placeholder="例如：US20230152276A1、EP15154539A1、US8697359B1" autocomplete="off" spellcheck="false">
+      <select id="ptype">
+        <option value="auto">自动识别类型</option>
+        <option value="publication">公开号 publication</option>
+        <option value="application">申请号 application</option>
+        <option value="patent">授权号 patent</option>
+      </select>
+      <button class="btn" id="btnSearch">查询同族</button>
+    </div>
+    <div id="status"></div>
+    <div class="opts">
+      <label><input type="checkbox" id="optIP5" checked> 默认仅勾选 IP5 局 + WIPO</label>
+      <label>每局最多文件数 <input class="num" type="text" id="optCap" value="300" title="0 表示不限制"> </label>
+      <label>并发下载数 <input class="num" type="text" id="optConc" value="4"></label>
+      <label><input type="checkbox" id="optAllDoc" checked> 仅打包 PDF 格式文件</label>
+    </div>
+    <div class="muted" style="margin-top:8px">
+      提示：数量巨大的同族（如含全部成员共几十局 × 数百文件）可能达数 GB，请善用“每局最多文件数”或取消勾选不需要的局。
+    </div>
+  </div>
+
+  <!-- 同族结果卡片 -->
+  <div class="card hide" id="famCard">
+    <div class="row" style="justify-content:space-between">
+      <h3 style="margin:0">同族专利列表 <span class="muted" id="famTitle"></span></h3>
+      <div class="row">
+        <button class="btn ghost" id="btnCounts">加载选中局的文件数</button>
+        <button class="btn green" id="btnZip">开始打包下载 ZIP</button>
+      </div>
+    </div>
+    <div style="margin-top:10px; overflow-x:auto">
+      <table id="famTable">
+        <thead><tr>
+          <th><input type="checkbox" id="chkAll" checked></th>
+          <th>局</th><th>申请号</th><th>申请日</th><th>公开/登记信息</th><th>审查文件数</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <details>
+      <summary>查询参数说明 / 常见失败原因</summary>
+      <div class="muted" style="margin-top:6px; line-height:1.8">
+        · 本工具从 USPTO Global Dossier 官方接口获取数据；只收录参与局（US、EP、JP、KR、CN、WIPO 以及部分 CASE 成员局）的审查文件。<br>
+        · “加载文件数”会逐个局请求文件列表；某些局（如 EPO 家族大的申请）文件可达上千份，属正常现象。<br>
+        · 个别文件下载失败通常是来源局临时限流/无该文件，工具会自动重试，仍失败会在清单中标记，不影响其余文件。
+      </div>
+    </details>
+  </div>
+
+  <!-- 进度卡片 -->
+  <div class="card hide" id="progCard">
+    <div class="row" style="justify-content:space-between">
+      <strong id="progText">准备中…</strong>
+      <button class="btn" id="btnStop" style="background:#c53030">停止</button>
+    </div>
+    <div class="pwrap"><div class="pbar" id="pbar"></div></div>
+    <div class="muted" id="progStat"></div>
+    <pre id="log" style="margin-top:12px"></pre>
+  </div>
+</main>
+<footer>
+  数据来源：<a href="https://globaldossier.uspto.gov/" target="_blank" rel="noopener">globaldossier.uspto.gov</a>（USPTO / IP5 各局）。
+  本工具仅供学习研究，请遵守各局使用条款。部署于 Cloudflare Workers。
+</footer>
+
+<script>
+/* ================= 全局状态 ================= */
+var $ = function (id) { return document.getElementById(id); };
+var members = [];          // 同族成员
+var searching = false, packing = false, stopFlag = false;
+
+function setStatus(msg, cls) {
+  var s = $("status");
+  s.className = cls || "";
+  s.innerHTML = msg || "";
+}
+function log(msg) {
+  var el = $("log");
+  el.textContent += msg + "\n";
+  el.scrollTop = el.scrollHeight;
+}
+function fmtBytes(n) {
+  if (n > 1048576) return (n / 1048576).toFixed(1) + " MB";
+  if (n > 1024) return (n / 1024).toFixed(0) + " KB";
+  return n + " B";
+}
+function safeName(s) {
+  return String(s == null ? "" : s).replace(/[\\\/:*?"<>|\u0000-\u001f]+/g, "_").replace(/\s+/g, " ").trim().slice(0, 90);
+}
+function today() {
+  var d = new Date();
+  return d.getFullYear() + ("0" + (d.getMonth() + 1)).slice(-2) + ("0" + d.getDate()).slice(-2);
+}
+
+/* ================= 号码解析 ================= */
+function parseNumber(raw) {
+  raw = String(raw || "").trim().toUpperCase().replace(/[\s,]+/g, "");
+  var m = raw.match(/^([A-Z]{2})([0-9].+)$/);   // 例：US20230152276A1 / EP15154539A1 / US14/054414
+  if (!m) throw new Error("无法识别的号码格式，请形如 US20230152276A1 / EP15154539A1 / US8697359B1");
+  var country = m[1];
+  var rest = m[2];
+  var hasSlash = rest.indexOf("/") >= 0;
+  var kind = "";
+  var km = rest.match(/([A-Z]{1,2}[0-9]?)$/);   // 末尾 kind code：A1 / B2 / W 等
+  if (km && rest.length - km[0].length >= 6) { kind = km[0]; rest = rest.slice(0, -kind.length); }
+  var number = rest.replace(/[\/-]/g, "");     // 14/054414 -> 14054414
+  var office = (country === "WO" || country === "PCT") ? "WIPO" : country;
+  var candidates;
+  if (hasSlash) candidates = ["application", "publication", "patent"];
+  else if (number.length >= 9) candidates = ["publication", "application", "patent"];
+  else candidates = ["patent", "publication", "application"];
+  return { office: office, number: number, kind: kind, candidates: candidates, raw: raw };
+}
+
+/* ===== 直连版：不经 Cloudflare Worker，浏览器直接请求上游 Global Dossier API =====
+   上游已对任意 Origin 返回 Access-Control-Allow-Origin: *，且只用简单 GET（不发自定义头，避免 OPTIONS 预检被 403）。 */
+var UPSTREAM = "https://d1kazzu6rbodle.cloudfront.net";
+function mapPath(p) {
+  if (p.indexOf("/api/family/") === 0) return "/patent-family/svc/family/" + p.slice(12);
+  if (p.indexOf("/api/doclist/") === 0) return "/doc-list/svc/doclist/" + p.slice(13);
+  if (p.indexOf("/api/file/") === 0) return "/doc-content/svc/doccontent/" + p.slice(10);
+  return p;
+}
+function upUrl(p) { return UPSTREAM + mapPath(p); }
+
+function api(path) { return fetch(upUrl(path)).then(function (r) { return r; }); }
+function apiJson(path) {
+  return api(path).then(function (r) {
+    return r.text().then(function (t) {
+      var j = null; try { j = JSON.parse(t); } catch (e) {}
+      return { status: r.status, json: j, text: t };
+    });
+  });
+}
+
+/* ================= 查询同族 ================= */
+function doSearch() {
+  if (searching) return;
+  searching = true;
+  members = [];
+  $("famCard").classList.add("hide");
+  var parsed;
+  try { parsed = parseNumber($("q").value); }
+  catch (e) { setStatus("⚠ " + e.message, "err"); searching = false; return; }
+
+  var forced = $("ptype").value;
+  var cands = forced === "auto" ? parsed.candidates : [forced];
+  setStatus('<span class="spinner"></span>正在查询同族：' + parsed.office + " " + parsed.number + " …");
+
+  var idx = 0;
+  function tryNext() {
+    if (idx >= cands.length) {
+      setStatus("未找到该号码的全球同族/审查档案。请检查号码（含国家代码、尽量带 kind code），或改用申请号/授权号重试。", "err");
+      searching = false; return;
+    }
+    var t = cands[idx++];
+    apiJson("/api/family/" + t + "/" + encodeURIComponent(parsed.office) + "/" + encodeURIComponent(parsed.number)).then(function (res) {
+      if (res.status === 200 && res.json && res.json.list && res.json.list.length) {
+        renderFamily(res.json, t, parsed);
+        searching = false;
+      } else {
+        tryNext();
+      }
+    }).catch(function (err) {
+      setStatus("请求失败：" + err.message + "（若反复失败，可能是上游限流，请稍后再试）", "err");
+      searching = false;
+    });
+  }
+  tryNext();
+}
+
+var CENTER = null;
+function renderFamily(json, type, parsed) {
+  CENTER = { type: type, office: json.country, number: json.id, corrAppNum: json.corrAppNum };
+  var list = json.list || [];
+  var seen = {};
+  members = [];
+  list.forEach(function (m) {
+    var appNum = String(m.appNum || "").replace(/[,\s]/g, "");
+    var key = m.countryCode + "|" + appNum + "|" + (m.kindCode || "");
+    if (seen[key] || !appNum) return;
+    seen[key] = 1;
+    members.push(m);
+  });
+
+  $("famCard").classList.remove("hide");
+  $("famTitle").textContent = "（" + parsed.raw + " → 中心局 " + CENTER.office + " " + CENTER.type + " " + CENTER.number + "，共 " + members.length + " 个同族成员）";
+  setStatus("同族查询成功，已列出 " + members.length + " 个成员局，请点击“加载选中局的文件数”。", "ok");
+
+  var ip5only = $("optIP5").checked;
+  var tb = $("famTable").querySelector("tbody");
+  tb.innerHTML = "";
+  members.forEach(function (m, i) {
+    var isIP5 = m.IP5 === true || m.IP5 === "true";
+    var checked = ip5only ? (isIP5 || m.countryCode === "WO" || m.countryCode === "PCT") : true;
+    var tr = document.createElement("tr");
+    if (isIP5) tr.className = "IP5";
+    var pubs = (m.pubList || []).slice(0, 3).map(function (p) {
+      return (p.pubCountry || m.countryCode) + p.pubNum + (p.kindCode ? "/" + p.kindCode : "");
+    }).join("，");
+    tr.innerHTML =
+      '<td><input type="checkbox" data-i="' + i + '"' + (checked ? " checked" : "") + "></td>" +
+      "<td><b>" + m.countryCode + "</b> " + (isIP5 ? '<span class="badge ip5">IP5</span>' : '<span class="badge">成员</span>') + "</td>" +
+      "<td>" + m.appNum + "</td>" +
+      "<td>" + (m.appDateStr || "") + "</td>" +
+      "<td>" + (pubs || (m.kindCode || "")) + "</td>" +
+      '<td class="cnt" id="cnt' + i + '">—</td>';
+    tb.appendChild(tr);
+  });
+  $("btnCounts").disabled = false;
+  $("btnZip").disabled = false;
+}
+
+function checkedMembers() {
+  var arr = [];
+  document.querySelectorAll("#famTable tbody input[type=checkbox]").forEach(function (cb) {
+    var i = +cb.getAttribute("data-i");
+    if (cb.checked && members[i]) arr.push({ i: i, m: members[i] });
+  });
+  return arr;
+}
+
+/* ================= 文件列表 ================= */
+function doclistPath(m) {
+  var app = String(m.appNum).replace(/[\/]/g, "");
+  var kind = (m.docNum && m.docNum.kindCode) || m.kindCode || "";
+  return "/api/doclist/" + encodeURIComponent(m.countryCode) + "/" + encodeURIComponent(app) + "/" + encodeURIComponent(kind);
+}
+
+function loadCounts() {
+  var sel = checkedMembers();
+  if (!sel.length) { setStatus("请先勾选至少一个局。", "err"); return; }
+  $("btnCounts").disabled = true;
+  var done = 0;
+  setStatus('<span class="spinner"></span>正在加载 ' + sel.length + ' 个局的文件列表…');
+  sel.forEach(function (item) {
+    apiJson(doclistPath(item.m)).then(function (res) {
+      var cell = $("cnt" + item.i);
+      if (res.status === 200 && res.json && res.json.docs) {
+        item.m.docList = res.json;
+        cell.textContent = res.json.docs.length + " 份";
+      } else {
+        item.m.docListFailed = true;
+        cell.innerHTML = '<span class="cnt err">无数据/暂不可用</span>';
+      }
+      if (++done === sel.length) {
+        $("btnCounts").disabled = false;
+        var tot = 0;
+        sel.forEach(function (s) { if (s.m.docList) tot += s.m.docList.docs.length; });
+        setStatus("文件列表加载完成：选中 " + sel.length + " 个局，共约 " + tot + " 份审查文件。可点击“开始打包下载 ZIP”。", "ok");
+      }
+    }).catch(function () {
+      $("cnt" + item.i).innerHTML = '<span class="cnt err">请求失败</span>';
+      if (++done === sel.length) { $("btnCounts").disabled = false; }
+    });
+  });
+}
+
+/* ================= 打包下载 ================= */
+function collectDocs(cap, pdfOnly) {
+  var jobs = [];
+  checkedMembers().forEach(function (item) {
+    var m = item.m;
+    var dl = m.docList;
+    if (!dl || !dl.docs) return;
+    var app = String(m.appNum).replace(/[\/]/g, "");
+    var docs = dl.docs;
+    if (pdfOnly) docs = docs.filter(function (d) { return String(d.docFormat).toUpperCase() === "PDF"; });
+    if (cap > 0) docs = docs.slice(0, cap);
+    docs.forEach(function (d, n) {
+      var seg2 = (m.countryCode === "US") ? app : dl.docNumber;
+      var url = "/api/file/" + encodeURIComponent(m.countryCode) + "/" + encodeURIComponent(seg2) +
+                "/" + encodeURIComponent(d.docId) + "/" + encodeURIComponent(d.numberOfPages || 1) +
+                "/" + encodeURIComponent(d.docFormat || "PDF");
+      var dateStr = d.legalDateStr ? d.legalDateStr.replace(/\//g, "-") : "";
+      var name = ("0000" + (n + 1)).slice(-4) + "_" + dateStr + "_" + safeName(d.docDesc || d.docCode) + "_" + safeName(d.docId) + "." + String(d.docFormat || "pdf").toLowerCase();
+      jobs.push({ m: m, d: d, url: url, folder: m.countryCode + "-" + safeName(app), name: name });
+    });
+  });
+  return jobs;
+}
+
+async function startZip() {
+  if (packing) return;
+  var cap = parseInt($("optCap").value, 10); if (isNaN(cap) || cap < 0) cap = 0;
+  var conc = parseInt($("optConc").value, 10) || 4;
+  if (conc > 8) conc = 8;
+  var pdfOnly = $("optAllDoc").checked;
+
+  var jobs = collectDocs(cap, pdfOnly);
+  if (!jobs.length) {
+    setStatus("没有可下载的文件。可能未加载文件列表（请先点“加载选中局的文件数”），或所选局无审查文件。", "err");
+    return;
+  }
+  packing = true; stopFlag = false;
+  $("btnZip").disabled = true;
+  $("progCard").classList.remove("hide");
+  $("log").textContent = "";
+  log("开始打包：共 " + jobs.length + " 个文件，并发 " + conc + "。请勿关闭页面。");
+
+  var zip = new JSZip();
+  var done = 0, bytes = 0, fail = 0, t0 = Date.now();
+  var manifest = ["Office,ApplicationNumber,DocId,Date,Description,Pages,Format,Status,SizeBytes,ZipPath"];
+  var folderCounts = {};
+
+  zip.file("_README.txt",
+    "Global Dossier 全球专利审查过程文件打包\n" +
+    "查询号码: " + ($("q").value || "").trim().toUpperCase() + "\n" +
+    "生成时间: " + new Date().toISOString() + "\n" +
+    "数据来源: https://globaldossier.uspto.gov/ (USPTO Global Dossier, IP5 参与局)\n" +
+    "目录结构: 按 局-申请号 分文件夹；_manifest.csv 为完整清单。\n" +
+    "说明: 个别来源局对历史文件有可得性限制，失败项见 _manifest.csv 中 Status 列。\n");
+
+  var cursor = 0;
+  function workerLoop() {
+    return new Promise(function (resolve) {
+      var active = 0;
+      function next() {
+        if (stopFlag || cursor >= jobs.length) {
+          if (active === 0) resolve();
+          return;
+        }
+        active++;
+        runJob(jobs[cursor++]).then(function () {
+          active--;
+          updateProg();
+          next();
+        });
+      }
+      for (var k = 0; k < conc; k++) next();
+    });
+  }
+
+  async function runJob(job) {
+    var status = "OK", size = 0, lastErr = "";
+    for (var a = 0; a < 3; a++) {
+      if (stopFlag) { status = "SKIPPED"; break; }
+      try {
+        var r = await fetch(upUrl(job.url));
+        if (r.status === 200) {
+          var blob = await r.blob();
+          size = blob.size;
+          if (size > 0) {
+            zip.folder(job.folder).file(job.name, blob);
+            status = "OK";
+          } else { status = "EMPTY"; }
+          break;
+        } else if (r.status === 404 || r.status === 417) {
+          status = "NOT_AVAILABLE"; lastErr = "HTTP " + r.status; break;
+        } else {
+          lastErr = "HTTP " + r.status;
+          await sleep(800 * (a + 1) + Math.random() * 300);
+        }
+      } catch (e) {
+        lastErr = e.message;
+        await sleep(800 * (a + 1));
+      }
+    }
+    if (status !== "OK") fail++;
+    if (status === "OK") bytes += size;
+    done++;
+    folderCounts[job.folder] = (folderCounts[job.folder] || 0) + 1;
+    manifest.push([
+      job.m.countryCode, String(job.m.appNum).replace(/,/g, ""), job.d.docId,
+      job.d.legalDateStr || "", '"' + String(job.d.docDesc || "").replace(/"/g, '""') + '"',
+      job.d.numberOfPages || "", job.d.docFormat || "PDF", status + (status === "OK" || !lastErr ? "" : " " + lastErr), size,
+      status === "OK" ? job.folder + "/" + job.name : ""
+    ].join(","));
+    if ((done % 20) === 0) log("进度 " + done + "/" + jobs.length + "（失败/跳过 " + fail + "）");
+  }
+
+  function updateProg() {
+    var pct = jobs.length ? (done / jobs.length * 100) : 0;
+    $("pbar").style.width = pct.toFixed(1) + "%";
+    var sec = Math.max(1, (Date.now() - t0) / 1000);
+    $("progText").textContent = "打包中 " + done + " / " + jobs.length + (stopFlag ? "（已停止，正在生成已完成部分…）" : "");
+    $("progStat").textContent = "已下载 " + fmtBytes(bytes) + " · " + Math.round(bytes / 1024 / sec) + " KB/s · 失败/跳过 " + fail;
+  }
+
+  await workerLoop();
+  updateProg();
+  zip.file("_manifest.csv", "\ufeff" + manifest.join("\n"));
+  log("正在浏览器内生成 ZIP（文件较多时需要一些时间）…");
+  try {
+    var blob = await zip.generateAsync({ type: "blob", compression: "STORE" }, function (meta2) {
+      $("progStat").textContent = "生成 ZIP：" + meta2.percent.toFixed(1) + "%";
+    });
+    var qn = ($("q").value || "result").trim().toUpperCase().replace(/[^A-Z0-9]+/g, "");
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = qn + "_GlobalDossier_" + today() + ".zip";
+    document.body.appendChild(a); a.click(); a.remove();
+    log("✅ 完成：ZIP 已生成并开始下载（" + fmtBytes(blob.size) + "，成功 " + (done - fail) + " / " + done + "）");
+    setStatus("打包完成，浏览器已开始下载 ZIP 文件。", "ok");
+  } catch (e) {
+    log("❌ 生成 ZIP 失败：" + e.message + "（可能内存不足，请减少勾选的局或设置每局文件数上限）");
+    setStatus("生成 ZIP 失败：" + e.message, "err");
+  }
+  packing = false;
+  $("btnZip").disabled = false;
+}
+
+/* ================= 事件绑定 ================= */
+$("btnSearch").onclick = doSearch;
+$("q").addEventListener("keydown", function (e) { if (e.key === "Enter") doSearch(); });
+$("btnCounts").onclick = loadCounts;
+$("btnZip").onclick = startZip;
+$("btnStop").onclick = function () { stopFlag = true; log("收到停止指令，正在完成进行中的请求…"); };
+$("chkAll").onchange = function () {
+  var v = this.checked;
+  document.querySelectorAll("#famTable tbody input[type=checkbox]").forEach(function (cb) { cb.checked = v; });
+};
+</script>
+</body>
+</html>
