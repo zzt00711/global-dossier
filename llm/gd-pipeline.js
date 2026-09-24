@@ -71,7 +71,8 @@ const PIPE = (() => {
       throw e;
     }
   }
-  const OFFICE_LANGS = { US: "eng", EP: "eng", JP: "eng+jpn", KR: "eng+kor" };
+  const OFFICE_LANGS = { US: "eng", EP: "eng", JP: "eng+jpn", KR: "eng+kor", WO: "eng" };
+  const isPctNum = s => /\//.test(s || "");
   async function ocrPageTexts(pdf, langs, maxPages, log, cancel, onPages) {
     const worker = await getOcrWorker(langs, log);
     const n = Math.min(pdf.numPages, maxPages);
@@ -119,11 +120,32 @@ const PIPE = (() => {
   // ── 单局处理（process_member 移植）──
   async function processMember(member, opts, log, cancel, excludeAll) {
     const country = (member.countryCode || "").toUpperCase(), appNum = member.appNum, kind = member.kindCode;
+    const isPct = isPctNum(appNum);   // PCT 国际申请号（如 PCT/US22/45176），斜杠会破坏 URL 路径，需换写法
     checkCancel(cancel);
-    log(`\n===== ${country} ${appNum} (kind=${kind}) =====`);
-    let dl;
-    try { dl = await GD.doclist(country, appNum, kind); }
-    catch (e) { log(`  文书列表失败: ${e.message}`); return { office: country, app_num: appNum, error: String(e.message).slice(0, 120), documents: [] }; }
+    log(`\n===== ${isPct ? "PCT(国际局)" : country} ${appNum} (kind=${kind}) =====`);
+    let dl, dlCountry = country, dlBase = appNum;
+    try {
+      if (isPct) {
+        // 优先用 WO 公布号查国际局清单（ISR 国际检索报告 / WOSA 书面意见 / IPRP1 等实审相关文书），
+        // 拿不到再退回“去斜杠”申请号查受理局清单（RO/101、spec、claims 等受理文书）
+        let got = null;
+        const pub = (member.pubList || []).find(p => (p.pubCountry || "").toUpperCase() === "WO" && p.pubNum);
+        if (pub) {
+          const woNum = String(pub.pubNum).replace(/^WO/i, "");
+          try { got = await GD.doclist("WO", woNum, "A"); dlCountry = "WO"; dlBase = woNum; }
+          catch (e) { log(`  WO 公布号清单不可用(${e.message})，尝试受理局清单 ...`); }
+        }
+        if (!got) {
+          const stripped = appNum.replace(/\//g, "");
+          got = await GD.doclist(country, stripped, kind); dlBase = stripped;
+        }
+        dl = got;
+      } else {
+        dl = await GD.doclist(country, appNum, kind);
+      }
+    }
+    catch (e) { log(`  文书列表失败: ${e.message}`); return { office: isPct ? "PCT/IB" : country, app_num: appNum, error: String(e.message).slice(0, 120), documents: [] }; }
+    const officeLabel = dlCountry === "WO" || isPct ? "PCT/IB" : country;
     const docs = dl.docs || [];
     const docNumber = dl.docNumber;
     const picked = GD.pickExamDocs(docs, opts.maxDocs);
@@ -134,16 +156,20 @@ const PIPE = (() => {
       const name = d.docDesc, did = d.docId, pages = d.numberOfPages || 1;
       const isRefTail = /search\s+report|registered\s+search|international\s+(search|preliminary)|search\s+strategy|search\s+information|list\s+of\s+references|\b892\b|引用文献|인용문헌|검색|調査報告/.test(name.toLowerCase());
       const refLen = opts.docTextLen * (isRefTail ? 2 : 1);
-      log(`  [${country}] ${name} (${pages}p) 下载 ...`);
-      // 候选号：US 用 appNum；其他局依次 appNum / 去后缀 docNumber / 完整 docNumber（含 kind 后缀）
-      const cands = [appNum];
-      if (country !== "US") cands.push((docNumber || "").split(".").slice(0, -1).join("."), docNumber || "");
-      if (docNumber) cands.push(docNumber);
+      log(`  [${dlCountry}] ${name} (${pages}p) 下载 ...`);
+      // 候选号：PCT 用清单返回的 docNumber(如 2023055894.W)/基础号；US 用 appNum；其他局依次 appNum / 去后缀 docNumber / 完整 docNumber
+      let cands;
+      if (isPct) cands = [docNumber, dlBase];
+      else {
+        cands = [appNum];
+        if (country !== "US") cands.push((docNumber || "").split(".").slice(0, -1).join("."), docNumber || "");
+        if (docNumber) cands.push(docNumber);
+      }
       const seen = new Set(); const tryList = [];
       for (const c of cands) if (c && !seen.has(c)) { seen.add(c); tryList.push(c); }
       let pdf = null, used = "";
       for (const num of tryList) {
-        const r = await GD.getPDF(country, num, did, pages, 1);
+        const r = await GD.getPDF(dlCountry, num, did, pages, 1);
         if (r.ok) { pdf = r.buf; used = num; break; }
       }
       if (!pdf) {
@@ -154,7 +180,7 @@ const PIPE = (() => {
       }
       log(`    下载完成 ${(pdf.byteLength / 1024) | 0}KB, 抽取文本 ...`);
       let text = "";
-      try { text = await pdfToText(pdf, opts, log, cancel, country); } catch (e) { if (e.message === "__CANCELLED__") throw e; text = ""; }
+      try { text = await pdfToText(pdf, opts, log, cancel, dlCountry); } catch (e) { if (e.message === "__CANCELLED__") throw e; text = ""; }
       if (text.replace(/\s+/g, "").length < 50) {
         text = text.trim() || "[扫描版-未获取到文本]";
       } else {
@@ -181,7 +207,7 @@ const PIPE = (() => {
       dated.sort((a, b) => { const ka = dk(a.date), kb = dk(b.date); return ka[0] - kb[0] || ka[1] - kb[1] || ka[2] - kb[2]; });
       conclusion = dated[dated.length - 1].conclusion;
     }
-    return { office: country, app_num: appNum, kind_code: kind, title: member.title || "", conclusion, documents };
+    return { office: officeLabel, app_num: appNum, kind_code: kind, title: member.title || "", conclusion, documents };
   }
 
   // ── 主流程 ──
