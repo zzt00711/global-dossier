@@ -97,6 +97,7 @@ th { color:var(--dim); font-weight:400; background:#101a2e; }
       <b style="font-size:14px">分析报告</b>
       <span>
         <button class="ghost" id="dlMd">下载 .md</button>
+        <button class="ghost" id="dlPdf">下载 PDF</button>
         <button class="ghost" id="dlJson">下载原始数据 .json</button>
       </span>
     </div>
@@ -195,7 +196,7 @@ async function start() {
     if (!lastReport.trim()) { log("  ⚠ 模型未返回正文"); }
     $("report").innerHTML = renderMd(lastReport) || "<i>（空）</i>";
     $("reportCard").classList.remove("hide");
-    log("\n完成。可点击上方按钮下载 .md 报告。");
+    log("\n完成。可点击上方按钮下载 .md / PDF 报告。");
   } catch (e) {
     if (e.message === "__CANCELLED__" || e.name === "AbortError") log("\n已停止。");
     else { log("\n出错: " + e.message); }
@@ -209,6 +210,40 @@ $("dlMd").addEventListener("click", () => {
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob); a.download = (lastData?.query || "report") + "_国外局实审分析报告.md"; a.click();
 });
+// ── PDF 导出：利浏览器打印引擎（选“另存为 PDF”），中文矢量、无需嵌入字体 ──
+function printHtml() {
+  const title = (lastData?.query || "") + " 国外局实审过程分析报告";
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${title}</title><style>
+@page { size:A4; margin:22mm 18mm; }
+body { font-family:"宋体",SimSun,"Microsoft YaHei",serif; color:#000; background:#fff; font-size:12pt; line-height:1.75; margin:0; }
+h1 { font-size:17pt; text-align:center; font-family:"方正小标宋简体","SimHei","Microsoft YaHei",sans-serif; margin:0 0 18px; }
+h2 { font-size:14pt; margin:24px 0 8px; font-family:"黑体",SimHei,sans-serif; }
+h3 { font-size:12pt; margin:16px 0 6px; }
+table { border-collapse:collapse; width:100%; margin:10px 0; font-size:10.5pt; }
+th,td { border:1px solid #666; padding:4px 8px; text-align:left; }
+th { background:#eee; }
+code { background:#f2f2f2; padding:0 4px; font-size:10.5pt; }
+blockquote { border-left:3px solid #999; margin:8px 0; padding:2px 12px; color:#444; }
+hr { border:0; border-top:1px solid #999; }
+ul,ol { padding-left:22px; }
+.meta { text-align:center; color:#444; font-size:10.5pt; margin-bottom:20px; }
+</style></head><body><h1>${title}</h1><div class="meta">生成时间：${(lastData?.fetched_at || "").replace(/-/g, "-")} · 数据来源：USPTO Global Dossier</div>${$("report").innerHTML}</body></html>`;
+}
+function exportPdf() {
+  if (!lastReport.trim()) { alert("请先完成一次分析"); return; }
+  const f = document.createElement("iframe");
+  f.setAttribute("aria-hidden", "true");
+  f.style.cssText = "position:fixed;width:0;height:0;left:-9px;top:-9px;border:0;";
+  document.body.appendChild(f);
+  const d = f.contentDocument;
+  d.open(); d.write(printHtml()); d.close();
+  setTimeout(() => {               // 等样式/DOM 就绪再唤起打印，否则部分浏览器拿到空白
+    try { f.contentWindow.focus(); f.contentWindow.print(); }
+    catch (e) { alert("打印调用失败：" + e.message); }
+    setTimeout(() => f.remove(), 120000);   // 打印对话框可能打开很久
+  }, 400);
+}
+$("dlPdf").addEventListener("click", exportPdf);
 $("dlJson").addEventListener("click", () => {
   const blob = new Blob([JSON.stringify(lastData, null, 1)], { type: "application/json" });
   const a = document.createElement("a");
