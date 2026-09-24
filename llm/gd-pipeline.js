@@ -146,8 +146,15 @@ const PIPE = (() => {
     }
     catch (e) { log(`  文书列表失败: ${e.message}`); return { office: isPct ? "PCT/IB" : country, app_num: appNum, error: String(e.message).slice(0, 120), documents: [] }; }
     const officeLabel = dlCountry === "WO" || isPct ? "PCT/IB" : country;
-    const docs = dl.docs || [];
+    let docs = dl.docs || [];
     const docNumber = dl.docNumber;
+    // PCT 国际阶段未进实审：国际局文书仅保留审查员关注的三份（ISR 国际检索报告 / WOSA 书面意见 / IPRP1 专利性国际报告），减少无谓 OCR 耗时
+    if (isPct && dlCountry === "WO") {
+      const KEEP = new Set(["ISR", "WOSA", "IPRP1"]);
+      const before = docs.length;
+      docs = docs.filter(d => KEEP.has((d.docCode || "").toUpperCase()));
+      log(`  国际局文书 ${before} 份, 仅保留 ISR/WOSA/IPRP1 → ${docs.length} 份`);
+    }
     const picked = GD.pickExamDocs(docs, opts.maxDocs);
     log(`  文书共 ${docs.length} 份, 挑选实审相关 ${picked.length} 份`);
     const documents = [];
