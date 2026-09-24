@@ -184,7 +184,7 @@ function parseNumber(raw) {
 
 /* ===== 直连版：不经 Cloudflare Worker，浏览器直接请求上游 Global Dossier API =====
    上游已对任意 Origin 返回 Access-Control-Allow-Origin: *，且只用简单 GET（不发自定义头，避免 OPTIONS 预检被 403）。 */
-var UPSTREAM = "https://d1kazzu6rbodle.cloudfront.net";
+var UPSTREAM = "https://d1kazzu6rbodne.cloudfront.net";
 function mapPath(p) {
   if (p.indexOf("/api/family/") === 0) return "/patent-family/svc/family/" + p.slice(12);
   if (p.indexOf("/api/doclist/") === 0) return "/doc-list/svc/doclist/" + p.slice(13);
