@@ -12,7 +12,7 @@
 <script src="./gd-extract.js?v=20260925a"></script>
 <script src="./gd-pipeline.js?v=20260925a"></script>
 <style>
-:root { --bg:#0f172a; --card:#1e293b; --line:#334155; --txt:#e2e8f0; --dim:#94a3b8; --acc:#38bdf8; --ok:#34d399; --warn:#fbbf24; --err:#f87171; }
+:root { --bg:#f7f1e5; --card:#fffaf0; --line:#e0d3ba; --txt:#3d2f1f; --dim:#8a7a63; --acc:#b8622b; --ok:#3e8e5a; --warn:#b7791f; --err:#c0392b; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--bg); color:var(--txt); font-family:"Microsoft YaHei",system-ui,sans-serif; }
 .wrap { max-width:1080px; margin:0 auto; padding:20px 16px 60px; }
@@ -21,30 +21,30 @@ h1 { font-size:22px; margin:8px 0 4px; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:16px; }
 .row { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
 label { font-size:14px; color:var(--dim); }
-input[type=text], select { background:#0b1220; color:var(--txt); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:14px; }
+input[type=text], select { background:#fffdf7; color:var(--txt); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:14px; }
 input[type=text]:focus { outline:none; border-color:var(--acc); }
 .chk { display:flex; align-items:center; gap:5px; font-size:14px; color:var(--txt); }
-button { background:var(--acc); color:#082f49; border:0; border-radius:6px; padding:9px 22px; font-size:15px; font-weight:600; cursor:pointer; }
+button { background:var(--acc); color:#fff8ef; border:0; border-radius:6px; padding:9px 22px; font-size:15px; font-weight:600; cursor:pointer; }
 button:disabled { opacity:.45; cursor:not-allowed; }
 button.stop { background:var(--err); color:#fff; }
 button.ghost { background:transparent; border:1px solid var(--line); color:var(--txt); font-weight:400; }
 details.adv { margin-top:10px; }
 details.adv summary { cursor:pointer; font-size:13px; color:var(--dim); }
-pre#log { background:#0b1220; border:1px solid var(--line); border-radius:8px; padding:12px; font-size:12.5px; line-height:1.55; white-space:pre-wrap; word-break:break-all; max-height:340px; overflow:auto; margin:0; }
+pre#log { background:#fdf7ea; color:#4a3b28; border:1px solid var(--line); border-radius:8px; padding:12px; font-size:12.5px; line-height:1.55; white-space:pre-wrap; word-break:break-all; max-height:340px; overflow:auto; margin:0; }
 .office { border:1px solid var(--line); border-radius:8px; margin-bottom:10px; overflow:hidden; }
-.office > summary { padding:10px 14px; cursor:pointer; font-size:14.5px; background:#16233a; }
+.office > summary { padding:10px 14px; cursor:pointer; font-size:14.5px; background:#f3e8d3; }
 table { border-collapse:collapse; width:100%; font-size:13px; }
 th, td { border-top:1px solid var(--line); padding:6px 10px; text-align:left; }
-th { color:var(--dim); font-weight:400; background:#101a2e; }
+th { color:var(--dim); font-weight:400; background:#f6ecd9; }
 .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; }
-.b授权 { background:#064e3b; color:#6ee7b7; } .b驳回 { background:#7f1d1d; color:#fca5a5; }
-.b审查中 { background:#78350f; color:#fcd34d; } .b其他 { background:#1e3a5f; color:#93c5fd; }
+.b授权 { background:#e3f0e6; color:#2c6e49; } .b驳回 { background:#f7e0da; color:#b3402f; }
+.b审查中 { background:#f8ecc9; color:#9a6b1d; } .b其他 { background:#eee3cd; color:#7a5c2e; }
 #report { font-size:15px; line-height:1.75; }
 #report h1 { font-size:20px; border-bottom:1px solid var(--line); padding-bottom:8px; }
 #report h2 { font-size:17px; margin-top:26px; color:var(--acc); }
 #report h3 { font-size:15px; margin-top:18px; }
 #report table { margin:10px 0; }
-#report code { background:#0b1220; padding:1px 5px; border-radius:4px; font-size:13px; }
+#report code { background:#f3e8d3; padding:1px 5px; border-radius:4px; font-size:13px; }
 #report blockquote { border-left:3px solid var(--acc); margin:8px 0; padding:2px 12px; color:var(--dim); }
 #report ul, #report ol { padding-left:24px; }
 .hide { display:none; }
@@ -89,22 +89,22 @@ th { color:var(--dim); font-weight:400; background:#101a2e; }
     <pre id="log" style="margin-top:8px"></pre>
   </div>
 
-  <div class="card hide" id="officesCard">
-    <b style="font-size:14px">各局文书明细</b>
-    <div id="offices" style="margin-top:10px"></div>
-  </div>
-
   <div class="card hide" id="reportCard">
     <div class="row" style="justify-content:space-between">
       <b style="font-size:14px">分析报告</b>
       <span>
-        <button class="ghost" id="dlMd">下载 .md</button>
         <button class="ghost" id="dlPdf">下载 PDF</button>
+        <button class="ghost" id="dlMd">下载 .md</button>
         <button class="ghost" id="dlPrint" title="弹打印框，选“另存为 PDF”，文字可选可复制">打印版（文字可选）</button>
         <button class="ghost" id="dlJson">下载原始数据 .json</button>
       </span>
     </div>
     <div id="report" style="margin-top:12px"></div>
+  </div>
+
+  <div class="card hide" id="officesCard">
+    <b style="font-size:14px">各局文书明细</b>
+    <div id="offices" style="margin-top:10px"></div>
   </div>
 </div>
 
