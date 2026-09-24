@@ -155,6 +155,17 @@ const PIPE = (() => {
       docs = docs.filter(d => KEEP.has((d.docCode || "").toUpperCase()));
       log(`  国际局文书 ${before} 份, 仅保留 ISR/WOSA/IPRP1 → ${docs.length} 份`);
     }
+    // 排除全文公报类文书：专利全文文本（如 EP Text intended for grant、各局公开公报）动辄几十上百页，
+    // OCR 耗时极长且不含审查过程信息；权利要求修改内容看 Amended claims 等提交文书即可
+    const FULLTEXT = /text intended for grant|version for approval|clean copy|granted patent|patent specification|publication of a granted|issued (patent|document)|patent (grant )?publication|published (patent|application|invention)|pamphlet|公開公報|特許公報|公表|공개공보|등록공보/i;
+    const dropped = [];
+    docs = docs.filter(d => {
+      const name = d.docDesc || "", pages = d.numberOfPages || 1;
+      if (FULLTEXT.test(name)) { dropped.push(`${name}(${pages}p)`); return false; }
+      if (pages > 60) { dropped.push(`${name}(${pages}p,超长)`); return false; }
+      return true;
+    });
+    if (dropped.length) log(`  已排除全文/超长文书 ${dropped.length} 份: ${dropped.slice(0, 3).join("; ")}${dropped.length > 3 ? " ..." : ""}`);
     const picked = GD.pickExamDocs(docs, opts.maxDocs);
     log(`  文书共 ${docs.length} 份, 挑选实审相关 ${picked.length} 份`);
     const documents = [];
