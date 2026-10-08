@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Dossier 国外局实审分析报告（LLM 版）</title>
+<script src="./vendor/pdf.min.js"></script>
+<script src="./vendor/tesseract/tesseract.min.js"></script>
+<script src="./vendor/html2canvas.min.js"></script>
+<script src="./vendor/jspdf.umd.min.js"></script>
+<script src="./gd-core.js?v=20260925a"></script>
+<script src="./gd-extract.js?v=20260925a"></script>
+<script src="./gd-pipeline.js?v=20260925a"></script>
+<style>
+:root { --bg:#f7f1e5; --card:#fffaf0; --line:#e0d3ba; --txt:#3d2f1f; --dim:#8a7a63; --acc:#b8622b; --ok:#3e8e5a; --warn:#b7791f; --err:#c0392b; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--txt); font-family:"Microsoft YaHei",system-ui,sans-serif; }
+.wrap { max-width:1080px; margin:0 auto; padding:20px 16px 60px; }
+h1 { font-size:22px; margin:8px 0 4px; }
+.sub { color:var(--dim); font-size:13px; margin-bottom:18px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:16px; }
+.row { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+label { font-size:14px; color:var(--dim); }
+input[type=text], select { background:#fffdf7; color:var(--txt); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:14px; }
+input[type=text]:focus { outline:none; border-color:var(--acc); }
+.chk { display:flex; align-items:center; gap:5px; font-size:14px; color:var(--txt); }
+button { background:var(--acc); color:#fff8ef; border:0; border-radius:6px; padding:9px 22px; font-size:15px; font-weight:600; cursor:pointer; }
+button:disabled { opacity:.45; cursor:not-allowed; }
+button.stop { background:var(--err); color:#fff; }
+button.ghost { background:transparent; border:1px solid var(--line); color:var(--txt); font-weight:400; }
+details.adv { margin-top:10px; }
+details.adv summary { cursor:pointer; font-size:13px; color:var(--dim); }
+pre#log { background:#fdf7ea; color:#4a3b28; border:1px solid var(--line); border-radius:8px; padding:12px; font-size:12.5px; line-height:1.55; white-space:pre-wrap; word-break:break-all; max-height:340px; overflow:auto; margin:0; }
+.office { border:1px solid var(--line); border-radius:8px; margin-bottom:10px; overflow:hidden; }
+.office > summary { padding:10px 14px; cursor:pointer; font-size:14.5px; background:#f3e8d3; }
+table { border-collapse:collapse; width:100%; font-size:13px; }
+th, td { border-top:1px solid var(--line); padding:6px 10px; text-align:left; }
+th { color:var(--dim); font-weight:400; background:#f6ecd9; }
+.badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; }
+.b授权 { background:#e3f0e6; color:#2c6e49; } .b驳回 { background:#f7e0da; color:#b3402f; }
+.b审查中 { background:#f8ecc9; color:#9a6b1d; } .b其他 { background:#eee3cd; color:#7a5c2e; }
+#report { font-size:15px; line-height:1.75; }
+#report h1 { font-size:20px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+#report h2 { font-size:17px; margin-top:26px; color:var(--acc); }
+#report h3 { font-size:15px; margin-top:18px; }
+#report table { margin:10px 0; }
+#report code { background:#f3e8d3; padding:1px 5px; border-radius:4px; font-size:13px; }
+#report blockquote { border-left:3px solid var(--acc); margin:8px 0; padding:2px 12px; color:var(--dim); }
+#report ul, #report ol { padding-left:24px; }
+.hide { display:none; }
+.foot { color:var(--dim); font-size:12px; margin-top:8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Global Dossier 国外局实审分析报告</h1>
+  <div class="sub">输入 CN 公开号 → 自动抓取 US/EP/JP/KR 实审文书（授权/驳回/审查意见/检索报告/答复）→ 浏览器内置 OCR（tesseract.js）→ 正则预提取 → 大模型生成中文分析报告。全程纯浏览器直连，无需后端。首次 OCR 需加载引擎与语言包（约 8MB，仅一次）；源文书多为扫描件，单份 16 页 OA 约 1~3 分钟，请耐心等待。</div>
+
+  <div class="card">
+    <div class="row">
+      <label>CN 公开号</label>
+      <input type="text" id="q" placeholder="如 CN118076910" size="16" value="">
+      <label>关注局：</label>
+      <span class="chk"><input type="checkbox" class="off" value="US" checked>US</span>
+      <span class="chk"><input type="checkbox" class="off" value="EP" checked>EP</span>
+      <span class="chk"><input type="checkbox" class="off" value="JP" checked>JP</span>
+      <span class="chk"><input type="checkbox" class="off" value="KR" checked>KR</span>
+      <label>每局文书数</label>
+      <select id="maxdocs"><option>4</option><option>6</option><option selected>8</option><option>10</option></select>
+      <label>每份OCR页数上限</label>
+      <select id="ocrp"><option value="10">10</option><option value="20">20</option><option value="40" selected>40</option><option value="999">不限</option></select>
+      <button id="go">开始分析</button>
+      <button id="stop" class="stop hide">停止</button>
+    </div>
+    <details class="adv">
+      <summary>高级设置（更换大模型 Key / 接口 / 模型，仅存本机浏览器）</summary>
+      <div class="row" style="margin-top:10px">
+        <label>API Key</label><input type="text" id="cfgKey" placeholder="留空 = 使用内置 Key" size="30">
+        <label>Base URL</label><input type="text" id="cfgBase" placeholder="https://note3-prev-api.askdiandian.com/v1" size="26">
+        <label>模型</label><input type="text" id="cfgModel" placeholder="dots3-note-prev" size="16">
+        <button class="ghost" id="saveCfg">保存</button>
+      </div>
+      <div class="foot">页面内置 Key 已做轻混淆，但仍随前端下发；建议在自己的环境下填入私有 Key。配置只写入 localStorage。</div>
+    </details>
+  </div>
+
+  <div class="card hide" id="logcard">
+    <b style="font-size:14px">运行日志</b>
+    <pre id="log" style="margin-top:8px"></pre>
+  </div>
+
+  <div class="card hide" id="reportCard">
+    <div class="row" style="justify-content:space-between">
+      <b style="font-size:14px">分析报告</b>
+      <span>
+        <button class="ghost" id="dlPdf">下载 PDF</button>
+        <button class="ghost" id="dlMd">下载 .md</button>
+        <button class="ghost" id="dlPrint" title="弹打印框，选“另存为 PDF”，文字可选可复制">打印版（文字可选）</button>
+        <button class="ghost" id="dlJson">下载原始数据 .json</button>
+      </span>
+    </div>
+    <div id="report" style="margin-top:12px"></div>
+  </div>
+
+  <div class="card hide" id="officesCard">
+    <b style="font-size:14px">各局文书明细</b>
+    <div id="offices" style="margin-top:10px"></div>
+  </div>
+</div>
+
+<script>
+"use strict";
+pdfjsLib.GlobalWorkerOptions.workerSrc = "./vendor/pdf.worker.min.js";
+
+const $ = id => document.getElementById(id);
+let cancelBox = null, lastData = null, lastReport = "";
+
+function log(msg) {
+  $("log").textContent += (typeof msg === "string" ? msg : String(msg)) + "\n";
+  $("log").scrollTop = $("log").scrollHeight;
+}
+
+// ── 轻量 Markdown 渲染（标题/表格/列表/粗体/行内代码/引用）──
+function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+function inline(s) {
+  return esc(s)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+    .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<i>$2</i>");
+}
+function renderMd(md) {
+  const lines = md.split("\n"); let html = "", i = 0;
+  const flushList = (buf, ord) => { if (buf.length) html += `<${ord}>` + buf.map(x => `<li>${inline(x)}</li>`).join("") + `</${ord}>`; };
+  let ulb = [], olb = [];
+  while (i < lines.length) {
+    const ln = lines[i];
+    if (/^#{1,4}\s/.test(ln)) {
+      flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+      const lv = ln.match(/^#+/)[0].length; html += `<h${lv}>${inline(ln.replace(/^#+\s*/, ""))}</h${lv}>`; i++; continue;
+    }
+    if (/^\s*\|/.test(ln) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+      flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+      const rows = []; while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+      const cells = r => r.replace(/^\s*\|/, "").replace(/\|\s*$/, "").split("|").map(c => inline(c.trim()));
+      html += "<table><tr>" + cells(rows[0]).map(c => `<th>${c}</th>`).join("") + "</tr>";
+      for (const r of rows.slice(2)) html += "<tr>" + cells(r).map(c => `<td>${c}</td>`).join("") + "</tr>";
+      html += "</table>"; continue;
+    }
+    if (/^\s*[-*]\s+/.test(ln)) { olb.length && (flushList(olb, "ol"), olb = []); ulb.push(ln.replace(/^\s*[-*]\s+/, "")); i++; continue; }
+    if (/^\s*\d+[.、]\s+/.test(ln)) { ulb.length && (flushList(ulb, "ul"), ulb = []); olb.push(ln.replace(/^\s*\d+[.、]\s+/, "")); i++; continue; }
+    if (/^>\s?/.test(ln)) { html += `<blockquote>${inline(ln.replace(/^>\s?/, ""))}</blockquote>`; i++; continue; }
+    if (/^\s*(---|\*\*\*)\s*$/.test(ln)) { html += "<hr>"; i++; continue; }
+    if (!ln.trim()) { flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = []; i++; continue; }
+    flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+    html += `<p>${inline(ln)}</p>`; i++;
+  }
+  flushList(ulb, "ul"); flushList(olb, "ol");
+  return html;
+}
+
+function renderOffices(data) {
+  const box = $("offices"); box.innerHTML = "";
+  for (const m of data.members) {
+    const det = document.createElement("details"); det.className = "office"; det.open = true;
+    const badge = c => `<span class="badge b${/授权|驳回/.test(c) ? c : (c.startsWith("审查中") ? "审查中" : "其他")}">${c}</span>`;
+    det.innerHTML = `<summary>${m.office} ${m.app_num} ${m.error ? "（列表失败）" : ""} 最终结论: ${badge(m.conclusion || "审查中")}</summary>`;
+    let t = "<table><tr><th>日期</th><th>文书</th><th>类型</th><th>引用</th><th>权项</th><th>结论</th></tr>";
+    for (const d of m.documents || []) {
+      t += `<tr><td>${esc(d.date || "")}</td><td>${esc((d.name || "").slice(0, 70))}${d.error ? " ⚠" + esc(d.error) : ""}</td><td>${d.type || ""}</td><td>${(d.citations || []).length}</td><td>${(d.claims || []).length}</td><td>${badge(d.conclusion || "")}</td></tr>`;
+    }
+    det.innerHTML += t + "</table>";
+    box.appendChild(det);
+  }
+  $("officesCard").classList.remove("hide");
+}
+
+function setRunning(on) {
+  $("go").disabled = on; $("stop").classList.toggle("hide", !on);
+  $("go").textContent = on ? "分析中 ..." : "开始分析";
+}
+
+async function start() {
+  const q = $("q").value.trim();
+  if (!q) { alert("请输入 CN 公开号"); return; }
+  const offices = [...document.querySelectorAll(".off:checked")].map(x => x.value);
+  if (!offices.length) { alert("至少勾选一个局"); return; }
+  const opts = { offices, maxDocs: +$("maxdocs").value, docTextLen: PIPE.DEFAULTS.docTextLen, maxOcrPages: Math.min(+$("ocrp").value, 80) };
+  $("log").textContent = ""; $("logcard").classList.remove("hide");
+  $("reportCard").classList.add("hide"); $("officesCard").classList.add("hide");
+  setRunning(true);
+  const ac = new AbortController();
+  cancelBox = { stop: false, signal: ac.signal };
+  try {
+    lastData = await PIPE.runPipeline(q, opts, log, cancelBox);
+    renderOffices(lastData);
+    if (!$("cfgKey").value.trim() && !localStorage.getItem("gd_llm_key"))
+      log("  使用内置 LLM Key（可在高级设置中替换为自己的 Key）");
+    lastReport = await PIPE.callLLM(lastData, log, cancelBox);
+    if (!lastReport.trim()) { log("  ⚠ 模型未返回正文"); }
+    $("report").innerHTML = renderMd(lastReport) || "<i>（空）</i>";
+    $("reportCard").classList.remove("hide");
+    log("\n完成。可点击上方按钮下载 .md / PDF 报告。");
+  } catch (e) {
+    if (e.message === "__CANCELLED__" || e.name === "AbortError") log("\n已停止。");
+    else { log("\n出错: " + e.message); }
+  } finally { setRunning(false); cancelBox = null; }
+}
+
+$("go").addEventListener("click", start);
+$("stop").addEventListener("click", () => { if (cancelBox) { cancelBox.stop = true; } });
+$("dlMd").addEventListener("click", () => {
+  const blob = new Blob([lastReport], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = (lastData?.query || "report") + "_国外局实审分析报告.md"; a.click();
+});
+// ── 报告正文的打印/PDF 样式（s 为作选择器前缀：iframe 用 body，直载用 .pdfscope）──
+function pdfCss(s) {
+  const r = sel => `${sel}{font-family:"宋体",SimSun,"Microsoft YaHei",serif;color:#000;background:#fff;font-size:12pt;line-height:1.75;margin:0}`;
+  return r(s)
+    + `${s} h1{font-size:17pt;text-align:center;font-family:"方正小标宋简体","SimHei","Microsoft YaHei",sans-serif;margin:0 0 8px}`
+    + `${s} h2{font-size:14pt;margin:24px 0 8px;font-family:"黑体",SimHei,sans-serif}`
+    + `${s} h3{font-size:12pt;margin:16px 0 6px}`
+    + `${s} table{border-collapse:collapse;width:100%;margin:10px 0;font-size:10.5pt}`
+    + `${s} th,${s} td{border:1px solid #666;padding:4px 8px;text-align:left}`
+    + `${s} th{background:#eee}`
+    + `${s} code{background:#f2f2f2;padding:0 4px;font-size:10.5pt}`
+    + `${s} blockquote{border-left:3px solid #999;margin:8px 0;padding:2px 12px;color:#444}`
+    + `${s} hr{border:0;border-top:1px solid #999}`
+    + `${s} ul,${s} ol{padding-left:22px}`
+    + `${s} .meta{text-align:center;color:#444;font-size:10.5pt;margin:4px 0 20px}`;
+}
+function reportTitle() { return (lastData?.query || "") + " 国外局实审过程分析报告"; }
+function reportBodyHtml() {
+  return `<h1>${reportTitle()}</h1><div class="meta">生成时间：${lastData?.fetched_at || ""} · 数据来源：USPTO Global Dossier</div>` + $("report").innerHTML;
+}
+// ── ① 直接下载 .pdf：html2canvas 渲染 + jsPDF 分页拼图，不弹任何对话框 ──
+async function downloadPdfFile() {
+  if (!lastReport.trim()) { alert("请先完成一次分析"); return; }
+  const btn = $("dlPdf"), old = btn.textContent;
+  btn.disabled = true; btn.textContent = "PDF 生成中 …";
+  const style = document.createElement("style");
+  style.textContent = pdfCss(".pdfscope") + ".pdfscope{width:794px;padding:26px 30px;position:fixed;left:-3000px;top:0;background:#fff}";
+  document.head.appendChild(style);
+  const holder = document.createElement("div");
+  holder.className = "pdfscope";
+  holder.innerHTML = reportBodyHtml();
+  document.body.appendChild(holder);
+  try {
+    await new Promise(r => setTimeout(r, 120));   // 等待样式/字体应用
+    const canvas = await html2canvas(holder, { scale: 2.5, backgroundColor: "#ffffff", logging: false, useCORS: true });
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({ unit: "mm", format: "a4", compress: true });
+    const W = 210, H = 297, pxmm = canvas.width / W, slice = Math.floor(H * pxmm);
+    let y = 0, first = true;
+    while (y < canvas.height) {
+      const h = Math.min(slice, canvas.height - y);
+      const c = document.createElement("canvas"); c.width = canvas.width; c.height = h;
+      const x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, h);
+      x.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
+      if (!first) pdf.addPage();
+      pdf.addImage(c.toDataURL("image/jpeg", 0.86), "JPEG", 0, 0, W, h / pxmm, undefined, "FAST");
+      first = false; y += h;
+    }
+    pdf.save((lastData?.query || "report") + "_国外局实审分析报告.pdf");
+  } catch (e) {
+    log("PDF 生成失败: " + String(e && e.message || e));
+    alert("PDF 生成失败：" + String(e && e.message || e) + "\n可改用“打印版”按钮。");
+  } finally { holder.remove(); style.remove(); btn.disabled = false; btn.textContent = old; }
+}
+$("dlPdf").addEventListener("click", downloadPdfFile);
+// ── ② 打印版：弹打印框选“另存为 PDF”，文字矢量可选 ──
+function printHtml() {
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${reportTitle()}</title><style>
+@page { size:A4; margin:22mm 18mm; }
+${pdfCss("body")}
+</style></head><body>${reportBodyHtml()}</body></html>`;
+}
+function exportPdf() {
+  if (!lastReport.trim()) { alert("请先完成一次分析"); return; }
+  const f = document.createElement("iframe");
+  f.setAttribute("aria-hidden", "true");
+  f.style.cssText = "position:fixed;width:0;height:0;left:-9px;top:-9px;border:0;";
+  document.body.appendChild(f);
+  const d = f.contentDocument;
+  d.open(); d.write(printHtml()); d.close();
+  setTimeout(() => {               // 等样式/DOM 就绪再唤起打印，否则部分浏览器拿到空白
+    try { f.contentWindow.focus(); f.contentWindow.print(); }
+    catch (e) { alert("打印调用失败：" + e.message); }
+    setTimeout(() => f.remove(), 120000);   // 打印对话框可能打开很久
+  }, 400);
+}
+$("dlPrint").addEventListener("click", exportPdf);
+$("dlJson").addEventListener("click", () => {
+  const blob = new Blob([JSON.stringify(lastData, null, 1)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = (lastData?.query || "data") + "_raw.json"; a.click();
+});
+$("saveCfg").addEventListener("click", () => {
+  localStorage.setItem("gd_llm_key", $("cfgKey").value.trim());
+  localStorage.setItem("gd_llm_base", $("cfgBase").value.trim());
+  localStorage.setItem("gd_llm_model", $("cfgModel").value.trim());
+  alert("已保存到本机浏览器（localStorage）。清空输入框并保存 = 恢复内置默认。");
+});
+$("cfgKey").value = localStorage.getItem("gd_llm_key") || "";
+$("cfgBase").value = localStorage.getItem("gd_llm_base") || "";
+$("cfgModel").value = localStorage.getItem("gd_llm_model") || "";
+</script>
+</body>
+</html>
