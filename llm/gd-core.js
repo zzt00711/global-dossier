@@ -4,6 +4,17 @@
 const GD = (() => {
   const HOST = "https://d1kazzu6rbodne.cloudfront.net";
 
+  // ── 取数出口：经 Netlify Edge 代理转发 ──
+  // 本机/浏览器出口 IP 已被 GD 在 CloudFront 边缘层拦截（403 IP ADDR BLOCKED DUE TO ABUSE），直连必失败；
+  // Edge 出口可正常取数且已开 CORS。用 ?key= 传密钥属简单 GET，不触发 OPTIONS 预检。
+  // 想改回直连：把 PROXY 置为空字符串。
+  const PROXY = "https://6ac8a18988acf5a969ba552e--gd-proxy-hk3f9.netlify.app/api/gd";
+  const PROXY_KEY = "k-gd-9c035c75b48dfb0d2080ebfe773c9230";
+  function urlOf(p) {
+    if (!PROXY) return HOST + p;
+    return PROXY + "?key=" + encodeURIComponent(PROXY_KEY) + "&path=" + encodeURIComponent(p);
+  }
+
   // ── 全局限速：两次请求最小间隔 + 抖动（复刻后端 RateLimiter，避免突发触发上游限流）──
   let _last = 0;
   const MIN_GAP = 0.6, JITTER = 0.8;
@@ -20,7 +31,7 @@ const GD = (() => {
     let last;
     for (let i = 0; i < tries; i++) {
       try {
-        const r = await fetch(HOST + path, { method: "GET", accept: "*/*" });
+        const r = await fetch(urlOf(path), { method: "GET", accept: "*/*" });
         if (r.status === 429) { await sleep(2000 * (i + 1)); continue; }
         if (r.status >= 500) { last = "HTTP " + r.status; await sleep(2000 * (i + 1)); continue; }
         const t = await r.text();
@@ -36,7 +47,7 @@ const GD = (() => {
     let last;
     for (let i = 0; i < tries; i++) {
       try {
-        const r = await fetch(HOST + path, { method: "GET" });
+        const r = await fetch(urlOf(path), { method: "GET" });
         const buf = await r.arrayBuffer();
         const head = new Uint8Array(buf.slice(0, 5));
         if (r.status === 200 && head[0] === 0x25 && head[1] === 0x50 && head[2] === 0x44 && head[3] === 0x46) {
