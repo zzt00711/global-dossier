@@ -123,51 +123,40 @@ const PIPE = (() => {
   // ── 单局处理（process_member 移植）──
   async function processMember(member, opts, log, cancel, excludeAll) {
     const country = (member.countryCode || "").toUpperCase(), appNum = member.appNum, kind = member.kindCode;
-    const isPct = isPctNum(appNum);   // PCT 国际申请号（如 PCT/US22/45176），斜杠会破坏 URL 路径，需换写法
+    const hasSlash = isPctNum(appNum);   // 申请号含斜杠（如 US 14/054414）：斜杠会破坏 URL 路径，需去斜杠再查
     checkCancel(cancel);
-    log(`\n===== ${isPct ? "PCT(国际局)" : country} ${appNum} (kind=${kind}) =====`);
+    log(`\n===== ${country} ${appNum} (kind=${kind}) =====`);
     let dl, dlCountry = country, dlBase = appNum;
     try {
-      if (isPct) {
-        // 优先用 WO 公布号查国际局清单（ISR 国际检索报告 / WOSA 书面意见 / IPRP1 等实审相关文书），
-        // 拿不到再退回“去斜杠”申请号查受理局清单（RO/101、spec、claims 等受理文书）
-        let got = null;
-        const pub = (member.pubList || []).find(p => (p.pubCountry || "").toUpperCase() === "WO" && p.pubNum);
-        if (pub) {
-          const woNum = String(pub.pubNum).replace(/^WO/i, "");
-          try { got = await GD.doclist("WO", woNum, "A"); dlCountry = "WO"; dlBase = woNum; }
-          catch (e) { log(`  WO 公布号清单不可用(${e.message})，尝试受理局清单 ...`); }
-        }
-        if (!got) {
-          const stripped = appNum.replace(/\//g, "");
-          got = await GD.doclist(country, stripped, kind); dlBase = stripped;
-        }
-        dl = got;
+      if (hasSlash) {
+        // 申请号含斜杠（如 PCT/KR2021/019079，或 US 的 14/054414）：斜杠会破坏 URL 路径，需先去斜杠再查本局清单。
+        // 不再走 WO 国际局清单 —— 国际局文书（ISR/WOSA/IPRP1）已明确不需要下载。
+        dlBase = appNum.replace(/\//g, "");
+        dl = await GD.doclist(country, dlBase, kind);
       } else {
         dl = await GD.doclist(country, appNum, kind);
       }
     }
-    catch (e) { log(`  文书列表失败: ${e.message}`); return { office: isPct ? "PCT/IB" : country, app_num: appNum, error: String(e.message).slice(0, 120), documents: [] }; }
-    const officeLabel = dlCountry === "WO" || isPct ? "PCT/IB" : country;
+    catch (e) { log(`  文书列表失败: ${e.message}`); return { office: country, app_num: appNum, error: String(e.message).slice(0, 120), documents: [] }; }
+    const officeLabel = country;
     let docs = dl.docs || [];
     const docNumber = dl.docNumber;
-    // PCT 国际阶段未进实审：国际局文书仅保留审查员关注的三份（ISR 国际检索报告 / WOSA 书面意见 / IPRP1 专利性国际报告），减少无谓 OCR 耗时
-    if (isPct && dlCountry === "WO") {
-      const KEEP = new Set(["ISR", "WOSA", "IPRP1"]);
-      const before = docs.length;
-      docs = docs.filter(d => KEEP.has((d.docCode || "").toUpperCase()));
-      log(`  国际局文书 ${before} 份, 仅保留 ISR/WOSA/IPRP1 → ${docs.length} 份`);
-    }
     // 排除全文公报类文书：专利全文文本（如 EP Text intended for grant、各局公开公报）动辄几十上百页，
     // OCR 耗时极长且不含审查过程信息；权利要求修改内容看 Amended claims 等提交文书即可
     const FULLTEXT = /text intended for grant|version for approval|clean copy|granted patent|patent specification|publication of a granted|issued (patent|document)|patent (grant )?publication|published (patent|application|invention)|pamphlet|公開公報|特許公報|公表|공개공보|등록공보/i;
-    const dropped = [];
+    // 优先权文本（各局要求提交的在先申请副本/证明文件）只是整份扫描件、不含审查过程信息，一律不下载
+    const PRTY = /priority\s+(document|application|paper|evidence|certificate)|certified\s+copy|優先權|优先权|우선권/i;
+    const PRTY_CODE = /^(PD|PRTY|PRIO)$/;
+    const dropped = [], prioDropped = [];
     docs = docs.filter(d => {
       const name = d.docDesc || "", pages = d.numberOfPages || 1;
+      const code = (d.docCode || "").toUpperCase().split("-")[0];
+      if (PRTY.test(name) || PRTY_CODE.test(code)) { prioDropped.push(`${name}(${pages}p)`); return false; }
       if (FULLTEXT.test(name)) { dropped.push(`${name}(${pages}p)`); return false; }
       if (pages > 60) { dropped.push(`${name}(${pages}p,超长)`); return false; }
       return true;
     });
+    if (prioDropped.length) log(`  已排除优先权文本 ${prioDropped.length} 份: ${prioDropped.slice(0, 3).join("; ")}${prioDropped.length > 3 ? " ..." : ""}`);
     if (dropped.length) log(`  已排除全文/超长文书 ${dropped.length} 份: ${dropped.slice(0, 3).join("; ")}${dropped.length > 3 ? " ..." : ""}`);
     const picked = GD.pickExamDocs(docs, opts.maxDocs);
     log(`  文书共 ${docs.length} 份, 挑选实审相关 ${picked.length} 份`);
@@ -180,7 +169,7 @@ const PIPE = (() => {
       log(`  [${dlCountry}] ${name} (${pages}p) 下载 ...`);
       // 候选号：PCT 用清单返回的 docNumber(如 2023055894.W)/基础号；US 用 appNum；其他局依次 appNum / 去后缀 docNumber / 完整 docNumber
       let cands;
-      if (isPct) cands = [docNumber, dlBase];
+      if (hasSlash) cands = [docNumber, dlBase];
       else {
         cands = [appNum];
         if (country !== "US") cands.push((docNumber || "").split(".").slice(0, -1).join("."), docNumber || "");
@@ -244,9 +233,17 @@ const PIPE = (() => {
     const members = await GD.family(q);
     checkCancel(cancel);
     const offices = new Set(opts.offices.map(s => s.toUpperCase()));
-    const targets = members.filter(m => offices.has((m.countryCode || "").toUpperCase()));
+    // 中国局(CN)与国际局(WO/PCT)不计入下载：CN 无实审过程文书，PCT 国际阶段文书也明确不需要；
+    // 申请号形如 PCT/xx 的成员，其文书同样来自国际局，一并跳过（这也是此前 404 的来源）。
+    const SKIP_OFFICES = new Set(["CN", "WO", "PCT"]);
+    const isIntlApp = m => /^PCT\//i.test(String(m.appNum || ""));
+    const isSkipped = m => SKIP_OFFICES.has((m.countryCode || "").toUpperCase()) || isIntlApp(m);
+    const skipped = members.filter(isSkipped);
+    const targets = members.filter(m => offices.has((m.countryCode || "").toUpperCase()) && !isSkipped(m));
     log(`同族 ${members.length} 个, 关注国外局 ${targets.length} 个: ` +
         targets.map(m => `${m.countryCode} ${m.appNum}`).join(", "));
+    if (skipped.length) log(`  已跳过中国局/国际局成员 ${skipped.length} 个: ` +
+        skipped.map(m => `${m.countryCode} ${m.appNum}`).join(", "));
     if (!targets.length) throw new Error("未找到国外局同族成员，请确认公开号或调整关注局");
     const excludeAll = [];
     for (const m of members) { if (m.appNum) excludeAll.push(m.appNum); if (m.pubNum) excludeAll.push(m.pubNum); }
