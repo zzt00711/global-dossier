@@ -56,10 +56,13 @@ const PIPE = (() => {
     if (ocrWorkers[langs]) return ocrWorkers[langs];
     log(`  加载 OCR 引擎(${langs})，首次需下载语言包 ...`);
     try {
+      // 必须是绝对 URL：worker 内的 importScripts 相对「worker 脚本 URL」解析，
+      // 给相对路径会被再拼一次 vendor/tesseract/ → 404（tesseract-core-*.wasm.js 加载失败）。
+      const VENDOR = new URL("./vendor/tesseract/", location.href).href;
       const w = await Tesseract.createWorker(langs, 1, {
-        workerPath: "./vendor/tesseract/worker.min.js",
-        corePath: "./vendor/tesseract/",
-        langPath: "./vendor/tesseract/",
+        workerPath: VENDOR + "worker.min.js",
+        corePath: VENDOR,
+        langPath: VENDOR,
         workerBlobURL: false,   // 直连同源脚本，避开 blob worker 的 importScripts 跨源限制
         gzip: true,
         logger: () => {},
