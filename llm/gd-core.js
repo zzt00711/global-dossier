@@ -17,7 +17,8 @@ const GD = (() => {
 
   // ── 全局限速：两次请求最小间隔 + 抖动（复刻后端 RateLimiter，避免突发触发上游限流）──
   let _last = 0;
-  const MIN_GAP = 0.6, JITTER = 0.8;
+  // 防封：GD 按出口 IP 做反滥用拦截，请求越密越容易被 403；把最小间隔与抖动都加大。
+  const MIN_GAP = 1.5, JITTER = 1.5;
   async function throttle() {
     const now = performance.now();
     const wait = Math.max(0, _last + MIN_GAP * 1000 + Math.random() * JITTER * 1000 - now);
@@ -48,6 +49,8 @@ const GD = (() => {
     for (let i = 0; i < tries; i++) {
       try {
         const r = await fetch(urlOf(path), { method: "GET" });
+        // 403 = 出口被 GD 反滥用拦截，重试只会加重封禁，直接放弃
+        if (r.status === 403) { last = "blocked/403"; break; }
         const buf = await r.arrayBuffer();
         const head = new Uint8Array(buf.slice(0, 5));
         if (r.status === 200 && head[0] === 0x25 && head[1] === 0x50 && head[2] === 0x44 && head[3] === 0x46) {
