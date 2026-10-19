@@ -59,11 +59,20 @@
   #status.err { color: var(--err); }
   .hint { color: var(--muted); font-size: 12px; margin-top: 10px; }
   .section-title { font-size: 13px; font-weight: 700; letter-spacing: .3px; margin-bottom: 10px; }
-  #logs {
+  #logs, #analysisLog {
     display: none; background: #0f172a; color: #d6e2f5; border-radius: 8px;
     padding: 14px 16px; font: 12.5px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace;
     white-space: pre-wrap; word-break: break-all; max-height: 300px; overflow: auto;
   }
+  #analysisLog { margin-top: 10px; max-height: 220px; font-size: 12px; }
+  #report { font-size: 14.5px; line-height: 1.75; margin-top: 10px; }
+  #report h1 { font-size: 20px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+  #report h2 { font-size: 17px; margin-top: 26px; color: var(--accent); }
+  #report h3 { font-size: 15px; margin-top: 18px; }
+  #report table { margin: 10px 0; }
+  #report code { background: #f1f5f9; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  #report blockquote { border-left: 3px solid var(--accent); margin: 8px 0; padding: 2px 12px; color: var(--muted); }
+  #report ul, #report ol { padding-left: 24px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th { text-align: left; color: var(--muted); font-weight: 600; font-size: 12px;
        padding: 8px 10px; border-bottom: 1px solid var(--line); }
@@ -149,6 +158,19 @@
     <div id="result"></div>
   </div>
 
+  <div class="card" id="reportCard" style="display:none">
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <div class="section-title" style="margin:0">国外局实审过程分析报告（大模型）</div>
+      <span>
+        <button class="ghost" id="regen">重新生成</button>
+        <button class="ghost" id="dlMd">下载 .md</button>
+      </span>
+    </div>
+    <div id="reportState" class="hint" style="margin:6px 0 0"></div>
+    <div id="analysisLog"></div>
+    <div id="report"></div>
+  </div>
+
   <div class="card" id="historyCard" style="display:none">
     <div class="section-title">最近任务</div>
     <div class="history" id="history"></div>
@@ -161,6 +183,8 @@
   </div>
 </div>
 
+<script src="./vendor/pdf.min.js"></script>
+<script src="./gd-extract.js"></script>
 <script>
 "use strict";
 const REPO = "zzt00711/global-dossier";
@@ -267,8 +291,423 @@ function elapsed() {
   return startedAt ? Math.round((Date.now() - startedAt) / 1000) : 0;
 }
 
+// ───────── 大模型分析：PDF 文本层 / OCR → 结构化提取 → LLM 流式报告 ─────────
+const LLM = {
+  apiBase: "https://note3-prev-api.askdiandian.com/v1",
+  model: "dots3-note-prev",
+  maxOcrPages: 30,
+  docTextLen: 25666,
+  textBudget: 256000,
+  maxTokens: 32768,
+};
+
+if (typeof pdfjsLib !== "undefined") {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "./vendor/pdf.worker.min.js";
+}
+
+// 内置 LLM Key（XOR+base64 分段混淆，运行时组装）
+function embeddedKey() {
+  const S = ["OHYAIMFEEFG", "zC2yg2my2mT", "EIwo008Ag0A", "Fzu1jpLgW3="];
+  let b = "";
+  for (let i = 0; i < 11; i++) for (const s of S) if (i < s.length) b += s[i];
+  const bin = atob(b);
+  let k = "";
+  for (const c of bin) k += String.fromCharCode(c.charCodeAt(0) ^ 0x5A);
+  return k;
+}
+function llmKey() { return (localStorage.getItem("gd_llm_key") || "").trim() || embeddedKey(); }
+
+// ── 轻量 Markdown 渲染 ──
+function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+function inline(s) {
+  return esc(s)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+    .replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<i>$2</i>");
+}
+function renderMd(md) {
+  const lines = md.split("\n"); let html = "", i = 0;
+  const flushList = (buf, ord) => { if (buf.length) html += `<${ord}>` + buf.map(x => `<li>${inline(x)}</li>`).join("") + `</${ord}>`; };
+  let ulb = [], olb = [];
+  while (i < lines.length) {
+    const ln = lines[i];
+    if (/^#{1,4}\s/.test(ln)) {
+      flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+      const lv = ln.match(/^#+/)[0].length; html += `<h${lv}>${inline(ln.replace(/^#+\s*/, ""))}</h${lv}>`; i++; continue;
+    }
+    if (/^\s*\|/.test(ln) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+      flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+      const rows = []; while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+      const cells = r => r.replace(/^\s*\|/, "").replace(/\|\s*$/, "").split("|").map(c => inline(c.trim()));
+      html += "<table><tr>" + cells(rows[0]).map(c => `<th>${c}</th>`).join("") + "</tr>";
+      for (const r of rows.slice(2)) html += "<tr>" + cells(r).map(c => `<td>${c}</td>`).join("") + "</tr>";
+      html += "</table>"; continue;
+    }
+    if (/^\s*[-*]\s+/.test(ln)) { olb.length && (flushList(olb, "ol"), olb = []); ulb.push(ln.replace(/^\s*[-*]\s+/, "")); i++; continue; }
+    if (/^\s*\d+[.、]\s+/.test(ln)) { ulb.length && (flushList(ulb, "ul"), ulb = []); olb.push(ln.replace(/^\s*\d+[.、]\s+/, "")); i++; continue; }
+    if (/^>\s?/.test(ln)) { html += `<blockquote>${inline(ln.replace(/^>\s?/, ""))}</blockquote>`; i++; continue; }
+    if (/^\s*(---|\*\*\*)\s*$/.test(ln)) { html += "<hr>"; i++; continue; }
+    if (!ln.trim()) { flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = []; i++; continue; }
+    flushList(ulb, "ul"); ulb = []; flushList(olb, "ol"); olb = [];
+    html += `<p>${inline(ln)}</p>`; i++;
+  }
+  flushList(ulb, "ul"); flushList(olb, "ol");
+  return html;
+}
+
+// ── PDF.js 文本层 + tesseract.js OCR ──
+async function openPdf(buf) {
+  if (typeof pdfjsLib === "undefined") throw new Error("PDF.js 未加载");
+  return await pdfjsLib.getDocument({
+    data: new Uint8Array(buf),
+    isEvalSupported: false,
+    cMapUrl: new URL("./vendor/cmaps/", location.href).href,
+    cMapPacked: true,
+    standardFontDataUrl: new URL("./vendor/standard_fonts/", location.href).href,
+  }).promise;
+}
+async function layerText(pdf, maxPages) {
+  const lines = [];
+  const n = Math.min(pdf.numPages, maxPages);
+  for (let p = 1; p <= n; p++) {
+    try {
+      const tc = await (await pdf.getPage(p)).getTextContent();
+      let line = "";
+      for (const it of tc.items) {
+        if (typeof it.str !== "string") continue;
+        line += it.str + (it.hasEOL ? "\n" : " ");
+        if (line.includes("\n")) { lines.push(line.replace(/\n+$/, "")); line = ""; }
+      }
+      if (line.trim()) lines.push(line.trim());
+      if (lines.join("\n").length > 2000000) break;
+    } catch (e) { lines.push("[第" + p + "页解析失败]"); }
+  }
+  return lines.join("\n");
+}
+
+let tessLoading = null;
+function loadTesseract() {
+  if (typeof Tesseract !== "undefined") return Promise.resolve();
+  if (!tessLoading) {
+    tessLoading = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "./vendor/tesseract/tesseract.min.js";
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error("OCR 引擎脚本加载失败"));
+      document.head.appendChild(s);
+    });
+  }
+  return tessLoading;
+}
+
+const ocrWorkers = {};
+async function getOcrWorker(langs, log) {
+  if (ocrWorkers[langs]) return ocrWorkers[langs];
+  await loadTesseract();
+  log(`  加载 OCR 引擎（${langs}），首次需下载语言包 ...`);
+  const VENDOR = new URL("./vendor/tesseract/", location.href).href;
+  const w = await Tesseract.createWorker(langs, 1, {
+    workerPath: VENDOR + "worker.min.js",
+    corePath: VENDOR,
+    langPath: VENDOR,
+    workerBlobURL: false,
+    gzip: true,
+    logger: () => {},
+  });
+  ocrWorkers[langs] = w;
+  return w;
+}
+
+const OFFICE_LANGS = { US: "eng", EP: "eng", JP: "eng+jpn", KR: "eng+kor", WO: "eng" };
+
+async function ocrPageTexts(pdf, langs, maxPages, log) {
+  const worker = await getOcrWorker(langs, log);
+  const n = Math.min(pdf.numPages, maxPages);
+  const canvas = document.createElement("canvas");
+  const parts = [];
+  const t0 = Date.now();
+  for (let p = 1; p <= n; p++) {
+    const page = await pdf.getPage(p);
+    const vp = page.getViewport({ scale: 2.6 });
+    canvas.width = Math.ceil(vp.width); canvas.height = Math.ceil(vp.height);
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    await page.render({ canvasContext: ctx, viewport: vp }).promise;
+    const { data: { text } } = await worker.recognize(canvas);
+    parts.push(text);
+    if (p === 1 || p % 5 === 0 || p === n) {
+      log(`    OCR ${p}/${n} 页（${((Date.now() - t0) / 1000).toFixed(0)}s）...`);
+    }
+  }
+  return parts.join("\n");
+}
+
+async function pdfToText(buf, office, log) {
+  const pdf = await openPdf(buf);
+  let text = "";
+  try { text = await layerText(pdf, LLM.maxOcrPages); } catch (e) { text = ""; }
+  if (text.replace(/\s+/g, "").length >= 50) {
+    try { await pdf.destroy(); } catch (e) {}
+    return text;
+  }
+  try {
+    const langs = OFFICE_LANGS[(office || "").toUpperCase()] || "eng";
+    const text2 = await ocrPageTexts(pdf, langs, LLM.maxOcrPages, log);
+    try { await pdf.destroy(); } catch (e) {}
+    return text2;
+  } catch (e) {
+    try { await pdf.destroy(); } catch (e2) {}
+    log("    OCR 失败：" + String(e && e.message || e).slice(0, 120));
+    return "[扫描版-OCR失败]";
+  }
+}
+
+function trimDocText(text, name) {
+  let t = (text || "").replace(/[ \t]+/g, " ").replace(/[ \t]*\n[ \t]*/g, "\n").trim();
+  if (t.replace(/\s+/g, "").length < 50) return t || "[扫描版-未获取到文本]";
+  const isRefTail = /search\s+report|registered\s+search|international\s+(search|preliminary)|search\s+strategy|search\s+information|list\s+of\s+references|\b892\b|引用文献|인용문헌|검색|調査報告/.test((name || "").toLowerCase());
+  const len = LLM.docTextLen * (isRefTail ? 2 : 1);
+  if (t.length > len) t = isRefTail ? t.slice(-len) : t.slice(0, len);
+  return t;
+}
+
+function memberConclusion(documents) {
+  const DEFINITIVE = new Set(["授权", "驳回", "视为撤回或放弃"]);
+  const dated = documents.filter(x => x.text && DEFINITIVE.has(x.conclusion));
+  if (!dated.length) return "审查中";
+  const dk = s => {
+    s = (s || "").trim();
+    let m = s.match(/(\d{2})\/(\d{2})\/(\d{4})/); if (m) return [+m[3], +m[1], +m[2]];
+    m = s.match(/(\d{4})-(\d{2})-(\d{2})/); if (m) return [+m[1], +m[2], +m[3]];
+    return [9999, 12, 31];
+  };
+  dated.sort((a, b) => { const ka = dk(a.date), kb = dk(b.date); return ka[0] - kb[0] || ka[1] - kb[1] || ka[2] - kb[2]; });
+  return dated[dated.length - 1].conclusion;
+}
+
+// ── 抓取结果 → 可分析数据 ──
+let analysisLogLines = [];
+function alog(msg) {
+  analysisLogLines.push(msg);
+  const box = $("analysisLog");
+  box.style.display = "block";
+  box.textContent = analysisLogLines.join("\n");
+  box.scrollTop = box.scrollHeight;
+}
+
+async function extractBundle(data) {
+  const r = data.result;
+  const excludeNos = [];
+  for (const m of r.members) if (m.app_num) excludeNos.push(m.app_num);
+  const members = [];
+  for (const m of r.members) {
+    if (m.status === "skipped" || !m.picked || !m.picked.length) continue;
+    const office = (m.country || "").toUpperCase();
+    if (!/^(JP|EP|US|KR)$/.test(office)) continue;
+    alog("\n===== " + office + " " + (m.app_num || "") + " 文书 " + m.picked.length + " 份 =====");
+    const documents = [];
+    for (const p of m.picked) {
+      const name = p.name || "";
+      if (!p.url) {
+        documents.push({ date: p.date || "", name, family: p.family || "", type: GDX.detectDocType(name), text: "", error: p.error || "无下载链接" });
+        continue;
+      }
+      alog("  · " + name + " 下载并抽取文本 ...");
+      try {
+        const resp = await fetch(p.url, { cache: "force-cache" });
+        if (!resp.ok) throw new Error("HTTP " + resp.status);
+        const buf = await resp.arrayBuffer();
+        const raw = await pdfToText(buf, office, alog);
+        const text = trimDocText(raw, name);
+        const isSearch = /search\s+(strategy|results?)/.test(name.toLowerCase());
+        const doc = {
+          date: p.date || "", name, family: p.family || "",
+          type: GDX.detectDocType(name),
+          citations: isSearch ? [] : GDX.extractCitations(text, 40, [m.app_num, ...excludeNos]),
+          claims: GDX.extractClaims(text).slice(0, 10),
+          conclusion: GDX.detectConclusion(text, name),
+          text,
+        };
+        documents.push(doc);
+        alog("    文本 " + text.length + " 字，引用 " + doc.citations.length + " 条，结论：" + doc.conclusion);
+      } catch (e) {
+        const msg = String(e && e.message || e).slice(0, 120);
+        alog("    失败：" + msg);
+        documents.push({ date: p.date || "", name, family: p.family || "", type: GDX.detectDocType(name), text: "", error: msg });
+      }
+    }
+    members.push({ office, app_num: m.app_num || "", conclusion: memberConclusion(documents), documents });
+  }
+  return {
+    query: r.query || "",
+    fetched_at: r.generated_at || "",
+    family_counts: r.family_counts || {},
+    members,
+  };
+}
+
+// ── LLM 提示词与流式调用 ──
+function budgetCopy(data) {
+  const d = JSON.parse(JSON.stringify(data));
+  let used = 0;
+  for (const m of d.members) for (const doc of m.documents || []) {
+    const txt = (doc.text || "").trim();
+    if (!txt || txt.startsWith("[") || txt.length < 50) continue;
+    const remain = LLM.textBudget - used;
+    if (remain < 3000) { doc.text = ""; doc.text_note = "超出文本预算未收录，仅提供结构化预提取"; used = LLM.textBudget; }
+    else if (used + txt.length > LLM.textBudget) { doc.text = txt.slice(0, remain) + " …[截断]"; used = LLM.textBudget; }
+    else used += txt.length;
+  }
+  return d;
+}
+
+const SYSTEM_PROMPT =
+  "你是一名资深的中华人民共和国专利审查员，同时精通美国(USPTO)、欧洲(EPO)、" +
+  "日本(JPO)、韩国(KIPO)的实审制度、法条与审查实践。" +
+  "请基于用户提供的国外局实审案卷数据，撰写一份" +
+  "《国外局实审过程分析报告》，帮助中国审查员快速掌握该同族在国外的审查脉络。" +
+  "核心要求：" +
+  "1) 绝不编造。只引用数据中真实出现的文书名称、日期、法条、对比文件与权利要求；" +
+  "缺失信息明确标注'数据未提供'。" +
+  "2) 对比文件必须注明编号与类别(X/Y/A，参照各局惯例：US 的 PTO-892、EP 检索报告、" +
+  "JP 引用文献、KR 인용문헌)，并说明其被引用的理由(最接近现有技术/结合启示等)。" +
+  "3) 法条按各局规范表述：US 35 U.S.C. §102/§103/§112、EPC Art. 54/56/84、" +
+  "特許法第29条(新規性/進歩性)、특허법 제29조。" +
+  "4) 逐份通知书梳理：引用法条 → 引用对比文件 → 审查意见要点；" +
+  "随后整理申请人答复与权利要求修改；最后给出最终结论(授权/驳回/视为撤回等)，" +
+  "若授权则摘录授权的权利要求——**只需摘录独立权利要求**(不引用其他权利要求" +
+  "的权项，如 US 的 'What is claimed is' 中的第 1 条及不依赖前项的权项)。" +
+  "5) 输出 Markdown，表格与分节并用，可直接作为工作参考。";
+
+function userPrompt(data) {
+  return "以下是该同族在 JP / EP / US / KR 的实审案卷数据(JSON)。每个成员的 documents 按日期升序，" +
+    "text 为通知书/答复/检索文书文本(截取片段)，citations/claims/conclusion 为正则预提取结果。" +
+    "报告落款日期使用 fetched_at。\n\n" +
+    JSON.stringify(data, null, 1) + "\n\n" +
+    "请撰写中文 Markdown 报告，结构如下：\n" +
+    `# 国外局实审过程分析报告（${data.query || ""}）\n\n` +
+    "## 一、跨局对比与中国审查员参考\n" +
+    "(各国驳回理由与对比文件使用方式的异同、对中国实审的参考要点；可先给出结论性概括)\n\n" +
+    "## 二、历次通知书详解（引用法条/对比文件/审查意见）\n" +
+    "(逐局逐份：引用法条、引用对比文件[编号/类别X·Y·A/专利号/被引用理由]、审查意见要点)\n\n" +
+    "## 三、申请人答复与权利要求修改\n" +
+    "(历次答复要点、修改的权利要求、争辩理由；数据未提供时如实说明)\n\n" +
+    "## 四、同族与实审范围总览\n" +
+    "(同族成员、各局申请号、关注范围说明、各局最终结论汇总表)\n\n" +
+    "## 五、各局实审时间线\n" +
+    "(每局按时间列出历次通知书/答复/检索文书，含日期、类型、状态标签)\n\n" +
+    "## 六、最终审查结论\n" +
+    "(每局最终状态：授权/驳回/视为撤回等；若授权，摘录授权的独立权利要求文本)\n";
+}
+
+async function streamReport(data, onProgress) {
+  const budgeted = budgetCopy(data);
+  const body = {
+    model: LLM.model,
+    messages: [
+      { role: "system", content: SYSTEM_PROMPT },
+      { role: "user", content: userPrompt(budgeted) },
+    ],
+    max_tokens: LLM.maxTokens,
+    stream: true,
+    chat_template_kwargs: { enable_thinking: false },
+  };
+  alog("  模型：" + LLM.model + "　接口：" + LLM.apiBase);
+  alog("  正在生成报告（流式）...");
+  const r = await fetch(LLM.apiBase.replace(/\/$/, "") + "/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Authorization": "Bearer " + llmKey() },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error("LLM HTTP " + r.status + "：" + (await r.text()).slice(0, 200));
+  const reader = r.body.getReader(), dec = new TextDecoder();
+  let bufTxt = "", parts = [], done = 0, lastReport = 0, lastPaint = 0;
+  while (true) {
+    const { value, done: fin } = await reader.read();
+    if (fin) break;
+    bufTxt += dec.decode(value, { stream: true });
+    let nl;
+    while ((nl = bufTxt.indexOf("\n")) >= 0) {
+      const line = bufTxt.slice(0, nl).trim(); bufTxt = bufTxt.slice(nl + 1);
+      if (!line.startsWith("data:")) continue;
+      const payload = line.slice(5).trim();
+      if (payload === "[DONE]") continue;
+      try {
+        const j = JSON.parse(payload);
+        const piece = (j.choices && j.choices[0] && j.choices[0].delta && j.choices[0].delta.content) || "";
+        if (!piece) continue;
+        parts.push(piece); done += piece.length;
+        const now = Date.now();
+        if (now - lastPaint > 400) { lastPaint = now; renderReport(parts.join("")); }
+        if (done - lastReport >= 400) { lastReport = done; onProgress(done); }
+      } catch (e) { /* 心跳/分片边缘 */ }
+    }
+  }
+  const md = parts.join("");
+  renderReport(md);
+  return md;
+}
+
+// ── 报告卡片与缓存 ──
+let analysisRunning = false;
+let lastResultData = null;
+let lastReportMd = "";
+
+function reportCacheKey(job) { return "opd_report_" + job; }
+function loadReport(job) { try { return localStorage.getItem(reportCacheKey(job)) || ""; } catch (e) { return ""; } }
+function saveReport(job, md) {
+  try { if (md.length < 500000) localStorage.setItem(reportCacheKey(job), md); } catch (e) {}
+}
+function setReportState(text, isError) {
+  const el = $("reportState");
+  el.textContent = text || "";
+  el.className = "hint " + (isError ? "err" : "");
+}
+function renderReport(md) {
+  lastReportMd = md;
+  $("report").innerHTML = renderMd(md) || "<i>（空）</i>";
+}
+
+async function startAnalysis(job, data, force) {
+  if (analysisRunning) return;
+  $("reportCard").style.display = "block";
+  const cached = force ? "" : loadReport(job);
+  if (cached) {
+    renderReport(cached);
+    setReportState("已加载本任务上次生成的报告；如需重新分析请点“重新生成”。");
+    return;
+  }
+  if (!data || !data.result) { setReportState("没有可分析的数据", true); return; }
+
+  analysisRunning = true;
+  analysisLogLines = [];
+  $("analysisLog").textContent = "";
+  $("analysisLog").style.display = "none";
+  $("report").innerHTML = "";
+  $("regen").disabled = true;
+  setReportState("正在下载 PDF 并抽取文本（扫描件将自动 OCR，可能较慢）…");
+
+  try {
+    const bundle = await extractBundle(data);
+    const usable = bundle.members.some(m => m.documents.some(d => d.text && !d.text.startsWith("[")));
+    if (!usable) throw new Error("未能从 PDF 中提取到可用文本");
+    setReportState("正在调用大模型生成报告（流式）…");
+    const md = await streamReport(bundle, (chars) => {
+      setReportState("正在调用大模型生成报告… 已生成约 " + chars + " 字");
+    });
+    if (!md.trim()) throw new Error("模型未返回正文");
+    saveReport(job, md);
+    setReportState("报告生成完成（" + md.length + " 字）。");
+  } catch (e) {
+    const msg = String(e && e.message || e);
+    setReportState("分析失败：" + msg, true);
+    alog("\n[出错] " + msg);
+  } finally {
+    analysisRunning = false;
+    $("regen").disabled = false;
+  }
+}
+
 async function poll(job) {
-  clearTimeout(pollTimer);
   const url = SITE + "/results/jobs/" + job + "/status.json?t=" + Date.now();
   let data = null;
   try {
@@ -281,7 +720,9 @@ async function poll(job) {
     if (data.state === "done") {
       setStatus("完成（" + elapsed() + "s）");
       renderResult(data);
+      lastResultData = data;
       $("run").disabled = false;
+      startAnalysis(job, data, false);
       return;
     }
     if (data.state === "error") {
@@ -326,6 +767,8 @@ async function submit() {
 
   $("run").disabled = true;
   $("resultCard").style.display = "none";
+  $("reportCard").style.display = "none";
+  lastReportMd = "";
   renderLogs([]);
   setStatus("正在创建任务…");
 
@@ -375,6 +818,23 @@ $("clearToken").addEventListener("click", () => {
   localStorage.removeItem(TOKEN_KEY);
   renderTokenState();
   setStatus("Token 已清除", false);
+});
+
+$("regen").addEventListener("click", () => {
+  const job = parseInt(new URLSearchParams(location.search).get("job") || "0", 10);
+  if (!job || !lastResultData) { setReportState("没有可重新分析的任务", true); return; }
+  try { localStorage.removeItem(reportCacheKey(job)); } catch (e) {}
+  startAnalysis(job, lastResultData, true);
+});
+
+$("dlMd").addEventListener("click", () => {
+  if (!lastReportMd) return;
+  const blob = new Blob([lastReportMd], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = ((lastResultData && lastResultData.result && lastResultData.result.query) || "report") + "_国外局实审分析报告.md";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 });
 
 $("run").addEventListener("click", submit);
