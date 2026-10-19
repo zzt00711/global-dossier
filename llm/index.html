@@ -658,6 +658,26 @@ function loadReport(job) { try { return localStorage.getItem(reportCacheKey(job)
 function saveReport(job, md) {
   try { if (md.length < 500000) localStorage.setItem(reportCacheKey(job), md); } catch (e) {}
 }
+
+// 抽取结果缓存：重新生成时直接复用文本，避免重复下载 PDF 与 OCR
+const BUNDLE_KEEP = 6;
+function bundleCacheKey(job) { return "opd_bundle_" + job; }
+function loadBundle(job) {
+  try { const s = localStorage.getItem(bundleCacheKey(job)); return s ? JSON.parse(s) : null; } catch (e) { return null; }
+}
+function saveBundle(job, bundle) {
+  try {
+    const s = JSON.stringify(bundle);
+    if (s.length > 3000000) return;
+    localStorage.setItem(bundleCacheKey(job), s);
+    const keys = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k && k.indexOf("opd_bundle_") === 0 && k !== bundleCacheKey(job)) keys.push(k);
+    }
+    while (keys.length > BUNDLE_KEEP - 1) { try { localStorage.removeItem(keys.shift()); } catch (e) {} }
+  } catch (e) {}
+}
 function setReportState(text, isError) {
   const el = $("reportState");
   el.textContent = text || "";
@@ -685,10 +705,19 @@ async function startAnalysis(job, data, force) {
   $("analysisLog").style.display = "none";
   $("report").innerHTML = "";
   $("regen").disabled = true;
-  setReportState("正在下载 PDF 并抽取文本（扫描件将自动 OCR，可能较慢）…");
+  const cachedBundle = loadBundle(job);
+  setReportState(cachedBundle
+    ? "正在复用上次抽取的文本，调用大模型重新生成…"
+    : "正在下载 PDF 并抽取文本（扫描件将自动 OCR，可能较慢）…");
 
   try {
-    const bundle = await extractBundle(data);
+    let bundle = cachedBundle;
+    if (bundle) {
+      alog("已复用上次抽取的文本，跳过 PDF 下载与 OCR。");
+    } else {
+      bundle = await extractBundle(data);
+      saveBundle(job, bundle);
+    }
     const usable = bundle.members.some(m => m.documents.some(d => d.text && !d.text.startsWith("[")));
     if (!usable) throw new Error("未能从 PDF 中提取到可用文本");
     setReportState("正在调用大模型生成报告（流式）…");
