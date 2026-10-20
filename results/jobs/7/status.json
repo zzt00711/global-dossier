@@ -1,0 +1,171 @@
+{
+  "state": "done",
+  "issue": 7,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-20T02:41:00+00:00",
+  "logs": [
+    "    OK  EP Decision to grant a European patent  102 KB",
+    "    OK  EP Copy of the international search report  87 KB",
+    "    OK  EP Copy of the international search report  89 KB",
+    "    OK  EP Amendments received before examination  48 KB",
+    "    OK  EP Amended description filed after receipt of (European) search report  1294 KB",
+    "    OK  EP Decision to grant a European patent  102 KB",
+    "    OK  EP European search opinion  147 KB",
+    "    OK  EP European search report  50 KB",
+    "    OK  EP Information on Search Strategy  17 KB",
+    "    OK  EP Amendments received before examination  99 KB"
+  ],
+  "query": "CN118891148A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "result": {
+    "query": "CN118891148A",
+    "family_counts": {
+      "EP": 2,
+      "CN": 1,
+      "WO": 1,
+      "AT": 1
+    },
+    "generated_at": "2026-10-20T02:41:02+00:00",
+    "members": [
+      {
+        "country": "EP",
+        "app_num": "EP.22817395.A",
+        "status": "ok",
+        "doc_total": 75,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2026-05-15",
+            "status": "ok",
+            "bytes": 104599,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2026-05-15_EP_Decision_to_grant_a_European_patent_57GQD5DO1SD9.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2023-06-01",
+            "status": "ok",
+            "bytes": 89149,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2023-06-01_EP_Copy_of_the_international_search_report_M80CK1N350DY.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2023-06-01",
+            "status": "ok",
+            "bytes": 90732,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2023-06-01_EP_Copy_of_the_international_search_report_M80CMQSKUIUN.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2024-12-18",
+            "status": "ok",
+            "bytes": 49408,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2024-12-18_EP_Amendments_received_before_examination_ZBRXD10EAE1E.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended description filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2024-12-18",
+            "status": "ok",
+            "bytes": 1324613,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2024-12-18_EP_Amended_description_filed_after_receipt_of_%28European%29_search_ZBS6619W3H1P.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.25165211.A",
+        "status": "ok",
+        "doc_total": 41,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2026-05-08",
+            "status": "ok",
+            "bytes": 104786,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2026-05-08_EP_Decision_to_grant_a_European_patent_AKFTT1ONENDS.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-06-05",
+            "status": "ok",
+            "bytes": 150943,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2025-06-05_EP_European_search_opinion_O6MRZW7PDDYI.pdf",
+            "error": null
+          },
+          {
+            "name": "European search report",
+            "family": "citation",
+            "date": "2025-06-05",
+            "status": "ok",
+            "bytes": 51596,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2025-06-05_EP_European_search_report_OBKSD1U6FUDM.pdf",
+            "error": null
+          },
+          {
+            "name": "Information on Search Strategy",
+            "family": "citation",
+            "date": "2025-06-05",
+            "status": "ok",
+            "bytes": 17624,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2025-06-05_EP_Information_on_Search_Strategy_OBL34VZKXS9K.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2026-01-08",
+            "status": "ok",
+            "bytes": 101732,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/7/CN118891148A/EP/2026-01-08_EP_Amendments_received_before_examination_DY2951K6RBUZ.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280089841.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "IB.2022061376.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "AT",
+        "app_num": "AT.1872021.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-20T02:41:24+00:00"
+}
