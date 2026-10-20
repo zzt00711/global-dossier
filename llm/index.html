@@ -192,12 +192,21 @@ const SITE = "https://zzt00711.github.io/global-dossier";
 const API = "https://api.github.com";
 const TOKEN_KEY = "opd_gh_token";
 const HISTORY_KEY = "opd_jobs";
+const LAST_SUBMIT_KEY = "opd_last_submit";
+const DEDUP_TTL = 30 * 60 * 1000;
+const DEDUP_WINDOW_RUNNING = 20 * 60 * 1000;
+const LOCAL_LOCK_MS = 60 * 1000;
+const POLL_MIN = 2000;
+const POLL_MAX = 30000;
 
 const $ = (id) => document.getElementById(id);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 let pollTimer = null;
 let startedAt = 0;
+let pollJob = null;
+let pollDelay = 2000;
+let pollStopped = true;
 
 function token() { return (localStorage.getItem(TOKEN_KEY) || "").trim(); }
 
@@ -253,6 +262,55 @@ function saveHistory(job, query) {
   list.unshift({ job: job, query: query, at: Date.now() });
   localStorage.setItem(HISTORY_KEY, JSON.stringify(list.slice(0, 20)));
   loadHistory();
+}
+
+// ── 提交去重：同参数任务不重复开 Issue ──
+function jobKey(query, offices, maxDocs) {
+  return query + "|" + offices.slice().sort().join(",") + "|" + maxDocs;
+}
+
+function decodePayload(body) {
+  const m = /<!--OPD_JOB:([A-Za-z0-9+/=]+)-->/.exec(body || "");
+  if (!m) return null;
+  try {
+    const bin = atob(m[1]);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return JSON.parse(new TextDecoder().decode(bytes));
+  } catch (e) {
+    return null;
+  }
+}
+
+function lastSubmit() {
+  try { return JSON.parse(localStorage.getItem(LAST_SUBMIT_KEY) || "null"); } catch (e) { return null; }
+}
+
+async function findDuplicate(t, key) {
+  const url = API + "/repos/" + REPO + "/issues?state=all&sort=created&direction=desc&per_page=30";
+  let list = null;
+  try {
+    const r = await fetch(url, {
+      headers: { "Accept": "application/vnd.github+json", "Authorization": "Bearer " + t },
+    });
+    if (!r.ok) return null;
+    list = await r.json();
+  } catch (e) {
+    return null;
+  }
+  if (!Array.isArray(list)) return null;
+  const now = Date.now();
+  for (const it of list) {
+    if (!it || it.pull_request) continue;
+    if (!/^\[OPD\]/i.test(it.title || "")) continue;
+    const age = now - Date.parse(it.created_at || 0);
+    if (!(age >= 0) || age > DEDUP_TTL) continue;
+    const p = decodePayload(it.body);
+    if (!p) continue;
+    if (jobKey(String(p.query || "").toUpperCase(), p.offices || [], p.max_docs) !== key) continue;
+    return { job: it.number, state: it.state, age: age };
+  }
+  return null;
 }
 
 function renderResult(data) {
@@ -751,13 +809,47 @@ async function startAnalysis(job, data, force) {
   }
 }
 
-async function poll(job) {
+function nextPollDelay() {
+  const base = pollDelay;
+  pollDelay = Math.min(POLL_MAX, Math.round(pollDelay * 1.6));
+  return Math.max(POLL_MIN, Math.min(POLL_MAX, Math.round(base * (0.85 + Math.random() * 0.3))));
+}
+
+function schedulePoll(ms) {
+  if (pollTimer) clearTimeout(pollTimer);
+  pollTimer = setTimeout(() => { pollTimer = null; poll(pollJob); }, ms);
+}
+
+function stopPoll() {
+  pollStopped = true;
+  if (pollTimer) { clearTimeout(pollTimer); pollTimer = null; }
+}
+
+async function fetchStatus(job) {
   const url = SITE + "/results/jobs/" + job + "/status.json?t=" + Date.now();
-  let data = null;
   try {
     const r = await fetch(url, { cache: "no-store" });
-    if (r.ok) data = await r.json();
-  } catch (e) {}
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+async function poll(job) {
+  if (pollStopped || pollJob !== job) {
+    pollJob = job;
+    pollDelay = POLL_MIN;
+  }
+  pollStopped = false;
+
+  if (document.hidden) {
+    schedulePoll(POLL_MAX);
+    return;
+  }
+
+  const data = await fetchStatus(job);
+  if (pollStopped || pollJob !== job) return;
 
   if (data) {
     renderLogs(data.logs || []);
@@ -766,12 +858,14 @@ async function poll(job) {
       renderResult(data);
       lastResultData = data;
       $("run").disabled = false;
+      stopPoll();
       startAnalysis(job, data, false);
       return;
     }
     if (data.state === "error") {
       setStatus("失败：" + (data.error || "未知错误"), true);
       $("run").disabled = false;
+      stopPoll();
       return;
     }
     setStatus("运行中… 已用 " + elapsed() + "s");
@@ -782,9 +876,22 @@ async function poll(job) {
   if (elapsed() > 20 * 60) {
     setStatus("超时，请到 Actions 页面查看：" + job, true);
     $("run").disabled = false;
+    stopPoll();
     return;
   }
-  pollTimer = setTimeout(() => poll(job), 4000);
+  schedulePoll(nextPollDelay());
+}
+
+function track(job, startTs, msg) {
+  startedAt = startTs;
+  $("run").disabled = true;
+  $("resultCard").style.display = "none";
+  $("reportCard").style.display = "none";
+  lastReportMd = "";
+  saveHistory(job, ($("query").value || "").trim().toUpperCase());
+  history.replaceState(null, "", "?job=" + job);
+  setStatus(msg);
+  poll(job);
 }
 
 async function submit() {
@@ -806,17 +913,47 @@ async function submit() {
   }
   const maxDocs = Math.max(1, Math.min(5, parseInt($("maxDocs").value || "2", 10) || 2));
 
-  const payload = b64utf8(JSON.stringify({ query: query, offices: offices, max_docs: maxDocs }));
-  const body = "由 OPD 前端提交。\n\n<!--OPD_JOB:" + payload + "-->";
+  const key = jobKey(query, offices, maxDocs);
+
+  const lock = lastSubmit();
+  if (lock && lock.job && lock.key === key && Date.now() - lock.at < LOCAL_LOCK_MS) {
+    track(lock.job, lock.at, "同参数任务 #" + lock.job + " 刚提交过，继续跟踪…");
+    return;
+  }
 
   $("run").disabled = true;
   $("resultCard").style.display = "none";
   $("reportCard").style.display = "none";
   lastReportMd = "";
   renderLogs([]);
-  setStatus("正在创建任务…");
+  setStatus("正在检查是否有相同任务…");
 
   try {
+    const dup = await findDuplicate(t, key);
+    if (dup) {
+      const age = Math.max(0, dup.age);
+      if (dup.state === "open" && age <= DEDUP_WINDOW_RUNNING) {
+        track(dup.job, Date.now() - age, "已有运行中的相同任务 #" + dup.job + "，继续跟踪…");
+        return;
+      }
+      const st = await fetchStatus(dup.job);
+      if (st && st.state === "done") {
+        startedAt = Date.now() - age;
+        saveHistory(dup.job, query);
+        history.replaceState(null, "", "?job=" + dup.job);
+        setStatus("复用 " + Math.max(1, Math.round(age / 60000)) + " 分钟前的相同任务 #" + dup.job);
+        renderLogs(st.logs || []);
+        renderResult(st);
+        lastResultData = st;
+        $("run").disabled = false;
+        startAnalysis(dup.job, st, false);
+        return;
+      }
+    }
+
+    setStatus("正在创建任务…");
+    const payload = b64utf8(JSON.stringify({ query: query, offices: offices, max_docs: maxDocs }));
+    const body = "由 OPD 前端提交。\n\n<!--OPD_JOB:" + payload + "-->";
     const r = await fetch(API + "/repos/" + REPO + "/issues", {
       method: "POST",
       headers: {
@@ -832,6 +969,7 @@ async function submit() {
       throw new Error(msg + (r.status === 401 || r.status === 403 ? "（检查 Token 权限：Issues 读写）" : ""));
     }
     startedAt = Date.now();
+    try { localStorage.setItem(LAST_SUBMIT_KEY, JSON.stringify({ key: key, job: data.number, at: startedAt })); } catch (e) {}
     saveHistory(data.number, query);
     setStatus("已提交 #" + data.number + "，等待 Actions 启动…");
     history.replaceState(null, "", "?job=" + data.number);
@@ -973,6 +1111,12 @@ $("dlZip").addEventListener("click", async () => {
 
 $("run").addEventListener("click", submit);
 $("query").addEventListener("keydown", (e) => { if (e.key === "Enter") submit(); });
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden || pollStopped || !pollJob) return;
+  if (pollTimer) { clearTimeout(pollTimer); pollTimer = null; }
+  poll(pollJob);
+});
 
 renderTokenState();
 loadHistory();
