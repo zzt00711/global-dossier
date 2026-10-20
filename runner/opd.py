@@ -65,19 +65,18 @@ class OpdError(RuntimeError):
         self.message = message
 
 
-def parse_cn_publication(raw: str) -> tuple[dict[str, str], list[dict[str, str]]]:
-    """把 CN118056148A 解析为号段；kind 缺失时给出候选。
+def parse_cn_publication(raw: str) -> dict[str, str]:
+    """把 CN116887720A 解析为 OPD 号段。
 
-    返回 (首选号段, 候选号段列表)。首选与候选的第一个相同。
+    OPD 已不支持模糊匹配，kind code 必填；缺失时直接报错而不是猜 A/B/U。
     """
     s = re.sub(r"[\s\-]", "", (raw or "").strip().upper())
-    m = re.fullmatch(r"(?:CN)?(\d{8,12})([A-Z]\d?)?", s)
+    m = re.fullmatch(r"(?:CN)?(\d{6,12})([A-Z]\d?)", s)
     if not m:
-        raise ValueError(f"无法识别的 CN 公开号: {raw!r}，示例: CN118056148A")
-    num, kind = m.group(1), m.group(2) or ""
-    kinds = [kind] if kind else ["A", "B", "U"]
-    parts = [{"CNTRY_CD_PART": "CN", "NUM_PART": num, "KIND_CD_PART": k} for k in kinds]
-    return parts[0], parts
+        raise ValueError(
+            f"无法识别的 CN 公开号: {raw!r}；请输入完整公开号（含 kind code），如 CN116887720A"
+        )
+    return {"CNTRY_CD_PART": "CN", "NUM_PART": m.group(1), "KIND_CD_PART": m.group(2)}
 
 
 def parse_member_num(value: str) -> dict[str, str]:
@@ -338,20 +337,12 @@ class OpdClient:
         raise OpdError("DOWNLOAD", f"PDF 下载失败: {last}")
 
 
-def family_with_kind_fallback(
+def family_by_publication(
     client: OpdClient, raw: str, bul_type: str = "publication"
 ) -> tuple[dict[str, str], list[dict[str, Any]]]:
-    """kind 缺失时依次尝试 A/B/U，返回成功的号段与成员。"""
-    primary, candidates = parse_cn_publication(raw)
-    last: OpdError | None = None
-    for parts in candidates:
-        try:
-            members = client.family(parts, bul_type=bul_type)
-            if members:
-                return parts, members
-            last = OpdError("EMPTY", f"号段 {parts} 未返回同族成员")
-        except OpdError as exc:
-            last = exc
-            if exc.status in {"2", "8"}:  # 需授权/验证码，换 kind 无意义
-                raise
-    raise last or OpdError("EMPTY", "未找到同族成员")
+    """按完整公开号（含 kind code）查询同族，不做 kind 猜测。"""
+    parts = parse_cn_publication(raw)
+    members = client.family(parts, bul_type=bul_type)
+    if not members:
+        raise OpdError("EMPTY", f"号段 {parts} 未返回同族成员")
+    return parts, members

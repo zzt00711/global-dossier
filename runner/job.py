@@ -62,8 +62,10 @@ def parse_payload(body: str) -> tuple[str, list[str], int]:
         raise ValueError(f"OPD_JOB 参数解码失败: {exc}") from exc
 
     query = str(data.get("query", "")).strip().upper()
-    if not re.fullmatch(r"CN\d{6,12}[A-Z]?", query):
-        raise ValueError(f"CN 公开号格式不合法: {query!r}")
+    if not re.fullmatch(r"CN\d{6,12}[A-Z]\d?", query):
+        raise ValueError(
+            f"CN 公开号格式不合法: {query!r}；请输入完整公开号（含 kind code），如 CN116887720A"
+        )
 
     offices = [o for o in data.get("offices", []) if o in ALLOWED_OFFICES]
     if not offices:

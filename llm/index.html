@@ -123,7 +123,7 @@
     <div class="row">
       <label class="field">
         <b>CN 公开号</b>
-        <input type="text" id="query" value="CN118056148A" placeholder="例如 CN118056148A" autocomplete="off">
+        <input type="text" id="query" value="CN118056148A" placeholder="完整公开号，如 CN116887720A" autocomplete="off">
       </label>
       <div class="field">
         <b>局别</b>
@@ -902,8 +902,8 @@ async function submit() {
     return;
   }
   const query = ($("query").value || "").trim().toUpperCase();
-  if (!/^CN\d{6,12}[A-Z]?$/.test(query)) {
-    setStatus("CN 公开号格式不合法", true);
+  if (!/^CN\d{6,12}[A-Z]\d?$/.test(query)) {
+    setStatus("请输入完整公开号（含 kind code），如 CN116887720A", true);
     return;
   }
   const offices = Array.from(document.querySelectorAll(".offices input:checked")).map((x) => x.value);

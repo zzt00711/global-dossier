@@ -22,7 +22,7 @@ from typing import Any
 from opd import (
     OpdClient,
     OpdError,
-    family_with_kind_fallback,
+    family_by_publication,
     parse_member_num,
 )
 
@@ -191,7 +191,7 @@ def collect(
     out_dir = (out_root or Path(__file__).parent / "out") / query.upper()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    input_parts, members = family_with_kind_fallback(client, query)
+    input_parts, members = family_by_publication(client, query)
     # 同族成员按申请号去重
     seen: set[str] = set()
     unique_members = []
