@@ -1,0 +1,88 @@
+{
+  "state": "done",
+  "issue": 12,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-20T03:17:00+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116887720A_US_1",
+    "    OK  US Final Rejection  471 KB"
+  ],
+  "query": "CN116887720A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 1,
+  "result": {
+    "query": "CN116887720A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "WO": 1,
+      "GB": 1,
+      "MY": 1
+    },
+    "generated_at": "2026-10-20T03:17:03+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023557759.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218278815.A",
+        "status": "ok",
+        "doc_total": 58,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-05-27",
+            "status": "ok",
+            "bytes": 482568,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/12/CN116887720A/US/2026-05-27_US_Final_Rejection_XKMO5X240X47.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280014068.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "MY.2022050016.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "GB",
+        "app_num": "GB.202311854.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "MY",
+        "app_num": "MY.PI2021001448.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-20T03:17:09+00:00"
+}
