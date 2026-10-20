@@ -17,6 +17,7 @@ import os
 import re
 import shutil
 import sys
+import time
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
@@ -31,6 +32,9 @@ from fetch import collect  # noqa: E402
 SITE = "https://zzt00711.github.io/global-dossier"
 ALLOWED_OFFICES = ("JP", "EP", "US", "KR")
 MAX_JOBS_KEEP = 10
+# 同 CN 号重复提交时直接复用上次抓取结果，避免重复请求 OPD
+CACHE_TTL = 72 * 3600
+MAX_CACHE_KEEP = 5
 
 
 class _LogWriter(io.TextIOBase):
@@ -127,10 +131,60 @@ def cleanup_old_jobs(jobs_root: Path, current: int) -> None:
             shutil.rmtree(d, ignore_errors=True)
 
 
+def cache_key(query: str, offices: list[str], max_docs: int) -> str:
+    return f"{query}_{'-'.join(sorted(offices))}_{max_docs}"
+
+
+def cache_valid(cache_dir: Path) -> bool:
+    hits = list(cache_dir.glob("*/manifest.json"))
+    if not hits:
+        return False
+    try:
+        return time.time() - hits[0].stat().st_mtime <= CACHE_TTL
+    except OSError:
+        return False
+
+
+def copy_tree(src: Path, dst: Path) -> None:
+    dst.mkdir(parents=True, exist_ok=True)
+    for item in src.iterdir():
+        target = dst / item.name
+        if item.is_dir():
+            shutil.copytree(item, target, dirs_exist_ok=True)
+        else:
+            shutil.copy2(item, target)
+
+
+def load_cache(cache_dir: Path, job_dir: Path) -> dict | None:
+    """命中缓存时复制到任务目录，并返回缓存中的 manifest。"""
+    hits = list(cache_dir.glob("*/manifest.json"))
+    if not hits:
+        return None
+    copy_tree(cache_dir, job_dir)
+    try:
+        return json.loads(hits[0].read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def cleanup_cache(cache_root: Path) -> None:
+    if not cache_root.is_dir():
+        return
+    dirs = [d for d in cache_root.iterdir() if d.is_dir()]
+    for d in dirs:
+        if not cache_valid(d):
+            shutil.rmtree(d, ignore_errors=True)
+    dirs = [d for d in cache_root.iterdir() if d.is_dir()]
+    dirs.sort(key=lambda d: d.stat().st_mtime, reverse=True)
+    for d in dirs[MAX_CACHE_KEEP:]:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main() -> int:
     issue = int(os.environ.get("ISSUE_NUMBER", "0"))
     body = os.environ.get("ISSUE_BODY", "")
     jobs_root = REPO_ROOT / "results" / "jobs"
+    cache_root = REPO_ROOT / "results" / "cache"
     job_dir = jobs_root / str(issue)
     status_path = job_dir / "status.json"
 
@@ -155,15 +209,34 @@ def main() -> int:
         job_dir.mkdir(parents=True, exist_ok=True)
         write_status(status_path, status)
 
+        key = cache_key(query, offices, max_docs)
+        cache_dir = cache_root / key
         writer = _LogWriter(logs)
         with contextlib.redirect_stdout(writer):
-            manifest = collect(
-                query,
-                offices=offices,
-                max_docs=max_docs,
-                out_root=job_dir,
-                download=True,
-            )
+            manifest = load_cache(cache_dir, job_dir) if cache_valid(cache_dir) else None
+            if manifest:
+                print(f"命中缓存 {key}，跳过 OPD 抓取")
+                status["cached"] = True
+            else:
+                print(f"未命中缓存，开始 OPD 抓取：{key}")
+                shutil.rmtree(cache_dir, ignore_errors=True)
+                manifest = collect(
+                    query,
+                    offices=offices,
+                    max_docs=max_docs,
+                    out_root=cache_dir,
+                    download=True,
+                )
+                copy_tree(cache_dir, job_dir)
+                if any(
+                    p.get("status") == "ok"
+                    for m in manifest.get("members", [])
+                    for p in m.get("picked", [])
+                ):
+                    os.utime(cache_dir, None)
+                else:
+                    # 全部失败的结果不值得缓存，避免下次直接复用空结果
+                    shutil.rmtree(cache_dir, ignore_errors=True)
 
         status["result"] = slim_result(manifest, issue)
         status["state"] = "done"
@@ -177,6 +250,7 @@ def main() -> int:
         status["logs"] = logs[-300:]
         write_status(status_path, status)
         cleanup_old_jobs(jobs_root, issue)
+        cleanup_cache(cache_root)
 
     return 0 if status.get("state") == "done" else 1
 

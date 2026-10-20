@@ -39,6 +39,22 @@ PDF_HEADERS = {
     "User-Agent": UA,
 }
 
+# 需要退避重试的 HTTP 状态；429/503 优先使用服务端 Retry-After
+RETRY_STATUS = {429, 500, 502, 503, 504}
+MAX_BACKOFF = 60.0
+
+
+def _retry_delay(resp: requests.Response | None, attempt: int) -> float:
+    """优先采用 Retry-After，否则指数退避并加入抖动。"""
+    if resp is not None:
+        raw = (resp.headers.get("Retry-After") or "").strip()
+        if raw:
+            try:
+                return max(0.0, min(MAX_BACKOFF, float(raw)))
+            except ValueError:
+                pass
+    return min(MAX_BACKOFF, 2.0 ** attempt + random.random())
+
 
 class OpdError(RuntimeError):
     """OPD 业务错误或网络错误。status 为 STATUS_CD_A 或 NETWORK。"""
@@ -127,10 +143,18 @@ class OpdClient:
                 return data
             except OpdError:
                 raise
+            except requests.exceptions.HTTPError as exc:
+                last = exc
+                resp = exc.response
+                if attempt < self.retries and resp is not None and resp.status_code in RETRY_STATUS:
+                    wait = _retry_delay(resp, attempt)
+                    print(f"    OPD HTTP {resp.status_code}，{wait:.0f}s 后重试（{attempt}/{self.retries}）")
+                    time.sleep(wait)
+                    continue
             except Exception as exc:  # 网络、SSL、JSON 解析
                 last = exc
                 if attempt < self.retries:
-                    time.sleep(1.2 * attempt)
+                    time.sleep(min(MAX_BACKOFF, 1.2 * attempt + random.random()))
                     if isinstance(
                         exc,
                         (
@@ -299,9 +323,18 @@ class OpdClient:
                     return size
             except OpdError:
                 raise
+            except requests.exceptions.HTTPError as exc:
+                last = exc
+                resp = exc.response
+                if attempt < self.retries and resp is not None and resp.status_code in RETRY_STATUS:
+                    wait = _retry_delay(resp, attempt)
+                    print(f"    PDF HTTP {resp.status_code}，{wait:.0f}s 后重试（{attempt}/{self.retries}）")
+                    time.sleep(wait)
+                    continue
             except Exception as exc:
                 last = exc
-                time.sleep(1.5 * attempt)
+                if attempt < self.retries:
+                    time.sleep(min(MAX_BACKOFF, 1.2 * attempt + random.random()))
         raise OpdError("DOWNLOAD", f"PDF 下载失败: {last}")
 
 

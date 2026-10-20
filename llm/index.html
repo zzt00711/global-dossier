@@ -184,7 +184,6 @@
   </div>
 </div>
 
-<script src="./vendor/pdf.min.js"></script>
 <script src="./gd-extract.js"></script>
 <script>
 "use strict";
@@ -302,8 +301,22 @@ const LLM = {
   maxTokens: 32768,
 };
 
-if (typeof pdfjsLib !== "undefined") {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "./vendor/pdf.worker.min.js";
+let pdfLoading = null;
+function loadPdfJs() {
+  if (typeof pdfjsLib !== "undefined") return Promise.resolve();
+  if (!pdfLoading) {
+    pdfLoading = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "./vendor/pdf.min.js";
+      s.onload = () => {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = "./vendor/pdf.worker.min.js";
+        resolve();
+      };
+      s.onerror = () => reject(new Error("PDF.js 脚本加载失败"));
+      document.head.appendChild(s);
+    });
+  }
+  return pdfLoading;
 }
 
 // 内置 LLM Key（XOR+base64 分段混淆，运行时组装）
@@ -358,6 +371,7 @@ function renderMd(md) {
 
 // ── PDF.js 文本层 + tesseract.js OCR ──
 async function openPdf(buf) {
+  await loadPdfJs();
   if (typeof pdfjsLib === "undefined") throw new Error("PDF.js 未加载");
   return await pdfjsLib.getDocument({
     data: new Uint8Array(buf),
