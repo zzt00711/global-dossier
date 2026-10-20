@@ -1,0 +1,17 @@
+{
+  "state": "error",
+  "issue": 10,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-20T03:11:43+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116887720_JP_1",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 223, in main\n    manifest = collect(\n               ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 194, in collect\n    input_parts, members = family_with_kind_fallback(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 357, in family_with_kind_fallback\n    raise last or OpdError(\"EMPTY\", \"未找到同族成员\")\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 349, in family_with_kind_fallback\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 194, in family\n    data = self._post(\"/app/opdgw/wsh0701\", body)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 142, in _post\n    self._check(data)\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 182, in _check\n    raise OpdError(code or \"UNKNOWN\", \" / \".join(messages) or \"OPD 返回失败\")\nopd.OpdError: [1] 情報が取得できませんでした。\n"
+  ],
+  "query": "CN116887720",
+  "offices": [
+    "JP"
+  ],
+  "max_docs": 1,
+  "error": "OpdError: [1] 情報が取得できませんでした。",
+  "finished_at": "2026-10-20T03:11:46+00:00"
+}
