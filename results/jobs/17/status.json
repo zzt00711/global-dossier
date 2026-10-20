@@ -1,0 +1,194 @@
+{
+  "state": "done",
+  "issue": 17,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-20T10:16:03+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN119322514A_EP-JP-KR-US_4",
+    "    OK  JP 特許査定  111 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  JP 請求の範囲  139 KB",
+    "    OK  JP 特許性に関する国際予備報告（第Ｉ章）  72 KB",
+    "    OK  US Non-Final Rejection  329 KB",
+    "    OK  US Information Disclosure Statement (IDS) Form (SB08)  216 KB",
+    "    OK  US Information Disclosure Statement (IDS) Form (SB08)  229 KB",
+    "    OK  US Claims  360 KB",
+    "    OK  EP European search opinion  170 KB",
+    "    OK  EP Supplementary European search report  72 KB",
+    "    OK  EP Information on Search Strategy  16 KB",
+    "    OK  EP Amendments received before examination  1047 KB"
+  ],
+  "query": "CN119322514A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "result": {
+    "query": "CN119322514A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-20T10:16:04+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2025533180.A",
+        "status": "ok",
+        "doc_total": 22,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-08-18",
+            "status": "ok",
+            "bytes": 113183,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/JP/2026-08-18_JP_Decision_to_Grant_a_Patent_126360401_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2025-08-12",
+            "status": "ok",
+            "bytes": 69212,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/JP/2025-08-12_JP_International_Search_Report_512650903_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2025-06-06",
+            "status": "ok",
+            "bytes": 142391,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/JP/2025-06-06_JP_Claims_501229271_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "特許性に関する国際予備報告（第Ｉ章）",
+            "family": "other",
+            "date": "2026-02-09",
+            "status": "ok",
+            "bytes": 73535,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/JP/2026-02-09_JP_International_Preliminary_Report_on_Patentability_%28Chapter_I_642180107_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519281727.A",
+        "status": "ok",
+        "doc_total": 41,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-04",
+            "status": "ok",
+            "bytes": 337093,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/US/2026-09-04_US_Non-Final_Rejection_KCKCB114X165.pdf",
+            "error": null
+          },
+          {
+            "name": "Information Disclosure Statement (IDS) Form (SB08)",
+            "family": "citation",
+            "date": "2026-09-30",
+            "status": "ok",
+            "bytes": 221625,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/US/2026-09-30_US_Information_Disclosure_Statement_%28IDS%29_Form_%28SB08%29_MD7NNX247X37.pdf",
+            "error": null
+          },
+          {
+            "name": "Information Disclosure Statement (IDS) Form (SB08)",
+            "family": "citation",
+            "date": "2026-09-29",
+            "status": "ok",
+            "bytes": 234457,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/US/2026-09-29_US_Information_Disclosure_Statement_%28IDS%29_Form_%28SB08%29_7ZNGIX59X207.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2025-07-27",
+            "status": "ok",
+            "bytes": 369134,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/US/2025-07-27_US_Claims_EWDYA240X242.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.23945678.A",
+        "status": "ok",
+        "doc_total": 31,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2026-02-04",
+            "status": "ok",
+            "bytes": 173726,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/EP/2026-02-04_EP_European_search_opinion_H7CXVZJRXHSO.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2026-02-04",
+            "status": "ok",
+            "bytes": 73411,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/EP/2026-02-04_EP_Supplementary_European_search_report_H54Z986WCKB5.pdf",
+            "error": null
+          },
+          {
+            "name": "Information on Search Strategy",
+            "family": "citation",
+            "date": "2026-02-04",
+            "status": "ok",
+            "bytes": 15910,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/EP/2026-02-04_EP_Information_on_Search_Strategy_H55B81QW2RAP.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2026-08-13",
+            "status": "ok",
+            "bytes": 1071793,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/17/CN119322514A/EP/2026-08-13_EP_Amendments_received_before_examination_FSX08T5FVIV2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310876039.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "CN.2023134493.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-20T10:16:39+00:00"
+}
