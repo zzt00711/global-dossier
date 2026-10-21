@@ -1,0 +1,419 @@
+{
+  "query": "CN119322514A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "119322514",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-21T06:41:54+00:00",
+  "offices": [
+    "US"
+  ],
+  "max_docs_per_office": 1,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "US": 1,
+    "EP": 1,
+    "CN": 1,
+    "WO": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2025533180.A",
+      "pub_nums": [
+        "JP.2025538768.A"
+      ],
+      "status": "skipped",
+      "doc_total": 22,
+      "picked": [],
+      "title": "Balance control method and apparatus for legged robot, device, and computer program"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519281727.A",
+      "pub_nums": [
+        "US.20250353195.A1"
+      ],
+      "status": "ok",
+      "doc_total": 41,
+      "picked": [
+        {
+          "doc_id": "MTLKCKCB114X165",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2026-09-04",
+          "family": "rejection",
+          "tender_date": "2026-09-04",
+          "file": "US/2026-09-04_US_Non-Final_Rejection_KCKCB114X165.pdf",
+          "bytes": 337093,
+          "status": "ok"
+        }
+      ],
+      "title": "BALANCE CONTROL METHOD AND APPARATUS FOR WHEEL-LEGGED ROBOT, DEVICE, AND STORAGE MEDIUM",
+      "documents": [
+        {
+          "doc_id": "MDMEWDVY240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDW1240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDW9240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDWC240X242",
+          "name": "Transmittal of New Application",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDWN240X242",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDWQ240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDWU240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDX1240X242",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDX4240X242",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDXJ240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDXM240X242",
+          "name": "Foreign Reference",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDXP240X242",
+          "name": "Electronic Fee Payment",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDXW240X242",
+          "name": "Power of Attorney",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDY0240X242",
+          "name": "Specification",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDY7240X242",
+          "name": "Abstract",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEWDYA240X242",
+          "name": "Claims",
+          "date": "2025-07-27",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDMEZOGCX114X87",
+          "name": "Placeholder sheet indicating presence of supplemental content in Supplemental Complex Repository for Examiners(SCORE)",
+          "date": "2025-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME8EKQ6Q139X183",
+          "name": "Filing Receipt",
+          "date": "2025-08-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME8EKQ6T139X183",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2025-08-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME8EKQ6W139X183",
+          "name": "Welcome Letter from USPTO Director and Deputy Director",
+          "date": "2025-08-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MEH2PLUIX88X137",
+          "name": "Priority Documents electronically retrieved by USPTO from a participating IP Office",
+          "date": "2025-08-18",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MI7GRP225X158X5",
+          "name": "Notice of Publication",
+          "date": "2025-11-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MO3FT3XA154X143",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2026-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MO3FT3XR154X143",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQB0KCW1106X200",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2026-06-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQB0KCW4106X200",
+          "name": "Patents Pre-Docketing Notice",
+          "date": "2026-06-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCB114X165",
+          "name": "Non-Final Rejection",
+          "date": "2026-09-04",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MTLKCKCD114X165",
+          "name": "List of references cited by examiner",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCE114X165",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCF114X165",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCH114X165",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCI114X165",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTLKCKCJ114X165",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-09-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUN7ZNGIX59X207",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2026-09-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUN7ZNGLX59X207",
+          "name": "Foreign Reference",
+          "date": "2026-09-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUN7ZNGMX59X207",
+          "name": "Foreign Reference",
+          "date": "2026-09-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUN7ZNGOX59X207",
+          "name": "Foreign Reference",
+          "date": "2026-09-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUN7ZNGRX59X207",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-09-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUOMD7NNX247X37",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2026-09-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUOMD7NPX247X37",
+          "name": "Foreign Reference",
+          "date": "2026-09-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUOMD7NQX247X37",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-09-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ]
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.23945678.A",
+      "pub_nums": [
+        "EP.4617808.A4",
+        "EP.4617808.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 31,
+      "picked": [],
+      "title": "BALANCE CONTROL METHOD AND APPARATUS FOR WHEEL-LEGGED ROBOT, DEVICE AND STORAGE MEDIUM"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202310876039.A",
+      "pub_nums": [
+        "CN.119322514.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "CN.2023134493.W",
+      "pub_nums": [
+        "WO.2025015799.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ]
+}
