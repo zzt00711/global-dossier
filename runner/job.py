@@ -17,7 +17,6 @@ import os
 import re
 import shutil
 import sys
-import time
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
@@ -34,7 +33,7 @@ ALLOWED_OFFICES = ("JP", "EP", "US", "KR")
 MAX_JOBS_KEEP = 10
 # 同 CN 号重复提交时直接复用上次抓取结果，避免重复请求 OPD
 CACHE_TTL = 72 * 3600
-MAX_CACHE_KEEP = 5
+MAX_CACHE_KEEP = 10
 
 
 class _LogWriter(io.TextIOBase):
@@ -133,52 +132,99 @@ def cleanup_old_jobs(jobs_root: Path, current: int) -> None:
             shutil.rmtree(d, ignore_errors=True)
 
 
-def cache_key(query: str, offices: list[str], max_docs: int) -> str:
-    return f"{query}_{'-'.join(sorted(offices))}_{max_docs}"
-
-
-def cache_valid(cache_dir: Path) -> bool:
-    hits = list(cache_dir.glob("*/manifest.json"))
-    if not hits:
-        return False
+def _manifest_time(manifest: dict) -> datetime | None:
     try:
-        return time.time() - hits[0].stat().st_mtime <= CACHE_TTL
-    except OSError:
-        return False
-
-
-def copy_tree(src: Path, dst: Path) -> None:
-    dst.mkdir(parents=True, exist_ok=True)
-    for item in src.iterdir():
-        target = dst / item.name
-        if item.is_dir():
-            shutil.copytree(item, target, dirs_exist_ok=True)
-        else:
-            shutil.copy2(item, target)
-
-
-def load_cache(cache_dir: Path, job_dir: Path) -> dict | None:
-    """命中缓存时复制到任务目录，并返回缓存中的 manifest。"""
-    hits = list(cache_dir.glob("*/manifest.json"))
-    if not hits:
+        ts = datetime.fromisoformat(str(manifest.get("generated_at", "")))
+    except ValueError:
         return None
-    copy_tree(cache_dir, job_dir)
+    return ts if ts.tzinfo else ts.replace(tzinfo=timezone.utc)
+
+
+def load_cache_manifest(cache_dir: Path) -> dict | None:
+    """读取缓存 manifest；缺失、损坏或超过 TTL 都视为无效。"""
     try:
-        return json.loads(hits[0].read_text(encoding="utf-8"))
+        manifest = json.loads((cache_dir / "manifest.json").read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return None
+    ts = _manifest_time(manifest)
+    if ts is None:
+        return None
+    if (datetime.now(timezone.utc) - ts).total_seconds() > CACHE_TTL:
+        return None
+    return manifest
+
+
+# 这些状态说明抓取本身失败，缓存再新也要重试；no_doc/bad_app_num 重试也不会变
+RETRYABLE_STATUS = {"doc_list_failed", "download_failed"}
+
+
+def cache_covers(manifest: dict, offices: list[str], max_docs: int) -> bool:
+    """缓存是否已覆盖本次请求的局别与篇数。"""
+    if set(offices) - set(manifest.get("offices", [])):
+        return False
+    if int(manifest.get("max_docs_per_office", 0)) < max_docs:
+        return False
+    for member in manifest.get("members", []):
+        if member.get("country") in offices and member.get("status") in RETRYABLE_STATUS:
+            return False
+    return True
+
+
+def select_manifest(manifest: dict, offices: list[str], max_docs: int) -> dict:
+    """从缓存 manifest 裁出本次请求的子集：局别过滤 + 篇数截断。"""
+    out = json.loads(json.dumps(manifest))
+    out["offices"] = list(offices)
+    out["max_docs_per_office"] = max_docs
+    for member in out.get("members", []):
+        if member.get("country") not in offices:
+            member["status"] = "skipped"
+            member["picked"] = []
+            member.pop("documents", None)
+            continue
+        picked = member.get("picked", [])[:max_docs]
+        keep = {p.get("doc_id") for p in picked}
+        member["picked"] = picked
+        for doc in member.get("documents", []):
+            doc["picked"] = doc.get("doc_id") in keep
+    out.pop("manifest_path", None)
+    return out
+
+
+def copy_picked(manifest: dict, src_root: Path, dst_root: Path) -> None:
+    """按 manifest 里被选中的文书复制 PDF，并写入任务目录的 manifest.json。"""
+    for member in manifest.get("members", []):
+        for item in member.get("picked", []):
+            rel = item.get("file")
+            if not rel:
+                continue
+            src = src_root / rel
+            if not src.is_file():
+                item["status"] = "failed"
+                item["error"] = "缓存文件缺失"
+                continue
+            dst = dst_root / rel
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+    dst_root.mkdir(parents=True, exist_ok=True)
+    write_status(dst_root / "manifest.json", manifest)
 
 
 def cleanup_cache(cache_root: Path) -> None:
     if not cache_root.is_dir():
         return
-    dirs = [d for d in cache_root.iterdir() if d.is_dir()]
-    for d in dirs:
-        if not cache_valid(d):
+    entries: list[tuple[datetime, Path]] = []
+    for d in cache_root.iterdir():
+        if not d.is_dir():
+            continue
+        manifest = load_cache_manifest(d)
+        if manifest is None:
             shutil.rmtree(d, ignore_errors=True)
-    dirs = [d for d in cache_root.iterdir() if d.is_dir()]
-    dirs.sort(key=lambda d: d.stat().st_mtime, reverse=True)
-    for d in dirs[MAX_CACHE_KEEP:]:
+            continue
+        ts = _manifest_time(manifest) or datetime.fromtimestamp(0, timezone.utc)
+        entries.append((ts, d))
+    # 按 manifest.generated_at 淘汰：checkout 会重置目录 mtime，mtime 不可信
+    entries.sort(key=lambda item: item[0], reverse=True)
+    for _, d in entries[MAX_CACHE_KEEP:]:
         shutil.rmtree(d, ignore_errors=True)
 
 
@@ -211,34 +257,48 @@ def main() -> int:
         job_dir.mkdir(parents=True, exist_ok=True)
         write_status(status_path, status)
 
-        key = cache_key(query, offices, max_docs)
-        cache_dir = cache_root / key
+        # 缓存按公开号归并，局别与篇数退化为"覆盖度"，同一号码的不同请求共用一份
+        cache_dir = cache_root / query
+        cached = load_cache_manifest(cache_dir)
+        fetched = False
         writer = _LogWriter(logs)
         with contextlib.redirect_stdout(writer):
-            manifest = load_cache(cache_dir, job_dir) if cache_valid(cache_dir) else None
-            if manifest:
-                print(f"命中缓存 {key}，跳过 OPD 抓取")
+            if cached and cache_covers(cached, offices, max_docs):
+                print(
+                    f"命中缓存 {query}（{cached.get('max_docs_per_office')} 篇/局，"
+                    f"{','.join(cached.get('offices', []))}），跳过 OPD 抓取"
+                )
                 status["cached"] = True
+                manifest = select_manifest(cached, offices, max_docs)
             else:
-                print(f"未命中缓存，开始 OPD 抓取：{key}")
+                status["cached"] = False
+                # 未覆盖时按并集补抓，成功后缓存同时服务其他局别/篇数
+                fetch_offices = list(
+                    dict.fromkeys(offices + list(cached.get("offices", []) if cached else []))
+                )
+                fetch_max = max(
+                    max_docs, int(cached.get("max_docs_per_office", 0)) if cached else 0
+                )
+                print(f"未命中缓存，开始 OPD 抓取：{query}（{fetch_max} 篇/局）")
                 shutil.rmtree(cache_dir, ignore_errors=True)
-                manifest = collect(
+                full = collect(
                     query,
-                    offices=offices,
-                    max_docs=max_docs,
-                    out_root=cache_dir,
+                    offices=fetch_offices,
+                    max_docs=fetch_max,
+                    out_root=cache_root,
                     download=True,
                 )
-                copy_tree(cache_dir, job_dir)
-                if any(
-                    p.get("status") == "ok"
-                    for m in manifest.get("members", [])
-                    for p in m.get("picked", [])
-                ):
-                    os.utime(cache_dir, None)
-                else:
-                    # 全部失败的结果不值得缓存，避免下次直接复用空结果
-                    shutil.rmtree(cache_dir, ignore_errors=True)
+                manifest = select_manifest(full, offices, max_docs)
+                fetched = True
+
+            copy_picked(manifest, cache_dir, job_dir / query)
+            if fetched and not any(
+                p.get("status") == "ok"
+                for m in manifest.get("members", [])
+                for p in m.get("picked", [])
+            ):
+                # 全部失败的结果不值得缓存，避免下次直接复用空结果
+                shutil.rmtree(cache_dir, ignore_errors=True)
 
         status["result"] = slim_result(manifest, issue)
         status["state"] = "done"
