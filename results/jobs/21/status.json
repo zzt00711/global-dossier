@@ -1,0 +1,143 @@
+{
+  "state": "done",
+  "issue": 21,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T02:17:48+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118056231A_EP-JP-KR-US_2",
+    "    OK  JP 特許査定  105 KB",
+    "    OK  JP 拒絶理由通知書  178 KB",
+    "    OK  US Issue Notification  85 KB",
+    "    OK  US Non-Final Rejection  237 KB",
+    "    OK  EP Decision to grant a European patent  94 KB",
+    "    OK  EP Communication from the Examining Division  41 KB"
+  ],
+  "query": "CN118056231A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "result": {
+    "query": "CN118056231A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1,
+      "RO": 1
+    },
+    "generated_at": "2026-10-21T02:17:50+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2024519074.A",
+        "status": "ok",
+        "doc_total": 25,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-01-28",
+            "status": "ok",
+            "bytes": 107699,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/JP/2025-01-28_JP_Decision_to_Grant_a_Patent_125026950_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-10-29",
+            "status": "ok",
+            "bytes": 182329,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/JP/2024-10-29_JP_Notice_of_Reasons_for_Refusal_124517663_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218696402.A",
+        "status": "ok",
+        "doc_total": 59,
+        "picked": [
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 86795,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/US/2026-03-25_US_Issue_Notification_E3Y3VX20X230.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-09-17",
+            "status": "ok",
+            "bytes": 243045,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/US/2025-09-17_US_Non-Final_Rejection_UWJNX5X176X0.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22773784.A",
+        "status": "ok",
+        "doc_total": 61,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2026-03-26",
+            "status": "ok",
+            "bytes": 96088,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/EP/2026-03-26_EP_Decision_to_grant_a_European_patent_F137G1WBRRVU.pdf",
+            "error": null
+          },
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2025-07-30",
+            "status": "ok",
+            "bytes": 42356,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/21/CN118056231A/EP/2025-07-30_EP_Communication_from_the_Examining_Division_IBFEU12TCKHL.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280066363.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022030803.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "RO",
+        "app_num": "RO.202100606.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T02:18:06+00:00"
+}
