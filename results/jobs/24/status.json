@@ -1,0 +1,95 @@
+{
+  "state": "done",
+  "issue": 24,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T02:24:44+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116974273A_EP-JP-KR-US_2",
+    "    OK  JP 特許査定  105 KB",
+    "    OK  JP 拒絶理由通知書  155 KB",
+    "    OK  US Issue Notification  77 KB",
+    "    OK  US Final Rejection  581 KB"
+  ],
+  "query": "CN116974273A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "result": {
+    "query": "CN116974273A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-10-21T02:24:46+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022074865.A",
+        "status": "ok",
+        "doc_total": 11,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-10-01",
+            "status": "ok",
+            "bytes": 107724,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/24/CN116974273A/JP/2024-10-01_JP_Decision_to_Grant_a_Patent_124444256_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-08-06",
+            "status": "ok",
+            "bytes": 159069,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/24/CN116974273A/JP/2024-08-06_JP_Notice_of_Reasons_for_Refusal_124369270_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318166653.A",
+        "status": "ok",
+        "doc_total": 51,
+        "picked": [
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2026-02-25",
+            "status": "ok",
+            "bytes": 78977,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/24/CN116974273A/US/2026-02-25_US_Issue_Notification_GFEL2241X187.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2025-09-12",
+            "status": "ok",
+            "bytes": 595333,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/24/CN116974273A/US/2025-09-12_US_Final_Rejection_FORWT147X179.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310155715.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T02:25:00+00:00"
+}
