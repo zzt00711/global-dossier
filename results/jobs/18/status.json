@@ -1,0 +1,113 @@
+{
+  "state": "done",
+  "issue": 18,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T02:14:37+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117795448A_EP-JP-KR-US_1",
+    "    OK  JP 特許査定  110 KB",
+    "    OK  US Information Disclosure Statement (IDS) Form (SB08)  417 KB",
+    "    OK  KR Amendment including Specification etc.  46 KB"
+  ],
+  "query": "CN117795448A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 1,
+  "result": {
+    "query": "CN117795448A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "KR": 1,
+      "WO": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-10-21T02:14:39+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023539740.A",
+        "status": "ok",
+        "doc_total": 21,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-02-03",
+            "status": "ok",
+            "bytes": 112173,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/18/CN117795448A/JP/2026-02-03_JP_Decision_to_Grant_a_Patent_126027020_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218681377.A",
+        "status": "ok",
+        "doc_total": 43,
+        "picked": [
+          {
+            "name": "Information Disclosure Statement (IDS) Form (SB08)",
+            "family": "citation",
+            "date": "2024-02-05",
+            "status": "ok",
+            "bytes": 427221,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/18/CN117795448A/US/2024-02-05_US_Information_Disclosure_Statement_%28IDS%29_Form_%28SB08%29_IL5PMGREENX7.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280053184.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20247003255.A",
+        "status": "ok",
+        "doc_total": 3,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2024-03-11",
+            "status": "ok",
+            "bytes": 46830,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/18/CN117795448A/KR/2024-03-11_KR_Amendment_including_Specification_etc_027248115_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022027715.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.111129074.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T02:14:52+00:00"
+}
