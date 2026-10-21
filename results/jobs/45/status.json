@@ -1,0 +1,104 @@
+{
+  "state": "done",
+  "issue": 45,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T05:19:21+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116774691A_EP-JP-KR-US_2",
+    "    OK  JP 特許査定  109 KB",
+    "    OK  JP 検索報告書  196 KB",
+    "    OK  US Issue Notification  75 KB",
+    "    OK  US Non-Final Rejection  573 KB"
+  ],
+  "query": "CN116774691A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "result": {
+    "query": "CN116774691A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-10-21T05:19:22+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022041970.A",
+        "status": "ok",
+        "doc_total": 8,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-09-17",
+            "status": "ok",
+            "bytes": 111350,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/45/CN116774691A/JP/2024-09-17_JP_Decision_to_Grant_a_Patent_124382344_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2024-07-31",
+            "status": "ok",
+            "bytes": 200808,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/45/CN116774691A/JP/2024-07-31_JP_Search_Report_by_Registered_Search_Organization_824097859_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318103058.A",
+        "status": "ok",
+        "doc_total": 50,
+        "picked": [
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2025-09-17",
+            "status": "ok",
+            "bytes": 76483,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/45/CN116774691A/US/2025-09-17_US_Issue_Notification_BLIY75X176X0.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-03-17",
+            "status": "ok",
+            "bytes": 586717,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/45/CN116774691A/US/2025-03-17_US_Non-Final_Rejection_GCAKGWFYGX55.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310095367.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102023101415.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T05:19:32+00:00"
+}
