@@ -5,11 +5,11 @@
     "NUM_PART": "116670735",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-10-21T03:27:24+00:00",
+  "generated_at": "2026-10-21T03:33:24+00:00",
   "offices": [
     "US"
   ],
-  "max_docs_per_office": 1,
+  "max_docs_per_office": 2,
   "download": true,
   "family_counts": {
     "US": 1,
@@ -36,6 +36,17 @@
           "tender_date": "2024-08-07",
           "file": "US/2024-08-07_US_Issue_Notification_7S8TQWFYGX54.pdf",
           "bytes": 157515,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LO79JN9DXBLUEX4",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2023-10-30",
+          "family": "rejection",
+          "tender_date": "2023-10-30",
+          "file": "US/2023-10-30_US_Non-Final_Rejection_9JN9DXBLUEX4.pdf",
+          "bytes": 3427851,
           "status": "ok"
         }
       ],
@@ -455,7 +466,7 @@
           "date": "2023-10-30",
           "family": "rejection",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "LO79JN9EXBLUEX4",

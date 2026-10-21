@@ -1,0 +1,80 @@
+{
+  "state": "done",
+  "issue": 37,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T03:33:23+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116670735A_US_2",
+    "    OK  US Issue Notification  154 KB",
+    "    OK  US Non-Final Rejection  3348 KB"
+  ],
+  "query": "CN116670735A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 2,
+  "result": {
+    "query": "CN116670735A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-21T03:33:24+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202117244379.A",
+        "status": "ok",
+        "doc_total": 73,
+        "picked": [
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2024-08-07",
+            "status": "ok",
+            "bytes": 157515,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/37/CN116670735A/US/2024-08-07_US_Issue_Notification_7S8TQWFYGX54.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-10-30",
+            "status": "ok",
+            "bytes": 3427851,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/37/CN116670735A/US/2023-10-30_US_Non-Final_Rejection_9JN9DXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22796940.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280008740.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022071771.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T03:33:29+00:00"
+}
