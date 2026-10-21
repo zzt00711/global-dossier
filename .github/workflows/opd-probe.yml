@@ -1,0 +1,160 @@
+name: OPD Probe
+
+# 临时探测工作流：只读，不写仓库。用完即删。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: python -m pip install --quiet requests curl_cffi
+
+      - name: Egress IP
+        run: |
+          echo "ipify: $(curl -s https://api.ipify.org)"
+          echo "ipinfo:"
+          curl -s https://ipinfo.io/json || true
+
+      - name: Probe
+        run: |
+          cat > /tmp/probe.py <<'PY'
+          import json
+          import re
+          import requests
+
+          BASE = "https://www.j-platpat.inpit.go.jp"
+          UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+          HOME_HEADERS = {
+              "User-Agent": UA,
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+              "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+              "Upgrade-Insecure-Requests": "1",
+              "Sec-Fetch-Dest": "document",
+              "Sec-Fetch-Mode": "navigate",
+              "Sec-Fetch-Site": "none",
+              "Sec-Fetch-User": "?1",
+          }
+          API_HEADERS = {
+              "Content-Type": "application/json",
+              "Accept": "application/json, text/plain, */*",
+              "Origin": BASE,
+              "Referer": BASE + "/h0200",
+              "User-Agent": UA,
+              "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+              "Sec-Fetch-Dest": "empty",
+              "Sec-Fetch-Mode": "cors",
+              "Sec-Fetch-Site": "same-origin",
+          }
+          BODY = {
+              "DISP_ID": "H0200",
+              "SVC": "jpp",
+              "BIZ_MENU": "family-list",
+              "BUL_TYPE": "publication",
+              "INQRY_NUM": {"CNTRY_CD_PART": "CN", "NUM_PART": "119322514", "KIND_CD_PART": "A"},
+              "OTID": None,
+          }
+          INTEREST = ("server", "content-type", "set-cookie", "x-akamai", "akamai-grn",
+                      "x-cache", "via", "x-iinfo", "cf-ray", "x-datadome", "report-to",
+                      "location", "x-request-id")
+          COOKIE_NAMES = ("_abck", "bm_sz", "ak_bmsc", "incap_ses", "visid_incap",
+                          "reese84", "datadome", "cf_clearance", "JSESSIONID", "AWSALB")
+
+
+          def show(label, r, body=None):
+              print("--- " + label + " ---")
+              proto = getattr(r, "http_version", None) or getattr(getattr(r, "raw", None), "version", None)
+              print("status=%s url=%s bytes=%s http=%s" % (r.status_code, r.url, len(r.content), proto))
+              for key in INTEREST:
+                  value = r.headers.get(key)
+                  if value:
+                      print("%s: %s" % (key, value[:400]))
+              names = [c.name for c in getattr(r, "cookies", [])]
+              print("resp cookies:", names)
+              text = (body if body is not None else r.text)
+              for name in COOKIE_NAMES:
+                  hits = [c for c in (getattr(r, "cookies", []) or []) if c.name == name]
+                  if hits:
+                      print("cookie hit:", name, len(hits[0].value))
+              return text
+
+
+          def rsl(printable):
+              try:
+                  data = json.loads(printable)
+              except Exception as exc:
+                  print("json error:", exc)
+                  return
+              info = data.get("RSLT_INFO") or {}
+              print("RSLT_INFO:", json.dumps(info, ensure_ascii=False)[:400])
+              respond = info.get("FAMILY_INFO_RESPOND") or {}
+              rows = ((respond.get("FAMILY_INFO_LST") or {}).get("FAMILY_LST_LST")) or []
+              if isinstance(rows, dict):
+                  rows = [rows]
+              print("family rows:", len(rows))
+
+
+          print("requests", requests.__version__)
+
+          # 1) 冷会话直接 POST（等价于当前 runner 的行为）
+          cold = requests.Session()
+          cold.headers.update({"User-Agent": UA})
+          try:
+              r = cold.post(BASE + "/app/opdgw/wsh0701", data=json.dumps(BODY),
+                            headers=API_HEADERS, timeout=60)
+              rsl(show("POST wsh0701 (cold, no warm-up)", r))
+          except Exception as exc:
+              print("cold POST failed:", repr(exc))
+
+          # 2) 预热：GET 首页拿 cookie，再 POST
+          warm = requests.Session()
+          warm.headers.update(HOME_HEADERS)
+          try:
+              home = warm.get(BASE + "/", timeout=60)
+              html = show("GET / (warm-up)", home)
+              title = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
+              print("title:", title.group(1).strip()[:120] if title else None)
+              low = html.lower()
+              for kw in ("csrf", "token", "jsessionid", "javascript", "wsh0701"):
+                  print("html has %-12s %s" % (kw, kw in low))
+              print("session cookies:", [(c.name, c.domain, c.path) for c in warm.cookies])
+              r = warm.post(BASE + "/app/opdgw/wsh0701", data=json.dumps(BODY),
+                            headers=API_HEADERS, timeout=60)
+              rsl(show("POST wsh0701 (warm session)", r))
+          except Exception as exc:
+              print("warm POST failed:", repr(exc))
+
+          # 3) curl_cffi：Chrome 的 TLS/JA3 + HTTP2 指纹
+          try:
+              from curl_cffi import requests as creq
+              for impersonation in ("chrome124", "chrome"):
+                  try:
+                      cs = creq.Session(impersonate=impersonation)
+                      h = cs.get(BASE + "/", headers={"Accept-Language": "ja,en-US;q=0.9,en;q=0.8"},
+                                 timeout=60)
+                      show("curl_cffi GET / (%s)" % impersonation, h)
+                      print("session cookies:", [(c.name, c.domain) for c in cs.cookies.jar])
+                      r = cs.post(BASE + "/app/opdgw/wsh0701", json=BODY,
+                                  headers={"Referer": BASE + "/h0200", "Origin": BASE,
+                                           "Accept-Language": "ja,en-US;q=0.9,en;q=0.8"},
+                                  timeout=60)
+                      rsl(show("curl_cffi POST wsh0701 (%s)" % impersonation, r))
+                      break
+                  except Exception as exc:
+                      print("curl_cffi %s failed: %r" % (impersonation, exc))
+          except Exception as exc:
+              print("curl_cffi unavailable:", repr(exc))
+          PY
+          python /tmp/probe.py
