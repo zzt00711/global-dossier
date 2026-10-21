@@ -43,6 +43,12 @@ PDF_HEADERS = {
 RETRY_STATUS = {429, 500, 502, 503, 504}
 MAX_BACKOFF = 60.0
 
+# J-PlatPat 在临时无响应/限流时也会返回 STATUS_CD_A=1 + 这句话，
+# 与「号码确实没有数据」无法区分，只能靠重试兜住前一种情况。
+TRANSIENT_MSG = "情報が取得できませんでした"
+# 入口同族查询的重试间隔（秒）；该接口失败即整单失败，值得等久一点。
+FAMILY_RETRY_DELAYS = (3.0, 20.0, 45.0, 90.0)
+
 
 def _retry_delay(resp: requests.Response | None, attempt: int) -> float:
     """优先采用 Retry-After，否则指数退避并加入抖动。"""
@@ -63,6 +69,11 @@ class OpdError(RuntimeError):
         super().__init__(f"[{status}] {message}")
         self.status = status
         self.message = message
+
+
+def _is_transient(exc: "OpdError") -> bool:
+    """判断是否为 J-PlatPat 侧临时不可用（可重试）。"""
+    return exc.status == "1" and TRANSIENT_MSG in exc.message
 
 
 def parse_cn_publication(raw: str) -> dict[str, str]:
@@ -180,6 +191,29 @@ class OpdClient:
                 messages.append(str(item))
         raise OpdError(code or "UNKNOWN", " / ".join(messages) or "OPD 返回失败")
 
+    def _post_with_retry(
+        self, path: str, body: dict[str, Any], timeout: float = 60
+    ) -> dict[str, Any]:
+        """入口查询专用：对 J-PlatPat 临时无响应做多次退避重试。
+
+        仅重试 STATUS_CD_A=1 且提示「情報が取得できませんでした」的情况，
+        参数错误、号码无数据等永久错误立即抛出。
+        """
+        attempt = 0
+        while True:
+            try:
+                return self._post(path, body, timeout=timeout)
+            except OpdError as exc:
+                if not _is_transient(exc) or attempt >= len(FAMILY_RETRY_DELAYS):
+                    raise
+                wait = FAMILY_RETRY_DELAYS[attempt] + random.random() * 3
+                print(
+                    f"    OPD 暂未返回数据，{wait:.0f}s 后重试"
+                    f"（{attempt + 1}/{len(FAMILY_RETRY_DELAYS)}）"
+                )
+                time.sleep(wait)
+                attempt += 1
+
     # ── wsh0701 ──────────────────────────────────────────────
     def family(self, inqry: dict[str, str], bul_type: str = "publication") -> list[dict[str, Any]]:
         body = {
@@ -190,7 +224,7 @@ class OpdClient:
             "INQRY_NUM": inqry,
             "OTID": None,
         }
-        data = self._post("/app/opdgw/wsh0701", body)
+        data = self._post_with_retry("/app/opdgw/wsh0701", body)
         respond = ((data.get("RSLT_INFO") or {}).get("FAMILY_INFO_RESPOND") or {})
         lst = (respond.get("FAMILY_INFO_LST") or {}).get("FAMILY_LST_LST")
         members: list[dict[str, Any]] = []
@@ -342,7 +376,16 @@ def family_by_publication(
 ) -> tuple[dict[str, str], list[dict[str, Any]]]:
     """按完整公开号（含 kind code）查询同族，不做 kind 猜测。"""
     parts = parse_cn_publication(raw)
-    members = client.family(parts, bul_type=bul_type)
+    try:
+        members = client.family(parts, bul_type=bul_type)
+    except OpdError as exc:
+        if _is_transient(exc):
+            raise OpdError(
+                exc.status,
+                f"J-PlatPat 暂未返回 {raw} 的同族信息，已重试 "
+                f"{len(FAMILY_RETRY_DELAYS)} 次仍失败，请稍后重新提交",
+            ) from exc
+        raise
     if not members:
         raise OpdError("EMPTY", f"号段 {parts} 未返回同族成员")
     return parts, members
