@@ -1,0 +1,105 @@
+{
+  "state": "done",
+  "issue": 50,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T08:42:00+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117308911A（5 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  383 KB",
+    "    OK  US Final Rejection  754 KB",
+    "    OK  US Non-Final Rejection  656 KB",
+    "    OK  US Search information including classification, databases and other search related notes  43 KB",
+    "    OK  US Examiner's search strategy and results  47 KB"
+  ],
+  "query": "CN117308911A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "result": {
+    "query": "CN117308911A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-10-21T08:42:01+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217852675.A",
+        "status": "ok",
+        "doc_total": 53,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 392141,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/50/CN117308911A/US/2025-09-23_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_3CB8LX205X73.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2025-05-20",
+            "status": "ok",
+            "bytes": 771994,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/50/CN117308911A/US/2025-05-20_US_Final_Rejection_HOYV5WFYGX62.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-12-11",
+            "status": "ok",
+            "bytes": 671518,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/50/CN117308911A/US/2024-12-11_US_Non-Final_Rejection_BH67HWFYGX55.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 44107,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/50/CN117308911A/US/2025-09-23_US_Search_information_including_classification%2C_databases_and_o_3CB8OX205X73.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 47974,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/50/CN117308911A/US/2025-09-23_US_Examiner%27s_search_strategy_and_results_3CB8QX205X73.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310764765.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102023117099.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T08:42:20+00:00"
+}
