@@ -1,0 +1,17 @@
+{
+  "state": "error",
+  "issue": 29,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T03:12:23+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116774691A_JP_1",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 225, in main\n    manifest = collect(\n               ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 194, in collect\n    input_parts, members = family_by_publication(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 345, in family_by_publication\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 193, in family\n    data = self._post(\"/app/opdgw/wsh0701\", body)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 141, in _post\n    self._check(data)\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 181, in _check\n    raise OpdError(code or \"UNKNOWN\", \" / \".join(messages) or \"OPD 返回失败\")\nopd.OpdError: [1] 情報が取得できませんでした。\n"
+  ],
+  "query": "CN116774691A",
+  "offices": [
+    "JP"
+  ],
+  "max_docs": 1,
+  "error": "OpdError: [1] 情報が取得できませんでした。",
+  "finished_at": "2026-10-21T03:12:24+00:00"
+}
