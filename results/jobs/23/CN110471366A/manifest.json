@@ -1,0 +1,366 @@
+{
+  "query": "CN110471366A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "110471366",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-21T02:19:25+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "US": 1,
+    "CN": 1,
+    "DE": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.201815977072.A",
+      "pub_nums": [
+        "US.2019346822.A1"
+      ],
+      "status": "ok",
+      "doc_total": 33,
+      "picked": [
+        {
+          "doc_id": "KCXQPY7IRXEAPX5",
+          "name": "Issue Notification",
+          "name_en": "",
+          "date": "2020-07-22",
+          "family": "final_grant",
+          "tender_date": "2020-07-22",
+          "file": "US/2020-07-22_US_Issue_Notification_QPY7IRXEAPX5.pdf",
+          "bytes": 53945,
+          "status": "ok"
+        },
+        {
+          "doc_id": "K3HLEUOMRXEAPX2",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2019-12-02",
+          "family": "rejection",
+          "tender_date": "2019-12-02",
+          "file": "US/2019-12-02_US_Non-Final_Rejection_LEUOMRXEAPX2.pdf",
+          "bytes": 638065,
+          "status": "ok"
+        },
+        {
+          "doc_id": "K8KIOT92RXEAPX5",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2020-04-07",
+          "family": "citation",
+          "tender_date": "2020-04-07",
+          "file": "US/2020-04-07_US_Search_information_including_classification,_databases_and_o_IOT92RXEAPX5.pdf",
+          "bytes": 24681,
+          "status": "ok"
+        },
+        {
+          "doc_id": "K8KIOT96RXEAPX5",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2020-04-07",
+          "family": "citation",
+          "tender_date": "2020-04-07",
+          "file": "US/2020-04-07_US_Examiner's_search_strategy_and_results_IOT96RXEAPX5.pdf",
+          "bytes": 124317,
+          "status": "ok"
+        }
+      ],
+      "title": "METHOD AND SYSTEM FOR MONITORING MACHINE HEALTH TO IMPROVE MACHINE CYCLE TIME IMPACT",
+      "documents": [
+        {
+          "doc_id": "JH26GBJTRXEAPX5",
+          "name": "Power of Attorney",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGY6RXEAPX1",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2018-05-11",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGY9RXEAPX1",
+          "name": "Foreign Reference",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYARXEAPX1",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYBRXEAPX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYDRXEAPX1",
+          "name": "Specification",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYERXEAPX1",
+          "name": "Claims",
+          "date": "2018-05-11",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYFRXEAPX1",
+          "name": "Abstract",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JH26GGYHRXEAPX1",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2018-05-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JI1J2C9QRXEAPX0",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2018-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JI1J2ENZRXEAPX0",
+          "name": "Filing Receipt",
+          "date": "2018-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K2YU8BRWRXEAPX5",
+          "name": "Notice of Publication",
+          "date": "2019-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K3HLEUOMRXEAPX2",
+          "name": "Non-Final Rejection",
+          "date": "2019-12-02",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "K3HLEUONRXEAPX2",
+          "name": "List of references cited by examiner",
+          "date": "2019-12-02",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K3HLEUOORXEAPX2",
+          "name": "Index of Claims",
+          "date": "2019-12-02",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "K3HLEUOPRXEAPX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2019-12-02",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K3HLEUOQRXEAPX2",
+          "name": "Examiner's search strategy and results",
+          "date": "2019-12-02",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K3HLEUORRXEAPX2",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2019-12-02",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K7AUII24RXEAPX2",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2020-03-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K7CAL744LXEAPX2",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2020-03-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K7CAL745LXEAPX2",
+          "name": "Claims",
+          "date": "2020-03-02",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K7CAL746LXEAPX2",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2020-03-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K7KOWJEDRXEAPX2",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2020-03-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K8KIOT91RXEAPX5",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2020-04-07",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K8KIOT92RXEAPX5",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2020-04-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "K8KIOT94RXEAPX5",
+          "name": "Issue Information including classification, examiner, name, claim, renumbering, etc.",
+          "date": "2020-04-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K8KIOT95RXEAPX5",
+          "name": "Bibliographic Data Sheet",
+          "date": "2020-04-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K8KIOT96RXEAPX5",
+          "name": "Examiner's search strategy and results",
+          "date": "2020-04-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "KCCJRQ8ZRXEAPX1",
+          "name": "Change of Address",
+          "date": "2020-07-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KCCJRQ90RXEAPX1",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2020-07-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KCCJRQ91RXEAPX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2020-07-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KCCJRQ92RXEAPX1",
+          "name": "Issue Fee Payment (PTO-85B)",
+          "date": "2020-07-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KCXQPY7IRXEAPX5",
+          "name": "Issue Notification",
+          "date": "2020-07-22",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        }
+      ]
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201910379198.A",
+      "pub_nums": [
+        "CN.110471366.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "DE",
+      "app_num": "DE.102019112166.A",
+      "pub_nums": [
+        "DE.102019112166.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ]
+}
