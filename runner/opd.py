@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import json
+import math
 import random
 import re
 import time
@@ -26,17 +27,46 @@ UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
+# 必须与 UA 里的主版本号一致，否则「UA 说 124、sec-ch-ua 说别的版本」反而更可疑
+CH_UA = '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"'
+
+# 真实 Chrome 无论 XHR 还是页面导航都会带的那几项，单独抽出来共用。
+# 不主动设置 Accept-Encoding：requests 默认的 gzip, deflate 不会触发
+# 环境里没装 brotli 时的解码失败，而 Chrome 的 br/zstd 我们解不了。
+BROWSER_HEADERS = {
+    "User-Agent": UA,
+    "Accept-Language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7",
+    "sec-ch-ua": CH_UA,
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "Connection": "keep-alive",
+}
+
+# XHR 型请求（wsh0701 / wsh0501 / wsh0901）
 API_HEADERS = {
+    **BROWSER_HEADERS,
     "Content-Type": "application/json",
     "Accept": "application/json, text/plain, */*",
     "Origin": BASE,
     "Referer": BASE + "/h0200",
-    "User-Agent": UA,
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "Priority": "u=1, i",
 }
+# PDF 直链是地址栏导航，Accept 与 Sec-Fetch-* 要和「打开一个页面」对得上
 PDF_HEADERS = {
-    "Accept": "application/pdf,*/*",
+    **BROWSER_HEADERS,
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+        "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    ),
     "Referer": BASE + "/h0400",
-    "User-Agent": UA,
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
 }
 
 # 需要退避重试的 HTTP 状态；429/503 优先使用服务端 Retry-After
@@ -48,6 +78,23 @@ MAX_BACKOFF = 60.0
 TRANSIENT_MSG = "情報が取得できませんでした"
 # 入口同族查询的重试间隔（秒）；该接口失败即整单失败，值得等久一点。
 FAMILY_RETRY_DELAYS = (3.0, 20.0, 45.0, 90.0)
+
+# 人类化节奏：按「上一个动作 → 下一个动作」分段取对数正态分布（秒）。
+# 真实用户是「看一眼再点」，间隔天然右偏、偶尔很长，固定间隔反而像脚本。
+DELAY_RANGES = {
+    "family": (2.0, 4.5),      # 打开检索页 → 提交同族查询
+    "doc_list": (1.5, 4.0),    # 同族结果 → 逐个局点开文书列表
+    "doc_content": (1.5, 4.0),  # 文书列表 → 取某篇文书地址
+    "pdf": (1.0, 3.0),         # 拿到地址 → 下载 PDF / 连下下一篇
+}
+
+
+def _human_delay(lo: float, hi: float) -> float:
+    """对数正态采样并截断到 [lo, hi]，中位数取区间几何中点。"""
+    mu = (math.log(lo) + math.log(hi)) / 2.0
+    sigma = (math.log(hi) - math.log(lo)) / 3.92  # 约 95% 落在区间内
+    return min(hi, max(lo, random.lognormvariate(mu, sigma)))
+
 
 
 def _retry_delay(resp: requests.Response | None, attempt: int) -> float:
@@ -116,9 +163,7 @@ def _as_list(value: Any) -> list[Any]:
 
 
 class OpdClient:
-    def __init__(self, min_gap: float = 1.2, jitter: float = 1.0, retries: int = 3):
-        self.min_gap = min_gap
-        self.jitter = jitter
+    def __init__(self, retries: int = 3):
         self.retries = retries
         self.session = self._new_session()
         self._last = 0.0
@@ -126,20 +171,24 @@ class OpdClient:
     @staticmethod
     def _new_session() -> requests.Session:
         s = requests.Session()
-        s.headers.update({"User-Agent": UA})
+        s.headers.update(BROWSER_HEADERS)
         return s
 
-    def _throttle(self) -> None:
+    def _throttle(self, kind: str) -> None:
+        """按动作类型把两次请求的间隔拉到人类区间。首次请求不等待。"""
+        lo, hi = DELAY_RANGES.get(kind, (1.5, 4.0))
         now = time.monotonic()
-        wait = max(0.0, self._last + self.min_gap + random.random() * self.jitter - now)
+        wait = max(0.0, self._last + _human_delay(lo, hi) - now)
         self._last = now + wait
         if wait:
             time.sleep(wait)
 
-    def _post(self, path: str, body: dict[str, Any], timeout: float = 60) -> dict[str, Any]:
+    def _post(
+        self, path: str, body: dict[str, Any], timeout: float = 60, kind: str = "doc_content"
+    ) -> dict[str, Any]:
         last: Exception | None = None
         for attempt in range(1, self.retries + 1):
-            self._throttle()
+            self._throttle(kind)
             try:
                 r = self.session.post(
                     BASE + path,
@@ -192,7 +241,7 @@ class OpdClient:
         raise OpdError(code or "UNKNOWN", " / ".join(messages) or "OPD 返回失败")
 
     def _post_with_retry(
-        self, path: str, body: dict[str, Any], timeout: float = 60
+        self, path: str, body: dict[str, Any], timeout: float = 60, kind: str = "family"
     ) -> dict[str, Any]:
         """入口查询专用：对 J-PlatPat 临时无响应做多次退避重试。
 
@@ -202,7 +251,7 @@ class OpdClient:
         attempt = 0
         while True:
             try:
-                return self._post(path, body, timeout=timeout)
+                return self._post(path, body, timeout=timeout, kind=kind)
             except OpdError as exc:
                 if not _is_transient(exc) or attempt >= len(FAMILY_RETRY_DELAYS):
                     raise
@@ -224,7 +273,7 @@ class OpdClient:
             "INQRY_NUM": inqry,
             "OTID": None,
         }
-        data = self._post_with_retry("/app/opdgw/wsh0701", body)
+        data = self._post_with_retry("/app/opdgw/wsh0701", body, kind="family")
         respond = ((data.get("RSLT_INFO") or {}).get("FAMILY_INFO_RESPOND") or {})
         lst = (respond.get("FAMILY_INFO_LST") or {}).get("FAMILY_LST_LST")
         members: list[dict[str, Any]] = []
@@ -265,7 +314,7 @@ class OpdClient:
             "APP_NUM": app_num,
             "OTID": None,
         }
-        data = self._post("/app/opdgw/wsh0501", body)
+        data = self._post("/app/opdgw/wsh0501", body, kind="doc_list")
         respond = ((data.get("RSLT_INFO") or {}).get("DOC_LST_INFO_RESPOND") or {})
         bbl = respond.get("BBL_INFO") or {}
         docs: list[dict[str, Any]] = []
@@ -338,6 +387,7 @@ class OpdClient:
         dest.parent.mkdir(parents=True, exist_ok=True)
         last: Exception | None = None
         for attempt in range(1, self.retries + 1):
+            self._throttle("pdf")
             try:
                 with self.session.get(url, headers=PDF_HEADERS, stream=True, timeout=timeout) as r:
                     r.raise_for_status()
