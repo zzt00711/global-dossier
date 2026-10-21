@@ -35,14 +35,36 @@ jobs:
 
       - name: Commit results
         if: always()
+        env:
+          N: ${{ github.event.issue.number }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ ! -f "results/jobs/$N/status.json" ]; then exit 0; fi
+          backup="$(mktemp -d)"
+          cp -r "results/jobs/$N" "$backup/job"
+          # 先按常规方式提交（含缓存增删）；与其他任务并发写缓存冲突时，退回只提交本任务结果
           git add results
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "opd: job #${{ github.event.issue.number }} [skip ci]"
-          git pull --rebase --autostash origin main
-          git push origin HEAD:main
+          git commit -m "opd: job #$N [skip ci]" || true
+          if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+            exit 0
+          fi
+          git rebase --abort 2>/dev/null || true
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf "results/jobs/$N"
+            cp -r "$backup/job" "results/jobs/$N"
+            git add "results/jobs/$N"
+            git commit -m "opd: job #$N [skip ci]" || true
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "推送失败，$((i * 5))s 后重试（$i/5）"
+            sleep $((i * 5))
+          done
+          echo "结果提交失败" >&2
+          exit 1
 
       - name: Report on issue
         if: always()
