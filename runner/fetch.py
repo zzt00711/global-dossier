@@ -88,6 +88,9 @@ def classify(name: str) -> str:
         return "applicant"
     if RE_REJECTION.search(name):
         return "rejection"
+    # IDS 表格与外国对比文件清单只是著录表格，不占对比文件配额
+    if re.search(r"information\s+disclosure\s+statement|\bids\b|foreign\s+reference", name, re.I):
+        return "other"
     if RE_CITATION.search(name):
         return "citation"
     if RE_CLAIMS.search(name):
@@ -106,12 +109,24 @@ def _date_key(value: str) -> str:
 def _family_rank(family: str, doc: dict[str, Any]) -> int:
     """类别内部的偏好：数字越小越优先。"""
     name = f"{doc.get('name', '')} {doc.get('name_en', '')}".lower()
+    if family == "final_grant":
+        # 授权通知只有一行著录信息，优先取带审查结论的 Notice of Allowance / 査定
+        if "issue notification" in name or "egrant" in name:
+            return 2
+        return 0
     if family == "rejection":
         if "advisory action" in name:
             return 2
         if "final rejection" in name or "拒絶査定" in name:
             return 1
         return 0
+    if family == "citation":
+        # 检索报告/检索意见的信息量远高于检索策略与引用清单
+        if "search report" in name or "search opinion" in name or "international search" in name:
+            return 0
+        if "search strategy" in name or "information on search" in name or "search information" in name:
+            return 1
+        return 2
     if family == "claims":
         return 0 if name.strip() == "claims" else 1
     return 0
