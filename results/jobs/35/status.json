@@ -1,0 +1,104 @@
+{
+  "state": "done",
+  "issue": 35,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-21T03:24:48+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116670735A_EP-JP-KR-US_2",
+    "    OK  US Issue Notification  154 KB",
+    "    OK  US Non-Final Rejection  3348 KB",
+    "    OK  EP European search opinion  259 KB",
+    "    OK  EP Supplementary European search report  64 KB"
+  ],
+  "query": "CN116670735A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "result": {
+    "query": "CN116670735A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-21T03:24:50+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202117244379.A",
+        "status": "ok",
+        "doc_total": 73,
+        "picked": [
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2024-08-07",
+            "status": "ok",
+            "bytes": 157515,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/35/CN116670735A/US/2024-08-07_US_Issue_Notification_7S8TQWFYGX54.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-10-30",
+            "status": "ok",
+            "bytes": 3427851,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/35/CN116670735A/US/2023-10-30_US_Non-Final_Rejection_9JN9DXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22796940.A",
+        "status": "ok",
+        "doc_total": 33,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-04-28",
+            "status": "ok",
+            "bytes": 264846,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/35/CN116670735A/EP/2025-04-28_EP_European_search_opinion_5Y4QR19AHUCJ.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2025-04-28",
+            "status": "ok",
+            "bytes": 65286,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/35/CN116670735A/EP/2025-04-28_EP_Supplementary_European_search_report_5QI6S5ATA0OE.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280008740.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022071771.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-21T03:25:21+00:00"
+}
