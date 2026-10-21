@@ -5,14 +5,11 @@
     "NUM_PART": "116670735",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-10-21T03:24:50+00:00",
+  "generated_at": "2026-10-21T03:27:24+00:00",
   "offices": [
-    "JP",
-    "EP",
-    "US",
-    "KR"
+    "US"
   ],
-  "max_docs_per_office": 2,
+  "max_docs_per_office": 1,
   "download": true,
   "family_counts": {
     "US": 1,
@@ -39,17 +36,6 @@
           "tender_date": "2024-08-07",
           "file": "US/2024-08-07_US_Issue_Notification_7S8TQWFYGX54.pdf",
           "bytes": 157515,
-          "status": "ok"
-        },
-        {
-          "doc_id": "LO79JN9DXBLUEX4",
-          "name": "Non-Final Rejection",
-          "name_en": "",
-          "date": "2023-10-30",
-          "family": "rejection",
-          "tender_date": "2023-10-30",
-          "file": "US/2023-10-30_US_Non-Final_Rejection_9JN9DXBLUEX4.pdf",
-          "bytes": 3427851,
           "status": "ok"
         }
       ],
@@ -469,7 +455,7 @@
           "date": "2023-10-30",
           "family": "rejection",
           "excluded": false,
-          "picked": true
+          "picked": false
         },
         {
           "doc_id": "LO79JN9EXBLUEX4",
@@ -648,299 +634,9 @@
         "EP.4330785.A1",
         "EP.4330785.A4"
       ],
-      "status": "ok",
-      "doc_total": 33,
-      "picked": [
-        {
-          "doc_id": "M9T5Y4QR19AHUCJ",
-          "name": "European search opinion",
-          "name_en": "",
-          "date": "2025-04-28",
-          "family": "rejection",
-          "tender_date": "2025-04-28",
-          "file": "EP/2025-04-28_EP_European_search_opinion_5Y4QR19AHUCJ.pdf",
-          "bytes": 264846,
-          "status": "ok"
-        },
-        {
-          "doc_id": "M9T5QI6S5ATA0OE",
-          "name": "Supplementary European search report",
-          "name_en": "",
-          "date": "2025-04-28",
-          "family": "citation",
-          "tender_date": "2025-04-28",
-          "file": "EP/2025-04-28_EP_Supplementary_European_search_report_5QI6S5ATA0OE.pdf",
-          "bytes": 65286,
-          "status": "ok"
-        }
-      ],
-      "title": "METHOD OF NAVIGATING AUTONOMOUS VEHICLE TO PASSENGER PICKUP / DROP-OFF LOCATION",
-      "documents": [
-        {
-          "doc_id": "LA6Q1AX21G1VCF5",
-          "name": "Published international application - A1",
-          "date": "2022-11-03",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LA6Q1AX61GS2AIJ",
-          "name": "Copy of the international search report",
-          "date": "2022-11-03",
-          "family": "citation",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LAQMSLBU1052PLA",
-          "name": "Priority document (electronically transmitted)",
-          "date": "2022-11-21",
-          "family": "other",
-          "excluded": true,
-          "picked": false
-        },
-        {
-          "doc_id": "LJCZ10ZK1JDYSS1",
-          "name": "Request for entry into the European phase",
-          "date": "2023-06-26",
-          "family": "other",
-          "excluded": true,
-          "picked": false
-        },
-        {
-          "doc_id": "LJCZ11QD10FJA88",
-          "name": "(Electronic) Receipt",
-          "date": "2023-06-26",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LJGS5O9QES4ATIZ",
-          "name": "Information regarding early processing",
-          "date": "2023-07-04",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LOWNO6AM18YS5Q3",
-          "name": "Copy of the international preliminary report on patentability",
-          "date": "2023-11-13",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LPIYAIYNJ4MT2AI",
-          "name": "Communication regarding possible amendment of the application/payment of claims fee",
-          "date": "2023-12-06",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT15TYIYEB9OQC",
-          "name": "Letter accompanying subsequently filed items",
-          "date": "2024-01-25",
-          "family": "other",
-          "excluded": true,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT15UC91X9RC64",
-          "name": "Amendments received before examination",
-          "date": "2024-01-25",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT15UVVZJZ792C",
-          "name": "Amended claims filed after receipt of (European) search report",
-          "date": "2024-01-25",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT15VZIA0M71T1",
-          "name": "Amended claims with annotations",
-          "date": "2024-01-25",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT15XT81C5TDBQ",
-          "name": "Amended description filed after receipt of (European) search report",
-          "date": "2024-01-25",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT161JBK5V0BBK",
-          "name": "Amended description with annotations",
-          "date": "2024-01-25",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LRT1651L1N294J8",
-          "name": "(Electronic) Receipt",
-          "date": "2024-01-25",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "LS3XMVKFRQDMXP2",
-          "name": "Notification on forthcoming publication of bibliographic data",
-          "date": "2024-02-07",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M2OR0DUJ1E7LBY0",
-          "name": "Annexes in respect of a client data request",
-          "date": "2024-10-14",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M2OR0DWPHNHTOK1",
-          "name": "Submission concerning a transfer of rights (applicant)",
-          "date": "2024-10-14",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M2OR0DXL1DMCJAR",
-          "name": "Submission concerning a transfer of rights (applicant)",
-          "date": "2024-10-14",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M2OR4O0CMXSZM1O",
-          "name": "Communication of the registration of a transfer or change of name and/or address",
-          "date": "2024-10-30",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M4VIMS9BLU1M87B",
-          "name": "Document concerning representation",
-          "date": "2024-12-04",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M4VC9RWC1851W4G",
-          "name": "Search started",
-          "date": "2024-12-19",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M6GIONVYQECTX7P",
-          "name": "Communication concerning corrected entries of the applicant",
-          "date": "2025-01-31",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M9T4P7MW1TJKG36",
-          "name": "Communication regarding the transmission of the European search report",
-          "date": "2025-04-28",
-          "family": "citation",
-          "excluded": true,
-          "picked": false
-        },
-        {
-          "doc_id": "M9T5QI6S5ATA0OE",
-          "name": "Supplementary European search report",
-          "date": "2025-04-28",
-          "family": "citation",
-          "excluded": false,
-          "picked": true
-        },
-        {
-          "doc_id": "M9T5QIHOYN7VB55",
-          "name": "Information on Search Strategy",
-          "date": "2025-04-28",
-          "family": "citation",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "M9T5Y4QR19AHUCJ",
-          "name": "European search opinion",
-          "date": "2025-04-28",
-          "family": "rejection",
-          "excluded": false,
-          "picked": true
-        },
-        {
-          "doc_id": "MAEI10CX1LZ1G92",
-          "name": "Invitation to declare maintenance of the application and to correct deficiencies in the Written Opinion/amend application",
-          "date": "2025-05-15",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "MHSZY3U95422YUJ",
-          "name": "Letter accompanying subsequently filed items",
-          "date": "2025-11-10",
-          "family": "other",
-          "excluded": true,
-          "picked": false
-        },
-        {
-          "doc_id": "MHSZY49U4IOT2UM",
-          "name": "Amendments received before examination",
-          "date": "2025-11-10",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "MHSZY52U3AR95XQ",
-          "name": "Amended description filed after receipt of (European) search report",
-          "date": "2025-11-10",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "MHSZY7EO7O5UP09",
-          "name": "Amended description with annotations",
-          "date": "2025-11-10",
-          "family": "applicant",
-          "excluded": false,
-          "picked": false
-        },
-        {
-          "doc_id": "MHSZYA051XH8F7O",
-          "name": "(Electronic) Receipt",
-          "date": "2025-11-10",
-          "family": "other",
-          "excluded": false,
-          "picked": false
-        }
-      ]
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
     },
     {
       "country": "CN",
