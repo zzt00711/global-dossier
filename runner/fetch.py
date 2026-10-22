@@ -195,7 +195,7 @@ def _member_app_parts(member: dict[str, Any]) -> dict[str, str] | None:
 def collect(
     query: str,
     offices: list[str] | None = None,
-    max_docs: int = 2,
+    max_docs: int = 4,
     out_root: Path | None = None,
     download: bool = True,
     client: OpdClient | None = None,
