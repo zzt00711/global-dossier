@@ -1,0 +1,105 @@
+{
+  "state": "done",
+  "issue": 57,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-22T01:29:21+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117413169A（2 篇/局）",
+    "    OK  JP 特許査定  108 KB",
+    "    OK  JP 拒絶理由通知書  169 KB",
+    "    OK  KR Written Decision on Registration  85 KB",
+    "    OK  KR Request for the Submission of an Opinion  101 KB"
+  ],
+  "query": "CN117413169A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "cached": false,
+  "result": {
+    "query": "CN117413169A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1,
+      "KR": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-22T01:29:22+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023574542.A",
+        "status": "ok",
+        "doc_total": 30,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-11-26",
+            "status": "ok",
+            "bytes": 110787,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/57/CN117413169A/JP/2024-11-26_JP_Decision_to_Grant_a_Patent_124575067_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-09-24",
+            "status": "ok",
+            "bytes": 173245,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/57/CN117413169A/JP/2024-09-24_JP_Notice_of_Reasons_for_Refusal_124456027_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280036948.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237040602.A",
+        "status": "ok",
+        "doc_total": 7,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-06-25",
+            "status": "ok",
+            "bytes": 86622,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/57/CN117413169A/KR/2026-06-25_KR_Written_Decision_on_Registration_057486419_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-08-21",
+            "status": "ok",
+            "bytes": 103533,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/57/CN117413169A/KR/2025-08-21_KR_Request_for_the_Submission_of_an_Opinion_080033490_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022020296.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-22T01:29:46+00:00"
+}

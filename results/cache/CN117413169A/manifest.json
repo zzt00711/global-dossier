@@ -1,0 +1,413 @@
+{
+  "query": "CN117413169A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117413169",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-22T01:29:22+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 2,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "CN": 1,
+    "KR": 1,
+    "WO": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2023574542.A",
+      "pub_nums": [
+        "JP.WO2023218672.A1"
+      ],
+      "status": "ok",
+      "doc_total": 30,
+      "picked": [
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06124575067_JP",
+          "name": "特許査定",
+          "name_en": "Decision to Grant a Patent",
+          "date": "2024-11-26",
+          "family": "final_grant",
+          "tender_date": "2024-11-26",
+          "file": "JP/2024-11-26_JP_Decision_to_Grant_a_Patent_124575067_JP.pdf",
+          "bytes": 110787,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124456027_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2024-09-24",
+          "family": "rejection",
+          "tender_date": "2024-09-24",
+          "file": "JP/2024-09-24_JP_Notice_of_Reasons_for_Refusal_124456027_JP.pdf",
+          "bytes": 173245,
+          "status": "ok"
+        }
+      ],
+      "title": "Water quality analyzer",
+      "documents": [
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52302602974_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2023-12-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "National_Entry_Form_52302602973_JP",
+          "name": "国内書面",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52302602975_JP",
+          "name": "出願審査請求書",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62319904178_JP",
+          "name": "国際公開",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62319904178_JP",
+          "name": "添付書類",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_62339928989_JP",
+          "name": "明細書",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62339928989_JP",
+          "name": "図面",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Applications_%2528Communication_of_International_Applications_in_Japanese%2529_62339928989_JP",
+          "name": "日本語国際公開（職権）",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_62339928989_JP",
+          "name": "請求の範囲",
+          "date": "2023-12-01",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_62339928989_JP",
+          "name": "要約書",
+          "date": "2023-12-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings__62470580068_JP",
+          "name": "日本語国際公開要約図（職権）",
+          "date": "2024-02-19",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62470580068_JP",
+          "name": "図面",
+          "date": "2024-02-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_under_Article_19_of_the_Patent_Cooperation_Treaty__62430570688_JP",
+          "name": "条約１９条補正（職権）",
+          "date": "2024-02-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62410570684_JP",
+          "name": "添付書類",
+          "date": "2024-02-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report%2528in_Japanese%2529_62410570684_JP",
+          "name": "国際調査報告（日本語）",
+          "date": "2024-02-19",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_under_Article_19_of_the_Patent_Cooperation_Treaty_62410570682_JP",
+          "name": "条約１９条補正",
+          "date": "2024-02-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62410570682_JP",
+          "name": "添付書類",
+          "date": "2024-02-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notification_of_Determination_of_Application_Number_02124026722_JP",
+          "name": "出願番号特定通知書",
+          "date": "2024-03-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notification_of_Determination_of_Application_Number_02124026723_JP",
+          "name": "出願番号特定通知書",
+          "date": "2024-03-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124344608_JP",
+          "name": "拒絶理由通知書",
+          "date": "2024-07-23",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52402003156_JP",
+          "name": "意見書",
+          "date": "2024-09-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52402003157_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2024-09-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124456027_JP",
+          "name": "拒絶理由通知書",
+          "date": "2024-09-24",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52402554737_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2024-11-21",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52402554736_JP",
+          "name": "意見書",
+          "date": "2024-11-21",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06124575067_JP",
+          "name": "特許査定",
+          "date": "2024-11-26",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Attached_Document_62443530696_JP",
+          "name": "添付書類",
+          "date": "2024-12-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62443530697_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2024-12-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62443530697_JP",
+          "name": "添付書類",
+          "date": "2024-12-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62443530696_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2024-12-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ]
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280036948.A",
+      "pub_nums": [
+        "CN.117413169.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20237040602.A",
+      "pub_nums": [
+        "KR.20230172600.A"
+      ],
+      "status": "ok",
+      "doc_total": 7,
+      "picked": [
+        {
+          "doc_id": "Written_Decision_on_Registration_952026057486419_KR",
+          "name": "Written Decision on Registration",
+          "name_en": "Written Decision on Registration",
+          "date": "2026-06-25",
+          "family": "final_grant",
+          "tender_date": "2026-06-25",
+          "file": "KR/2026-06-25_KR_Written_Decision_on_Registration_057486419_KR.pdf",
+          "bytes": 86622,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952025080033490_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2025-08-21",
+          "family": "rejection",
+          "tender_date": "2025-08-21",
+          "file": "KR/2025-08-21_KR_Request_for_the_Submission_of_an_Opinion_080033490_KR.pdf",
+          "bytes": 103533,
+          "status": "ok"
+        }
+      ],
+      "title": "WATER QUALITY ANALYZING DEVICE",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112023131576136_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2023-11-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_to_Bibliographic_Information_112023131596925_KR",
+          "name": "Amendment to Bibliographic Information",
+          "date": "2023-11-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952025080033490_KR",
+          "name": "Request for the Submission of an Opinion",
+          "date": "2025-08-21",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_112025135535519_KR",
+          "name": "Written Opinion",
+          "date": "2025-12-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112025135535654_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2025-12-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Decision_on_Registration_952026057486419_KR",
+          "name": "Written Decision on Registration",
+          "date": "2026-06-25",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112026501952149_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2026-09-12",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        }
+      ]
+    },
+    {
+      "country": "WO",
+      "app_num": "JP.2022020296.W",
+      "pub_nums": [
+        "WO.2023218672.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ]
+}
