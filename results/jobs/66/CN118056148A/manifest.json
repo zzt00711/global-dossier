@@ -5,12 +5,11 @@
     "NUM_PART": "118056148",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-10-21T08:56:05+00:00",
+  "generated_at": "2026-10-22T10:50:02+00:00",
   "offices": [
     "JP",
     "EP",
-    "US",
-    "KR"
+    "US"
   ],
   "max_docs_per_office": 2,
   "download": true,
@@ -275,7 +274,7 @@
           "family": "rejection",
           "tender_date": "2026-09-21",
           "file": "US/2026-09-21_US_Non-Final_Rejection_X2INMX86X209.pdf",
-          "bytes": 283217,
+          "bytes": 283216,
           "status": "ok"
         },
         {
@@ -286,7 +285,7 @@
           "family": "rejection",
           "tender_date": "2026-06-17",
           "file": "US/2026-06-17_US_Final_Rejection_XU5JO218X101.pdf",
-          "bytes": 316048,
+          "bytes": 316047,
           "status": "ok"
         }
       ],
@@ -938,8 +937,8 @@
       "country": "EP",
       "app_num": "EP.22880631.A",
       "pub_nums": [
-        "EP.4418028.A1",
-        "EP.4418028.A4"
+        "EP.4418028.A4",
+        "EP.4418028.A1"
       ],
       "status": "ok",
       "doc_total": 29,

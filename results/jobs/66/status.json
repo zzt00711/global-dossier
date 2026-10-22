@@ -1,17 +1,16 @@
 {
   "state": "done",
-  "issue": 56,
+  "issue": 66,
   "site": "https://zzt00711.github.io/global-dossier",
-  "started_at": "2026-10-22T01:20:28+00:00",
+  "started_at": "2026-10-22T11:08:05+00:00",
   "logs": [
-    "命中缓存 CN118056148A（3 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
+    "命中缓存 CN118056148A（4 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
   ],
   "query": "CN118056148A",
   "offices": [
     "JP",
     "EP",
-    "US",
-    "KR"
+    "US"
   ],
   "max_docs": 2,
   "cached": true,
@@ -24,7 +23,7 @@
       "CN": 1,
       "WO": 1
     },
-    "generated_at": "2026-10-21T08:56:05+00:00",
+    "generated_at": "2026-10-22T10:50:02+00:00",
     "members": [
       {
         "country": "JP",
@@ -38,7 +37,7 @@
             "date": "2026-07-07",
             "status": "ok",
             "bytes": 197857,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/JP/2026-07-07_JP_Notice_of_Reasons_for_Refusal_126297320_JP.pdf",
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/JP/2026-07-07_JP_Notice_of_Reasons_for_Refusal_126297320_JP.pdf",
             "error": null
           },
           {
@@ -47,7 +46,7 @@
             "date": "2023-07-24",
             "status": "ok",
             "bytes": 70259,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/JP/2023-07-24_JP_International_Search_Report%28in_Japanese%29_312540094_JP.pdf",
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/JP/2023-07-24_JP_International_Search_Report%28in_Japanese%29_312540094_JP.pdf",
             "error": null
           }
         ],
@@ -64,8 +63,8 @@
             "family": "rejection",
             "date": "2026-09-21",
             "status": "ok",
-            "bytes": 283217,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/US/2026-09-21_US_Non-Final_Rejection_X2INMX86X209.pdf",
+            "bytes": 283216,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/US/2026-09-21_US_Non-Final_Rejection_X2INMX86X209.pdf",
             "error": null
           },
           {
@@ -73,8 +72,8 @@
             "family": "rejection",
             "date": "2026-06-17",
             "status": "ok",
-            "bytes": 316048,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/US/2026-06-17_US_Final_Rejection_XU5JO218X101.pdf",
+            "bytes": 316047,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/US/2026-06-17_US_Final_Rejection_XU5JO218X101.pdf",
             "error": null
           }
         ],
@@ -92,7 +91,7 @@
             "date": "2024-12-17",
             "status": "ok",
             "bytes": 116317,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/EP/2024-12-17_EP_European_search_opinion_LR1YQS2RYXF1.pdf",
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/EP/2024-12-17_EP_European_search_opinion_LR1YQS2RYXF1.pdf",
             "error": null
           },
           {
@@ -101,7 +100,7 @@
             "date": "2024-12-17",
             "status": "ok",
             "bytes": 49273,
-            "url": "https://zzt00711.github.io/global-dossier/results/jobs/56/CN118056148A/EP/2024-12-17_EP_Supplementary_European_search_report_LNX4IB4W6KW1.pdf",
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/66/CN118056148A/EP/2024-12-17_EP_Supplementary_European_search_report_LNX4IB4W6KW1.pdf",
             "error": null
           }
         ],
@@ -125,5 +124,5 @@
       }
     ]
   },
-  "finished_at": "2026-10-22T01:20:28+00:00"
+  "finished_at": "2026-10-22T11:08:05+00:00"
 }
