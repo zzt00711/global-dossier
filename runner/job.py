@@ -71,9 +71,9 @@ def parse_payload(body: str) -> tuple[str, list[str], int]:
         offices = list(ALLOWED_OFFICES)
 
     try:
-        max_docs = int(data.get("max_docs", 2))
+        max_docs = int(data.get("max_docs", 4))
     except (TypeError, ValueError):
-        max_docs = 2
+        max_docs = 4
     max_docs = max(1, min(5, max_docs))
     return query, offices, max_docs
 
