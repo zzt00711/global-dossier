@@ -1,0 +1,25 @@
+{
+  "state": "error",
+  "issue": 61,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-22T03:02:38+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118103688A（4 篇/局）",
+    "    OPD 暂未返回数据，4s 后重试（1/4）",
+    "    OPD 暂未返回数据，22s 后重试（2/4）",
+    "    OPD 暂未返回数据，47s 后重试（3/4）",
+    "    OPD 暂未返回数据，90s 后重试（4/4）",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 430, in family_by_publication\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 276, in family\n    data = self._post_with_retry(\"/app/opdgw/wsh0701\", body, kind=\"family\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 254, in _post_with_retry\n    return self._post(path, body, timeout=timeout, kind=kind)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 201, in _post\n    self._check(data)\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 241, in _check\n    raise OpdError(code or \"UNKNOWN\", \" / \".join(messages) or \"OPD 返回失败\")\nopd.OpdError: [1] 情報が取得できませんでした。\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 284, in main\n    full = collect(\n           ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 209, in collect\n    input_parts, members = family_by_publication(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 433, in family_by_publication\n    raise OpdError(\nopd.OpdError: [1] J-PlatPat 暂未返回 CN118103688A 的同族信息，已重试 4 次仍失败，请稍后重新提交\n"
+  ],
+  "query": "CN118103688A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "error": "OpdError: [1] J-PlatPat 暂未返回 CN118103688A 的同族信息，已重试 4 次仍失败，请稍后重新提交",
+  "finished_at": "2026-10-22T03:05:24+00:00"
+}
