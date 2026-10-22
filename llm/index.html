@@ -493,7 +493,7 @@ async function getOcrWorker(langs, log) {
 
 const OFFICE_LANGS = { US: "eng", EP: "eng", JP: "eng+jpn", KR: "eng+kor", WO: "eng" };
 
-async function ocrPageTexts(pdf, langs, maxPages, log) {
+async function ocrPageTexts(pdf, langs, maxPages, log, shouldStop) {
   const worker = await getOcrWorker(langs, log);
   const n = Math.min(pdf.numPages, maxPages);
   const canvas = document.createElement("canvas");
@@ -510,11 +510,15 @@ async function ocrPageTexts(pdf, langs, maxPages, log) {
     if (p === 1 || p % 5 === 0 || p === n) {
       log(`    OCR ${p}/${n} 页（${((Date.now() - t0) / 1000).toFixed(0)}s）...`);
     }
+    if (shouldStop && shouldStop(parts.join("\n"))) {
+      log(`    已取得授权的独立权利要求 1，第 ${p} 页后提前结束 OCR（${((Date.now() - t0) / 1000).toFixed(0)}s）`);
+      break;
+    }
   }
   return parts.join("\n");
 }
 
-async function pdfToText(buf, office, log) {
+async function pdfToText(buf, office, log, name) {
   const pdf = await openPdf(buf);
   let text = "";
   try { text = await layerText(pdf, LLM.maxOcrPages); } catch (e) { text = ""; }
@@ -524,7 +528,9 @@ async function pdfToText(buf, office, log) {
   }
   try {
     const langs = OFFICE_LANGS[(office || "").toUpperCase()] || "eng";
-    const text2 = await ocrPageTexts(pdf, langs, LLM.maxOcrPages, log);
+    // 授权类文书只需要独权 1，OCR 拿到它即可停止，不必把费用表/引用清单全部识别完。
+    const stop = GDX.isGrantName(name) ? acc => !!GDX.claim1(acc) : null;
+    const text2 = await ocrPageTexts(pdf, langs, LLM.maxOcrPages, log, stop);
     try { await pdf.destroy(); } catch (e) {}
     return text2;
   } catch (e) {
@@ -589,19 +595,22 @@ async function extractBundle(data) {
         const resp = await fetch(p.url, { cache: "force-cache" });
         if (!resp.ok) throw new Error("HTTP " + resp.status);
         const buf = await resp.arrayBuffer();
-        const raw = await pdfToText(buf, office, alog);
+        const raw = await pdfToText(buf, office, alog, name);
         const text = trimDocText(raw, name);
         const isSearch = /search\s+(strategy|results?)/.test(name.toLowerCase());
+        const claims = GDX.extractClaims(text).slice(0, 10);
+        const grantClaim1 = GDX.isGrantName(name) ? GDX.claim1(text) : "";
         const doc = {
           date: p.date || "", name, family: p.family || "",
           type: GDX.detectDocType(name),
           citations: isSearch ? [] : GDX.extractCitations(text, 40, [m.app_num, ...excludeNos]),
-          claims: GDX.extractClaims(text).slice(0, 10),
+          claims: grantClaim1 ? [grantClaim1] : claims,
           conclusion: GDX.detectConclusion(text, name),
           text,
         };
         documents.push(doc);
-        alog("    文本 " + text.length + " 字，引用 " + doc.citations.length + " 条，结论：" + doc.conclusion);
+        alog("    文本 " + text.length + " 字，引用 " + doc.citations.length + " 条，结论：" + doc.conclusion +
+          (grantClaim1 ? "，独权 1：" + grantClaim1.length + " 字" : ""));
       } catch (e) {
         const msg = String(e && e.message || e).slice(0, 120);
         alog("    失败：" + msg);
@@ -623,12 +632,17 @@ function budgetCopy(data) {
   const d = JSON.parse(JSON.stringify(data));
   let used = 0;
   for (const m of d.members) for (const doc of m.documents || []) {
-    const txt = (doc.text || "").trim();
+    let txt = (doc.text || "").trim();
+    // 授权类文书只把独立权利要求 1 送给大模型：其余页（费用表、引用清单等）不参与分析。
+    if (txt && GDX.isGrantName(doc.name)) {
+      const c1 = GDX.claim1(txt);
+      if (c1) { txt = c1; doc.text_note = "已裁剪：仅含授权的独立权利要求 1"; }
+    }
     if (!txt || txt.startsWith("[") || txt.length < 50) continue;
     const remain = LLM.textBudget - used;
     if (remain < 3000) { doc.text = ""; doc.text_note = "超出文本预算未收录，仅提供结构化预提取"; used = LLM.textBudget; }
     else if (used + txt.length > LLM.textBudget) { doc.text = txt.slice(0, remain) + " …[截断]"; used = LLM.textBudget; }
-    else used += txt.length;
+    else { doc.text = txt; used += txt.length; }
   }
   return d;
 }
@@ -647,8 +661,8 @@ const SYSTEM_PROMPT =
   "特許法第29条(新規性/進歩性)、특허법 제29조。" +
   "4) 逐份通知书梳理：引用法条 → 引用对比文件 → 审查意见要点；" +
   "随后整理申请人答复与权利要求修改；最后给出最终结论(授权/驳回/视为撤回等)，" +
-  "若授权则摘录授权的权利要求——**只需摘录独立权利要求**(不引用其他权利要求" +
-  "的权项，如 US 的 'What is claimed is' 中的第 1 条及不依赖前项的权项)。" +
+  "若授权则摘录授权的权利要求——**只需摘录独立权利要求 1**（授权类文书的 text 已裁剪为" +
+  "该独权，直接据此转述；缺失时标注'数据未提供'，不要推测其他权项）。" +
   "5) 输出 Markdown，表格与分节并用，可直接作为工作参考。";
 
 function userPrompt(data) {
