@@ -102,61 +102,22 @@ const GDX = (() => {
     return [];
   }
 
-  // 授权类文书（Notice of Allowance / Decision to Grant 等）：只有独权 1 有分析价值。
-  const GRANT_DOC_NAME = /notice\s+of\s+allowance|decision\s+to\s+grant|intention\s+to\s+grant|text\s+intended\s+for\s+grant|decision\s+(on|of|for)\s+registration|登録査定|등록결정|rule\s+71\(3\)/i;
+  // 授权类文书（Notice of Allowance / Decision to Grant 等）正文没有分析价值，
+  // 依据文件名即可判定授权，因此不下载、不抽取。
+  const GRANT_DOC_NAME = /notice[\s_]+of[\s_]+allowance|decision[\s_]+to[\s_]+grant|intention[\s_]+to[\s_]+grant|text[\s_]+intended[\s_]+for[\s_]+grant|decision[\s_]+(on|of|for)[\s_]+registration|登録査定|등록결정|rule\s+71\(3\)/i;
   function isGrantName(name) {
     return GRANT_DOC_NAME.test(String(name || "").toLowerCase());
   }
 
-  // 取权利要求第 1 项（不依赖其他权项的那一条）。OCR 文本可能有噪声，故放宽空白与编号写法。
-  const CLAIM1_HEADER = [
-    /what\s+is\s+claimed\s+is\s*:?/i,
-    /\bwe\s+claim\s*:?/i,
-    /\bi\s+claim\s*:?/i,
-    /the\s+invention\s+claimed\s+is\s*:?/i,
-    /having\s+thus\s+described\s+(?:the|my|our)\s+invention[^:\n]{0,60}:?/i,
-    /^#*\s*\[?(?:CLAIMS|Patent\s+Claims)\]?\s*$/im,
-    /特許請求の範囲/,
-    /청구항/,
-    /权利要求书?/,
-  ];
-
-  // 单个权项的编号标记：1. / [Claim 1] / 【請求項1】 / 請求項1 / 청구항 1 / 权利要求1
-  function claimMark(n) {
-    const s = String(n);
-    return "(?:" + s + "\\s*[\\.\\)．、]\\s*" +
-      "|\\[?\\s*Claim\\s*" + s + "\\s*\\]?\\s*[\\.:]?\\s*" +
-      "|【\\s*請求項\\s*" + s + "\\s*】\\s*" +
-      "|請求項\\s*" + s + "\\s*" +
-      "|청구항\\s*" + s + "\\s*" +
-      "|权利要求\\s*" + s + "\\s*)";
-  }
-
-  function claim1(text) {
-    const t = String(text || "");
-    for (const hdr of CLAIM1_HEADER) {
-      const m = t.match(hdr);
-      if (!m) continue;
-      const rest = t.slice(m.index + m[0].length);
-      const m1 = rest.match(new RegExp("(?:^|\\n)\\s*" + claimMark(1), "i"));
-      if (!m1) continue;
-      const body = rest.slice(m1.index + m1[0].length);
-      const m2 = body.match(new RegExp("(?:\\n\\s*|(?=【))" + claimMark(2), "i"));
-      const claim = (m2 ? body.slice(0, m2.index) : body).replace(/\s+/g, " ").trim();
-      if (claim.length >= 20) return "1. " + claim.slice(0, 6000);
-    }
-    return "";
-  }
-
   // ── 审查结论判定 ──
-  const GRANT_NAME = /notice\s+of\s+allowance|decision\s+to\s+grant|decision\s+(on|of|for)\s+registration|登録査定|등록결정|intention\s+to\s+grant|text\s+intended\s+for\s+grant|issue\s+notification|patented|rule\s+71\(3\)/;
-  const REJECT_NAME = /final\s+rejection|拒絶査定|거절결정|decision\s+(?:of|on)\s+rejection|revocation|revoked/;
-  const WITHDRAW_NAME = /notice\s+of\s+abandonment|deemed\s+to\s+be\s+withdrawn|abandoned|みなし取下げ|포기/;
-  const PENDING_NAME = /non[- ]final|reasons?\s+(for|of)\s+refusal|拒絶理由|거절이유|notice\s+of\s+reasons|office\s+action|communication\s+from\s+the\s+examin/;
-  const GRANT_TEXT = /notice\s+of\s+allowance|decision\s+to\s+grant|登録査定|등록결정|intention\s+to\s+grant|decision\s+(on|of|for)\s+registration|text\s+intended\s+for\s+grant/;
-  const REJECT_TEXT = /final\s+rejection|decision\s+of\s+rejection|拒絶査定|거절결정/;
+  const GRANT_NAME = /notice[\s_]+of[\s_]+allowance|decision[\s_]+to[\s_]+grant|decision[\s_]+(on|of|for)[\s_]+registration|登録査定|등록결정|intention[\s_]+to[\s_]+grant|text[\s_]+intended[\s_]+for[\s_]+grant|issue[\s_]+notification|patented|rule\s+71\(3\)/;
+  const REJECT_NAME = /final[\s_]+rejection|拒絶査定|거절결정|decision[\s_]+(?:of|on)[\s_]+rejection|revocation|revoked/;
+  const WITHDRAW_NAME = /notice[\s_]+of[\s_]+abandonment|deemed[\s_]+to[\s_]+be[\s_]+withdrawn|abandoned|みなし取下げ|포기/;
+  const PENDING_NAME = /non[- ]final|reasons?[\s_]+(for|of)[\s_]+refusal|拒絶理由|거절이유|notice[\s_]+of[\s_]+reasons|office[\s_]+action|communication[\s_]+from[\s_]+the[\s_]+examin/;
+  const GRANT_TEXT = /notice[\s_]+of[\s_]+allowance|decision[\s_]+to[\s_]+grant|登録査定|등록결정|intention[\s_]+to[\s_]+grant|decision[\s_]+(on|of|for)[\s_]+registration|text[\s_]+intended[\s_]+for[\s_]+grant/;
+  const REJECT_TEXT = /final[\s_]+rejection|decision\s+of\s+rejection|拒絶査定|거절결정/;
   const PENDING_TEXT = /claims?[^.\n]{0,80}?(?:are|is|have\s+been)\s+rejected/;
-  const WITHDRAW_TEXT = /notice\s+of\s+abandonment|deemed\s+to\s+be\s+withdrawn|abandoned|みなし取下げ/;
+  const WITHDRAW_TEXT = /notice[\s_]+of[\s_]+abandonment|deemed[\s_]+to[\s_]+be[\s_]+withdrawn|abandoned|みなし取下げ/;
   const AMEND_OR_SEARCH_NAME = /amendment|reply|response|remarks|written\s+opinion|search\s+report|list\s+of\s+references|意見|보정|補正|答弁|의견|search\s+strategy/;
 
   function detectConclusion(text, docName = "") {
@@ -175,12 +136,12 @@ const GDX = (() => {
   }
 
   // ── 文书类型判定 ──
-  const OA_PATTERNS = [/office\s*action/i, /non[- ]final/i, /final\s+rejection/i,
-    /notice\s+of\s+allowance/i, /notice\s+of\s+abandonment/i,
-    /intention\s+to\s+grant/i, /text\s+intended\s+for\s+grant/i,
+  const OA_PATTERNS = [/office\s*action/i, /non[- ]final/i, /final[\s_]+rejection/i,
+    /notice[\s_]+of[\s_]+allowance/i, /notice[\s_]+of[\s_]+abandonment/i,
+    /intention[\s_]+to[\s_]+grant/i, /text[\s_]+intended[\s_]+for[\s_]+grant/i,
     /notification\s+of\s+(the\s+)?reasons?\s*for\s*refusal/i,
     /decision\s+(on|of|for)\s+(registration|rejection)/i,
-    /decision\s+to\s+grant/i, /reasons?\s+for\s+refusal/i,
+    /decision[\s_]+to[\s_]+grant/i, /reasons?\s+for\s+refusal/i,
     /communication\s+(from|under|pursuant)/i,
     /examination\s+started|examination\s+procedure/i,
     /拒絶理由通知|拒絶査定|登録査定|査定/,
@@ -200,5 +161,5 @@ const GDX = (() => {
     return "other";
   }
 
-  return { extractCitations, extractClaims, claim1, isGrantName, detectConclusion, detectDocType, norm };
+  return { extractCitations, extractClaims, isGrantName, detectConclusion, detectDocType, norm };
 })();
