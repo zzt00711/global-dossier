@@ -1,0 +1,95 @@
+{
+  "state": "done",
+  "issue": 70,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-23T01:48:01+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117597607A（4 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  864 KB",
+    "    OK  US Search information including classification, databases and other search related notes  62 KB",
+    "    OK  US Examiner's search strategy and results  1492 KB",
+    "    OK  US Preliminary Amendment  35 KB"
+  ],
+  "query": "CN117597607A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN117597607A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-23T01:48:04+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202218568323.A",
+        "status": "ok",
+        "doc_total": 43,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-06-10",
+            "status": "ok",
+            "bytes": 884408,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/70/CN117597607A/US/2024-06-10_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_5TK9NXBLUEX9.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-06-10",
+            "status": "ok",
+            "bytes": 63035,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/70/CN117597607A/US/2024-06-10_US_Search_information_including_classification%2C_databases_and_o_5TK9QXBLUEX9.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2024-06-10",
+            "status": "ok",
+            "bytes": 1528232,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/70/CN117597607A/US/2024-06-10_US_Examiner%27s_search_strategy_and_results_5TK9YXBLUEX9.pdf",
+            "error": null
+          },
+          {
+            "name": "Preliminary Amendment",
+            "family": "applicant",
+            "date": "2023-12-08",
+            "status": "ok",
+            "bytes": 36107,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/70/CN117597607A/US/2023-12-08_US_Preliminary_Amendment_Q7VALGREENX8.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280047007.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "IB.2022056001.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T01:48:30+00:00"
+}
