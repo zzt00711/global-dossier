@@ -1,0 +1,136 @@
+{
+  "state": "done",
+  "issue": 71,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-23T06:08:28+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118276202A（4 篇/局）",
+    "    OK  US Non-Final Rejection  368 KB",
+    "    OK  US Search information including classification, databases and other search related notes  33 KB",
+    "    OK  US Examiner's search strategy and results  406 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  13 KB",
+    "    ERR KR Written Decision on Registration  [1] 情報が取得できませんでした。",
+    "    ERR KR Request for the Submission of an Opinion  [1] 情報が取得できませんでした。",
+    "    OK  KR Written Opinion  209 KB",
+    "    OK  KR Amendment including Specification etc.  66 KB"
+  ],
+  "query": "CN118276202A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN118276202A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "KR": 1
+    },
+    "generated_at": "2026-10-23T06:08:30+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202318535786.A",
+        "status": "ok",
+        "doc_total": 46,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-02",
+            "status": "ok",
+            "bytes": 376572,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/US/2026-06-02_US_Non-Final_Rejection_EABG4X110X23.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-02",
+            "status": "ok",
+            "bytes": 34047,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/US/2026-06-02_US_Search_information_including_classification%2C_databases_and_o_EABG8X110X23.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-06-02",
+            "status": "ok",
+            "bytes": 415369,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/US/2026-06-02_US_Examiner%27s_search_strategy_and_results_EABGFX110X23.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2026-09-02",
+            "status": "ok",
+            "bytes": 12843,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/US/2026-09-02_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_YVSRM148X102.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202311749758.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20220190034.A",
+        "status": "ok",
+        "doc_total": 6,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-08-03",
+            "status": "failed",
+            "bytes": null,
+            "url": "",
+            "error": "[1] 情報が取得できませんでした。"
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-10-30",
+            "status": "failed",
+            "bytes": null,
+            "url": "",
+            "error": "[1] 情報が取得できませんでした。"
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2026-02-10",
+            "status": "ok",
+            "bytes": 213948,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/KR/2026-02-10_KR_Written_Opinion_017241951_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-02-10",
+            "status": "ok",
+            "bytes": 67465,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/71/CN118276202A/KR/2026-02-10_KR_Amendment_including_Specification_etc_017243391_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T06:10:57+00:00"
+}
