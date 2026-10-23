@@ -1,0 +1,154 @@
+{
+  "state": "done",
+  "issue": 69,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-23T01:34:10+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117940815A（4 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  457 KB",
+    "    OK  US Non-Final Rejection  370 KB",
+    "    OK  US Search information including classification, databases and other search related notes  21 KB",
+    "    OK  US Examiner's search strategy and results  286 KB",
+    "    OK  EP Communication from the Examining Division  105 KB",
+    "    OK  EP Copy of the international search report  77 KB",
+    "    OK  EP Amendments received before examination  112 KB",
+    "    OK  EP Amended claims filed after receipt of (European) search report  63 KB"
+  ],
+  "query": "CN117940815A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN117940815A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1,
+      "MX": 1
+    },
+    "generated_at": "2026-10-23T01:34:11+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202218576907.A",
+        "status": "ok",
+        "doc_total": 55,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 467945,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/US/2026-09-11_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_SZI4AX69X150.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 378989,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/US/2026-03-25_US_Non-Final_Rejection_WTVNF5X143X2.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 21630,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/US/2026-09-11_US_Search_information_including_classification%2C_databases_and_o_SZI4DX69X150.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 292931,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/US/2026-09-11_US_Examiner%27s_search_strategy_and_results_SZI4KX69X150.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22751200.A",
+        "status": "ok",
+        "doc_total": 33,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2026-07-02",
+            "status": "ok",
+            "bytes": 107265,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/EP/2026-07-02_EP_Communication_from_the_Examining_Division_5ZJDA1S6VJHJ.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2023-01-12",
+            "status": "ok",
+            "bytes": 78642,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/EP/2023-01-12_EP_Copy_of_the_international_search_report_LFT8U46ZR13D.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2024-08-13",
+            "status": "ok",
+            "bytes": 114698,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/EP/2024-08-13_EP_Amendments_received_before_examination_IET5835SFAUP.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2024-08-13",
+            "status": "ok",
+            "bytes": 64756,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/69/CN117940815A/EP/2024-08-13_EP_Amended_claims_filed_after_receipt_of_%28European%29_search_repo_IETGR1V0DISI.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280053429.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022036217.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "MX",
+        "app_num": "MX.2024000009.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T01:34:55+00:00"
+}
