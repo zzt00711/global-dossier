@@ -1,0 +1,580 @@
+{
+  "state": "done",
+  "issue": 68,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-23T01:20:09+00:00",
+  "logs": [
+    "命中缓存 CN119158130A（4 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
+  ],
+  "query": "CN119158130A",
+  "offices": [
+    "JP",
+    "EP",
+    "US"
+  ],
+  "max_docs": 2,
+  "cached": true,
+  "result": {
+    "query": "CN119158130A",
+    "family_counts": {
+      "JP": 6,
+      "US": 5,
+      "EP": 6,
+      "CN": 4,
+      "AU": 3,
+      "WO": 2,
+      "MX": 2
+    },
+    "generated_at": "2026-10-22T10:22:55+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2020572756.A",
+        "status": "ok",
+        "doc_total": 36,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2023-12-04",
+            "status": "ok",
+            "bytes": 106654,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2023-12-04_JP_Decision_to_Grant_a_Patent_123596665_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2023-08-07",
+            "status": "ok",
+            "bytes": 143983,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2023-08-07_JP_Notice_of_Reasons_for_Refusal_123387092_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2021544387.A",
+        "status": "ok",
+        "doc_total": 42,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2022-11-21",
+            "status": "ok",
+            "bytes": 106588,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2022-11-21_JP_Decision_to_Grant_a_Patent_122580554_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2022-08-15",
+            "status": "ok",
+            "bytes": 124905,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2022-08-15_JP_Notice_of_Reasons_for_Refusal_122389722_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2022204686.A",
+        "status": "ok",
+        "doc_total": 21,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-06-24",
+            "status": "ok",
+            "bytes": 106078,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2024-06-24_JP_Decision_to_Grant_a_Patent_124283926_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-03-04",
+            "status": "ok",
+            "bytes": 155062,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2024-03-04_JP_Notice_of_Reasons_for_Refusal_124077649_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2024000225.A",
+        "status": "ok",
+        "doc_total": 16,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-08-05",
+            "status": "ok",
+            "bytes": 106999,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2024-08-05_JP_Decision_to_Grant_a_Patent_124371873_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-05-13",
+            "status": "ok",
+            "bytes": 131835,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2024-05-13_JP_Notice_of_Reasons_for_Refusal_124214950_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2024118887.A",
+        "status": "ok",
+        "doc_total": 16,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-05-27",
+            "status": "ok",
+            "bytes": 106959,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2025-05-27_JP_Decision_to_Grant_a_Patent_125221611_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-11-18",
+            "status": "ok",
+            "bytes": 188857,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2024-11-18_JP_Notice_of_Reasons_for_Refusal_124560035_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2024152286.A",
+        "status": "ok",
+        "doc_total": 20,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-03-31",
+            "status": "ok",
+            "bytes": 214019,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2026-03-31_JP_Notice_of_Reasons_for_Refusal_126132453_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-07-08",
+            "status": "ok",
+            "bytes": 205747,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/JP/2025-07-08_JP_Notice_of_Reasons_for_Refusal_125305646_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.201917255615.A",
+        "status": "ok",
+        "doc_total": 135,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-02-01",
+            "status": "ok",
+            "bytes": 130256,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2023-02-01_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_VM36KXBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2022-05-11",
+            "status": "ok",
+            "bytes": 785025,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2022-05-11_US_Final_Rejection_YC3DKXBLUEX1.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.201917426362.A",
+        "status": "ok",
+        "doc_total": 109,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-07-27",
+            "status": "ok",
+            "bytes": 130049,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2022-07-27_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_7A7RNXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2022-02-14",
+            "status": "ok",
+            "bytes": 830242,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2022-02-14_US_Non-Final_Rejection_5TIMKDFLYX11.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217959368.A",
+        "status": "ok",
+        "doc_total": 56,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-05-05",
+            "status": "ok",
+            "bytes": 801899,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2023-05-05_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_21BQ8XBLUEX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-01-18",
+            "status": "ok",
+            "bytes": 1870540,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2023-01-18_US_Non-Final_Rejection_WECGIXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318112559.A",
+        "status": "ok",
+        "doc_total": 91,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-06-17",
+            "status": "ok",
+            "bytes": 84549,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2026-06-17_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_B1AQ24X50X14.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-01-20",
+            "status": "ok",
+            "bytes": 1075517,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2026-01-20_US_Non-Final_Rejection_0Z2YF149X195.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318232058.A",
+        "status": "ok",
+        "doc_total": 90,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-07-30",
+            "status": "ok",
+            "bytes": 1345630,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2026-07-30_US_Final_Rejection_0QYJOX247X24.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-13",
+            "status": "ok",
+            "bytes": 1118173,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/US/2026-03-13_US_Non-Final_Rejection_J5JI8130X101.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.19825205.A",
+        "status": "ok",
+        "doc_total": 60,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2023-04-14",
+            "status": "ok",
+            "bytes": 105091,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2023-04-14_EP_Decision_to_grant_a_European_patent_PF8JV1EE207Z.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2022-03-31",
+            "status": "ok",
+            "bytes": 189584,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2022-03-31_EP_European_search_opinion_7ORXFVS7Q7SH.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.23172224.A",
+        "status": "ok",
+        "doc_total": 51,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2024-12-05",
+            "status": "ok",
+            "bytes": 93620,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2024-12-05_EP_Decision_to_grant_a_European_patent_0NKX69FQTS9A.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-11-02",
+            "status": "ok",
+            "bytes": 19621,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2023-11-02_EP_European_search_opinion_V8DGJ16AAPQI.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.24223611.A",
+        "status": "ok",
+        "doc_total": 55,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2026-07-23",
+            "status": "ok",
+            "bytes": 96249,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2026-07-23_EP_Decision_to_grant_a_European_patent_H920U1JCGT01.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-05-28",
+            "status": "ok",
+            "bytes": 277745,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2025-05-28_EP_European_search_opinion_2F7P0M90TBU4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.19912954.A",
+        "status": "ok",
+        "doc_total": 52,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2023-03-30",
+            "status": "ok",
+            "bytes": 106577,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2023-03-30_EP_Decision_to_grant_a_European_patent_SOSZY17HUGX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2022-04-08",
+            "status": "ok",
+            "bytes": 41380,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2022-04-08_EP_Communication_from_the_Examining_Division_Q1UO21V1K2AX.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.23169431.A",
+        "status": "ok",
+        "doc_total": 73,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2025-06-05",
+            "status": "ok",
+            "bytes": 98150,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2025-06-05_EP_Decision_to_grant_a_European_patent_YADH3IJVSAWB.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-11-23",
+            "status": "ok",
+            "bytes": 19637,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2023-11-23_EP_European_search_opinion_BQ8BXGKZ4AC8.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.25184843.A",
+        "status": "ok",
+        "doc_total": 50,
+        "picked": [
+          {
+            "name": "Text intended for grant (clean copy)",
+            "family": "final_grant",
+            "date": "2026-09-22",
+            "status": "ok",
+            "bytes": 15183848,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2026-09-22_EP_Text_intended_for_grant_%28clean_copy%29_5YBZHZOUMP1F.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2026-01-02",
+            "status": "ok",
+            "bytes": 227879,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/68/CN119158130A/EP/2026-01-02_EP_European_search_opinion_109QW1WIHVBT.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201980054652.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202411109598.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201980094588.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202411391136.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2019426678.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2023202241.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2024259668.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "AU.2019050655.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "IB.2019060432.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "MX",
+        "app_num": "MX.2021009132.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "MX",
+        "app_num": "MX.2020014259.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T01:20:09+00:00"
+}
