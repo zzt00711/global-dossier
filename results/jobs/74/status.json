@@ -1,0 +1,204 @@
+{
+  "state": "done",
+  "issue": 74,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-23T10:25:42+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116194352A（4 篇/局）",
+    "    OK  JP 拒絶理由通知書  257 KB",
+    "    OK  JP 拒絶理由通知書  190 KB",
+    "    OK  JP 検索報告書  250 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  US Non-Final Rejection  1336 KB",
+    "    OK  US Final Rejection  1230 KB",
+    "    OK  US Search information including classification, databases and other search related notes  31 KB",
+    "    OK  US Examiner's search strategy and results  419 KB",
+    "    OK  EP Communication from the Examining Division  46 KB",
+    "    OK  EP Copy of the international search report  98 KB",
+    "    OK  EP Copy of the international search report  101 KB",
+    "    OK  EP Reply to communication from the Examining Division  470 KB"
+  ],
+  "query": "CN116194352A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN116194352A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-10-23T10:25:44+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023510358.A",
+        "status": "ok",
+        "doc_total": 40,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-01-27",
+            "status": "ok",
+            "bytes": 263318,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/JP/2026-01-27_JP_Notice_of_Reasons_for_Refusal_126005541_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-08-13",
+            "status": "ok",
+            "bytes": 194429,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/JP/2024-08-13_JP_Notice_of_Reasons_for_Refusal_124384967_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2024-01-23",
+            "status": "ok",
+            "bytes": 255651,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/JP/2024-01-23_JP_Search_Report_by_Registered_Search_Organization_824006899_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2023-05-22",
+            "status": "ok",
+            "bytes": 69146,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/JP/2023-05-22_JP_International_Search_Report_311671143_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318183431.A",
+        "status": "ok",
+        "doc_total": 115,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-08-03",
+            "status": "ok",
+            "bytes": 1367675,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/US/2026-08-03_US_Non-Final_Rejection_A8OM2X71X179.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-02-23",
+            "status": "ok",
+            "bytes": 1259556,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/US/2026-02-23_US_Final_Rejection_3JBFH160X152.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-08-03",
+            "status": "ok",
+            "bytes": 31997,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/US/2026-08-03_US_Search_information_including_classification%2C_databases_and_o_A8OM6X71X179.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-08-03",
+            "status": "ok",
+            "bytes": 428636,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/US/2026-08-03_US_Examiner%27s_search_strategy_and_results_A8OM8X71X179.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21783148.A",
+        "status": "ok",
+        "doc_total": 39,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2025-03-18",
+            "status": "ok",
+            "bytes": 46896,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/EP/2025-03-18_EP_Communication_from_the_Examining_Division_HKP4SMOV34AV.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-03-17",
+            "status": "ok",
+            "bytes": 100748,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/EP/2022-03-17_EP_Copy_of_the_international_search_report_KDDGX17TK3B9.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-03-17",
+            "status": "ok",
+            "bytes": 103537,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/EP/2022-03-17_EP_Copy_of_the_international_search_report_KDDGZAN6I52Q.pdf",
+            "error": null
+          },
+          {
+            "name": "Reply to communication from the Examining Division",
+            "family": "applicant",
+            "date": "2025-07-03",
+            "status": "ok",
+            "bytes": 481039,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/74/CN116194352A/EP/2025-07-03_EP_Reply_to_communication_from_the_Examining_Division_FKCIL10RG2FK.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180062758.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2021075166.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102020123831.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T10:27:00+00:00"
+}
