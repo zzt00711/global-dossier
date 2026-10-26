@@ -1,0 +1,104 @@
+{
+  "state": "done",
+  "issue": 77,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-26T01:18:01+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117063087A（4 篇/局）",
+    "    OK  US Non-Final Rejection  538 KB",
+    "    OK  US Non-Final Rejection  505 KB",
+    "    OK  US Search information including classification, databases and other search related notes  23 KB",
+    "    OK  US Examiner's search strategy and results  353 KB"
+  ],
+  "query": "CN117063087A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN117063087A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "WO": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-10-26T01:18:03+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202218568630.A",
+        "status": "ok",
+        "doc_total": 56,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 550829,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/77/CN117063087A/US/2026-06-03_US_Non-Final_Rejection_MEPXZX139X84.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-11-26",
+            "status": "ok",
+            "bytes": 517110,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/77/CN117063087A/US/2025-11-26_US_Non-Final_Rejection_Z0SAB214X224.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 24062,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/77/CN117063087A/US/2026-06-03_US_Search_information_including_classification%2C_databases_and_o_MEPY3X139X84.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 361834,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/77/CN117063087A/US/2026-06-03_US_Examiner%27s_search_strategy_and_results_MEPY6X139X84.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280024195.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2022067403.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102021118563.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-26T01:18:27+00:00"
+}
