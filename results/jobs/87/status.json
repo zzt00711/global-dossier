@@ -1,0 +1,263 @@
+{
+  "state": "done",
+  "issue": 87,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-26T10:24:20+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118338869A（4 篇/局）",
+    "    OK  JP 特許査定  111 KB",
+    "    OK  JP 検索報告書  202 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  JP 請求の範囲  135 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  502 KB",
+    "    OK  US Search information including classification, databases and other search related notes  24 KB",
+    "    OK  US Examiner's search strategy and results  481 KB",
+    "    OK  US Response to Election / Restriction Filed  26 KB",
+    "    OK  EP Communication from the Examining Division  104 KB",
+    "    OK  EP European search opinion  156 KB",
+    "    OK  EP Supplementary European search report  56 KB",
+    "    OK  EP Copy of the international search report  52 KB",
+    "    OK  KR Amendment to Bibliographic Information  37 KB",
+    "    OK  KR Amendment to Bibliographic Information  42 KB",
+    "    OK  KR Request for Examination  36 KB",
+    "    OK  KR Request for Amendment  55 KB"
+  ],
+  "query": "CN118338869A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN118338869A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-26T10:24:22+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2024520701.A",
+        "status": "ok",
+        "doc_total": 25,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-10-06",
+            "status": "ok",
+            "bytes": 113629,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/JP/2026-10-06_JP_Decision_to_Grant_a_Patent_126432753_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-09-03",
+            "status": "ok",
+            "bytes": 207080,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/JP/2026-09-03_JP_Search_Report_by_Registered_Search_Organization_826104941_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2024-06-17",
+            "status": "ok",
+            "bytes": 69341,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/JP/2024-06-17_JP_International_Search_Report_411960613_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2024-05-22",
+            "status": "ok",
+            "bytes": 138268,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/JP/2024-05-22_JP_Claims_401107837_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217937076.A",
+        "status": "ok",
+        "doc_total": 182,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-01-21",
+            "status": "ok",
+            "bytes": 513957,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/US/2025-01-21_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_AK3FWWFYGX54.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-01-21",
+            "status": "ok",
+            "bytes": 24482,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/US/2025-01-21_US_Search_information_including_classification%2C_databases_and_o_AK3FZWFYGX54.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-01-21",
+            "status": "ok",
+            "bytes": 492127,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/US/2025-01-21_US_Examiner%27s_search_strategy_and_results_AK3G1WFYGX54.pdf",
+            "error": null
+          },
+          {
+            "name": "Response to Election / Restriction Filed",
+            "family": "applicant",
+            "date": "2024-11-19",
+            "status": "ok",
+            "bytes": 26176,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/US/2024-11-19_US_Response_to_Election___Restriction_Filed_2PTSEWFYGX61.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22879403.A",
+        "status": "ok",
+        "doc_total": 34,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2026-07-13",
+            "status": "ok",
+            "bytes": 106233,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/EP/2026-07-13_EP_Communication_from_the_Examining_Division_SVBTH5RCQ5D0.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-07-01",
+            "status": "ok",
+            "bytes": 160203,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/EP/2025-07-01_EP_European_search_opinion_LTAO1LS7VRBL.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2025-07-01",
+            "status": "ok",
+            "bytes": 57460,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/EP/2025-07-01_EP_Supplementary_European_search_report_LMR4D13Z4XIV.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2023-04-13",
+            "status": "ok",
+            "bytes": 53731,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/EP/2023-04-13_EP_Copy_of_the_international_search_report_KNTU5TTCFZPZ.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280079853.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20247015075.A",
+        "status": "ok",
+        "doc_total": 5,
+        "picked": [
+          {
+            "name": "Amendment to Bibliographic Information",
+            "family": "applicant",
+            "date": "2024-05-10",
+            "status": "ok",
+            "bytes": 38346,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/KR/2024-05-10_KR_Amendment_to_Bibliographic_Information_051112381_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment to Bibliographic Information",
+            "family": "applicant",
+            "date": "2024-05-10",
+            "status": "ok",
+            "bytes": 43256,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/KR/2024-05-10_KR_Amendment_to_Bibliographic_Information_051199229_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2025-09-29",
+            "status": "ok",
+            "bytes": 36671,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/KR/2025-09-29_KR_Request_for_Examination_110730722_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Amendment",
+            "family": "applicant",
+            "date": "2024-05-08",
+            "status": "ok",
+            "bytes": 56830,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/87/CN118338869A/KR/2024-05-08_KR_Request_for_Amendment_007669484_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3234381.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2022360960.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022077352.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-26T10:25:52+00:00"
+}
