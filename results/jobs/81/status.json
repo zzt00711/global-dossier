@@ -1,0 +1,136 @@
+{
+  "state": "done",
+  "issue": 81,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-26T03:07:51+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116778833A（4 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  167 KB",
+    "    OK  US Non-Final Rejection  1943 KB",
+    "    OK  US Search information including classification, databases and other search related notes  89 KB",
+    "    OK  US Examiner's search strategy and results  900 KB",
+    "    OK  KR Written Decision on Registration  64 KB",
+    "    OK  KR Request for the Submission of an Opinion  133 KB",
+    "    OK  KR Notice of Final Rejection  64 KB",
+    "    OK  KR Written Opinion  54 KB"
+  ],
+  "query": "CN116778833A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN116778833A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "KR": 1
+    },
+    "generated_at": "2026-10-26T03:07:52+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202318110624.A",
+        "status": "ok",
+        "doc_total": 42,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-03-27",
+            "status": "ok",
+            "bytes": 171397,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/US/2024-03-27_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_GOLNLXBLUEX3.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-12-04",
+            "status": "ok",
+            "bytes": 1989594,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/US/2023-12-04_US_Non-Final_Rejection_DYSH3GREENX6.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-02-28",
+            "status": "ok",
+            "bytes": 91148,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/US/2024-02-28_US_Search_information_including_classification%2C_databases_and_o_WU9WKXBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2024-02-28",
+            "status": "ok",
+            "bytes": 921334,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/US/2024-02-28_US_Examiner%27s_search_strategy_and_results_WU9WMXBLUEX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310268322.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20220033982.A",
+        "status": "ok",
+        "doc_total": 16,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-06-24",
+            "status": "ok",
+            "bytes": 65980,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/KR/2026-06-24_KR_Written_Decision_on_Registration_057006372_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-04-07",
+            "status": "ok",
+            "bytes": 136520,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/KR/2025-04-07_KR_Request_for_the_Submission_of_an_Opinion_034154718_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Notice of Final Rejection",
+            "family": "rejection",
+            "date": "2025-11-17",
+            "status": "ok",
+            "bytes": 65227,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/KR/2025-11-17_KR_Notice_of_Final_Rejection_111374404_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2026-02-19",
+            "status": "ok",
+            "bytes": 55443,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/81/CN116778833A/KR/2026-02-19_KR_Written_Opinion_020397340_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-26T03:08:43+00:00"
+}

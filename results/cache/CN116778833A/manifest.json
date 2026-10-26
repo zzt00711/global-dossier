@@ -5,13 +5,14 @@
     "NUM_PART": "116778833",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-10-26T03:02:55+00:00",
+  "generated_at": "2026-10-26T03:07:52+00:00",
   "offices": [
+    "JP",
     "EP",
     "US",
     "KR"
   ],
-  "max_docs_per_office": 1,
+  "max_docs_per_office": 4,
   "download": true,
   "family_counts": {
     "US": 1,
@@ -37,6 +38,39 @@
           "tender_date": "2024-03-27",
           "file": "US/2024-03-27_US_Notice_of_Allowance_and_Fees_Due_(PTOL-85)_GOLNLXBLUEX3.pdf",
           "bytes": 171397,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LPLDYSH3GREENX6",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2023-12-04",
+          "family": "rejection",
+          "tender_date": "2023-12-04",
+          "file": "US/2023-12-04_US_Non-Final_Rejection_DYSH3GREENX6.pdf",
+          "bytes": 1989594,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LT2WU9WKXBLUEX5",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2024-02-28",
+          "family": "citation",
+          "tender_date": "2024-02-28",
+          "file": "US/2024-02-28_US_Search_information_including_classification,_databases_and_o_WU9WKXBLUEX5.pdf",
+          "bytes": 91148,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LT2WU9WMXBLUEX5",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2024-02-28",
+          "family": "citation",
+          "tender_date": "2024-02-28",
+          "file": "US/2024-02-28_US_Examiner's_search_strategy_and_results_WU9WMXBLUEX5.pdf",
+          "bytes": 921334,
           "status": "ok"
         }
       ],
@@ -144,7 +178,7 @@
           "date": "2023-12-04",
           "family": "rejection",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "LPLDYSH4GREENX6",
@@ -248,7 +282,7 @@
           "date": "2024-02-28",
           "family": "citation",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "LT2WU9WLXBLUEX5",
@@ -264,7 +298,7 @@
           "date": "2024-02-28",
           "family": "citation",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "LT2WU9WOXBLUEX5",
@@ -409,6 +443,39 @@
           "file": "KR/2026-06-24_KR_Written_Decision_on_Registration_057006372_KR.pdf",
           "bytes": 65980,
           "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952025034154718_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2025-04-07",
+          "family": "rejection",
+          "tender_date": "2025-04-07",
+          "file": "KR/2025-04-07_KR_Request_for_the_Submission_of_an_Opinion_034154718_KR.pdf",
+          "bytes": 136520,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Final_Rejection_952025111374404_KR",
+          "name": "Notice of Final Rejection",
+          "name_en": "Notice of Final Rejection",
+          "date": "2025-11-17",
+          "family": "rejection",
+          "tender_date": "2025-11-17",
+          "file": "KR/2025-11-17_KR_Notice_of_Final_Rejection_111374404_KR.pdf",
+          "bytes": 65227,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_112026020397340_KR",
+          "name": "Written Opinion",
+          "name_en": "Written Opinion",
+          "date": "2026-02-19",
+          "family": "applicant",
+          "tender_date": "2026-02-19",
+          "file": "KR/2026-02-19_KR_Written_Opinion_020397340_KR.pdf",
+          "bytes": 55443,
+          "status": "ok"
         }
       ],
       "title": "SOURCE DRIVER OF DISPLAY PANNEL",
@@ -459,7 +526,7 @@
           "date": "2025-04-07",
           "family": "rejection",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Request_for_Extension_of_Designated_Period_112025063642923_KR",
@@ -515,7 +582,7 @@
           "date": "2025-11-17",
           "family": "rejection",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Written_Opinion_112026020397340_KR",
@@ -523,7 +590,7 @@
           "date": "2026-02-19",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Amendment_including_Specification_etc._112026020397496_KR",
