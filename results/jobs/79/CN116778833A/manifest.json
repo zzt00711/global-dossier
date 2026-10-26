@@ -1,0 +1,51 @@
+{
+  "query": "CN116778833A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116778833",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-26T03:01:16+00:00",
+  "offices": [
+    "JP"
+  ],
+  "max_docs_per_office": 1,
+  "download": true,
+  "family_counts": {
+    "US": 1,
+    "CN": 1,
+    "KR": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.202318110624.A",
+      "pub_nums": [
+        "US.2023298495.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202310268322.A",
+      "pub_nums": [
+        "CN.116778833.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20220033982.A",
+      "pub_nums": [
+        "KR.20230136362.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ]
+}
