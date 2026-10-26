@@ -1,0 +1,86 @@
+{
+  "state": "done",
+  "issue": 86,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-26T10:11:25+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116736855A（4 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  451 KB",
+    "    OK  US Final Rejection  1924 KB",
+    "    OK  US Non-Final Rejection  3070 KB",
+    "    OK  US Search information including classification, databases and other search related notes  41 KB"
+  ],
+  "query": "CN116736855A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "result": {
+    "query": "CN116736855A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-10-26T10:11:27+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217843546.A",
+        "status": "ok",
+        "doc_total": 51,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-12-12",
+            "status": "ok",
+            "bytes": 462290,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/86/CN116736855A/US/2024-12-12_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_F60PMWFYGX61.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-10-10",
+            "status": "ok",
+            "bytes": 1969725,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/86/CN116736855A/US/2024-10-10_US_Final_Rejection_JZWI9WFYGX62.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-06-26",
+            "status": "ok",
+            "bytes": 3143421,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/86/CN116736855A/US/2024-06-26_US_Non-Final_Rejection_C4NNGXBLUEX3.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-12-12",
+            "status": "ok",
+            "bytes": 41855,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/86/CN116736855A/US/2024-12-12_US_Search_information_including_classification%2C_databases_and_o_F60QMWFYGX61.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310715813.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-26T10:12:08+00:00"
+}
