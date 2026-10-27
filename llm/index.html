@@ -339,7 +339,9 @@ function renderResult(data) {
 
   const rows = [];
   for (const m of members) {
-    const note = m.note ? '<div class="muted" style="font-weight:400;font-size:11px;line-height:1.45">' + esc(m.note) + "</div>" : "";
+    const total = (r.family_counts || {})[m.country];
+    const noteText = m.note || (total ? "该局同族成员 " + total + " 个" : "");
+    const note = noteText ? '<div class="muted" style="font-weight:400;font-size:11px;line-height:1.45">' + esc(noteText) + "</div>" : "";
     if (!m.picked || !m.picked.length) {
       if (NOISE_STATUS[m.status]) continue;
       rows.push('<tr><td class="country">' + m.country + note + '</td><td colspan="4" class="muted">'
