@@ -121,6 +121,7 @@ def slim_result(manifest: dict, issue: int) -> dict:
                 "doc_total": m.get("doc_total", 0),
                 "picked": picked,
                 "error": m.get("error"),
+                "note": m.get("note"),
             }
         )
     return {
