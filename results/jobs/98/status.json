@@ -1,0 +1,3025 @@
+{
+  "state": "done",
+  "issue": 98,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-27T09:09:17+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117425921A（2 篇/局）",
+    "    OK  JP 特許査定  107 KB",
+    "    OK  JP 拒絶理由通知書  176 KB",
+    "    OK  JP 特許査定  113 KB",
+    "    OK  JP 拒絶理由通知書  183 KB",
+    "    OK  JP 拒絶理由通知書  257 KB",
+    "    OK  JP 拒絶理由通知書  225 KB",
+    "    OK  JP 特許査定  106 KB",
+    "    OK  JP 拒絶理由通知書  216 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  JP 請求の範囲  151 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  JP 手続補正書（自発・内容）  118 KB",
+    "    OK  JP 拒絶理由通知書  241 KB",
+    "    OK  JP 検索報告書  220 KB",
+    "    OK  JP 拒絶理由通知書  231 KB",
+    "    OK  JP 検索報告書  205 KB",
+    "    OK  JP 拒絶理由通知書  213 KB",
+    "    OK  JP 検索報告書  195 KB",
+    "    OK  JP 拒絶理由通知書  160 KB",
+    "    OK  JP 検索報告書  230 KB",
+    "    OK  JP 拒絶理由通知書  152 KB",
+    "    OK  JP 検索報告書  217 KB",
+    "    OK  JP 拒絶理由通知書  163 KB",
+    "    OK  JP 検索報告書  232 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  78 KB",
+    "    OK  US Non-Final Rejection  503 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  390 KB",
+    "    OK  US Non-Final Rejection  222 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  824 KB",
+    "    OK  US Non-Final Rejection  504 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  465 KB",
+    "    OK  US Non-Final Rejection  882 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  461 KB",
+    "    OK  US Non-Final Rejection  508 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  489 KB",
+    "    OK  US Search information including classification, databases and other search related notes  24 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  472 KB",
+    "    OK  US Non-Final Rejection  539 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  24 KB",
+    "    OK  US Search information including classification, databases and other search related notes  51 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  45 KB",
+    "    OK  US Non-Final Rejection  519 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  24 KB",
+    "    OK  US Non-Final Rejection  529 KB",
+    "    OK  US Final Rejection  1192 KB",
+    "    OK  US Non-Final Rejection  562 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  877 KB",
+    "    OK  US Non-Final Rejection  1269 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  59 KB",
+    "    OK  US Non-Final Rejection  840 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  125 KB",
+    "    OK  US Non-Final Rejection  1227 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  43 KB",
+    "    OK  US Non-Final Rejection  823 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  125 KB",
+    "    OK  US Final Rejection  435 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  46 KB",
+    "    OK  US Search information including classification, databases and other search related notes  53 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  55 KB",
+    "    OK  US Final Rejection  459 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  646 KB",
+    "    OK  US Non-Final Rejection  543 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  841 KB",
+    "    OK  US Final Rejection  922 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  1038 KB",
+    "    OK  US Final Rejection  1976 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  26 KB",
+    "    OK  US Non-Final Rejection  683 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  169 KB",
+    "    OK  US Non-Final Rejection  1464 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  25 KB",
+    "    OK  US Search information including classification, databases and other search related notes  52 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  307 KB",
+    "    OK  US Non-Final Rejection  404 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  25 KB",
+    "    OK  US Non-Final Rejection  526 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  1078 KB",
+    "    OK  US Final Rejection  1247 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  425 KB",
+    "    OK  US Final Rejection  401 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  572 KB",
+    "    OK  US Non-Final Rejection  791 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  25 KB",
+    "    OK  US Non-Final Rejection  909 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  26 KB",
+    "    OK  US Search information including classification, databases and other search related notes  92 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  239 KB",
+    "    OK  US Non-Final Rejection  788 KB",
+    "    OK  US Non-Final Rejection  541 KB",
+    "    OK  US Final Rejection  880 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  26 KB",
+    "    OK  US Non-Final Rejection  603 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  169 KB",
+    "    OK  US Non-Final Rejection  1203 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  25 KB",
+    "    OK  US Final Rejection  1370 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  51 KB",
+    "    OK  US Non-Final Rejection  818 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  348 KB",
+    "    OK  US Non-Final Rejection  742 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  51 KB",
+    "    OK  US Non-Final Rejection  1426 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  24 KB",
+    "    OK  US Non-Final Rejection  788 KB",
+    "    OK  US Non-Final Rejection  530 KB",
+    "    OK  US Final Rejection  547 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  138 KB",
+    "    OK  US Outgoing - PCT/ISA/210 - International Search Report  614 KB",
+    "    OK  US Final Rejection  876 KB",
+    "    OK  US Non-Final Rejection  862 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  324 KB",
+    "    OK  US Non-Final Rejection  1276 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  26 KB",
+    "    OK  US Final Rejection  914 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  645 KB",
+    "    OK  US Non-Final Rejection  791 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  780 KB",
+    "    OK  US Search information including classification, databases and other search related notes  92 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  791 KB",
+    "    OK  US Search information including classification, databases and other search related notes  90 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  645 KB",
+    "    OK  US Non-Final Rejection  673 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  58 KB",
+    "    OK  US Search information including classification, databases and other search related notes  92 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  348 KB",
+    "    OK  US Non-Final Rejection  653 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  388 KB",
+    "    OK  US Non-Final Rejection  628 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  324 KB",
+    "    OK  US Non-Final Rejection  403 KB",
+    "    OK  US Non-Final Rejection  585 KB",
+    "    OK  US Final Rejection  532 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  445 KB",
+    "    OK  US Non-Final Rejection  1922 KB",
+    "    OK  US Final Rejection  542 KB",
+    "    OK  US Non-Final Rejection  475 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  581 KB",
+    "    OK  US Non-Final Rejection  1054 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  386 KB",
+    "    OK  US Non-Final Rejection  1112 KB",
+    "    OK  US Non-Final Rejection  733 KB",
+    "    OK  US Search information including classification, databases and other search related notes  39 KB",
+    "    OK  US Non-Final Rejection  482 KB",
+    "    OK  US Search information including classification, databases and other search related notes  25 KB",
+    "    OK  US Non-Final Rejection  346 KB",
+    "    OK  US Search information including classification, databases and other search related notes  25 KB",
+    "    OK  US Response to Election / Restriction Filed  23 KB",
+    "    OK  US Applicant Arguments/Remarks Made in an Amendment  34 KB",
+    "    OK  US Claims  93 KB",
+    "    OK  US Notice of Publication  55 KB",
+    "    OK  US Non-Final Rejection  474 KB",
+    "    OK  US Search information including classification, databases and other search related notes  25 KB",
+    "    OK  US Non-Final Rejection  892 KB",
+    "    OK  US Search information including classification, databases and other search related notes  26 KB",
+    "    OK  US Non-Final Rejection  971 KB",
+    "    OK  US Search information including classification, databases and other search related notes  21 KB",
+    "    OK  US Non-Final Rejection  748 KB",
+    "    OK  US Search information including classification, databases and other search related notes  17 KB",
+    "    OK  US Non-Final Rejection  963 KB",
+    "    OK  US Search information including classification, databases and other search related notes  35 KB",
+    "    OK  US Claims  148 KB",
+    "    OK  US Miscellaneous Communication to Applicant - No Action Count  23 KB",
+    "    OK  EP European search opinion  169 KB",
+    "    OK  EP Supplementary European search report  56 KB",
+    "    OK  EP European search opinion  115 KB",
+    "    OK  EP Supplementary European search report  60 KB",
+    "    OK  EP European search opinion  109 KB",
+    "    OK  EP Supplementary European search report  46 KB",
+    "    OK  EP European search opinion  209 KB",
+    "    OK  EP Supplementary European search report  41 KB",
+    "    OK  EP Communication from the Examining Division  103 KB",
+    "    OK  EP European search opinion  111 KB",
+    "    OK  EP European search opinion  419 KB",
+    "    ERR EP Supplementary European search report  [1] 情報が取得できませんでした。",
+    "    OK  KR Written Decision on Registration  69 KB",
+    "    OK  KR Request for the Submission of an Opinion  72 KB",
+    "    OK  KR Amendment including Specification etc.  59 KB",
+    "    OK  KR Amendment including Specification etc.  63 KB",
+    "    OK  KR Request for the Submission of an Opinion  54 KB",
+    "    OK  KR Amendment including Specification etc.  80 KB",
+    "    OK  KR Written Decision on Registration  69 KB",
+    "    OK  KR Amendment including Specification etc.  80 KB",
+    "    OK  KR Request for the Submission of an Opinion  97 KB",
+    "    OK  KR Written Opinion  89 KB",
+    "    OK  KR Amendment including Specification etc.  70 KB",
+    "    OK  KR Amendment including Specification etc.  217 KB",
+    "    OK  KR Amendment including Specification etc.  43 KB",
+    "    OK  KR Request for Examination  37 KB",
+    "    OK  KR Written Decision on Registration  68 KB",
+    "    OK  KR Amendment including Specification etc.  62 KB",
+    "    OK  KR Written Decision on Registration  68 KB",
+    "    OK  KR Divisional Application for International Patent  6252 KB",
+    "    OK  KR Written Decision on Registration  68 KB",
+    "    OK  KR Divisional Application for International Patent  6244 KB",
+    "    OK  KR [Patent Application] Paper according to the Article 203 of Patent Act  4027 KB"
+  ],
+  "query": "CN117425921A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 2,
+  "cached": false,
+  "result": {
+    "query": "CN117425921A",
+    "family_counts": {
+      "JP": 12,
+      "US": 69,
+      "EP": 6,
+      "CN": 12,
+      "KR": 12,
+      "WO": 7
+    },
+    "generated_at": "2026-10-27T09:09:19+00:00",
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022518412.A",
+        "status": "ok",
+        "doc_total": 36,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-04-14",
+            "status": "ok",
+            "bytes": 109169,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-04-14_JP_Decision_to_Grant_a_Patent_125154834_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-07-23",
+            "status": "ok",
+            "bytes": 180055,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2024-07-23_JP_Notice_of_Reasons_for_Refusal_124351225_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2022518645.A",
+        "status": "ok",
+        "doc_total": 36,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-04-14",
+            "status": "ok",
+            "bytes": 115957,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-04-14_JP_Decision_to_Grant_a_Patent_125154699_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-07-25",
+            "status": "ok",
+            "bytes": 187160,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2024-07-25_JP_Notice_of_Reasons_for_Refusal_124354217_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2022553601.A",
+        "status": "ok",
+        "doc_total": 45,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-09-25",
+            "status": "ok",
+            "bytes": 263244,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-09-25_JP_Notice_of_Reasons_for_Refusal_125434820_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-01-14",
+            "status": "ok",
+            "bytes": 230711,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-01-14_JP_Notice_of_Reasons_for_Refusal_124631639_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2023574645.A",
+        "status": "ok",
+        "doc_total": 30,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-09-14",
+            "status": "ok",
+            "bytes": 108047,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-09-14_JP_Decision_to_Grant_a_Patent_126368556_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-12-15",
+            "status": "ok",
+            "bytes": 220687,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-12-15_JP_Notice_of_Reasons_for_Refusal_125575239_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2024521139.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2024-06-17",
+            "status": "ok",
+            "bytes": 69365,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2024-06-17_JP_International_Search_Report_411960253_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2024-06-07",
+            "status": "ok",
+            "bytes": 154426,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2024-06-07_JP_Claims_401233226_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025514409.A",
+        "status": "ok",
+        "doc_total": 19,
+        "picked": [
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2025-05-19",
+            "status": "ok",
+            "bytes": 69401,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2025-05-19_JP_International_Search_Report_511651653_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-05-14",
+            "status": "ok",
+            "bytes": 120872,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-05-14_JP_Written_Amendment_%28voluntary-content%29_601049832_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081159.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-04-09",
+            "status": "ok",
+            "bytes": 247084,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-04-09_JP_Notice_of_Reasons_for_Refusal_126151288_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 225679,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-25_JP_Search_Report_by_Registered_Search_Organization_826037372_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081160.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-04-09",
+            "status": "ok",
+            "bytes": 236787,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-04-09_JP_Notice_of_Reasons_for_Refusal_126151337_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 209542,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-25_JP_Search_Report_by_Registered_Search_Organization_826037631_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081161.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-04-09",
+            "status": "ok",
+            "bytes": 218574,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-04-09_JP_Notice_of_Reasons_for_Refusal_126142156_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 200169,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-25_JP_Search_Report_by_Registered_Search_Organization_826037505_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081197.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-03-30",
+            "status": "ok",
+            "bytes": 164235,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-30_JP_Notice_of_Reasons_for_Refusal_126140631_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 235667,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-18_JP_Search_Report_by_Registered_Search_Organization_826033876_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081198.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-04-13",
+            "status": "ok",
+            "bytes": 156151,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-04-13_JP_Notice_of_Reasons_for_Refusal_126157465_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 221989,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-18_JP_Search_Report_by_Registered_Search_Organization_826033566_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2025081199.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-03-30",
+            "status": "ok",
+            "bytes": 166618,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-30_JP_Notice_of_Reasons_for_Refusal_126141308_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 237364,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/JP/2026-03-18_JP_Search_Report_by_Registered_Search_Organization_826033757_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202017027167.A",
+        "status": "ok",
+        "doc_total": 80,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-04-19",
+            "status": "ok",
+            "bytes": 80314,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-04-19_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_CBZE3GREENX1.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2021-09-08",
+            "status": "ok",
+            "bytes": 515580,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-09-08_US_Non-Final_Rejection_FD7J8DFLYX11.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202017027187.A",
+        "status": "ok",
+        "doc_total": 66,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2021-10-06",
+            "status": "ok",
+            "bytes": 398857,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-10-06_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_O3CSRLDFLYX7.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2021-06-24",
+            "status": "ok",
+            "bytes": 227624,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-06-24_US_Non-Final_Rejection_KUQKMLDFLYX9.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117195589.A",
+        "status": "ok",
+        "doc_total": 86,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-08-23",
+            "status": "ok",
+            "bytes": 844041,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-08-23_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_FIOL0GREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2022-03-04",
+            "status": "ok",
+            "bytes": 516010,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-03-04_US_Non-Final_Rejection_1O5R5DFLYX11.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117233319.A",
+        "status": "ok",
+        "doc_total": 76,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-02-04",
+            "status": "ok",
+            "bytes": 475983,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-02-04_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_QEWJFDFLYX10.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2021-07-07",
+            "status": "ok",
+            "bytes": 903484,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-07-07_US_Non-Final_Rejection_NVLE3DFLYX11.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117233324.A",
+        "status": "ok",
+        "doc_total": 69,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-02-18",
+            "status": "ok",
+            "bytes": 472248,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-02-18_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_Y84EVDFLYX11.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2021-07-16",
+            "status": "ok",
+            "bytes": 519760,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-07-16_US_Non-Final_Rejection_IXQPFLDFLYX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117233328.A",
+        "status": "ok",
+        "doc_total": 40,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2021-06-30",
+            "status": "ok",
+            "bytes": 500247,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-06-30_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_0KN35LDFLYX7.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2021-06-30",
+            "status": "ok",
+            "bytes": 24399,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-06-30_US_Search_information_including_classification%2C_databases_and_o_0KN38LDFLYX7.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117233329.A",
+        "status": "ok",
+        "doc_total": 62,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2021-10-06",
+            "status": "ok",
+            "bytes": 483283,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-10-06_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_MYEZ3DFLYX11.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2021-07-08",
+            "status": "ok",
+            "bytes": 552095,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2021-07-08_US_Non-Final_Rejection_K6BNYLDFLYX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117469148.A",
+        "status": "ok",
+        "doc_total": 64,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-06-06",
+            "status": "ok",
+            "bytes": 24629,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-06-06_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_EDL1PGREENX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-04-07",
+            "status": "ok",
+            "bytes": 52166,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-04-07_US_Search_information_including_classification%2C_databases_and_o_UY4EFXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117525290.A",
+        "status": "ok",
+        "doc_total": 82,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-09-11",
+            "status": "ok",
+            "bytes": 46552,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-09-11_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_A8K8RGREENX3.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-02-23",
+            "status": "ok",
+            "bytes": 531884,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-02-23_US_Non-Final_Rejection_G9RXYGREENX1.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117525427.A",
+        "status": "ok",
+        "doc_total": 75,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-06-15",
+            "status": "ok",
+            "bytes": 24891,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-06-15_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_MKW2IXBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2022-08-18",
+            "status": "ok",
+            "bytes": 541725,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2022-08-18_US_Non-Final_Rejection_5209HGREENX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570018.A",
+        "status": "ok",
+        "doc_total": 236,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-30",
+            "status": "ok",
+            "bytes": 1220623,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-30_US_Final_Rejection_367WAX59X207.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-05-08",
+            "status": "ok",
+            "bytes": 575526,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-05-08_US_Non-Final_Rejection_G2FYY4X93X59.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570060.A",
+        "status": "ok",
+        "doc_total": 117,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-05-22",
+            "status": "ok",
+            "bytes": 898316,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-05-22_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_V0J0UGREENX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-06-27",
+            "status": "ok",
+            "bytes": 1299562,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-06-27_US_Non-Final_Rejection_XG16JXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570125.A",
+        "status": "ok",
+        "doc_total": 116,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-10-16",
+            "status": "ok",
+            "bytes": 60819,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-10-16_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_4F32BWFYGX59.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-07-20",
+            "status": "ok",
+            "bytes": 860481,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-07-20_US_Non-Final_Rejection_A4BTYXBLUEX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570738.A",
+        "status": "ok",
+        "doc_total": 100,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-11-06",
+            "status": "ok",
+            "bytes": 127911,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-06_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_BCT0TXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-03-02",
+            "status": "ok",
+            "bytes": 1256648,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-03-02_US_Non-Final_Rejection_S2HK3GREENX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570822.A",
+        "status": "ok",
+        "doc_total": 80,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-08-30",
+            "status": "ok",
+            "bytes": 44196,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-08-30_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_W4J0JXBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-02-16",
+            "status": "ok",
+            "bytes": 843037,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-02-16_US_Non-Final_Rejection_ILYIPGREENX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217570853.A",
+        "status": "ok",
+        "doc_total": 103,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-11-30",
+            "status": "ok",
+            "bytes": 127933,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-30_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_M0HX2REENX10.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2023-08-03",
+            "status": "ok",
+            "bytes": 445175,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-08-03_US_Final_Rejection_THL3FGREENX0.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217674239.A",
+        "status": "ok",
+        "doc_total": 43,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-07-12",
+            "status": "ok",
+            "bytes": 46631,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-07-12_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_MMDU8GREENM1.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-04-12",
+            "status": "ok",
+            "bytes": 54315,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-04-12_US_Search_information_including_classification%2C_databases_and_o_T14XDGREENX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217674281.A",
+        "status": "ok",
+        "doc_total": 127,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-07-05",
+            "status": "ok",
+            "bytes": 55857,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-07-05_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_W36HKXBLUEX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2023-08-17",
+            "status": "ok",
+            "bytes": 469622,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-08-17_US_Final_Rejection_HRW1VGREENX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217674309.A",
+        "status": "ok",
+        "doc_total": 102,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-01-12",
+            "status": "ok",
+            "bytes": 661165,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-01-12_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_R2CA9GREENX8.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-03-31",
+            "status": "ok",
+            "bytes": 555958,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-03-31_US_Non-Final_Rejection_PH7Z8XBLUEX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217675340.A",
+        "status": "ok",
+        "doc_total": 124,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-03-27",
+            "status": "ok",
+            "bytes": 861530,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-03-27_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_W3L7XXBLUEX6.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2023-11-17",
+            "status": "ok",
+            "bytes": 943753,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-17_US_Final_Rejection_TM6URGREENX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217703514.A",
+        "status": "ok",
+        "doc_total": 104,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-03-20",
+            "status": "ok",
+            "bytes": 1062855,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-03-20_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_WXLLRXBLUEX8.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2023-11-13",
+            "status": "ok",
+            "bytes": 2023168,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-13_US_Final_Rejection_ZXPV5XBLUEX0.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217833614.A",
+        "status": "ok",
+        "doc_total": 186,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2025-11-14",
+            "status": "ok",
+            "bytes": 27002,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-11-14_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_C7Y4O5X158X5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-04-11",
+            "status": "ok",
+            "bytes": 698926,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-04-11_US_Non-Final_Rejection_2GEIMWFYGX60.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093950.A",
+        "status": "ok",
+        "doc_total": 140,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-08-12",
+            "status": "ok",
+            "bytes": 173214,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-12_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_9TVP0WFYGX57.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-01-19",
+            "status": "ok",
+            "bytes": 1499637,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-01-19_US_Non-Final_Rejection_9LMAHGREENX6.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093955.A",
+        "status": "ok",
+        "doc_total": 67,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2023-08-09",
+            "status": "ok",
+            "bytes": 25747,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-08-09_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_TRQTWGREENX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-05-11",
+            "status": "ok",
+            "bytes": 53197,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-05-11_US_Search_information_including_classification%2C_databases_and_o_TGEEKGREENX1.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093956.A",
+        "status": "ok",
+        "doc_total": 145,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-08-22",
+            "status": "ok",
+            "bytes": 314841,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-22_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_RYCT1WFYBX96.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-04-20",
+            "status": "ok",
+            "bytes": 413799,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-04-20_US_Non-Final_Rejection_MUQ5KXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093962.A",
+        "status": "ok",
+        "doc_total": 206,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2025-07-16",
+            "status": "ok",
+            "bytes": 25353,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-07-16_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_NFPQP242X155.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-11-04",
+            "status": "ok",
+            "bytes": 538922,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-11-04_US_Non-Final_Rejection_CFEW0WFYBX99.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093964.A",
+        "status": "ok",
+        "doc_total": 160,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-09-29",
+            "status": "ok",
+            "bytes": 1103390,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-29_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_PZUU4WFYBX99.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-05-29",
+            "status": "ok",
+            "bytes": 1277264,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-05-29_US_Final_Rejection_XBTO2GREENX6.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093967.A",
+        "status": "ok",
+        "doc_total": 270,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-11-14",
+            "status": "ok",
+            "bytes": 435489,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-11-14_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_MR9P565X80X4.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2025-03-31",
+            "status": "ok",
+            "bytes": 410704,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-03-31_US_Final_Rejection_HM3CVWFYGX57.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318093970.A",
+        "status": "ok",
+        "doc_total": 276,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-04-21",
+            "status": "ok",
+            "bytes": 585436,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-04-21_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_9OPCL65X42X3.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-12-16",
+            "status": "ok",
+            "bytes": 810064,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-12-16_US_Non-Final_Rejection_PJDWF6X59X63.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123151.A",
+        "status": "ok",
+        "doc_total": 159,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-12-06",
+            "status": "ok",
+            "bytes": 25285,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-12-06_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_61862WFYGX60.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-10-05",
+            "status": "ok",
+            "bytes": 931267,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-10-05_US_Non-Final_Rejection_LK17IGREENX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123159.A",
+        "status": "ok",
+        "doc_total": 117,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-09-03",
+            "status": "ok",
+            "bytes": 26800,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-03_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_1B6QAWFYBX92.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-08-28",
+            "status": "ok",
+            "bytes": 93739,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-28_US_Search_information_including_classification%2C_databases_and_o_UKNHSWFYGX57.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123172.A",
+        "status": "ok",
+        "doc_total": 118,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-06-05",
+            "status": "ok",
+            "bytes": 244416,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-06-05_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_8D1MGXBLUEX7.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-10-05",
+            "status": "ok",
+            "bytes": 807257,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-10-05_US_Non-Final_Rejection_LKA3EXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123183.A",
+        "status": "ok",
+        "doc_total": 222,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-10",
+            "status": "ok",
+            "bytes": 554087,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-10_US_Non-Final_Rejection_2AEAKX86X209.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-04-22",
+            "status": "ok",
+            "bytes": 901223,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-04-22_US_Final_Rejection_MG3Z5X24X110.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123186.A",
+        "status": "ok",
+        "doc_total": 120,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-08-13",
+            "status": "ok",
+            "bytes": 26734,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-13_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_OF0IIWFYBX98.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-01-19",
+            "status": "ok",
+            "bytes": 617781,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-01-19_US_Non-Final_Rejection_3UO0BGREENX1.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123188.A",
+        "status": "ok",
+        "doc_total": 120,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-05-07",
+            "status": "ok",
+            "bytes": 173116,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-05-07_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_KI609XBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-11-24",
+            "status": "ok",
+            "bytes": 1232204,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-24_US_Non-Final_Rejection_ICB92XBLUEX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123193.A",
+        "status": "ok",
+        "doc_total": 136,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-12-30",
+            "status": "ok",
+            "bytes": 25861,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-12-30_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_L45J8WFYGX51.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-02-29",
+            "status": "ok",
+            "bytes": 1402760,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-02-29_US_Final_Rejection_J1G7LXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123195.A",
+        "status": "ok",
+        "doc_total": 104,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-06-07",
+            "status": "ok",
+            "bytes": 51860,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-06-07_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_0LYM7XBLUEX1.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-11-09",
+            "status": "ok",
+            "bytes": 837976,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-09_US_Non-Final_Rejection_CE8XQXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123198.A",
+        "status": "ok",
+        "doc_total": 211,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-10-01",
+            "status": "ok",
+            "bytes": 356739,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-10-01_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_08334X212X89.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 759422,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-03_US_Non-Final_Rejection_0VXQJX110X23.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123203.A",
+        "status": "ok",
+        "doc_total": 103,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-06-11",
+            "status": "ok",
+            "bytes": 52457,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-06-11_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_WLIYNXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-11-09",
+            "status": "ok",
+            "bytes": 1460383,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-11-09_US_Non-Final_Rejection_CEJWFXBLUEX4.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318123208.A",
+        "status": "ok",
+        "doc_total": 128,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-09-27",
+            "status": "ok",
+            "bytes": 24601,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-27_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_Z1YSUWFYBX49.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-10-05",
+            "status": "ok",
+            "bytes": 806412,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2023-10-05_US_Non-Final_Rejection_LJRNHXBLUEX1.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318235481.A",
+        "status": "ok",
+        "doc_total": 179,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-08-11",
+            "status": "ok",
+            "bytes": 542979,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-08-11_US_Non-Final_Rejection_GDHNV219X103.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-11",
+            "status": "ok",
+            "bytes": 560198,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-03-11_US_Final_Rejection_JZIKZX93X239.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318244147.A",
+        "status": "ok",
+        "doc_total": 123,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-01-02",
+            "status": "ok",
+            "bytes": 141395,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-01-02_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_ELT24WFYGX51.pdf",
+            "error": null
+          },
+          {
+            "name": "Outgoing - PCT/ISA/210 - International Search Report",
+            "family": "citation",
+            "date": "2024-04-11",
+            "status": "ok",
+            "bytes": 628479,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-04-11_US_Outgoing_-_PCT_ISA_210_-_International_Search_Report_C9QEEWFYGM26.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318532224.A",
+        "status": "ok",
+        "doc_total": 228,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-08-26",
+            "status": "ok",
+            "bytes": 896628,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-08-26_US_Final_Rejection_N7OOLX153X50.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-19",
+            "status": "ok",
+            "bytes": 882368,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-03-19_US_Non-Final_Rejection_ZIHXWX221X22.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318532696.A",
+        "status": "ok",
+        "doc_total": 110,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-10-25",
+            "status": "ok",
+            "bytes": 331765,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-10-25_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_4H1NMWFYGX52.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-07-05",
+            "status": "ok",
+            "bytes": 1307096,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-07-05_US_Non-Final_Rejection_KHJ3RXBLUEX6.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418416753.A",
+        "status": "ok",
+        "doc_total": 142,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2025-05-08",
+            "status": "ok",
+            "bytes": 26423,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-05-08_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_MTNCWWFYGX59.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-08-27",
+            "status": "ok",
+            "bytes": 935693,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-27_US_Final_Rejection_00U2OWFYGX53.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418416780.A",
+        "status": "ok",
+        "doc_total": 94,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-08-14",
+            "status": "ok",
+            "bytes": 660121,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-14_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_Y5C9JWFYGX56.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-04-25",
+            "status": "ok",
+            "bytes": 809976,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-04-25_US_Non-Final_Rejection_DREOSXBLUEX9.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418416798.A",
+        "status": "ok",
+        "doc_total": 98,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-08-21",
+            "status": "ok",
+            "bytes": 798933,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-21_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_08VIXWFYBX99.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-08-21",
+            "status": "ok",
+            "bytes": 94508,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-21_US_Search_information_including_classification%2C_databases_and_o_08VJ2WFYBX99.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418417407.A",
+        "status": "ok",
+        "doc_total": 104,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-09-11",
+            "status": "ok",
+            "bytes": 810077,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-11_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_194QLWFYBX99.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-09-11",
+            "status": "ok",
+            "bytes": 92438,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-11_US_Search_information_including_classification%2C_databases_and_o_194QPWFYBX99.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418417481.A",
+        "status": "ok",
+        "doc_total": 97,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-08-19",
+            "status": "ok",
+            "bytes": 660894,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-08-19_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_9JNZ7WFYBX50.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-04-11",
+            "status": "ok",
+            "bytes": 689313,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-04-11_US_Non-Final_Rejection_FXAGGXBLUEX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418417520.A",
+        "status": "ok",
+        "doc_total": 103,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2024-09-05",
+            "status": "ok",
+            "bytes": 59403,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-05_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_SH22RWFYBX92.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-09-04",
+            "status": "ok",
+            "bytes": 94516,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2024-09-04_US_Search_information_including_classification%2C_databases_and_o_OW20DWFYBX96.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418743848.A",
+        "status": "ok",
+        "doc_total": 215,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-07-17",
+            "status": "ok",
+            "bytes": 356578,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-07-17_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_GDDVM6X101X5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-09-25",
+            "status": "ok",
+            "bytes": 668514,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-09-25_US_Non-Final_Rejection_C0T46120X170.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418743878.A",
+        "status": "ok",
+        "doc_total": 204,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-09-10",
+            "status": "ok",
+            "bytes": 396871,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-10_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_744K36X50X70.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-11-14",
+            "status": "ok",
+            "bytes": 643102,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-11-14_US_Non-Final_Rejection_TD1XI214X224.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418743953.A",
+        "status": "ok",
+        "doc_total": 121,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-05-22",
+            "status": "ok",
+            "bytes": 331430,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-05-22_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_UP3OKWFYBX50.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-01-15",
+            "status": "ok",
+            "bytes": 412254,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-01-15_US_Non-Final_Rejection_Q19SSWFYGX61.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418743967.A",
+        "status": "ok",
+        "doc_total": 216,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-10",
+            "status": "ok",
+            "bytes": 598770,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-10_US_Non-Final_Rejection_1KK1EX86X209.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-04-22",
+            "status": "ok",
+            "bytes": 544346,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-04-22_US_Final_Rejection_MN64YX77X223.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418904768.A",
+        "status": "ok",
+        "doc_total": 186,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-08-13",
+            "status": "ok",
+            "bytes": 456048,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-08-13_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_J9YF6X255X58.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 1968606,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-03-25_US_Non-Final_Rejection_Q872V5X143X2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418908320.A",
+        "status": "ok",
+        "doc_total": 98,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-03",
+            "status": "ok",
+            "bytes": 554827,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-03_US_Final_Rejection_5SRCW5X19X20.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-25",
+            "status": "ok",
+            "bytes": 486266,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-03-25_US_Non-Final_Rejection_KC1ZKX61X171.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418908424.A",
+        "status": "ok",
+        "doc_total": 177,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-06-23",
+            "status": "ok",
+            "bytes": 594730,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-23_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_77G685X54X12.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-03-27",
+            "status": "ok",
+            "bytes": 1079381,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-03-27_US_Non-Final_Rejection_JBHXY5X143X2.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418908478.A",
+        "status": "ok",
+        "doc_total": 158,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-06-16",
+            "status": "ok",
+            "bytes": 394816,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-16_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_FCBTBX205X38.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 1138982,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-01-30_US_Non-Final_Rejection_JX1DCX23X166.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418908498.A",
+        "status": "ok",
+        "doc_total": 73,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 750318,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-03_US_Non-Final_Rejection_NH4VRX86X157.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-03",
+            "status": "ok",
+            "bytes": 40230,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-03_US_Search_information_including_classification%2C_databases_and_o_NH4VWX86X157.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519037560.A",
+        "status": "ok",
+        "doc_total": 23,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-29",
+            "status": "ok",
+            "bytes": 493212,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-29_US_Non-Final_Rejection_VQU3S233X112.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-29",
+            "status": "ok",
+            "bytes": 25993,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-29_US_Search_information_including_classification%2C_databases_and_o_VQU3V233X112.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519037617.A",
+        "status": "ok",
+        "doc_total": 23,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-04-28",
+            "status": "ok",
+            "bytes": 354788,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-04-28_US_Non-Final_Rejection_CMN1Q101X234.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-04-28",
+            "status": "ok",
+            "bytes": 25600,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-04-28_US_Search_information_including_classification%2C_databases_and_o_CMN1V101X234.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519053042.A",
+        "status": "ok",
+        "doc_total": 147,
+        "picked": [
+          {
+            "name": "Response to Election / Restriction Filed",
+            "family": "applicant",
+            "date": "2026-09-08",
+            "status": "ok",
+            "bytes": 23561,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-08_US_Response_to_Election___Restriction_Filed_417K36X50X70.pdf",
+            "error": null
+          },
+          {
+            "name": "Applicant Arguments/Remarks Made in an Amendment",
+            "family": "applicant",
+            "date": "2026-09-08",
+            "status": "ok",
+            "bytes": 34947,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-09-08_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_417K76X50X70.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519196408.A",
+        "status": "ok",
+        "doc_total": 13,
+        "picked": [
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2025-05-01",
+            "status": "ok",
+            "bytes": 94972,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-05-01_US_Claims_W2YG9WFYBX99.pdf",
+            "error": null
+          },
+          {
+            "name": "Notice of Publication",
+            "family": "other",
+            "date": "2025-08-14",
+            "status": "ok",
+            "bytes": 55845,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-08-14_US_Notice_of_Publication_TE9G4X224X60.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519223425.A",
+        "status": "ok",
+        "doc_total": 17,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-07-01",
+            "status": "ok",
+            "bytes": 485299,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-07-01_US_Non-Final_Rejection_1K572154X188.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-07-01",
+            "status": "ok",
+            "bytes": 25698,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-07-01_US_Search_information_including_classification%2C_databases_and_o_1K575154X188.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519223431.A",
+        "status": "ok",
+        "doc_total": 18,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-30",
+            "status": "ok",
+            "bytes": 913676,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-30_US_Non-Final_Rejection_YF2V8141X114.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-30",
+            "status": "ok",
+            "bytes": 26974,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-06-30_US_Search_information_including_classification%2C_databases_and_o_YF2VE141X114.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519223437.A",
+        "status": "ok",
+        "doc_total": 17,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-08-26",
+            "status": "ok",
+            "bytes": 994451,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-08-26_US_Non-Final_Rejection_OUJY6199X215.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-08-26",
+            "status": "ok",
+            "bytes": 21318,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-08-26_US_Search_information_including_classification%2C_databases_and_o_OUJYB199X215.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519363044.A",
+        "status": "ok",
+        "doc_total": 28,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-10-02",
+            "status": "ok",
+            "bytes": 765444,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-10-02_US_Non-Final_Rejection_T1YDO6X97X59.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-10-02",
+            "status": "ok",
+            "bytes": 17918,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-10-02_US_Search_information_including_classification%2C_databases_and_o_T1YDU6X97X59.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519364868.A",
+        "status": "ok",
+        "doc_total": 22,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-10-14",
+            "status": "ok",
+            "bytes": 986418,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-10-14_US_Non-Final_Rejection_QHRGLX54X145.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-10-14",
+            "status": "ok",
+            "bytes": 36286,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-10-14_US_Search_information_including_classification%2C_databases_and_o_QHRGPX54X145.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519364937.A",
+        "status": "ok",
+        "doc_total": 14,
+        "picked": [
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2025-10-21",
+            "status": "ok",
+            "bytes": 151466,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2025-10-21_US_Claims_5E9P54X45X46.pdf",
+            "error": null
+          },
+          {
+            "name": "Miscellaneous Communication to Applicant - No Action Count",
+            "family": "other",
+            "date": "2026-07-31",
+            "status": "ok",
+            "bytes": 23485,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/US/2026-07-31_US_Miscellaneous_Communication_to_Applicant_-_No_Action_Count_FYSEYX121X58.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.20864819.A",
+        "status": "ok",
+        "doc_total": 38,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-06-28",
+            "status": "ok",
+            "bytes": 172833,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2023-06-28_EP_European_search_opinion_TTDU51RMJXBV.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2023-06-28",
+            "status": "ok",
+            "bytes": 57002,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2023-06-28_EP_Supplementary_European_search_report_TK4KW1M6B482.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.20865060.A",
+        "status": "ok",
+        "doc_total": 38,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-07-10",
+            "status": "ok",
+            "bytes": 117311,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2023-07-10_EP_European_search_opinion_XZ4GF1KQ3XNE.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2023-07-10",
+            "status": "ok",
+            "bytes": 61922,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2023-07-10_EP_Supplementary_European_search_report_XJ7IRCDKH7CI.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21764127.A",
+        "status": "ok",
+        "doc_total": 34,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2024-03-11",
+            "status": "ok",
+            "bytes": 111849,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2024-03-11_EP_European_search_opinion_NCT083WZF3Q9.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2024-03-11",
+            "status": "ok",
+            "bytes": 46734,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2024-03-11_EP_Supplementary_European_search_report_MZPWV1QF1ZVX.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22816990.A",
+        "status": "ok",
+        "doc_total": 41,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-01-24",
+            "status": "ok",
+            "bytes": 214081,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2025-01-24_EP_European_search_opinion_RHUX17R9CBZ5.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2025-01-24",
+            "status": "ok",
+            "bytes": 41921,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2025-01-24_EP_Supplementary_European_search_report_RCP3FVZ5TJ0E.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22879366.A",
+        "status": "ok",
+        "doc_total": 34,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2026-10-13",
+            "status": "ok",
+            "bytes": 105800,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2026-10-13_EP_Communication_from_the_Examining_Division_OIGB0NS463JI.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-06-17",
+            "status": "ok",
+            "bytes": 114004,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2025-06-17_EP_European_search_opinion_LUJVU1QJ9DS5.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.23863852.A",
+        "status": "ok",
+        "doc_total": 26,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2026-07-15",
+            "status": "ok",
+            "bytes": 429376,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/EP/2026-07-15_EP_European_search_opinion_HTRPAEC3JX0Z.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2026-07-15",
+            "status": "failed",
+            "bytes": null,
+            "url": "",
+            "error": "[1] 情報が取得できませんでした。"
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202080080424.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202080080426.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202411076633.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202411076635.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202511486690.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180033047.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202511579241.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202511579243.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202511579253.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280040013.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280081910.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202380077659.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20227012919.A",
+        "status": "doc_list_failed",
+        "doc_total": 0,
+        "picked": [],
+        "error": "[1] 情報が取得できませんでした。"
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20227012920.A",
+        "status": "ok",
+        "doc_total": 11,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2025-12-09",
+            "status": "ok",
+            "bytes": 70342,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2025-12-09_KR_Written_Decision_on_Registration_119663458_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-03-20",
+            "status": "ok",
+            "bytes": 73390,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2025-03-20_KR_Request_for_the_Submission_of_an_Opinion_027982719_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267007247.A",
+        "status": "ok",
+        "doc_total": 4,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-07-08",
+            "status": "ok",
+            "bytes": 60583,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-07-08_KR_Amendment_including_Specification_etc_083133404_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-03-12",
+            "status": "ok",
+            "bytes": 64771,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-03-12_KR_Amendment_including_Specification_etc_030169146_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267029959.A",
+        "status": "ok",
+        "doc_total": 5,
+        "picked": [
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2026-09-22",
+            "status": "ok",
+            "bytes": 55002,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-09-22_KR_Request_for_the_Submission_of_an_Opinion_087654183_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 82115,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-09-11_KR_Amendment_including_Specification_etc_112559702_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267029960.A",
+        "status": "ok",
+        "doc_total": 5,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-10-15",
+            "status": "ok",
+            "bytes": 71099,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-10-15_KR_Written_Decision_on_Registration_095255628_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 82316,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-09-11_KR_Amendment_including_Specification_etc_112562256_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20227034679.A",
+        "status": "ok",
+        "doc_total": 8,
+        "picked": [
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2026-03-24",
+            "status": "ok",
+            "bytes": 98923,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-03-24_KR_Request_for_the_Submission_of_an_Opinion_028186818_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2026-09-18",
+            "status": "ok",
+            "bytes": 90891,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-09-18_KR_Written_Opinion_116160322_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237044530.A",
+        "status": "ok",
+        "doc_total": 5,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-07-31",
+            "status": "ok",
+            "bytes": 71833,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-07-31_KR_Amendment_including_Specification_etc_093800855_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2024-11-15",
+            "status": "ok",
+            "bytes": 222668,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2024-11-15_KR_Amendment_including_Specification_etc_126006870_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20247014732.A",
+        "status": "ok",
+        "doc_total": 3,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2025-09-05",
+            "status": "ok",
+            "bytes": 44203,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2025-09-05_KR_Amendment_including_Specification_etc_102290645_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2025-09-05",
+            "status": "ok",
+            "bytes": 37822,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2025-09-05_KR_Request_for_Examination_102290500_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20257010997.A",
+        "status": "ok",
+        "doc_total": 7,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-05-22",
+            "status": "ok",
+            "bytes": 69230,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-05-22_KR_Written_Decision_on_Registration_046734367_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-05-08",
+            "status": "ok",
+            "bytes": 63336,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-05-08_KR_Amendment_including_Specification_etc_055585954_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267027079.A",
+        "status": "ok",
+        "doc_total": 3,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-08-31",
+            "status": "ok",
+            "bytes": 69946,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-08-31_KR_Written_Decision_on_Registration_079618814_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Divisional Application for International Patent",
+            "family": "other",
+            "date": "2026-08-19",
+            "status": "ok",
+            "bytes": 6402251,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-08-19_KR_Divisional_Application_for_International_Patent_101521967_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267027080.A",
+        "status": "ok",
+        "doc_total": 3,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-08-31",
+            "status": "ok",
+            "bytes": 70001,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-08-31_KR_Written_Decision_on_Registration_079618959_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Divisional Application for International Patent",
+            "family": "other",
+            "date": "2026-08-19",
+            "status": "ok",
+            "bytes": 6394217,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-08-19_KR_Divisional_Application_for_International_Patent_101522014_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267025132.A",
+        "status": "ok",
+        "doc_total": 1,
+        "picked": [
+          {
+            "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+            "family": "other",
+            "date": "2026-07-30",
+            "status": "ok",
+            "bytes": 4123235,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/98/CN117425921A/KR/2026-07-30_KR_%5BPatent_Application%5D_Paper_according_to_the_Article_203_of_P_093264589_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2020051817.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2020051825.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2021021421.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022032380.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022046292.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2023032346.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2025010485.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-27T09:31:17+00:00"
+}
