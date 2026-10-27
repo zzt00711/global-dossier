@@ -363,14 +363,13 @@ def collect(
         "family_id": (anchor or {}).get("family_id"),
     }
 
-    entries: list[tuple[dict[str, Any], dict[str, Any]]] = []
+    office_entries: list[tuple[dict[str, Any], dict[str, Any]]] = []
     for member in unique_members:
         country = member.get("country", "")
-        app_date = member.get("app_date") or ""
         entry: dict[str, Any] = {
             "country": country,
             "app_num": member.get("app_num"),
-            "app_date": app_date,
+            "app_date": member.get("app_date") or "",
             "family_id": member.get("family_id"),
             "pub_nums": member.get("pub_nums", []),
             "status": "skipped",
@@ -378,38 +377,71 @@ def collect(
             "picked": [],
         }
         manifest["members"].append(entry)
-
-        if country not in offices:
-            continue
-        if anchor_date and app_date != anchor_date:
-            entry["status"] = "other_generation"
-            entry["note"] = f"申请日 {app_date or '未知'}，非被查号所在代 {anchor_date}"
-            continue
-        entries.append((member, entry))
+        if country in offices:
+            office_entries.append((member, entry))
 
     covered: set[str] = set()
+    covered_gen: dict[str, str] = {}
     for country in offices:
-        candidates = [(m, e) for m, e in entries if m.get("country") == country]
-        # 申请号序号升序：原申请在前，分案/续案在后
-        candidates.sort(key=lambda pair: _app_serial(pair[0].get("app_num") or ""))
-        attempted = 0
-        for member, entry in candidates:
-            if country in covered:
-                entry["status"] = "sibling"
-                entry["note"] = "同局已取到本代原申请的文书，不再重复下载"
+        total = manifest["family_counts"].get(country, 0)
+        groups: dict[str, list[tuple[dict[str, Any], dict[str, Any]]]] = {}
+        undated: list[tuple[dict[str, Any], dict[str, Any]]] = []
+        for member, entry in office_entries:
+            if member.get("country") != country:
                 continue
-            if attempted >= MAX_MEMBERS_PER_OFFICE:
-                entry["status"] = "member_limit"
-                entry["error"] = (
-                    f"该局本代成员 {len(candidates)} 个，"
-                    f"仅尝试前 {MAX_MEMBERS_PER_OFFICE} 个"
-                )
-                continue
-            attempted += 1
-            if _collect_member(
-                client, input_parts, member, country, max_docs, out_dir, download, entry
-            ):
-                covered.add(country)
+            d = member.get("app_date") or ""
+            if d:
+                groups.setdefault(d, []).append((member, entry))
+            else:
+                undated.append((member, entry))
+
+        dated = sorted(groups, reverse=True)
+        prev_date = ""
+        if anchor_date:
+            # 先本代；本代全失败再逐代往回降级（上一代优先，其次更早，最后才试更新的代）
+            earlier = [d for d in dated if d < anchor_date]
+            prev_date = earlier[0] if earlier else ""
+            order = ([anchor_date] if anchor_date in groups else []) + earlier
+            order += sorted(d for d in dated if d > anchor_date)
+        else:
+            order = dated
+        if undated:
+            order.append("")
+
+        for d in order:
+            batch = groups.get(d, []) if d else undated
+            # 申请号序号升序：原申请在前，分案/续案在后
+            batch.sort(key=lambda pair: _app_serial(pair[0].get("app_num") or ""))
+            attempted = 0
+            for member, entry in batch:
+                if country in covered:
+                    entry["status"] = "sibling" if d == anchor_date else "other_generation"
+                    entry["note"] = (
+                        f"该局同族成员 {total} 个，"
+                        f"已取到 {covered_gen.get(country) or d or anchor_date} 代的文书，不再重复下载"
+                    )
+                    continue
+                if attempted >= MAX_MEMBERS_PER_OFFICE:
+                    entry["status"] = "member_limit"
+                    entry["error"] = (
+                        f"该局同族成员 {total} 个，"
+                        f"{d or anchor_date} 这一代仅处理前 {MAX_MEMBERS_PER_OFFICE} 个"
+                    )
+                    continue
+                attempted += 1
+                if _collect_member(
+                    client, input_parts, member, country, max_docs, out_dir, download, entry
+                ):
+                    covered.add(country)
+                    covered_gen[country] = d
+                    if d and anchor_date and d != anchor_date:
+                        which = "上一代" if d == prev_date else "更早一代"
+                        entry["note"] = (
+                            f"该局同族成员 {total} 个，本代（{anchor_date}）未取到文书，"
+                            f"已降级使用{which}（{d}）"
+                        )
+                    else:
+                        entry["note"] = f"该局同族成员 {total} 个，使用本代原申请"
 
     manifest_path = out_dir / "manifest.json"
     manifest_path.write_text(
