@@ -197,6 +197,124 @@ def _member_app_parts(member: dict[str, Any]) -> dict[str, str] | None:
         return None
 
 
+def _norm_num(value: str) -> str:
+    return re.sub(r"[^0-9A-Z]", "", (value or "").upper())
+
+
+def _num_core(value: str) -> str:
+    """去掉末尾 kind code，只留国家+号码，便于 A/B 号互相匹配。"""
+    return re.sub(r"[A-Z]\d?$", "", _norm_num(value))
+
+
+def _app_serial(app_num: str) -> int:
+    """申请号里的数字段；越小越早递交（分案/续案都在母案之后）。"""
+    parts = (app_num or "").split(".")
+    digits = re.sub(r"\D", "", parts[1] if len(parts) > 1 else "")
+    return int(digits) if digits else 10**18
+
+
+def _find_anchor(members: list[dict[str, Any]], query: str) -> dict[str, Any] | None:
+    """被查公开号自身所在的那一行，用来锁定代际。"""
+    core = _num_core(query)
+    for m in members:
+        for pub in m.get("pub_nums", []):
+            if _num_core(pub) == core:
+                return m
+    return None
+
+
+def _first_cn_date(members: list[dict[str, Any]]) -> str:
+    dates = [m.get("app_date") for m in members if m.get("country") == "CN" and m.get("app_date")]
+    return min(dates) if dates else ""
+
+
+def _collect_member(
+    client: OpdClient,
+    input_parts: dict[str, str],
+    member: dict[str, Any],
+    country: str,
+    max_docs: int,
+    out_dir: Path,
+    download: bool,
+    entry: dict[str, Any],
+) -> bool:
+    """抓单个同族成员的文书并下载；返回是否拿到了可用文书。"""
+    app_parts = _member_app_parts(member)
+    if not app_parts:
+        entry["status"] = "bad_app_num"
+        return False
+
+    try:
+        listing = client.doc_list(input_parts, app_parts, refr_type="publication")
+    except OpdError as exc:
+        entry["status"] = "doc_list_failed"
+        entry["error"] = str(exc)
+        return False
+
+    docs = listing["docs"]
+    entry["title"] = listing.get("title", "")
+    entry["doc_total"] = len(docs)
+    picked = pick_docs(docs, max_docs)
+    picked_keys = {d["doc_id"] for d in picked}
+
+    entry["documents"] = [
+        {
+            "doc_id": d.get("doc_id"),
+            "name": d.get("name") or d.get("name_en"),
+            "date": d.get("date"),
+            "family": d.get("family"),
+            "excluded": is_excluded(f"{d.get('name', '')} {d.get('name_en', '')}"),
+            "picked": d["doc_id"] in picked_keys,
+        }
+        for d in docs
+    ]
+
+    if not picked:
+        entry["status"] = "no_doc"
+        return False
+
+    cdir = out_dir / country
+    cdir.mkdir(parents=True, exist_ok=True)
+    for d in picked:
+        item: dict[str, Any] = {
+            "doc_id": d["doc_id"],
+            "name": d.get("name") or d.get("name_en"),
+            "name_en": d.get("name_en"),
+            "date": d.get("date"),
+            "family": d.get("family"),
+        }
+        if not download:
+            item["status"] = "dry_run"
+            entry["picked"].append(item)
+            continue
+        try:
+            content = client.doc_content(input_parts, app_parts, d["doc_id"])
+            item["tender_date"] = content.get("tender_date")
+            fname = "_".join(
+                x
+                for x in (
+                    safe_filename(content.get("tender_date") or d.get("date") or ""),
+                    country,
+                    safe_filename(d.get("name_en") or d.get("name") or "doc"),
+                    safe_filename(d["doc_id"][-12:]),
+                )
+                if x
+            ) + ".pdf"
+            dest = cdir / fname
+            size = client.download_pdf(content["doc_url"], dest)
+            item.update({"file": str(dest.relative_to(out_dir)), "bytes": size, "status": "ok"})
+            print(f"    OK  {country} {item['name']}  {size/1024:.0f} KB")
+        except (OpdError, OSError, KeyError) as exc:
+            item.update({"status": "failed", "error": str(exc)})
+            print(f"    ERR {country} {item.get('name')}  {exc}")
+        entry["picked"].append(item)
+        time.sleep(0.3)
+
+    ok = [p for p in entry["picked"] if p.get("status") in {"ok", "dry_run"}]
+    entry["status"] = "ok" if ok else "download_failed"
+    return bool(ok)
+
+
 def collect(
     query: str,
     offices: list[str] | None = None,
@@ -235,12 +353,25 @@ def collect(
     for m in unique_members:
         manifest["family_counts"][m["country"]] = manifest["family_counts"].get(m["country"], 0) + 1
 
-    used_by_country: dict[str, int] = {}
+    # 用被查号自身那一行的申请日锁定代际：分案/续案会沿用母案申请日，
+    # 所以同一代里既有美国 PCT 国家阶段（单独成组），也有其他局的对应件。
+    anchor = _find_anchor(unique_members, query)
+    anchor_date = (anchor or {}).get("app_date") or _first_cn_date(unique_members)
+    manifest["anchor"] = {
+        "app_num": (anchor or {}).get("app_num"),
+        "app_date": anchor_date,
+        "family_id": (anchor or {}).get("family_id"),
+    }
+
+    entries: list[tuple[dict[str, Any], dict[str, Any]]] = []
     for member in unique_members:
         country = member.get("country", "")
+        app_date = member.get("app_date") or ""
         entry: dict[str, Any] = {
             "country": country,
             "app_num": member.get("app_num"),
+            "app_date": app_date,
+            "family_id": member.get("family_id"),
             "pub_nums": member.get("pub_nums", []),
             "status": "skipped",
             "doc_total": 0,
@@ -250,87 +381,35 @@ def collect(
 
         if country not in offices:
             continue
-        app_parts = _member_app_parts(member)
-        if not app_parts:
-            entry["status"] = "bad_app_num"
+        if anchor_date and app_date != anchor_date:
+            entry["status"] = "other_generation"
+            entry["note"] = f"申请日 {app_date or '未知'}，非被查号所在代 {anchor_date}"
             continue
-        if used_by_country.get(country, 0) >= MAX_MEMBERS_PER_OFFICE:
-            entry["status"] = "member_limit"
-            entry["error"] = (
-                f"该局同族成员 {manifest['family_counts'].get(country, 0)} 个，"
-                f"仅处理前 {MAX_MEMBERS_PER_OFFICE} 个"
-            )
-            continue
+        entries.append((member, entry))
 
-        try:
-            listing = client.doc_list(input_parts, app_parts, refr_type="publication")
-        except OpdError as exc:
-            entry["status"] = "doc_list_failed"
-            entry["error"] = str(exc)
-            continue
-
-        used_by_country[country] = used_by_country.get(country, 0) + 1
-        docs = listing["docs"]
-        entry["title"] = listing.get("title", "")
-        entry["doc_total"] = len(docs)
-        picked = pick_docs(docs, max_docs)
-        picked_keys = {d["doc_id"] for d in picked}
-
-        entry["documents"] = [
-            {
-                "doc_id": d.get("doc_id"),
-                "name": d.get("name") or d.get("name_en"),
-                "date": d.get("date"),
-                "family": d.get("family"),
-                "excluded": is_excluded(f"{d.get('name', '')} {d.get('name_en', '')}"),
-                "picked": d["doc_id"] in picked_keys,
-            }
-            for d in docs
-        ]
-
-        if not picked:
-            entry["status"] = "no_doc"
-            continue
-
-        cdir = out_dir / country
-        cdir.mkdir(parents=True, exist_ok=True)
-        for d in picked:
-            item: dict[str, Any] = {
-                "doc_id": d["doc_id"],
-                "name": d.get("name") or d.get("name_en"),
-                "name_en": d.get("name_en"),
-                "date": d.get("date"),
-                "family": d.get("family"),
-            }
-            if not download:
-                item["status"] = "dry_run"
-                entry["picked"].append(item)
+    covered: set[str] = set()
+    for country in offices:
+        candidates = [(m, e) for m, e in entries if m.get("country") == country]
+        # 申请号序号升序：原申请在前，分案/续案在后
+        candidates.sort(key=lambda pair: _app_serial(pair[0].get("app_num") or ""))
+        attempted = 0
+        for member, entry in candidates:
+            if country in covered:
+                entry["status"] = "sibling"
+                entry["note"] = "同局已取到本代原申请的文书，不再重复下载"
                 continue
-            try:
-                content = client.doc_content(input_parts, app_parts, d["doc_id"])
-                item["tender_date"] = content.get("tender_date")
-                fname = "_".join(
-                    x
-                    for x in (
-                        safe_filename(content.get("tender_date") or d.get("date") or ""),
-                        country,
-                        safe_filename(d.get("name_en") or d.get("name") or "doc"),
-                        safe_filename(d["doc_id"][-12:]),
-                    )
-                    if x
-                ) + ".pdf"
-                dest = cdir / fname
-                size = client.download_pdf(content["doc_url"], dest)
-                item.update({"file": str(dest.relative_to(out_dir)), "bytes": size, "status": "ok"})
-                print(f"    OK  {country} {item['name']}  {size/1024:.0f} KB")
-            except (OpdError, OSError, KeyError) as exc:
-                item.update({"status": "failed", "error": str(exc)})
-                print(f"    ERR {country} {item.get('name')}  {exc}")
-            entry["picked"].append(item)
-            time.sleep(0.3)
-
-        ok = [p for p in entry["picked"] if p.get("status") in {"ok", "dry_run"}]
-        entry["status"] = "ok" if ok else "download_failed"
+            if attempted >= MAX_MEMBERS_PER_OFFICE:
+                entry["status"] = "member_limit"
+                entry["error"] = (
+                    f"该局本代成员 {len(candidates)} 个，"
+                    f"仅尝试前 {MAX_MEMBERS_PER_OFFICE} 个"
+                )
+                continue
+            attempted += 1
+            if _collect_member(
+                client, input_parts, member, country, max_docs, out_dir, download, entry
+            ):
+                covered.add(country)
 
     manifest_path = out_dir / "manifest.json"
     manifest_path.write_text(
