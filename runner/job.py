@@ -37,14 +37,28 @@ MAX_CACHE_KEEP = 10
 
 
 class _LogWriter(io.TextIOBase):
-    def __init__(self, lines: list[str]):
+    """把日志同时写进内存、Actions 控制台和 status.json。
+
+    Actions 超时取消时进程会被直接杀掉，finally 里的落盘和内存日志都不会
+    留下。所以每写一行就刷一次真实 stdout，并回写 status.json。
+    """
+
+    def __init__(self, lines: list[str], on_line=None):
         self.lines = lines
+        self.on_line = on_line
 
     def write(self, text: str) -> int:
         for line in text.splitlines():
             line = line.rstrip()
-            if line:
-                self.lines.append(line)
+            if not line:
+                continue
+            self.lines.append(line)
+            real = sys.__stdout__
+            if real is not None:
+                real.write(line + "\n")
+                real.flush()
+            if self.on_line is not None:
+                self.on_line()
         return len(text)
 
     def flush(self) -> None:
@@ -120,6 +134,14 @@ def slim_result(manifest: dict, issue: int) -> dict:
 def write_status(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def safe_write_status(path: Path, payload: dict) -> None:
+    """单行日志触发的实时回写，失败不应打断抓取。"""
+    try:
+        write_status(path, payload)
+    except OSError:
+        pass
 
 
 def cleanup_old_jobs(jobs_root: Path, current: int) -> None:
@@ -261,7 +283,12 @@ def main() -> int:
         cache_dir = cache_root / query
         cached = load_cache_manifest(cache_dir)
         fetched = False
-        writer = _LogWriter(logs)
+
+        def flush_status() -> None:
+            status["logs"] = logs[-300:]
+            safe_write_status(status_path, status)
+
+        writer = _LogWriter(logs, flush_status)
         with contextlib.redirect_stdout(writer):
             if cached and cache_covers(cached, offices, max_docs):
                 print(

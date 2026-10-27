@@ -30,6 +30,11 @@ from opd import (
 FAMILY_ORDER = ["final_grant", "rejection", "citation", "applicant", "claims", "other"]
 FAMILY_QUOTA = {"final_grant": 1, "rejection": 2, "citation": 2, "applicant": 2, "claims": 1, "other": 0}
 
+# 大族（如 CN117425921A 有 118 个成员、其中 US 69 个）如果逐个成员下载，
+# 单次要抓 300+ 篇、40 分钟以上，必然撞上 job 的 30 分钟上限。
+# 只取每局最早的若干个成员（通常就是原始申请 + 首个分案/续案），其余标记 skipped。
+MAX_MEMBERS_PER_OFFICE = 2
+
 # 全文公报/优先权证明对实审分析价值低且体积大，直接排除
 EXCLUDE_NAME = re.compile(
     r"priority\s+document|priority\s+certificate"
@@ -230,6 +235,7 @@ def collect(
     for m in unique_members:
         manifest["family_counts"][m["country"]] = manifest["family_counts"].get(m["country"], 0) + 1
 
+    used_by_country: dict[str, int] = {}
     for member in unique_members:
         country = member.get("country", "")
         entry: dict[str, Any] = {
@@ -248,6 +254,13 @@ def collect(
         if not app_parts:
             entry["status"] = "bad_app_num"
             continue
+        if used_by_country.get(country, 0) >= MAX_MEMBERS_PER_OFFICE:
+            entry["status"] = "member_limit"
+            entry["error"] = (
+                f"该局同族成员 {manifest['family_counts'].get(country, 0)} 个，"
+                f"仅处理前 {MAX_MEMBERS_PER_OFFICE} 个"
+            )
+            continue
 
         try:
             listing = client.doc_list(input_parts, app_parts, refr_type="publication")
@@ -256,6 +269,7 @@ def collect(
             entry["error"] = str(exc)
             continue
 
+        used_by_country[country] = used_by_country.get(country, 0) + 1
         docs = listing["docs"]
         entry["title"] = listing.get("title", "")
         entry["doc_total"] = len(docs)

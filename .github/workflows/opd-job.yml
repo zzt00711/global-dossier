@@ -84,6 +84,14 @@ jobs:
                 .map(([k, v]) => `${k} ${v}`).join(' · ');
               body = `完成：${st.query}\n\n同族成员：${counts}\n\n`
                 + `打开结果页：https://zzt00711.github.io/global-dossier/llm/?job=${n}`;
+            } else if (st.state === 'running') {
+              // Run OPD job 步被 30 分钟超时取消时，进程来不及写 error，状态会停在 running
+              const lastLog = (st.logs || []).slice(-1)[0] || '';
+              const q = st.query || '任务';
+              body = `未完成：${q} 在 30 分钟内未抓完，Actions 已超时取消。\n\n`
+                + (lastLog ? `最后进度：${lastLog}\n\n` : '')
+                + `已完成的部分已保存：https://zzt00711.github.io/global-dossier/llm/?job=${n}\n\n`
+                + `可稍后重新提交，已抓到的结果会在 72 小时内复用。`;
             } else {
               body = `失败：${st.error || '未知错误'}\n\n请查看 Actions 日志。`;
             }
