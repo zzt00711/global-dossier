@@ -397,6 +397,7 @@ def collect(
 
         dated = sorted(groups, reverse=True)
         prev_date = ""
+        earliest_date = dated[-1] if dated else ""
         if anchor_date:
             # 先本代；本代全失败再逐代往回降级（上一代优先，其次更早，最后才试更新的代）
             earlier = [d for d in dated if d < anchor_date]
@@ -404,7 +405,8 @@ def collect(
             order = ([anchor_date] if anchor_date in groups else []) + earlier
             order += sorted(d for d in dated if d > anchor_date)
         else:
-            order = dated
+            # 定位不到本代时，按「都抓不到就取最早」兜底：最早申请优先
+            order = sorted(groups)
         if undated:
             order.append("")
 
@@ -434,12 +436,28 @@ def collect(
                 ):
                     covered.add(country)
                     covered_gen[country] = d
-                    if d and anchor_date and d != anchor_date:
-                        which = "上一代" if d == prev_date else "更早一代"
+                    if not anchor_date:
                         entry["note"] = (
-                            f"该局同族成员 {total} 个，本代（{anchor_date}）未取到文书，"
-                            f"已降级使用{which}（{d}）"
+                            f"该局同族成员 {total} 个，未定位到本代，"
+                            f"按最早申请优先取用（{d or '无申请日'}）"
                         )
+                    elif d and d != anchor_date:
+                        if d < anchor_date:
+                            if d == prev_date:
+                                which = "上一代"
+                            elif d == earliest_date:
+                                which = "最早申请（兜底）"
+                            else:
+                                which = "更早一代"
+                            entry["note"] = (
+                                f"该局同族成员 {total} 个，本代（{anchor_date}）未取到文书，"
+                                f"已降级使用{which}（{d}）"
+                            )
+                        else:
+                            entry["note"] = (
+                                f"该局同族成员 {total} 个，本代（{anchor_date}）未取到文书，"
+                                f"已改用更新一代（{d}）"
+                            )
                     else:
                         entry["note"] = f"该局同族成员 {total} 个，使用本代原申请"
 
