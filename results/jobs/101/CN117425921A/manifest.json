@@ -1,0 +1,3710 @@
+{
+  "query": "CN117425921A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117425921",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-27T09:58:04+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 1,
+  "download": true,
+  "family_counts": {
+    "JP": 12,
+    "US": 69,
+    "EP": 6,
+    "CN": 12,
+    "KR": 12,
+    "WO": 7
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2022518412.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2022548322.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2022518645.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2022548324.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2022553601.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "JP.2023516760.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2023574645.A",
+      "app_date": "2022-06-06",
+      "family_id": "84324599",
+      "pub_nums": [
+        "JP.2024526048.A"
+      ],
+      "status": "ok",
+      "doc_total": 30,
+      "picked": [
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06126368556_JP",
+          "name": "特許査定",
+          "name_en": "Decision to Grant a Patent",
+          "date": "2026-09-14",
+          "family": "final_grant",
+          "tender_date": "2026-09-14",
+          "file": "JP/2026-09-14_JP_Decision_to_Grant_a_Patent_126368556_JP.pdf",
+          "bytes": 108047,
+          "status": "ok"
+        }
+      ],
+      "title": "SYSTEM, METHOD AND APPARATUS FOR VEHICLE AUTOMATION",
+      "documents": [
+        {
+          "doc_id": "Notification_of_the_Recording_of_a_Change_62300010825_JP",
+          "name": "記録の変更通知",
+          "date": "2022-12-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62300010825_JP",
+          "name": "添付書類",
+          "date": "2022-12-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "National_Entry_Form_52302609332_JP",
+          "name": "国内書面",
+          "date": "2023-12-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_52400212376_JP",
+          "name": "図面",
+          "date": "2024-01-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_52400212376_JP",
+          "name": "請求の範囲",
+          "date": "2024-01-31",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_52400212376_JP",
+          "name": "明細書",
+          "date": "2024-01-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Submission_of_Translation_of_International_Application_52400212376_JP",
+          "name": "国際出願翻訳文提出書",
+          "date": "2024-01-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_52400212376_JP",
+          "name": "要約書",
+          "date": "2024-01-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62442200808_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62442200808_JP",
+          "name": "添付書類",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_62460140131_JP",
+          "name": "優先権書類",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62460140131_JP",
+          "name": "添付書類",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62410530673_JP",
+          "name": "添付書類",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62470540067_JP",
+          "name": "図面",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_%2528Communication_of_International_Applications_in_Foreign_Language%2529_62420530675_JP",
+          "name": "外国語国際公開図面（職権）",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62420530675_JP",
+          "name": "図面",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report_62410530673_JP",
+          "name": "国際調査報告",
+          "date": "2024-02-13",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings_62470540067_JP",
+          "name": "外国語国際公開要約図（職権）",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62410530671_JP",
+          "name": "添付書類",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62410530671_JP",
+          "name": "国際公開",
+          "date": "2024-02-13",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52500090859_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2025-01-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Statement_%2528applicant%252Fdemandant%2529_52500090860_JP",
+          "name": "上申書（出願人・請求人）",
+          "date": "2025-01-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52500584830_JP",
+          "name": "出願審査請求書",
+          "date": "2025-03-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52500584824_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2025-03-14",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125575239_JP",
+          "name": "拒絶理由通知書",
+          "date": "2025-12-15",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52600504379_JP",
+          "name": "期間延長請求書",
+          "date": "2026-03-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52600504382_JP",
+          "name": "期間延長請求書",
+          "date": "2026-03-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52601295944_JP",
+          "name": "意見書",
+          "date": "2026-06-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52601295946_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-06-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06126368556_JP",
+          "name": "特許査定",
+          "date": "2026-09-14",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 12 个，使用本代原申请"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2024521139.A",
+      "app_date": "2022-10-11",
+      "family_id": "85804698",
+      "pub_nums": [
+        "JP.2024538734.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025514409.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "JP.2025531830.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081159.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025134689.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081160.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025128127.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081161.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025128128.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081197.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025134690.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081198.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025128129.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025081199.A",
+      "app_date": "2025-05-14",
+      "family_id": "74882150",
+      "pub_nums": [
+        "JP.2025128130.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202017027167.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021092018.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202017027187.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021092019.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117195589.A",
+      "app_date": "2021-03-08",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2021192867.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117233319.A",
+      "app_date": "2021-04-16",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021234760.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117233324.A",
+      "app_date": "2021-04-16",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021234761.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117233328.A",
+      "app_date": "2021-04-16",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021234762.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117233329.A",
+      "app_date": "2021-04-16",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2021234763.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117469148.A",
+      "app_date": "2021-09-08",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2021407220.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117525290.A",
+      "app_date": "2021-11-12",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022078084.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117525427.A",
+      "app_date": "2021-11-12",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022070063.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570018.A",
+      "app_date": "2022-01-06",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131750.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570060.A",
+      "app_date": "2022-01-06",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131751.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570125.A",
+      "app_date": "2022-01-06",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131752.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570738.A",
+      "app_date": "2022-01-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131753.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570822.A",
+      "app_date": "2022-01-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131754.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217570853.A",
+      "app_date": "2022-01-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022131755.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217674239.A",
+      "app_date": "2022-02-17",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022173969.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217674281.A",
+      "app_date": "2022-02-17",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022173970.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217674309.A",
+      "app_date": "2022-02-17",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022173971.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217675340.A",
+      "app_date": "2022-02-18",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022173972.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217703514.A",
+      "app_date": "2022-03-24",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.2022231917.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202217833614.A",
+      "app_date": "2022-06-06",
+      "family_id": "83284975",
+      "pub_nums": [
+        "US.2022297635.A1"
+      ],
+      "status": "ok",
+      "doc_total": 186,
+      "picked": [
+        {
+          "doc_id": "MHZC7Y4O5X158X5",
+          "name": "Amendment after Notice of Allowance (Rule 312)",
+          "name_en": "",
+          "date": "2025-11-14",
+          "family": "final_grant",
+          "tender_date": "2025-11-14",
+          "file": "US/2025-11-14_US_Amendment_after_Notice_of_Allowance_(Rule_312)_C7Y4O5X158X5.pdf",
+          "bytes": 27002,
+          "status": "ok"
+        }
+      ],
+      "title": "SYSTEM, METHOD, AND APPARATUS FOR MANAGING VEHICLE DATA COLLECTION",
+      "documents": [
+        {
+          "doc_id": "L43DWETVGREENX1",
+          "name": "Transmittal Letter",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWETWGREENX1",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWETXGREENX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWETYGREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWETZGREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEU0GREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEU2GREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEU3GREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEU4GREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEU5GREENX1",
+          "name": "Foreign Reference",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUHGREENX1",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUIGREENX1",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUJGREENX1",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUKGREENX1",
+          "name": "Specification",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUMGREENX1",
+          "name": "Claims",
+          "date": "2022-06-06",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEUNGREENX1",
+          "name": "Abstract",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEWEGREENX1",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L43DWEZMXBLUEX0",
+          "name": "Power of Attorney",
+          "date": "2022-06-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L479KF5JMBLUEM0",
+          "name": "Preliminary Amendment",
+          "date": "2022-06-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L479KF5KMBLUEM0",
+          "name": "Claims",
+          "date": "2022-06-06",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L479KF5LMBLUEM0",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2022-06-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L4EF55MQGREENX3",
+          "name": "Filing Receipt",
+          "date": "2022-06-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L4EF57W6XBLUEX5",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-06-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L4EF58OTXBLUEX1",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2022-06-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L8D4K0X6GREENX3",
+          "name": "Notice of Publication",
+          "date": "2022-09-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LBQW71LNXBLUEX0",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2022-12-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LE38RQ6VGREENX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-02-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYF3GREENX3",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYF8GREENX3",
+          "name": "Foreign Reference",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYFJGREENX3",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYFOGREENX3",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYG5GREENX3",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYGAGREENX3",
+          "name": "Foreign Reference",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYGGGREENX3",
+          "name": "Foreign Reference",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYGLGREENX3",
+          "name": "Foreign Reference",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYGRGREENX3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYGWGREENX3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKLKDYH1GREENX3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-07-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LLGYM4BKXBLUEX0",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-08-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LLM6PB36GREENM3",
+          "name": "Preliminary Amendment",
+          "date": "2023-08-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LLM6PB3EGREENM3",
+          "name": "Claims",
+          "date": "2023-08-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LLM6PB3MGREENM3",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2023-08-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOFP1BI3XBLUEX2",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2023-08-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GQXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GRXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GTXBLUEX2",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GUXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GWXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5GYXBLUEX2",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H0XBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H1XBLUEX2",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H3XBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H4XBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H7XBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5H9XBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HAXBLUEX2",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HBXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HCXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HEXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HJXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HKXBLUEX2",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HLXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUVOQ5HOXBLUEX2",
+          "name": "Foreign Reference",
+          "date": "2024-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PHXBLUEX9",
+          "name": "Non-Final Rejection",
+          "date": "2024-05-08",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PKXBLUEX9",
+          "name": "List of references cited by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PMXBLUEX9",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PNXBLUEX9",
+          "name": "Bibliographic Data Sheet",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6POXBLUEX9",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PQXBLUEX9",
+          "name": "Examiner's search strategy and results",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PRXBLUEX9",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PSXBLUEX9",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PTXBLUEX9",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PUXBLUEX9",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PVXBLUEX9",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PWXBLUEX9",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PXXBLUEX9",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6PZXBLUEX9",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVVCA6Q1XBLUEX9",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LW7MCQL1GREENX3",
+          "name": "A courtesy postcard sent by USPTO to users who opt-in for e-Office Action",
+          "date": "2024-05-15",
+          "family": "rejection",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6P2WFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6P5WFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6P7WFYGX51",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6P8WFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PAWFYGX51",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PCWFYGX51",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PHWFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PJWFYGX51",
+          "name": "Electronic Fee Payment",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PMWFYGX51",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PNWFYGX51",
+          "name": "Drawings-other than black and white line drawings",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PSWFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PUWFYGX51",
+          "name": "Foreign Reference",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PWWFYGX51",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2024-08-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6PZWFYGX51",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2024-08-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6Q1WFYGX51",
+          "name": "Specification",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6Q3WFYGX51",
+          "name": "Claims",
+          "date": "2024-08-07",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6Q5WFYGX51",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2024-08-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6Q7WFYGX51",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2024-08-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCA6Q8WFYGX51",
+          "name": "Specification",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZKCBB07WFYGX61",
+          "name": "Placeholder sheet indicating presence of supplemental content in Supplemental Complex Repository for Examiners(SCORE)",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZQ6TZQ5WFYGX53",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2024-08-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LD7WFYBX92",
+          "name": "Final Rejection",
+          "date": "2024-09-29",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LD9WFYBX92",
+          "name": "List of references cited by examiner",
+          "date": "2024-09-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LDAWFYBX92",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2024-09-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LDBWFYBX92",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-09-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LDDWFYBX92",
+          "name": "Examiner's search strategy and results",
+          "date": "2024-09-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M1NS5LDFWFYBX92",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-09-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01NNWFYGX55",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01NXWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01NZWFYGX55",
+          "name": "Request for Continued Examination (RCE)",
+          "date": "2025-03-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O1WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O2WFYGX55",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O3WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O4WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O6WFYGX55",
+          "name": "Transmittal Letter",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O7WFYGX55",
+          "name": "Assertion regarding Information Disclosure Statement (IDS) Size Fee (SB/08C)",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01O9WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OBWFYGX55",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OCWFYGX55",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OEWFYGX55",
+          "name": "Electronic Fee Payment",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OFWFYGX55",
+          "name": "Drawings-other than black and white line drawings",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OHWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OIWFYGX55",
+          "name": "Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)",
+          "date": "2025-03-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OKWFYGX55",
+          "name": "Drawings-other than black and white line drawings",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01OZWFYGX55",
+          "name": "Claims",
+          "date": "2025-03-24",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01P3WFYGX55",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2025-03-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01P5WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01P7WFYGX55",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01P9WFYGX55",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01PBWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01PDWFYGX55",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01PFWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK01PGWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M8NK1N0WWFYGX54",
+          "name": "Placeholder sheet indicating presence of supplemental content in Supplemental Complex Repository for Examiners(SCORE)",
+          "date": "2025-03-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M9A2GEIMWFYGX60",
+          "name": "Non-Final Rejection",
+          "date": "2025-04-11",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M9A2GEINWFYGX60",
+          "name": "List of references cited by examiner",
+          "date": "2025-04-11",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M9A2GEISWFYGX60",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2025-04-11",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M9A2GEITWFYGX60",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2025-04-11",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M9A2GEIWWFYGX60",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-04-11",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MBTXB31CWFYBX98",
+          "name": "Electronic Request for Interview with Examiner",
+          "date": "2025-06-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MD3K25HB154X255",
+          "name": "Examiner Interview Summary Record (PTOL - 413)",
+          "date": "2025-07-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MD3K25HG154X255",
+          "name": "Office Action Appendix",
+          "date": "2025-07-15",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCD195X217",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCG195X217",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCJ195X217",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCL195X217",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCN195X217",
+          "name": "Electronic Fee Payment",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCO195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCQ195X217",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCS195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCT195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCV195X217",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCW195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADCY195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD0195X217",
+          "name": "Transmittal Letter",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD1195X217",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2025-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD3195X217",
+          "name": "Applicant summary of interview with examiner",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD4195X217",
+          "name": "Claims",
+          "date": "2025-08-22",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD6195X217",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2025-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD8195X217",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADD9195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MENBADDB195X217",
+          "name": "Foreign Reference",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MEYTH07F147X179",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2025-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFL6ZBCJ120X170",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2025-09-16",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFL6ZBCK120X170",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2025-09-16",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFL6ZBCL120X170",
+          "name": "Issue Information including classification, examiner, name, claim, renumbering, etc.",
+          "date": "2025-09-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFL6ZBCM120X170",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-09-16",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFL6ZBCN120X170",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2025-09-16",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MG89HVJ74X40X94",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2025-10-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MGJIRRILX134X26",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2025-10-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4I5X158X5",
+          "name": "Specification",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4M5X158X5",
+          "name": "Drawings-other than black and white line drawings",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4N5X158X5",
+          "name": "Specification",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4O5X158X5",
+          "name": "Amendment after Notice of Allowance (Rule 312)",
+          "date": "2025-11-14",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MHZC7Y4Q5X158X5",
+          "name": "Specification",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4R5X158X5",
+          "name": "Specification",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4S5X158X5",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2025-11-14",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4U5X158X5",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2025-11-14",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZC7Y4V5X158X5",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHZCDIAT5X64X49",
+          "name": "Placeholder sheet indicating presence of supplemental content in Supplemental Complex Repository for Examiners(SCORE)",
+          "date": "2025-11-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJ7F06FA174X193",
+          "name": "Issue Fee Payment (PTO-85B)",
+          "date": "2025-12-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJ7F06FD174X193",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-12-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJ7F06FE174X193",
+          "name": "Electronic Fee Payment",
+          "date": "2025-12-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJA9CVKS144X217",
+          "name": "Response to Amendment under Rule 312",
+          "date": "2025-12-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJA9CVKW144X217",
+          "name": "Amendment After Final or under 37CFR 1.312, initialed by the examiner.",
+          "date": "2025-12-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MK4FHLTG175X131",
+          "name": "Issue Notification",
+          "date": "2026-01-07",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKM5UKAMX67X213",
+          "name": "eGrant day-of Notification",
+          "date": "2026-01-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 69 个，使用本代原申请"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093950.A",
+      "app_date": "2023-01-06",
+      "family_id": "86323936",
+      "pub_nums": [
+        "US.2023154244.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093955.A",
+      "app_date": "2023-01-06",
+      "family_id": "86385079",
+      "pub_nums": [
+        "US.2023158974.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093956.A",
+      "app_date": "2023-01-06",
+      "family_id": "86385087",
+      "pub_nums": [
+        "US.2023158975.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093962.A",
+      "app_date": "2023-01-06",
+      "family_id": "86325082",
+      "pub_nums": [
+        "US.2023150523.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093964.A",
+      "app_date": "2023-01-06",
+      "family_id": "86323934",
+      "pub_nums": [
+        "US.2023154245.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093967.A",
+      "app_date": "2023-01-06",
+      "family_id": "86323941",
+      "pub_nums": [
+        "US.2023154246.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318093970.A",
+      "app_date": "2023-01-06",
+      "family_id": "86383786",
+      "pub_nums": [
+        "US.2023161583.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123151.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298398.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123159.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298399.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123172.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298400.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123183.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298401.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123186.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298402.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123188.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298403.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123193.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298404.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123195.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298405.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123198.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023298406.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123203.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023360448.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318123208.A",
+      "app_date": "2023-03-17",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.2023316817.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318235481.A",
+      "app_date": "2023-08-18",
+      "family_id": "88976305",
+      "pub_nums": [
+        "US.2023396634.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318244147.A",
+      "app_date": "2023-09-08",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240073093.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318532224.A",
+      "app_date": "2023-12-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20240163173.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202318532696.A",
+      "app_date": "2023-12-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20240163174.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418416753.A",
+      "app_date": "2024-01-18",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240214271.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418416780.A",
+      "app_date": "2024-01-18",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240154867.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418416798.A",
+      "app_date": "2024-01-18",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240154868.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418417407.A",
+      "app_date": "2024-01-19",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240179063.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418417481.A",
+      "app_date": "2024-01-19",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240163172.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418417520.A",
+      "app_date": "2024-01-19",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20240154869.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418743848.A",
+      "app_date": "2024-06-14",
+      "family_id": "83284975",
+      "pub_nums": [
+        "US.20240336224.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418743878.A",
+      "app_date": "2024-06-14",
+      "family_id": "83284975",
+      "pub_nums": [
+        "US.20240326742.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418743953.A",
+      "app_date": "2024-06-14",
+      "family_id": "83284975",
+      "pub_nums": [
+        "US.20240326743.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418743967.A",
+      "app_date": "2024-06-14",
+      "family_id": "83284975",
+      "pub_nums": [
+        "US.20240326744.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418904768.A",
+      "app_date": "2024-10-02",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20250023786.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418908320.A",
+      "app_date": "2024-10-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20250030599.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418908424.A",
+      "app_date": "2024-10-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20250030600.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418908478.A",
+      "app_date": "2024-10-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20250030601.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418908498.A",
+      "app_date": "2024-10-07",
+      "family_id": "74882150",
+      "pub_nums": [
+        "US.20250030602.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519037560.A",
+      "app_date": "2025-01-27",
+      "family_id": "88976305",
+      "pub_nums": [
+        "US.20250175477.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519037617.A",
+      "app_date": "2025-01-27",
+      "family_id": "88976305",
+      "pub_nums": [
+        "US.20250175478.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519053042.A",
+      "app_date": "2025-02-13",
+      "family_id": "88976305",
+      "pub_nums": [
+        "US.20250202913.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519196408.A",
+      "app_date": "2025-05-01",
+      "family_id": "89995218",
+      "pub_nums": [
+        "US.20250260618.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519223425.A",
+      "app_date": "2025-05-30",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.20250292630.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519223431.A",
+      "app_date": "2025-05-30",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.20250292631.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519223437.A",
+      "app_date": "2025-05-30",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.20250292632.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519363044.A",
+      "app_date": "2025-10-20",
+      "family_id": "76437471",
+      "pub_nums": [
+        "US.20260120524.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519364868.A",
+      "app_date": "2025-10-21",
+      "family_id": "98698883",
+      "pub_nums": [
+        "US.20260045123.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519364937.A",
+      "app_date": "2025-10-21",
+      "family_id": "98698881",
+      "pub_nums": [
+        "US.20260045124.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 69 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.20864819.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "EP.3999979.A1",
+        "EP.3999979.A4"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 6 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.20865060.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "EP.3999973.A1",
+        "EP.3999973.A4"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 6 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.21764127.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "EP.4097923.A4",
+        "EP.4097923.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 6 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22816990.A",
+      "app_date": "2022-06-06",
+      "family_id": "84324599",
+      "pub_nums": [
+        "EP.4315284.A4",
+        "EP.4315284.A1"
+      ],
+      "status": "ok",
+      "doc_total": 41,
+      "picked": [
+        {
+          "doc_id": "M65RHUX17R9CBZ5",
+          "name": "European search opinion",
+          "name_en": "",
+          "date": "2025-01-24",
+          "family": "rejection",
+          "tender_date": "2025-01-24",
+          "file": "EP/2025-01-24_EP_European_search_opinion_RHUX17R9CBZ5.pdf",
+          "bytes": 214081,
+          "status": "ok"
+        }
+      ],
+      "title": "SYSTEM, METHOD, AND APPARATUS FOR MANAGING VEHICLE DATA COLLECTION",
+      "documents": [
+        {
+          "doc_id": "LBKRQP0J95AJOJS",
+          "name": "Published international application - A1",
+          "date": "2022-12-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LBKRQP0QKD7HCEZ",
+          "name": "Copy of the international search report",
+          "date": "2022-12-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LBZA1CB4122BM5S",
+          "name": "Notification of the recording of a change",
+          "date": "2022-12-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LCEPQAQ2U8FFQHT",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2023-01-02",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LNJHARZW18ZLFT5",
+          "name": "Information on entry into European phase",
+          "date": "2023-10-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOEWYIBSGPEKZRA",
+          "name": "Request for entry into the European phase",
+          "date": "2023-10-31",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LOEWYNUZ1API8BK",
+          "name": "(Electronic) Receipt",
+          "date": "2023-10-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOIPXB3BLE7PNNW",
+          "name": "Request for a change to the title of the invention",
+          "date": "2023-11-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOMMBQJ0358NK90",
+          "name": "Confirmation of effective date of early entry",
+          "date": "2023-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOJ84V0WLZHKCW3",
+          "name": "Communication regarding possible amendment of the application/payment of claims fee",
+          "date": "2023-11-10",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LQARC6PPP16POXP",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2023-12-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LQZVYJNTC8DP82X",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2024-01-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVZ4K4CCGJ9RTNM",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2024-05-09",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LVZ4K4O27YURYFL",
+          "name": "Amendments received before examination",
+          "date": "2024-05-09",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVZ4K501TCE9052",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2024-05-09",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVZ4K5DA1MY42XL",
+          "name": "Amended claims with annotations",
+          "date": "2024-05-09",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVZ4K68637QW5WF",
+          "name": "(Electronic) Receipt",
+          "date": "2024-05-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4IHRN1ABD2AO",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2024-11-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4II2E1WFQFYI",
+          "name": "Request for correction of errors in filed documents",
+          "date": "2024-11-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4IIGY1R1BGU9",
+          "name": "Description",
+          "date": "2024-11-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4IIXT8MMUQ5K",
+          "name": "Amended description with annotations",
+          "date": "2024-11-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4IJJ678OU6FX",
+          "name": "Drawings",
+          "date": "2024-11-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3Q4IK4W1H5S1OH",
+          "name": "(Electronic) Receipt",
+          "date": "2024-11-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M3QYYWGORKM6I7U",
+          "name": "Communication for party to proceedings/third party",
+          "date": "2024-11-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M5M79JOC7A9CGO0",
+          "name": "Search started",
+          "date": "2025-01-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M65PA9F41J62YI0",
+          "name": "Communication regarding the transmission of the European search report",
+          "date": "2025-01-24",
+          "family": "citation",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M65RCP3FVZ5TJ0E",
+          "name": "Supplementary European search report",
+          "date": "2025-01-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M65RCPDW4C193C4",
+          "name": "Information on Search Strategy",
+          "date": "2025-01-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M65RHUX17R9CBZ5",
+          "name": "European search opinion",
+          "date": "2025-01-24",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "M6PPTA9NKQT04AN",
+          "name": "Invitation to declare maintenance of the application and to correct deficiencies in the Written Opinion/amend application",
+          "date": "2025-02-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2AZS1QWW9UZ",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2025-08-11",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2BTQI41KV3N",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2025-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2C8QJKSYGYZ",
+          "name": "Amended description with annotations",
+          "date": "2025-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2COHNRX2R6B",
+          "name": "Amended claims with annotations",
+          "date": "2025-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2D1B253R3KU",
+          "name": "Amendments received before examination",
+          "date": "2025-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME7B2DN3Q4C6TB5",
+          "name": "(Electronic) Receipt",
+          "date": "2025-08-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MGG5H06A13FE7SH",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2025-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME846O82RRTBE2F",
+          "name": "Brief communication to applicant/representative",
+          "date": "2025-08-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MGFAI7U11OW0IM8",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2025-10-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MGFAI88F4I2M41I",
+          "name": "Matter concerning the application",
+          "date": "2025-10-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MGFAI8N3PDYEIX8",
+          "name": "(Electronic) Receipt",
+          "date": "2025-10-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 6 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22879366.A",
+      "app_date": "2022-10-11",
+      "family_id": "85804698",
+      "pub_nums": [
+        "EP.4384992.A1",
+        "EP.4384992.A4"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 6 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.23863852.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "EP.4584940.A4",
+        "EP.4584940.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 6 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202080080424.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "CN.114651427.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202080080426.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "CN.114651456.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202411076633.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "CN.118945009.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202411076635.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "CN.118945010.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202511486690.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "CN.121056485.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202180033047.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "CN.115443637.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202511579241.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "CN.121357005.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202511579243.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "CN.121441751.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202511579253.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "CN.121547355.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280040013.A",
+      "app_date": "2022-06-06",
+      "family_id": "84324599",
+      "pub_nums": [
+        "CN.117425921.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280081910.A",
+      "app_date": "2022-10-11",
+      "family_id": "85804698",
+      "pub_nums": [
+        "CN.118451481.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202380077659.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "CN.120153636.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20227012919.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "KR.20220070242.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20227012920.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "KR.20220068239.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267007247.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "KR.20260049288.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267029959.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "KR.20260139830.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267029960.A",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "KR.20260139226.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20227034679.A",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "KR.20220152268.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20237044530.A",
+      "app_date": "2022-06-06",
+      "family_id": "84324599",
+      "pub_nums": [
+        "KR.20240018508.A"
+      ],
+      "status": "ok",
+      "doc_total": 5,
+      "picked": [
+        {
+          "doc_id": "Amendment_including_Specification_etc._112026093800855_KR",
+          "name": "Amendment including Specification etc.",
+          "name_en": "Amendment including Specification etc.",
+          "date": "2026-07-31",
+          "family": "applicant",
+          "tender_date": "2026-07-31",
+          "file": "KR/2026-07-31_KR_Amendment_including_Specification_etc_093800855_KR.pdf",
+          "bytes": 71833,
+          "status": "ok"
+        }
+      ],
+      "title": "SYSTEM, METHOD, AND APPARATUS FOR MANAGING VEHICLE DATA COLLECTION",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112023144383530_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2023-12-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112024001768035_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2024-01-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112024126006870_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2024-11-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_112025041011187_KR",
+          "name": "Request for Examination",
+          "date": "2025-04-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112026093800855_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2026-07-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 12 个，使用本代原申请"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20247014732.A",
+      "app_date": "2022-10-11",
+      "family_id": "85804698",
+      "pub_nums": [
+        "KR.20240089282.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20257010997.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "KR.20250065655.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267027079.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "KR.20260128518.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267027080.A",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "KR.20260128519.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267025132.A",
+      "app_date": "2025-01-06",
+      "family_id": "96387518",
+      "pub_nums": [
+        "KR.20260135829.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 12 个，已取到 2022-06-06 代的文书，不再重复下载"
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2020051817.W",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "WO.2021055952.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2020051825.W",
+      "app_date": "2020-09-21",
+      "family_id": "74882150",
+      "pub_nums": [
+        "WO.2021055955.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2021021421.W",
+      "app_date": "2021-03-08",
+      "family_id": "77612836",
+      "pub_nums": [
+        "WO.2021178979.A1",
+        "WO.2021178979.A8"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2022032380.W",
+      "app_date": "2022-06-06",
+      "family_id": "84324599",
+      "pub_nums": [
+        "WO.2022256742.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2022046292.W",
+      "app_date": "2022-10-11",
+      "family_id": "85804698",
+      "pub_nums": [
+        "WO.2023059938.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2023032346.W",
+      "app_date": "2023-09-08",
+      "family_id": "90191817",
+      "pub_nums": [
+        "WO.2024054664.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2025010485.W",
+      "app_date": "2025-01-06",
+      "family_id": "96387518",
+      "pub_nums": [
+        "WO.2025151377.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280040013.A",
+    "app_date": "2022-06-06",
+    "family_id": "84324599"
+  }
+}
