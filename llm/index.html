@@ -313,29 +313,49 @@ async function findDuplicate(t, key) {
   return null;
 }
 
+// 未取用的同族成员状态（只省略，不算失败）
+const NOISE_STATUS = { sibling: 1, other_generation: 1, member_limit: 1 };
+
 function renderResult(data) {
   const r = data.result;
   if (!r) return;
   const counts = Object.entries(r.family_counts || {}).map(([k, v]) => k + " " + v).join(" · ");
-  $("summary").innerHTML = "同族成员：" + counts + "　|　生成时间：" + (r.generated_at || "");
+  const members = (r.members || []).filter(m => m.status !== "skipped");
+  const pickedMembers = members.filter(m => m.picked && m.picked.length);
+  const totalDocs = pickedMembers.reduce((s, m) => s + m.picked.length, 0);
+  const omitted = members.filter(m => !(m.picked && m.picked.length) && NOISE_STATUS[m.status]).length;
+
+  let summary = "同族成员：" + (counts || "—") + "　|　生成时间：" + (r.generated_at || "");
+  if (pickedMembers.length) {
+    summary += '<div style="margin-top:6px">本次仅取各局最相关的 1 件（共 '
+      + pickedMembers.length + " 件 / " + totalDocs + " 份）："
+      + pickedMembers.map(m => m.country + " 1 件/" + m.picked.length + " 份").join(" · ") + "</div>";
+  }
+  if (omitted) {
+    summary += '<div class="muted" style="margin-top:2px">其余 ' + omitted
+      + " 个同族成员（其他代 / 超出每局上限）未取用，不在下表展示</div>";
+  }
+  $("summary").innerHTML = summary;
 
   const rows = [];
-  for (const m of r.members) {
-    if (m.status === "skipped") continue;
+  for (const m of members) {
+    const note = m.note ? '<div class="muted" style="font-weight:400;font-size:11px;line-height:1.45">' + esc(m.note) + "</div>" : "";
     if (!m.picked || !m.picked.length) {
-      rows.push('<tr><td class="country">' + m.country + '</td><td colspan="4" class="muted">'
-        + (m.error || m.status) + "</td></tr>");
+      if (NOISE_STATUS[m.status]) continue;
+      rows.push('<tr><td class="country">' + m.country + note + '</td><td colspan="4" class="muted">'
+        + esc(m.error || m.status || "未取到文书") + "</td></tr>");
       continue;
     }
     m.picked.forEach((p, i) => {
       const size = p.bytes ? (p.bytes / 1024).toFixed(0) + " KB" : "";
-      const name = p.url ? '<a href="' + p.url + '" target="_blank">' + p.name + "</a>" : p.name;
+      const label = esc(p.name || "");
+      const name = p.url ? '<a href="' + p.url + '" target="_blank">' + label + "</a>" : label;
       rows.push("<tr>"
         + (i === 0 ? '<td class="country" rowspan="' + m.picked.length + '">' + m.country
             + '<div class="muted" style="font-weight:400;font-size:11.5px">' + (m.app_num || "")
-            + "<br>文书 " + m.doc_total + "</div></td>" : "")
+            + "<br>文书 " + m.doc_total + "</div>" + note + "</td>" : "")
         + '<td><span class="' + tagClass(p.family) + '">' + (p.family || "other") + "</span></td>"
-        + "<td>" + name + (p.error ? '<div class="err">' + p.error + "</div>" : "") + "</td>"
+        + "<td>" + name + (p.error ? '<div class="err">' + esc(p.error) + "</div>" : "") + "</td>"
         + '<td class="muted">' + (p.date || "") + "</td>"
         + '<td class="muted">' + size + "</td></tr>");
     });
