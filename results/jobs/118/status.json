@@ -1,0 +1,97 @@
+{
+  "state": "done",
+  "issue": 118,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-29T07:08:49+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118056148A（2 篇/局）",
+    "    OK  JP 拒絶理由通知書  193 KB",
+    "    OK  JP 国際調査報告（日本語）  69 KB"
+  ],
+  "query": "CN118056148A",
+  "offices": [
+    "JP"
+  ],
+  "max_docs": 2,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118056148A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-29T07:08:51+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023554942.A",
+        "status": "ok",
+        "doc_total": 25,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-07-07",
+            "status": "ok",
+            "bytes": 197857,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/118/CN118056148A/JP/2026-07-07_JP_Notice_of_Reasons_for_Refusal_126297320_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告（日本語）",
+            "family": "citation",
+            "date": "2023-07-24",
+            "status": "ok",
+            "bytes": 70259,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/118/CN118056148A/JP/2023-07-24_JP_International_Search_Report%28in_Japanese%29_312540094_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218698915.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22880631.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280067311.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022030962.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-29T07:09:01+00:00"
+}
