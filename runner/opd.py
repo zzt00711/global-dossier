@@ -12,11 +12,14 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import random
 import re
 import time
+import uuid
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -81,6 +84,28 @@ TRANSIENT_MSG = "情報が取得できませんでした"
 # 仍在 job 的 30 分钟上限内；正常任务不会走到这里。
 FAMILY_RETRY_DELAYS = (5.0, 30.0, 90.0, 180.0, 300.0)
 
+# 2026-10 起 OPD 各接口都要求先做一次 Cookie 签名握手，否则网关直接回 C10131-E：
+#   POST /app/docgw/wsc1101 {"SERVICE_ID": "WSH0701"}
+# 返回 ECRL（7 位比特串，决定签名要拼哪些字段）与 ECKY，
+# 再按 sha256(拼接串) 写入 Cookie Z，随业务请求一起发出。
+HASH_URL = "/app/docgw/wsc1101"
+COOKIE_UUID = "U"
+COOKIE_LANG = "L"
+COOKIE_PAGE_ID = "D"
+COOKIE_REQUEST_TIME = "T"
+COOKIE_SITE_ID = "S"
+COOKIE_HASH = "Z"
+SITE_ID = "www"
+LANG = "ja"
+
+# MSG_LIST 只有 ID 时，补一句人话，避免把 {'ID': 'C10131-E'} 直接怼到 issue 里
+MSG_HINTS = {
+    "C10129-E": "J-PlatPat 验证码已取消，请稍后重试",
+    "C10130-E": "J-PlatPat 验证码校验未通过，请稍后重试",
+    "C10131-E": "J-PlatPat 服务器繁忙（外部系统连携错误），请稍后重试",
+    "C10132-E": "J-PlatPat 同一 IP 验证码次数超限，请稍后重试",
+}
+
 # 人类化节奏：按「上一个动作 → 下一个动作」分段取对数正态分布（秒）。
 # 真实用户是「看一眼再点」，间隔天然右偏、偶尔很长，固定间隔反而像脚本。
 DELAY_RANGES = {
@@ -120,9 +145,22 @@ class OpdError(RuntimeError):
         self.message = message
 
 
+def _num_key(parts: dict[str, str]) -> str:
+    """号段三元组拼成前端签名用的 CN.116887720.A 形式。"""
+    return ".".join(
+        [
+            parts.get("CNTRY_CD_PART", ""),
+            parts.get("NUM_PART", ""),
+            parts.get("KIND_CD_PART", ""),
+        ]
+    )
+
+
 def _is_transient(exc: "OpdError") -> bool:
     """判断是否为 J-PlatPat 侧临时不可用（可重试）。"""
-    return exc.status == "1" and TRANSIENT_MSG in exc.message
+    if exc.status != "1":
+        return False
+    return TRANSIENT_MSG in exc.message or "C10131-E" in exc.message
 
 
 def parse_cn_publication(raw: str) -> dict[str, str]:
@@ -169,6 +207,8 @@ class OpdClient:
         self.retries = retries
         self.session = self._new_session()
         self._last = 0.0
+        # 官网前端用客户端自生成的 UUID 参与 Cookie 签名，这里同样生成一次
+        self.uuid = str(uuid.uuid4())
 
     @staticmethod
     def _new_session() -> requests.Session:
@@ -236,10 +276,17 @@ class OpdClient:
         messages: list[str] = []
         for item in _as_list(info.get("MSG_LIST")):
             if isinstance(item, dict):
-                text = item.get("MSG") or item.get("MESSAGE") or item.get("MSG_TXT") or item
+                text = item.get("MSG") or item.get("MESSAGE") or item.get("MSG_TXT")
+                if not text:
+                    mid = str(item.get("ID") or "").strip()
+                    text = f"{mid}：{MSG_HINTS[mid]}" if mid in MSG_HINTS else str(item)
                 messages.append(str(text))
             else:
                 messages.append(str(item))
+        if not messages:
+            mid = str(info.get("MSG_ID") or "").strip()
+            if mid:
+                messages.append(f"{mid}：{MSG_HINTS[mid]}" if mid in MSG_HINTS else mid)
         raise OpdError(code or "UNKNOWN", " / ".join(messages) or "OPD 返回失败")
 
     def _post_with_retry(
@@ -265,8 +312,56 @@ class OpdClient:
                 time.sleep(wait)
                 attempt += 1
 
+    # ── Cookie 签名 ──────────────────────────────────────────
+    def _cookie_hash(self, service_id: str, key: str, page_id: str) -> None:
+        """按官网前端逻辑刷新 Cookie 签名 Z。
+
+        ECRL 决定签名串拼哪些字段，顺序固定为
+        号码 / UUID / 时刻 / 语言 / 页面 ID / 站点 ID / ECKY。
+        """
+        now = datetime.now()
+        stamp = now.strftime("%Y%m%d%H%M%S") + f"{now.microsecond // 1000:03d}"
+        for name, value in (
+            (COOKIE_UUID, self.uuid),
+            (COOKIE_LANG, LANG),
+            (COOKIE_PAGE_ID, page_id),
+            (COOKIE_REQUEST_TIME, stamp),
+            (COOKIE_SITE_ID, SITE_ID),
+        ):
+            self.session.cookies.set(name, value)
+        try:
+            r = self.session.post(
+                BASE + HASH_URL,
+                data=json.dumps({"SERVICE_ID": service_id}, ensure_ascii=False).encode("utf-8"),
+                headers=API_HEADERS,
+                timeout=60,
+            )
+            r.raise_for_status()
+            data = r.json()
+        except (requests.RequestException, ValueError) as exc:
+            raise OpdError("AUTH", f"Cookie 签名握手失败: {exc}") from exc
+        info = data.get("RSLT_INFO") or {}
+        if str(info.get("RSLT_CD", "")).strip() != "0":
+            mid = str(info.get("MSG_ID") or "").strip()
+            raise OpdError("AUTH", MSG_HINTS.get(mid, mid) or "Cookie 签名握手失败")
+        bits = bin(int(data.get("ECRL") or 0))[2:].zfill(7)
+        parts = [
+            key,
+            self.uuid,
+            stamp,
+            LANG,
+            page_id,
+            SITE_ID,
+            str(data.get("ECKY") or ""),
+        ]
+        joined = "".join(part for bit, part in zip(bits, parts) if bit == "1")
+        self.session.cookies.set(
+            COOKIE_HASH, hashlib.sha256(joined.encode("utf-8")).hexdigest()
+        )
+
     # ── wsh0701 ──────────────────────────────────────────────
     def family(self, inqry: dict[str, str], bul_type: str = "publication") -> list[dict[str, Any]]:
+        self._cookie_hash("WSH0701", _num_key(inqry), "H0200")
         body = {
             "DISP_ID": "H0200",
             "SVC": "jpp",
@@ -307,6 +402,7 @@ class OpdClient:
         app_num: dict[str, str],
         refr_type: str = "publication",
     ) -> dict[str, Any]:
+        self._cookie_hash("WSH0501", _num_key(app_num), "H0200")
         body = {
             "DISP_ID": "H0200",
             "SVC": "jpp",
@@ -356,6 +452,7 @@ class OpdClient:
         file_type: str = "PDF",
         refr_type: str = "publication",
     ) -> dict[str, Any]:
+        self._cookie_hash("WSH0901", _num_key(app_num), "H0400")
         body = {
             "DISP_ID": "H0400",
             "SVC": "jpp",
