@@ -237,6 +237,7 @@ def _collect_member(
     out_dir: Path,
     download: bool,
     entry: dict[str, Any],
+    deadline: float | None = None,
 ) -> bool:
     """抓单个同族成员的文书并下载；返回是否拿到了可用文书。"""
     app_parts = _member_app_parts(member)
@@ -287,6 +288,11 @@ def _collect_member(
             item["status"] = "dry_run"
             entry["picked"].append(item)
             continue
+        # 时间预算用尽后不再发起新下载，已下的保留，剩下的明确标记
+        if deadline is not None and time.monotonic() >= deadline:
+            item.update({"status": "timeout", "error": "任务时间预算用尽，未下载"})
+            entry["picked"].append(item)
+            continue
         try:
             content = client.doc_content(input_parts, app_parts, d["doc_id"])
             item["tender_date"] = content.get("tender_date")
@@ -311,7 +317,13 @@ def _collect_member(
         time.sleep(0.3)
 
     ok = [p for p in entry["picked"] if p.get("status") in {"ok", "dry_run"}]
-    entry["status"] = "ok" if ok else "download_failed"
+    if ok:
+        entry["status"] = "ok"
+    elif any(p.get("status") == "timeout" for p in entry["picked"]):
+        entry["status"] = "timeout"
+        entry["error"] = "任务时间预算用尽，未下载"
+    else:
+        entry["status"] = "download_failed"
     return bool(ok)
 
 
@@ -322,8 +334,9 @@ def collect(
     out_root: Path | None = None,
     download: bool = True,
     client: OpdClient | None = None,
+    deadline: float | None = None,
 ) -> dict[str, Any]:
-    """抓取并下载，返回 manifest。"""
+    """抓取并下载，返回 manifest。deadline 为 time.monotonic() 口径的截止时刻。"""
     offices = [o.upper() for o in (offices or ["JP", "EP", "US", "KR"])]
     client = client or OpdClient()
     out_dir = (out_root or Path(__file__).parent / "out") / query.upper()
@@ -431,8 +444,22 @@ def collect(
                     )
                     continue
                 attempted += 1
+                if deadline is not None and time.monotonic() >= deadline:
+                    # 预算用尽：不再开新成员，明确标记而不是伪装成 skipped
+                    entry["status"] = "timeout"
+                    entry["note"] = "任务时间预算用尽，本次未抓取"
+                    manifest["partial"] = True
+                    continue
                 if _collect_member(
-                    client, input_parts, member, country, max_docs, out_dir, download, entry
+                    client,
+                    input_parts,
+                    member,
+                    country,
+                    max_docs,
+                    out_dir,
+                    download,
+                    entry,
+                    deadline=deadline,
                 ):
                     covered.add(country)
                     covered_gen[country] = d
@@ -461,9 +488,13 @@ def collect(
                     else:
                         entry["note"] = f"该局同族成员 {total} 个，使用本代原申请"
 
+    if any(m.get("status") == "timeout" for m in manifest["members"]):
+        manifest["partial"] = True
+
     manifest_path = out_dir / "manifest.json"
-    manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    # 原子写：进程被 30 分钟上限杀掉时，不会留下半截 manifest 让缓存误判
+    tmp_path = manifest_path.with_name(manifest_path.name + ".tmp")
+    tmp_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp_path.replace(manifest_path)
     manifest["manifest_path"] = str(manifest_path)
     return manifest
