@@ -82,7 +82,11 @@ jobs:
             } else if (st.state === 'done') {
               const counts = Object.entries(st.result?.family_counts || {})
                 .map(([k, v]) => `${k} ${v}`).join(' · ');
-              body = `完成：${st.query}\n\n同族成员：${counts}\n\n`
+              // partial：到 24 分钟预算主动收尾，已抓到的可用，但仍有成员没跑
+              const head = st.result?.partial
+                ? `部分完成：${st.query}（时间预算用尽，剩余同族成员未抓取）`
+                : `完成：${st.query}`;
+              body = `${head}\n\n同族成员：${counts}\n\n`
                 + `打开结果页：https://zzt00711.github.io/global-dossier/llm/?job=${n}`;
             } else if (st.state === 'running') {
               // Run OPD job 步被 30 分钟超时取消时，进程来不及写 error，状态会停在 running
