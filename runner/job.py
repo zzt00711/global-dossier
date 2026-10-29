@@ -17,6 +17,7 @@ import os
 import re
 import shutil
 import sys
+import time
 import traceback
 from datetime import datetime, timezone
 from pathlib import Path
@@ -34,6 +35,9 @@ MAX_JOBS_KEEP = 10
 # 同 CN 号重复提交时直接复用上次抓取结果，避免重复请求 OPD
 CACHE_TTL = 72 * 3600
 MAX_CACHE_KEEP = 10
+# workflow 上限 30 分钟，留 6 分钟给 checkout / 提交 / 回写 issue；
+# 到点主动收尾，至少把已抓到的结果和 manifest 落盘。
+JOB_BUDGET_SECONDS = 24 * 60
 
 
 class _LogWriter(io.TextIOBase):
@@ -128,13 +132,17 @@ def slim_result(manifest: dict, issue: int) -> dict:
         "query": manifest.get("query"),
         "family_counts": manifest.get("family_counts", {}),
         "generated_at": manifest.get("generated_at"),
+        "partial": bool(manifest.get("partial")),
         "members": members,
     }
 
 
 def write_status(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 原子写：Actions 超时杀进程时，status.json 不会停在半截 JSON 上
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def safe_write_status(path: Path, payload: dict) -> None:
@@ -178,7 +186,8 @@ def load_cache_manifest(cache_dir: Path) -> dict | None:
 
 
 # 这些状态说明抓取本身失败，缓存再新也要重试；no_doc/bad_app_num 重试也不会变
-RETRYABLE_STATUS = {"doc_list_failed", "download_failed"}
+# timeout 是时间预算用尽，成员还没抓到，同样不能被当成完整结果长期复用
+RETRYABLE_STATUS = {"doc_list_failed", "download_failed", "timeout"}
 
 
 def cache_covers(manifest: dict, offices: list[str], max_docs: int) -> bool:
@@ -252,6 +261,7 @@ def cleanup_cache(cache_root: Path) -> None:
 
 
 def main() -> int:
+    started = time.monotonic()
     issue = int(os.environ.get("ISSUE_NUMBER", "0"))
     body = os.environ.get("ISSUE_BODY", "")
     jobs_root = REPO_ROOT / "results" / "jobs"
@@ -315,9 +325,12 @@ def main() -> int:
                     max_docs=fetch_max,
                     out_root=cache_root,
                     download=True,
+                    deadline=started + JOB_BUDGET_SECONDS,
                 )
                 manifest = select_manifest(full, offices, max_docs)
                 fetched = True
+
+            status["partial"] = bool(manifest.get("partial"))
 
             copy_picked(manifest, cache_dir, job_dir / query)
             if fetched and not any(
