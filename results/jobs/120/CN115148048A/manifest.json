@@ -1,0 +1,39 @@
+{
+  "query": "CN115148048A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "115148048",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-29T08:12:39+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "CN": 1
+  },
+  "members": [
+    {
+      "country": "CN",
+      "app_num": "CN.202110347706.A",
+      "app_date": "2021-03-31",
+      "family_id": "83404410",
+      "pub_nums": [
+        "CN.115148048.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202110347706.A",
+    "app_date": "2021-03-31",
+    "family_id": "83404410"
+  }
+}
