@@ -15,6 +15,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 import random
 import re
 import time
@@ -83,6 +84,9 @@ TRANSIENT_MSG = "情報が取得できませんでした"
 # 实测 J-PlatPat 的软失败可持续 2~3 分钟以上，故把窗口拉到约 10 分钟，
 # 仍在 job 的 30 分钟上限内；正常任务不会走到这里。
 FAMILY_RETRY_DELAYS = (5.0, 30.0, 90.0, 180.0, 300.0)
+# 成员级接口（wsh0501 / wsh0901）的短重试：单篇失败只影响一篇，
+# 等 5 分钟没有意义，3 次、合计约 20 秒足够兜住瞬时抖动。
+SHORT_RETRY_DELAYS = (2.0, 5.0, 10.0)
 
 # 2026-10 起 OPD 各接口都要求先做一次 Cookie 签名握手，否则网关直接回 C10131-E：
 #   POST /app/docgw/wsc1101 {"SERVICE_ID": "WSH0701"}
@@ -156,11 +160,16 @@ def _num_key(parts: dict[str, str]) -> str:
     )
 
 
+def _needs_reauth(exc: "OpdError") -> bool:
+    """签名缺失或过期时，网关统一回 C10131-E，需要重新握手再试。"""
+    return "C10131-E" in exc.message
+
+
 def _is_transient(exc: "OpdError") -> bool:
     """判断是否为 J-PlatPat 侧临时不可用（可重试）。"""
     if exc.status != "1":
         return False
-    return TRANSIENT_MSG in exc.message or "C10131-E" in exc.message
+    return TRANSIENT_MSG in exc.message or _needs_reauth(exc)
 
 
 def parse_cn_publication(raw: str) -> dict[str, str]:
@@ -209,6 +218,8 @@ class OpdClient:
         self._last = 0.0
         # 官网前端用客户端自生成的 UUID 参与 Cookie 签名，这里同样生成一次
         self.uuid = str(uuid.uuid4())
+        # 最近一次握手的参数，会话重建或签名过期时据此重新握手
+        self._auth: tuple[str, str, str] | None = None
 
     @staticmethod
     def _new_session() -> requests.Session:
@@ -242,7 +253,19 @@ class OpdClient:
                 data = r.json()
                 self._check(data)
                 return data
-            except OpdError:
+            except OpdError as exc:
+                last = exc
+                # 网关回 C10131-E 多半是签名过期（会话重建也会丢 Cookie）；
+                # 先重新握手再重试，避免把一次瞬时失败放大成整单失败。
+                if attempt < self.retries and _needs_reauth(exc) and self._auth is not None:
+                    wait = min(MAX_BACKOFF, 2.0 * attempt + random.random())
+                    print(
+                        f"    OPD 签名校验未通过，{wait:.0f}s 后重新握手重试"
+                        f"（{attempt}/{self.retries}）"
+                    )
+                    time.sleep(wait)
+                    self._reauth()
+                    continue
                 raise
             except requests.exceptions.HTTPError as exc:
                 last = exc
@@ -265,6 +288,11 @@ class OpdClient:
                         ),
                     ):
                         self.session = self._new_session()
+                        # 新 Session 没有任何 Cookie，不重新握手会被网关判成 C10131-E
+                        try:
+                            self._reauth()
+                        except OpdError as auth_exc:
+                            print(f"    重建会话后握手失败：{auth_exc}")
         raise OpdError("NETWORK", f"{path} 请求失败: {last}")
 
     @staticmethod
@@ -312,6 +340,34 @@ class OpdClient:
                 time.sleep(wait)
                 attempt += 1
 
+    def _post_with_short_retry(
+        self, path: str, body: dict[str, Any], timeout: float = 60, kind: str = "doc_content"
+    ) -> dict[str, Any]:
+        """成员级接口：对 J-PlatPat 临时不可用做 3 次短退避重试。
+
+        单个成员的文书列表/单篇文书失败不应该拖垮整单，也不值得等上几分钟。
+        """
+        attempt = 0
+        while True:
+            try:
+                return self._post(path, body, timeout=timeout, kind=kind)
+            except OpdError as exc:
+                if not _is_transient(exc) or attempt >= len(SHORT_RETRY_DELAYS):
+                    raise
+                wait = SHORT_RETRY_DELAYS[attempt] + random.random()
+                print(
+                    f"    OPD 暂未返回数据，{wait:.0f}s 后重试"
+                    f"（{attempt + 1}/{len(SHORT_RETRY_DELAYS)}）"
+                )
+                time.sleep(wait)
+                attempt += 1
+
+    def _reauth(self) -> None:
+        """用最近一次的业务参数重新握手（会话重建或签名过期时调用）。"""
+        if self._auth is None:
+            raise OpdError("AUTH", "缺少握手参数，无法刷新签名")
+        self._cookie_hash(*self._auth)
+
     # ── Cookie 签名 ──────────────────────────────────────────
     def _cookie_hash(self, service_id: str, key: str, page_id: str) -> None:
         """按官网前端逻辑刷新 Cookie 签名 Z。
@@ -321,6 +377,7 @@ class OpdClient:
         """
         now = datetime.now()
         stamp = now.strftime("%Y%m%d%H%M%S") + f"{now.microsecond // 1000:03d}"
+        self._auth = (service_id, key, page_id)
         for name, value in (
             (COOKIE_UUID, self.uuid),
             (COOKIE_LANG, LANG),
@@ -329,22 +386,57 @@ class OpdClient:
             (COOKIE_SITE_ID, SITE_ID),
         ):
             self.session.cookies.set(name, value)
-        try:
-            r = self.session.post(
-                BASE + HASH_URL,
-                data=json.dumps({"SERVICE_ID": service_id}, ensure_ascii=False).encode("utf-8"),
-                headers=API_HEADERS,
-                timeout=60,
-            )
-            r.raise_for_status()
-            data = r.json()
-        except (requests.RequestException, ValueError) as exc:
-            raise OpdError("AUTH", f"Cookie 签名握手失败: {exc}") from exc
+
+        data: dict[str, Any] = {}
+        last: Exception | None = None
+        for attempt in range(1, self.retries + 1):
+            try:
+                r = self.session.post(
+                    BASE + HASH_URL,
+                    data=json.dumps({"SERVICE_ID": service_id}, ensure_ascii=False).encode("utf-8"),
+                    headers=API_HEADERS,
+                    timeout=60,
+                )
+                r.raise_for_status()
+                data = r.json()
+                break
+            except requests.exceptions.HTTPError as exc:
+                last = exc
+                resp = exc.response
+                if attempt < self.retries and resp is not None and resp.status_code in RETRY_STATUS:
+                    wait = _retry_delay(resp, attempt)
+                    print(
+                        f"    握手 HTTP {resp.status_code}，{wait:.0f}s 后重试"
+                        f"（{attempt}/{self.retries}）"
+                    )
+                    time.sleep(wait)
+                    continue
+            except Exception as exc:  # 网络、SSL、JSON 解析
+                last = exc
+                if attempt < self.retries:
+                    time.sleep(min(MAX_BACKOFF, 1.5 * attempt + random.random()))
+        else:
+            raise OpdError("AUTH", f"Cookie 签名握手失败: {last}")
+
         info = data.get("RSLT_INFO") or {}
         if str(info.get("RSLT_CD", "")).strip() != "0":
             mid = str(info.get("MSG_ID") or "").strip()
             raise OpdError("AUTH", MSG_HINTS.get(mid, mid) or "Cookie 签名握手失败")
-        bits = bin(int(data.get("ECRL") or 0))[2:].zfill(7)
+
+        ecrl = data.get("ECRL")
+        ecky = str(data.get("ECKY") or "")
+        try:
+            bits = bin(int(ecrl))[2:].zfill(7)
+        except (TypeError, ValueError) as exc:
+            raise OpdError("AUTH", f"Cookie 签名握手返回无法解析的 ECRL: {ecrl!r}") from exc
+        if len(bits) > 7:
+            # 多出来的位此前没出现过；静默截断只会算出错误签名，不如显式报错
+            raise OpdError(
+                "AUTH", f"ECRL 位数由 7 变为 {len(bits)}（{ecrl!r}），签名规则可能已变更"
+            )
+        if bits[6] == "1" and not ecky:
+            raise OpdError("AUTH", "Cookie 签名握手未返回 ECKY，无法生成签名")
+
         parts = [
             key,
             self.uuid,
@@ -352,7 +444,7 @@ class OpdClient:
             LANG,
             page_id,
             SITE_ID,
-            str(data.get("ECKY") or ""),
+            ecky,
         ]
         joined = "".join(part for bit, part in zip(bits, parts) if bit == "1")
         self.session.cookies.set(
@@ -412,8 +504,16 @@ class OpdClient:
             "APP_NUM": app_num,
             "OTID": None,
         }
-        data = self._post("/app/opdgw/wsh0501", body, kind="doc_list")
-        respond = ((data.get("RSLT_INFO") or {}).get("DOC_LST_INFO_RESPOND") or {})
+        data = self._post_with_short_retry("/app/opdgw/wsh0501", body, kind="doc_list")
+        info = data.get("RSLT_INFO") or {}
+        # 正常情况下即使该号没有文书，这个字段也会出现（内容为空）；
+        # 整个字段消失说明响应结构变了，继续往下解析只会静默产出空列表。
+        if "DOC_LST_INFO_RESPOND" not in info:
+            raise OpdError(
+                "SCHEMA",
+                "文书列表响应缺少 DOC_LST_INFO_RESPOND，接口可能变更，或该号无著录数据",
+            )
+        respond = info.get("DOC_LST_INFO_RESPOND") or {}
         bbl = respond.get("BBL_INFO") or {}
         docs: list[dict[str, Any]] = []
         seen: set[str] = set()
@@ -464,7 +564,7 @@ class OpdClient:
             "FILE_TYPE": file_type,
             "OTID": None,
         }
-        data = self._post("/app/opdgw/wsh0901", body)
+        data = self._post_with_short_retry("/app/opdgw/wsh0901", body)
         respond = ((data.get("RSLT_INFO") or {}).get("DOC_ENTTY_INFO_RESPOND") or {})
         info = respond.get("DOC_INFO") or {}
         url = info.get("DOC_URL") or ""
@@ -484,6 +584,9 @@ class OpdClient:
         """流式下载 PDF，返回字节数。DOC_URL 有时效，必须拿到后立即调用。"""
         url = doc_url if doc_url.startswith("http") else BASE + doc_url
         dest.parent.mkdir(parents=True, exist_ok=True)
+        # 先写 .part、下完再改名：中途失败或进程被杀时，
+        # 结果目录里不会留下一个能被当成「已下载」的半截 PDF。
+        part = dest.with_name(dest.name + ".part")
         last: Exception | None = None
         for attempt in range(1, self.retries + 1):
             self._throttle("pdf")
@@ -492,7 +595,7 @@ class OpdClient:
                     r.raise_for_status()
                     first = b""
                     size = 0
-                    with dest.open("wb") as fh:
+                    with part.open("wb") as fh:
                         for chunk in r.iter_content(64 * 1024):
                             if not chunk:
                                 continue
@@ -502,11 +605,14 @@ class OpdClient:
                                     raise OpdError("NOT_PDF", f"响应不是 PDF: {first!r}")
                             fh.write(chunk)
                             size += len(chunk)
-                    return size
+                os.replace(part, dest)
+                return size
             except OpdError:
+                part.unlink(missing_ok=True)
                 raise
             except requests.exceptions.HTTPError as exc:
                 last = exc
+                part.unlink(missing_ok=True)
                 resp = exc.response
                 if attempt < self.retries and resp is not None and resp.status_code in RETRY_STATUS:
                     wait = _retry_delay(resp, attempt)
@@ -515,8 +621,10 @@ class OpdClient:
                     continue
             except Exception as exc:
                 last = exc
+                part.unlink(missing_ok=True)
                 if attempt < self.retries:
                     time.sleep(min(MAX_BACKOFF, 1.2 * attempt + random.random()))
+        part.unlink(missing_ok=True)
         raise OpdError("DOWNLOAD", f"PDF 下载失败: {last}")
 
 
