@@ -1,0 +1,110 @@
+{
+  "state": "done",
+  "issue": 121,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-29T08:12:56+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118318186A（5 篇/局）",
+    "    OK  JP 特許査定  105 KB",
+    "    OK  JP 拒絶理由通知書  140 KB",
+    "    OK  JP 拒絶理由通知書  173 KB",
+    "    OK  JP 国際調査報告（日本語）  69 KB",
+    "    OK  JP 手続補正書（自発・内容）  123 KB"
+  ],
+  "query": "CN118318186A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118318186A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-10-29T08:12:58+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022578841.A",
+        "status": "ok",
+        "doc_total": 32,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2023-09-28",
+            "status": "ok",
+            "bytes": 107498,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/121/CN118318186A/JP/2023-09-28_JP_Decision_to_Grant_a_Patent_123475992_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2023-07-05",
+            "status": "ok",
+            "bytes": 142971,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/121/CN118318186A/JP/2023-07-05_JP_Notice_of_Reasons_for_Refusal_123342910_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2023-04-03",
+            "status": "ok",
+            "bytes": 176880,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/121/CN118318186A/JP/2023-04-03_JP_Notice_of_Reasons_for_Refusal_123165190_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告（日本語）",
+            "family": "citation",
+            "date": "2023-10-16",
+            "status": "ok",
+            "bytes": 70267,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/121/CN118318186A/JP/2023-10-16_JP_International_Search_Report%28in_Japanese%29_313581714_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2023-07-27",
+            "status": "ok",
+            "bytes": 126318,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/121/CN118318186A/JP/2023-07-27_JP_Written_Amendment_%28voluntary-content%29_301607433_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280072283.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022031841.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-29T08:13:24+00:00"
+}
