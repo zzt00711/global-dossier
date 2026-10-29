@@ -1,0 +1,616 @@
+{
+  "query": "CN118056231A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "118056231",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-10-29T06:20:01+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 2,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "US": 1,
+    "EP": 1,
+    "CN": 1,
+    "WO": 1,
+    "RO": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2024519074.A",
+      "app_date": "2022-08-12",
+      "family_id": "85772261",
+      "pub_nums": [
+        "JP.2024535433.A"
+      ],
+      "status": "doc_list_failed",
+      "doc_total": 0,
+      "picked": [],
+      "error": "[1] C10129-E：J-PlatPat 验证码已取消，请稍后重试"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202218696402.A",
+      "app_date": "2022-08-12",
+      "family_id": "85772261",
+      "pub_nums": [
+        "US.20250006057.A1"
+      ],
+      "status": "doc_list_failed",
+      "doc_total": 0,
+      "picked": [],
+      "error": "[8] {}"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22773784.A",
+      "app_date": "2022-08-12",
+      "family_id": "85772261",
+      "pub_nums": [
+        "EP.4409562.A1"
+      ],
+      "status": "download_failed",
+      "doc_total": 61,
+      "picked": [
+        {
+          "doc_id": "MMYF137G1WBRRVU",
+          "name": "Decision to grant a European patent",
+          "name_en": "",
+          "date": "2026-03-26",
+          "family": "final_grant",
+          "status": "failed",
+          "error": "[8] {'ID': ''}"
+        },
+        {
+          "doc_id": "MDIIBFEU12TCKHL",
+          "name": "Communication from the Examining Division",
+          "name_en": "",
+          "date": "2025-07-30",
+          "family": "rejection",
+          "status": "failed",
+          "error": "[8] {'ID': ''}"
+        }
+      ],
+      "title": "VEHICLE-EXIT ASSIST APPARATUS",
+      "documents": [
+        {
+          "doc_id": "L7B1SWS0199MZOW",
+          "name": "Request form for international application (copy for ISA/EP)",
+          "date": "2022-08-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7B1U1SY10PWAQR",
+          "name": "Description",
+          "date": "2022-08-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7B1U1T06WD5VVW",
+          "name": "Claims",
+          "date": "2022-08-26",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7B1U1T1C7GSDRH",
+          "name": "Abstract",
+          "date": "2022-08-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7B1U1T3X98GIKQ",
+          "name": "Drawings",
+          "date": "2022-08-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L8P3BZYY1XYJ8A2",
+          "name": "Notification of receipt of Search copy",
+          "date": "2022-10-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L991XUBR1H8V7L6",
+          "name": "Incoming letter related to ISA procedure",
+          "date": "2022-10-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9A3ZP28PRTVXAZ",
+          "name": "Notification relating to priority claim",
+          "date": "2022-10-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9R99OBK12ZYVS2",
+          "name": "Notification relating to priority claim",
+          "date": "2022-10-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAB9E0D3FYZDC4U",
+          "name": "Notification relating to priority claim",
+          "date": "2022-11-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LGC440XQCV29WSP",
+          "name": "Published international application - A1",
+          "date": "2023-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LGC440XT11YLLB8",
+          "name": "Copy of the international search report",
+          "date": "2023-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LGUM4ZN31J4VPO7",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2023-04-24",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB3UTMBOM5E9OY",
+          "name": "Request for entry into the European phase",
+          "date": "2024-03-28",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB3UUC91EF30B1",
+          "name": "(Electronic) Receipt",
+          "date": "2024-03-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LV0OC2UV1AJQ1OE",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2024-04-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LV0V9DEL149TLN4",
+          "name": "Communication of the registration of a transfer or change of name and/or address",
+          "date": "2024-04-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVLIY85GO5X9SKD",
+          "name": "Communication concerning correction of deficiencies in written opinion/amendment of application/payment of claims fee",
+          "date": "2024-05-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LY7W59EDJXVPK0F",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2024-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N3ZN6YTNQ61",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2024-11-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N4AP1UMNWA3",
+          "name": "Amendments received before examination",
+          "date": "2024-11-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N4Q5S3EHVSX",
+          "name": "Amended description with annotations",
+          "date": "2024-11-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N521HKJA9SR",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2024-11-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N5FNFO8OG2Q",
+          "name": "Amended claims with annotations",
+          "date": "2024-11-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N5UM73H6I4Y",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2024-11-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M365N6D51N0TPCG",
+          "name": "(Electronic) Receipt",
+          "date": "2024-11-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4IBI43114G9VSX",
+          "name": "Invitation to file a copy of search results(priority)",
+          "date": "2024-12-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M5CITOZZHCFNXJL",
+          "name": "Statement of non-availability of priority search results",
+          "date": "2024-12-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M5CITPJE1IGT6SO",
+          "name": "(Electronic) Receipt",
+          "date": "2024-12-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDGZYKDM1CUFAGI",
+          "name": "Examination started",
+          "date": "2025-07-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDIIBFEU12TCKHL",
+          "name": "Communication from the Examining Division",
+          "date": "2025-07-30",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MDIIBFF010V7G4P",
+          "name": "Annex to the communication",
+          "date": "2025-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQ0I9IELRYYS48",
+          "name": "(Electronic) Receipt",
+          "date": "2025-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQ0IB27PUYSGKV",
+          "name": "Submission concerning a transfer of rights (applicant)",
+          "date": "2025-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQ0IBJL1ILV74P",
+          "name": "Annexes in respect of a client data request",
+          "date": "2025-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQ0IC59ME54GGW",
+          "name": "Submission concerning a transfer of rights (applicant)",
+          "date": "2025-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MEBFPQ1FNSJIK7O",
+          "name": "Communication of the registration of a transfer or change of name and/or address",
+          "date": "2025-08-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH56SO18BM78OXC",
+          "name": "(Electronic) Receipt",
+          "date": "2025-10-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH56SQ1B1VP926C",
+          "name": "Submission concerning change of applicant's name",
+          "date": "2025-10-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHLSUREU2MX8CNT",
+          "name": "Annexes in respect of a client data request",
+          "date": "2025-10-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH56SQU85ZQ7BG1",
+          "name": "Submission concerning change of applicant's name",
+          "date": "2025-10-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHLSWRRCOGI8R32",
+          "name": "Communication of the registration of a transfer or change of name and/or address",
+          "date": "2025-11-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG6ZWCUXSDWUN9",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2025-11-26",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG6ZXCD1CZOXD3",
+          "name": "Reply to communication from the Examining Division",
+          "date": "2025-11-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG6ZXUT1GDIMJ7",
+          "name": "Amended description with annotations",
+          "date": "2025-11-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG6ZYUJOQLXGF4",
+          "name": "Description",
+          "date": "2025-11-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG6ZZHNSCP2HII",
+          "name": "Amended claims with annotations",
+          "date": "2025-11-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG70057L8RN754",
+          "name": "Claims",
+          "date": "2025-11-26",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIG7012MQ05V9TL",
+          "name": "(Electronic) Receipt",
+          "date": "2025-11-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJDE6KOBA4FZ0D9",
+          "name": "Text intended for grant (clean copy)",
+          "date": "2026-01-02",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJDE6N3DBOY1Q8C",
+          "name": "Text intended for grant (version for approval)",
+          "date": "2026-01-02",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJH1GEGZWJF9IV1",
+          "name": "Communication about intention to grant a European patent",
+          "date": "2026-01-02",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJH1GEH3AEPKLUB",
+          "name": "Bibliographic data of the European patent application",
+          "date": "2026-01-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJH1GEH5IDHR4YG",
+          "name": "Annex to the communication about intention to grant a European patent",
+          "date": "2026-01-02",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MJH1GEH9DLA0W4K",
+          "name": "Intention to grant (signatures)",
+          "date": "2026-01-02",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMSZMRWUEVICS6B",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2026-03-16",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MMSZMSG911PI0YP",
+          "name": "French translation of claims",
+          "date": "2026-03-16",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMSZMSWAFWVGDPF",
+          "name": "German translation of the claims",
+          "date": "2026-03-16",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMSZMTJ1JZGQYC1",
+          "name": "(Electronic) Receipt",
+          "date": "2026-03-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMYF137G1WBRRVU",
+          "name": "Decision to grant a European patent",
+          "date": "2026-03-26",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MOHPE8XZ13DTGEQ",
+          "name": "Transmission of the certificate for a European patent pursuant to Rule 74 EPC",
+          "date": "2026-05-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ]
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280066363.A",
+      "app_date": "2022-08-12",
+      "family_id": "85772261",
+      "pub_nums": [
+        "CN.118056231.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "JP.2022030803.W",
+      "app_date": "2022-08-12",
+      "family_id": "85772261",
+      "pub_nums": [
+        "WO.2023053747.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "RO",
+      "app_num": "RO.202100606.A",
+      "app_date": "2021-09-30",
+      "family_id": "85772261",
+      "pub_nums": [
+        "RO.137337.A2"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280066363.A",
+    "app_date": "2022-08-12",
+    "family_id": "85772261"
+  }
+}
