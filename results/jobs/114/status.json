@@ -1,0 +1,222 @@
+{
+  "state": "done",
+  "issue": 114,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-29T06:08:45+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117959037A（5 篇/局）",
+    "    OK  EP Decision to grant a European patent  88 KB",
+    "    OK  EP European search opinion  209 KB",
+    "    OK  EP Supplementary European search report  65 KB",
+    "    OK  EP Copy of the international search report  83 KB",
+    "    OK  EP Communication of amended entries concerning the representative  26 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  410 KB",
+    "    OK  US Non-Final Rejection  516 KB",
+    "    OK  US Search information including classification, databases and other search related notes  34 KB",
+    "    OK  US Examiner's search strategy and results  158 KB",
+    "    OK  US Request for Continued Examination (RCE)  100 KB"
+  ],
+  "query": "CN117959037A",
+  "offices": [
+    "JP",
+    "EP",
+    "US"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "result": {
+    "query": "CN117959037A",
+    "family_counts": {
+      "US": 3,
+      "EP": 1,
+      "CN": 4,
+      "WO": 2
+    },
+    "generated_at": "2026-10-29T06:08:47+00:00",
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.201816056220.A",
+        "status": "ok",
+        "doc_total": 78,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2021-06-17",
+            "status": "ok",
+            "bytes": 419825,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/US/2021-06-17_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_0GPUZLDFLYX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2020-07-07",
+            "status": "ok",
+            "bytes": 528258,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/US/2020-07-07_US_Non-Final_Rejection_SOWBKRXEAPX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2021-06-17",
+            "status": "ok",
+            "bytes": 35097,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/US/2021-06-17_US_Search_information_including_classification%2C_databases_and_o_0GPV0LDFLYX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2021-06-17",
+            "status": "ok",
+            "bytes": 161851,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/US/2021-06-17_US_Examiner%27s_search_strategy_and_results_0GPV3LDFLYX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Continued Examination (RCE)",
+            "family": "applicant",
+            "date": "2021-05-12",
+            "status": "ok",
+            "bytes": 102603,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/US/2021-05-12_US_Request_for_Continued_Examination_%28RCE%29_WKE9XLDFLYX9.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 3 个，本代（2018-02-07）未取到文书，已改用更新一代（2018-08-06）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117509465.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 3 个，已取到 2018-08-06 代的文书，不再重复下载"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418404752.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 3 个，已取到 2018-08-06 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.18841862.A",
+        "status": "ok",
+        "doc_total": 58,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2024-10-17",
+            "status": "ok",
+            "bytes": 90355,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/EP/2024-10-17_EP_Decision_to_grant_a_European_patent_Y105CDJ5L16I.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2021-04-20",
+            "status": "ok",
+            "bytes": 213510,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/EP/2021-04-20_EP_European_search_opinion_60ETS5057DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2021-04-20",
+            "status": "ok",
+            "bytes": 66236,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/EP/2021-04-20_EP_Supplementary_European_search_report_60HFB3868DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2019-02-07",
+            "status": "ok",
+            "bytes": 85359,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/EP/2019-02-07_EP_Copy_of_the_international_search_report_CDT9A0416DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Communication of amended entries concerning the representative",
+            "family": "applicant",
+            "date": "2025-03-11",
+            "status": "ok",
+            "bytes": 26271,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/114/CN117959037A/EP/2025-03-11_EP_Communication_of_amended_entries_concerning_the_representati_VR8N11BCWPRR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2018-02-07）未取到文书，已改用更新一代（2018-08-06）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201880000111.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202410027954.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201880064033.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202311699389.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2018017175.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2018045420.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-29T06:09:59+00:00"
+}
