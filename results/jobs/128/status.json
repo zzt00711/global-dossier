@@ -1,0 +1,100 @@
+{
+  "state": "done",
+  "issue": 128,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-10-30T07:45:09+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115778083A（5 篇/局）",
+    "    OK  US Final Rejection  1146 KB",
+    "    OK  US Non-Final Rejection  1505 KB",
+    "    OK  US Search information including classification, databases and other search related notes  93 KB",
+    "    OK  US Examiner's search strategy and results  4906 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  53 KB"
+  ],
+  "query": "CN115778083A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115778083A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-10-30T07:45:10+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217866207.A",
+        "status": "ok",
+        "doc_total": 39,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-07-11",
+            "status": "ok",
+            "bytes": 1173131,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/128/CN115778083A/US/2024-07-11_US_Final_Rejection_O7S96XBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-02-28",
+            "status": "ok",
+            "bytes": 1541304,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/128/CN115778083A/US/2024-02-28_US_Non-Final_Rejection_KBJJABLUEX11.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-07-11",
+            "status": "ok",
+            "bytes": 95008,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/128/CN115778083A/US/2024-07-11_US_Search_information_including_classification%2C_databases_and_o_O7S9AXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2024-07-11",
+            "status": "ok",
+            "bytes": 5024227,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/128/CN115778083A/US/2024-07-11_US_Examiner%27s_search_strategy_and_results_O7S9BXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2024-06-28",
+            "status": "ok",
+            "bytes": 53767,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/128/CN115778083A/US/2024-06-28_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_C7MMPXBLUEX7.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210836811.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-10-30T07:46:02+00:00"
+}
