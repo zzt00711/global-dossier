@@ -1,0 +1,142 @@
+{
+  "state": "done",
+  "issue": 131,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-01T12:00:49+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118012017A（4 篇/局）",
+    "    OK  EP Copy of the translated international search report  95 KB",
+    "    OK  EP Copy of the international search report  84 KB",
+    "    OK  EP Amended description filed after receipt of (European) search report  3349 KB",
+    "    OPD 暂未返回数据，3s 后重试（1/3）",
+    "    OK  EP Amended claims filed after receipt of (European) search report  553 KB",
+    "    OK  KR Amendment including Specification etc.  67 KB",
+    "    OK  KR [Patent Application] Paper according to the Article 203 of Patent Act  404 KB",
+    "    OK  KR Request for Examination  38 KB"
+  ],
+  "query": "CN118012017A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118012017A",
+    "family_counts": {
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-01T12:00:52+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "EP",
+        "app_num": "EP.25757627.A",
+        "status": "ok",
+        "doc_total": 24,
+        "picked": [
+          {
+            "name": "Copy of the translated international search report",
+            "family": "citation",
+            "date": "2025-08-28",
+            "status": "ok",
+            "bytes": 97573,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/EP/2025-08-28_EP_Copy_of_the_translated_international_search_report_QU2KSHN9ICMC.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2025-08-28",
+            "status": "ok",
+            "bytes": 86230,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/EP/2025-08-28_EP_Copy_of_the_international_search_report_QU2KV1OX9AUI.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended description filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2026-03-31",
+            "status": "ok",
+            "bytes": 3429374,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/EP/2026-03-31_EP_Amended_description_filed_after_receipt_of_%28European%29_search_OVRPE12QND4T.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2026-03-31",
+            "status": "ok",
+            "bytes": 566009,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/EP/2026-03-31_EP_Amended_claims_filed_after_receipt_of_%28European%29_search_repo_OVRPH1I66PHA.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-02-23）未取到文书，已改用更新一代（2025-02-10）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202410200030.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20267014163.A",
+        "status": "ok",
+        "doc_total": 3,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-05-06",
+            "status": "ok",
+            "bytes": 68954,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/KR/2026-05-06_KR_Amendment_including_Specification_etc_054278198_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+            "family": "other",
+            "date": "2026-05-06",
+            "status": "ok",
+            "bytes": 413691,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/KR/2026-05-06_KR_%5BPatent_Application%5D_Paper_according_to_the_Article_203_of_P_054262438_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2026-05-06",
+            "status": "ok",
+            "bytes": 39286,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/131/CN118012017A/KR/2026-05-06_KR_Request_for_Examination_054278042_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-02-23）未取到文书，已改用更新一代（2025-02-10）"
+      },
+      {
+        "country": "WO",
+        "app_num": "CN.2025076595.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-01T12:01:48+00:00"
+}

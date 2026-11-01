@@ -1,0 +1,381 @@
+{
+  "query": "CN118012017A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "118012017",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-01T12:00:52+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "EP": 1,
+    "CN": 1,
+    "KR": 1,
+    "WO": 1
+  },
+  "members": [
+    {
+      "country": "EP",
+      "app_num": "EP.25757627.A",
+      "app_date": "2025-02-10",
+      "family_id": "90944105",
+      "pub_nums": [
+        "EP.4772950.A1"
+      ],
+      "status": "ok",
+      "doc_total": 24,
+      "picked": [
+        {
+          "doc_id": "MF0QU2KSHN9ICMC",
+          "name": "Copy of the translated international search report",
+          "name_en": "",
+          "date": "2025-08-28",
+          "family": "citation",
+          "tender_date": "2025-08-28",
+          "file": "EP/2025-08-28_EP_Copy_of_the_translated_international_search_report_QU2KSHN9ICMC.pdf",
+          "bytes": 97573,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MF0QU2KV1OX9AUI",
+          "name": "Copy of the international search report",
+          "name_en": "",
+          "date": "2025-08-28",
+          "family": "citation",
+          "tender_date": "2025-08-28",
+          "file": "EP/2025-08-28_EP_Copy_of_the_international_search_report_QU2KV1OX9AUI.pdf",
+          "bytes": 86230,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MNEOVRPE12QND4T",
+          "name": "Amended description filed after receipt of (European) search report",
+          "name_en": "",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "tender_date": "2026-03-31",
+          "file": "EP/2026-03-31_EP_Amended_description_filed_after_receipt_of_(European)_search_OVRPE12QND4T.pdf",
+          "bytes": 3429374,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MNEOVRPH1I66PHA",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "name_en": "",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "tender_date": "2026-03-31",
+          "file": "EP/2026-03-31_EP_Amended_claims_filed_after_receipt_of_(European)_search_repo_OVRPH1I66PHA.pdf",
+          "bytes": 566009,
+          "status": "ok"
+        }
+      ],
+      "title": "VEHICLE DIAGNOSTIC PROCESSING METHOD, APPARATUS, DEVICE, VEHICLE AND STORAGE MEDIUM",
+      "documents": [
+        {
+          "doc_id": "MF0QU2KQQ05YQPR",
+          "name": "International publication pamphlet",
+          "date": "2025-08-28",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MF0QU2KSHN9ICMC",
+          "name": "Copy of the translated international search report",
+          "date": "2025-08-28",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MF0QU2KV1OX9AUI",
+          "name": "Copy of the international search report",
+          "date": "2025-08-28",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MFKOSZYO1RIMDH9",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2025-09-15",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVQSYC8LS6I0",
+          "name": "Request for entry into the European phase",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVRPE12QND4T",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MNEOVRPH1I66PHA",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MNEOVRPK7MC8D7D",
+          "name": "Annex",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVRPMSY62KKZ",
+          "name": "Amended drawings filed after receipt of (European) search report",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVXHH1RZSCHQ",
+          "name": "Description",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVXHK1PE91OJ",
+          "name": "Claims",
+          "date": "2026-03-31",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVXHNBMPFY7A",
+          "name": "Abstract",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOVXHR12NUQUY",
+          "name": "Drawings",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW25D7EP63U6",
+          "name": "Annex",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW2J03GZSQBD",
+          "name": "Amendments received before examination",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW37ZBYITWF3",
+          "name": "Amended claims with annotations",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW3VX1BQUX1D",
+          "name": "Amended description with annotations",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW7M3PBKOYD9",
+          "name": "Amended drawings with annotations",
+          "date": "2026-03-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MNEOW9KV1MEY9FS",
+          "name": "(Electronic) Receipt",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MO78WW391UOELLB",
+          "name": "Enquiry with the International Bureau",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MO78X7S0CJL8TIO",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2026-03-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MO8B54Q910KKK1Z",
+          "name": "Confirmation of effective date of early entry",
+          "date": "2026-04-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQ0NO9KI1OEIQ5I",
+          "name": "Notification of forthcoming publication",
+          "date": "2026-06-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MQRPG1KU1EUJ1QM",
+          "name": "Translation of the international preliminary report on patentability",
+          "date": "2026-06-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2024-02-23）未取到文书，已改用更新一代（2025-02-10）"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202410200030.A",
+      "app_date": "2024-02-23",
+      "family_id": "90944105",
+      "pub_nums": [
+        "CN.118012017.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20267014163.A",
+      "app_date": "2025-02-10",
+      "family_id": "90944105",
+      "pub_nums": [
+        "KR.20260088549.A"
+      ],
+      "status": "ok",
+      "doc_total": 3,
+      "picked": [
+        {
+          "doc_id": "Amendment_including_Specification_etc._112026054278198_KR",
+          "name": "Amendment including Specification etc.",
+          "name_en": "Amendment including Specification etc.",
+          "date": "2026-05-06",
+          "family": "applicant",
+          "tender_date": "2026-05-06",
+          "file": "KR/2026-05-06_KR_Amendment_including_Specification_etc_054278198_KR.pdf",
+          "bytes": 68954,
+          "status": "ok"
+        },
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112026054262438_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "name_en": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2026-05-06",
+          "family": "other",
+          "tender_date": "2026-05-06",
+          "file": "KR/2026-05-06_KR_[Patent_Application]_Paper_according_to_the_Article_203_of_P_054262438_KR.pdf",
+          "bytes": 413691,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_Examination_112026054278042_KR",
+          "name": "Request for Examination",
+          "name_en": "Request for Examination",
+          "date": "2026-05-06",
+          "family": "other",
+          "tender_date": "2026-05-06",
+          "file": "KR/2026-05-06_KR_Request_for_Examination_054278042_KR.pdf",
+          "bytes": 39286,
+          "status": "ok"
+        }
+      ],
+      "title": "VEHICLE DIAGNOSTIC PROCESSING METHOD, APPARATUS, DEVICE, VEHICLE AND STORAGE MEDIUM",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112026054262438_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2026-05-06",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Examination_112026054278042_KR",
+          "name": "Request for Examination",
+          "date": "2026-05-06",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112026054278198_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2026-05-06",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2024-02-23）未取到文书，已改用更新一代（2025-02-10）"
+    },
+    {
+      "country": "WO",
+      "app_num": "CN.2025076595.W",
+      "app_date": "2025-02-10",
+      "family_id": "90944105",
+      "pub_nums": [
+        "WO.2025176030.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202410200030.A",
+    "app_date": "2024-02-23",
+    "family_id": "90944105"
+  }
+}
