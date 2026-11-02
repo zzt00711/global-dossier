@@ -1,0 +1,1180 @@
+{
+  "query": "CN116085718A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116085718",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-02T02:10:08+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 5,
+  "download": true,
+  "family_counts": {
+    "US": 1,
+    "EP": 1,
+    "CN": 2,
+    "WO": 1,
+    "AT": 1,
+    "DE": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.201615764786.A",
+      "app_date": "2016-08-24",
+      "family_id": "56893639",
+      "pub_nums": [
+        "US.2019017665.A1"
+      ],
+      "status": "ok",
+      "doc_total": 73,
+      "picked": [
+        {
+          "doc_id": "JYOFDUB5RXEAPX2",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "name_en": "",
+          "date": "2019-07-31",
+          "family": "final_grant",
+          "tender_date": "2019-07-31",
+          "file": "US/2019-07-31_US_Notice_of_Allowance_and_Fees_Due_(PTOL-85)_FDUB5RXEAPX2.pdf",
+          "bytes": 464932,
+          "status": "ok"
+        },
+        {
+          "doc_id": "JVCHZUCQRXEAPX4",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2019-05-08",
+          "family": "rejection",
+          "tender_date": "2019-05-08",
+          "file": "US/2019-05-08_US_Non-Final_Rejection_HZUCQRXEAPX4.pdf",
+          "bytes": 310794,
+          "status": "ok"
+        },
+        {
+          "doc_id": "JYOFDUB6RXEAPX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2019-07-31",
+          "family": "citation",
+          "tender_date": "2019-07-31",
+          "file": "US/2019-07-31_US_Search_information_including_classification,_databases_and_o_FDUB6RXEAPX2.pdf",
+          "bytes": 34520,
+          "status": "ok"
+        },
+        {
+          "doc_id": "JYOFDUBARXEAPX2",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2019-07-31",
+          "family": "citation",
+          "tender_date": "2019-07-31",
+          "file": "US/2019-07-31_US_Examiner's_search_strategy_and_results_FDUBARXEAPX2.pdf",
+          "bytes": 125334,
+          "status": "ok"
+        },
+        {
+          "doc_id": "JXLZWSS6RXEAPX3",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "name_en": "",
+          "date": "2019-07-02",
+          "family": "applicant",
+          "tender_date": "2019-07-02",
+          "file": "US/2019-07-02_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_ZWSS6RXEAPX3.pdf",
+          "bytes": 19238,
+          "status": "ok"
+        }
+      ],
+      "title": "COVER FOR A LIGHTING STRIP SYSTEM, ARRANGEMENT HAVING SUCH A COVER, AND LIGHTING STRIP SYSTEM",
+      "documents": [
+        {
+          "doc_id": "JFD1V2ZCRXEAPX3",
+          "name": "Transmittal of New Application",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V6ZURXEAPX4",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V6ZWRXEAPX4",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V6ZXRXEAPX4",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V6ZYRXEAPX4",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V6ZZRXEAPX4",
+          "name": "Transmittal Letter",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V700RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V701RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V702RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V703RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V705RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V706RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V707RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V708RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V709RXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V70ARXEAPX4",
+          "name": "Foreign Reference",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFD1V70BRXEAPX4",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFDC9SMQRXEAPX2",
+          "name": "PCT/RO/101 - Request form for new International Application - Conventional",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFDC9ST5RXEAPX1",
+          "name": "Certified Copy of Foreign Priority Application",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFDC9SVJRXEAPX1",
+          "name": "PCT Search Strategy and results",
+          "date": "2018-03-29",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JFDC9Y33RXEAPX2",
+          "name": "WIPO Publication - Non-English version",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KF4N02VKRXEAPX5",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KF4NIFWVRXEAPX3",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2018-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JJQ5QJOPRXEAPX5",
+          "name": "Notice of DO/EO Missing Requirements Mailed",
+          "date": "2018-07-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JJQ5QL3SRXEAPX1",
+          "name": "Acceptance of Permission to Access Search Results",
+          "date": "2018-07-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JJQ5QLXIRXEAPX1",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2018-07-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JJQ6IKMBRXEAPX3",
+          "name": "Acceptance of Permission to Access Application",
+          "date": "2018-07-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HKRXEAPX1",
+          "name": "Preliminary Amendment",
+          "date": "2018-09-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HMRXEAPX1",
+          "name": "Specification",
+          "date": "2018-09-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HNRXEAPX1",
+          "name": "Claims",
+          "date": "2018-09-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HORXEAPX1",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2018-09-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HPRXEAPX1",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2018-09-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HQRXEAPX1",
+          "name": "Specification",
+          "date": "2018-09-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HRRXEAPX1",
+          "name": "Claims",
+          "date": "2018-09-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS5HSRXEAPX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2018-09-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JM7VS68NRXEAPX2",
+          "name": "Applicant Response to Pre-Exam Formalities Notice",
+          "date": "2018-09-18",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JMAUD0A8LXEAPX4",
+          "name": "Specification",
+          "date": "2018-09-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JMAUD0AALXEAPX4",
+          "name": "Claims",
+          "date": "2018-09-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JMAUD0ABLXEAPX4",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2018-09-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JN1RLV7NRXEAPX4",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2018-10-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JN1RLXHHRXEAPX3",
+          "name": "Claims Worksheet (PTO-2022)",
+          "date": "2018-10-10",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "JN1UAPXCRXEAPX0",
+          "name": "Filing Receipt",
+          "date": "2018-10-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JN1UAR1TRXEAPX2",
+          "name": "Notice of Designated Office (DO) / Elected Office (EO) Acceptance Mailed",
+          "date": "2018-10-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JR0Q0CGTRXEAPX5",
+          "name": "Notice of Publication",
+          "date": "2019-01-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JSGIFGY3RXEAPX5",
+          "name": "Request for Corrected Filing Receipt",
+          "date": "2019-02-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JSGIFGY4RXEAPX5",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2019-02-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JSKOM5HHRXEAPX5",
+          "name": "Filing Receipt",
+          "date": "2019-02-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JVCHZUCQRXEAPX4",
+          "name": "Non-Final Rejection",
+          "date": "2019-05-08",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "JVCHZUCRRXEAPX4",
+          "name": "List of references cited by examiner",
+          "date": "2019-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JVCHZUCSRXEAPX4",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2019-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JVCHZUCTRXEAPX4",
+          "name": "Examiner's search strategy and results",
+          "date": "2019-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JVCHZUCURXEAPX4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2019-05-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JXLZWSS6RXEAPX3",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2019-07-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "JXLZWSS7RXEAPX3",
+          "name": "Claims",
+          "date": "2019-07-02",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JXLZWSS9RXEAPX3",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2019-07-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JXLZWSSARXEAPX3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2019-07-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JYEGLWMXRXEAPX0",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2019-07-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JXLXB0VMRXEAPX0",
+          "name": "Applicant Initiated Interview Summary (PTOL-413)",
+          "date": "2019-07-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JXLXB0VNRXEAPX0",
+          "name": "Office Action Appendix",
+          "date": "2019-07-05",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JYOFDUB5RXEAPX2",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2019-07-31",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "JYOFDUB6RXEAPX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2019-07-31",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "JYOFDUB7RXEAPX2",
+          "name": "Index of Claims",
+          "date": "2019-07-31",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "JYOFDUB8RXEAPX2",
+          "name": "Issue Information including classification, examiner, name, claim, renumbering, etc.",
+          "date": "2019-07-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JYOFDUB9RXEAPX2",
+          "name": "Bibliographic Data Sheet",
+          "date": "2019-07-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JYOFDUBARXEAPX2",
+          "name": "Examiner's search strategy and results",
+          "date": "2019-07-31",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "JYZXF8Y4RXEAPX2",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2019-08-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K20VHCOARXEAPX1",
+          "name": "Power of Attorney",
+          "date": "2019-10-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K20VHCOBRXEAPX1",
+          "name": "Issue Fee Payment (PTO-85B)",
+          "date": "2019-10-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K20VHCOCRXEAPX1",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2019-10-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K20VHCODRXEAPX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2019-10-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K20VHCOFRXEAPX1",
+          "name": "Assignee showing of ownership per 37 CFR 3.73",
+          "date": "2019-10-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K236CRN8RXEAPX4",
+          "name": "Communication - Re:  Power of Attorney (PTOL-308)",
+          "date": "2019-10-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "K2NQHISWRXEAPX3",
+          "name": "Issue Notification",
+          "date": "2019-11-06",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.16763192.A",
+      "app_date": "2016-08-24",
+      "family_id": "56893639",
+      "pub_nums": [
+        "EP.3356730.A1"
+      ],
+      "status": "ok",
+      "doc_total": 45,
+      "picked": [
+        {
+          "doc_id": "E4VAQ16Y8994DSU",
+          "name": "Decision to grant a European patent",
+          "name_en": "",
+          "date": "2020-06-12",
+          "family": "final_grant",
+          "tender_date": "2020-06-12",
+          "file": "EP/2020-06-12_EP_Decision_to_grant_a_European_patent_AQ16Y8994DSU.pdf",
+          "bytes": 100698,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E3YY9MCK0674DSU",
+          "name": "Communication from the Examining Division",
+          "name_en": "",
+          "date": "2019-10-25",
+          "family": "rejection",
+          "tender_date": "2019-10-25",
+          "file": "EP/2019-10-25_EP_Communication_from_the_Examining_Division_Y9MCK0674DSU.pdf",
+          "bytes": 46037,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E0ATAVRM6233DSU",
+          "name": "Copy of the international search report",
+          "name_en": "",
+          "date": "2017-04-06",
+          "family": "citation",
+          "tender_date": "2017-04-06",
+          "file": "EP/2017-04-06_EP_Copy_of_the_international_search_report_TAVRM6233DSU.pdf",
+          "bytes": 87373,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E0ATAVRN0362DSU",
+          "name": "Copy of the international search report",
+          "name_en": "",
+          "date": "2017-04-06",
+          "family": "citation",
+          "tender_date": "2017-04-06",
+          "file": "EP/2017-04-06_EP_Copy_of_the_international_search_report_TAVRN0362DSU.pdf",
+          "bytes": 98575,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E4A28WA36550DSU",
+          "name": "Reply to communication from the Examining Division",
+          "name_en": "",
+          "date": "2020-01-15",
+          "family": "applicant",
+          "tender_date": "2020-01-15",
+          "file": "EP/2020-01-15_EP_Reply_to_communication_from_the_Examining_Division_28WA36550DSU.pdf",
+          "bytes": 80502,
+          "status": "ok"
+        }
+      ],
+      "title": "COVER FOR A LIGHTING STRIP SYSTEM, ARRANGEMENT HAVING SUCH A COVER, AND LIGHTING STRIP SYSTEM",
+      "documents": [
+        {
+          "doc_id": "EZSQF9PH9503DSU",
+          "name": "Written opinion of the ISA, cover sheet",
+          "date": "2016-12-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZSQF9SK5693DSU",
+          "name": "Written opinion of the ISA, boxes No. I to VIII",
+          "date": "2016-12-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZSQF9VM9769DSU",
+          "name": "Written opinion of the ISA, supplemental box",
+          "date": "2016-12-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E0ATAVRM0011DSU",
+          "name": "Published international application - A1",
+          "date": "2017-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E0ATAVRM6233DSU",
+          "name": "Copy of the international search report",
+          "date": "2017-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E0ATAVRN0362DSU",
+          "name": "Copy of the international search report",
+          "date": "2017-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E0CXCDSR5912DSU",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2017-04-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E1HUE2KH1840DSU",
+          "name": "Information on entry into European phase",
+          "date": "2018-02-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1S7F3580583DSU",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2018-04-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1TCBU5R5179DSU",
+          "name": "Request for entry into the European phase",
+          "date": "2018-04-27",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E1TCBVBC5334DSU",
+          "name": "Priority search results",
+          "date": "2018-04-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1TCBVEF3476DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2018-04-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1VZI0HK9622DSU",
+          "name": "Communication to designated inventor",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1VZI7Z87910DSU",
+          "name": "Communication to designated inventor",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1VZJT261387DSU",
+          "name": "Communication to designated inventor",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1W4OO9U3707DSU",
+          "name": "Communication concerning correction of deficiencies in written opinion/amendment of application/payment of claims fee",
+          "date": "2018-06-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E129ZVLV2212DSU",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2018-07-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2DR3I7P5430DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2018-09-17",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E2DR3JDK7167DSU",
+          "name": "Amendments received before examination",
+          "date": "2018-09-17",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2DR3JE49240DSU",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2018-09-17",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2DR3JI67502DSU",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2018-09-17",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2DR3JLZ6101DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2018-09-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E3X300ST9837DSU",
+          "name": "Examination started",
+          "date": "2019-10-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E3YY9MCK0674DSU",
+          "name": "Communication from the Examining Division",
+          "date": "2019-10-25",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E3YY9MDR9409DSU",
+          "name": "Annex to the communication",
+          "date": "2019-10-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28V6H3733DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2020-01-15",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28WA36550DSU",
+          "name": "Reply to communication from the Examining Division",
+          "date": "2020-01-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E4A28WGJ8440DSU",
+          "name": "Claims",
+          "date": "2020-01-15",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28WLT5087DSU",
+          "name": "Amended claims with annotations",
+          "date": "2020-01-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28WR10153DSU",
+          "name": "Description",
+          "date": "2020-01-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28WW84420DSU",
+          "name": "Amended description with annotations",
+          "date": "2020-01-15",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4A28W475660DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2020-01-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4M3CF8S2787DSU",
+          "name": "Communication about intention to grant a European patent",
+          "date": "2020-04-20",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4M3CF9U7845DSU",
+          "name": "Bibliographic data of the European patent application",
+          "date": "2020-04-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4M3CKFO3413DSU",
+          "name": "Intention to grant (signatures)",
+          "date": "2020-04-20",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4M4M81A7049DSU",
+          "name": "Text intended for grant (clean copy)",
+          "date": "2020-04-20",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4M4M87F9306DSU",
+          "name": "Text intended for grant (version for approval)",
+          "date": "2020-04-20",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4TSFBLX9680DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2020-05-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E4TSFBPI5427DSU",
+          "name": "Filing of the translations of the claims",
+          "date": "2020-05-25",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4TSFBQ86745DSU",
+          "name": "English translation of the claims",
+          "date": "2020-05-25",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4TSFBUI9544DSU",
+          "name": "French translation of claims",
+          "date": "2020-05-25",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4TSFBYB9601DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2020-05-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4VAQ16Y8994DSU",
+          "name": "Decision to grant a European patent",
+          "date": "2020-06-12",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E40T569Y0047DSU",
+          "name": "Transmission of the certificate for a European patent pursuant to Rule 74 EPC",
+          "date": "2020-07-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E57HAGZC3687DSU",
+          "name": "Communication regarding the expiry of opposition period",
+          "date": "2021-05-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201680063051.A",
+      "app_date": "2016-08-24",
+      "family_id": "56893639",
+      "pub_nums": [
+        "CN.108351087.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202211687276.A",
+      "app_date": "2016-08-24",
+      "family_id": "56893639",
+      "pub_nums": [
+        "CN.116085718.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "AT.2016060043.W",
+      "app_date": "2016-08-24",
+      "family_id": "56893639",
+      "pub_nums": [
+        "WO.2017054025.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AT",
+      "app_num": "AT.3642015.U",
+      "app_date": "2015-12-17",
+      "family_id": "56893639",
+      "pub_nums": [
+        "AT.16246.U1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "DE",
+      "app_num": "DE.202015105153.U",
+      "app_date": "2015-09-30",
+      "family_id": "56893639",
+      "pub_nums": [
+        "DE.202015105153.U1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202211687276.A",
+    "app_date": "2016-08-24",
+    "family_id": "56893639"
+  }
+}
