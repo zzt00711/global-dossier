@@ -1,0 +1,171 @@
+{
+  "state": "done",
+  "issue": 132,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-02T01:35:55+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115867842A（5 篇/局）",
+    "    OK  JP 拒絶理由通知書  178 KB",
+    "    OK  JP 拒絶査定  100 KB",
+    "    OK  JP 国際調査報告（日本語）  69 KB",
+    "    OK  JP 請求の範囲  96 KB",
+    "    OK  JP 出願番号特定通知書  82 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  134 KB",
+    "    OK  US Non-Final Rejection  235 KB",
+    "    OK  US Search information including classification, databases and other search related notes  20 KB",
+    "    OK  US Examiner's search strategy and results  133 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  15 KB"
+  ],
+  "query": "CN115867842A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115867842A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-02T01:35:58+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022538559.A",
+        "status": "ok",
+        "doc_total": 20,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2023-11-07",
+            "status": "ok",
+            "bytes": 182641,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/JP/2023-11-07_JP_Notice_of_Reasons_for_Refusal_123573530_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶査定",
+            "family": "rejection",
+            "date": "2024-04-30",
+            "status": "ok",
+            "bytes": 102393,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/JP/2024-04-30_JP_Decision_of_Refusal_124196926_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告（日本語）",
+            "family": "citation",
+            "date": "2022-04-25",
+            "status": "ok",
+            "bytes": 70160,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/JP/2022-04-25_JP_International_Search_Report%28in_Japanese%29_211360624_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2022-12-09",
+            "status": "ok",
+            "bytes": 98138,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/JP/2022-12-09_JP_Claims_239928862_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "出願番号特定通知書",
+            "family": "other",
+            "date": "2023-02-21",
+            "status": "ok",
+            "bytes": 83697,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/JP/2023-02-21_JP_Notification_of_Determination_of_Application_Number_123019870_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202018016890.A",
+        "status": "ok",
+        "doc_total": 71,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-02-05",
+            "status": "ok",
+            "bytes": 136915,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/US/2026-02-05_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_0NDZ2X210X15.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-07-10",
+            "status": "ok",
+            "bytes": 240714,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/US/2025-07-10_US_Non-Final_Rejection_2L9F0X60X142.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-01-22",
+            "status": "ok",
+            "bytes": 20488,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/US/2026-01-22_US_Search_information_including_classification%2C_databases_and_o_DBCDQX118X94.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-01-22",
+            "status": "ok",
+            "bytes": 135967,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/US/2026-01-22_US_Examiner%27s_search_strategy_and_results_DBCDVX118X94.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2025-09-22",
+            "status": "ok",
+            "bytes": 15137,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/132/CN115867842A/US/2025-09-22_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_TK0E94X59X54.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202080102768.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2020028478.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-02T01:36:42+00:00"
+}
