@@ -1,0 +1,39 @@
+{
+  "query": "CN117825368A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117825368",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-02T08:47:08+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "CN": 1
+  },
+  "members": [
+    {
+      "country": "CN",
+      "app_num": "CN.202211189180.A",
+      "app_date": "2022-09-28",
+      "family_id": "90503272",
+      "pub_nums": [
+        "CN.117825368.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202211189180.A",
+    "app_date": "2022-09-28",
+    "family_id": "90503272"
+  }
+}
