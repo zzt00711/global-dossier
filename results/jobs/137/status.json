@@ -1,0 +1,151 @@
+{
+  "state": "done",
+  "issue": 137,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-03T07:11:30+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115032977A（4 篇/局）",
+    "    OK  JP 特許査定  101 KB",
+    "    OK  JP 検索報告書  171 KB",
+    "    OK  JP 請求の範囲  104 KB",
+    "    OK  JP 出願審査請求書  78 KB",
+    "    OK  KR Written Decision on Registration  64 KB",
+    "    OK  KR Request for the Submission of an Opinion  166 KB",
+    "    OK  KR Written Opinion  77 KB",
+    "    OK  KR Amendment including Specification etc.  47 KB"
+  ],
+  "query": "CN115032977A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115032977A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1,
+      "KR": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-03T07:11:33+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2021034349.A",
+        "status": "ok",
+        "doc_total": 8,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2023-07-25",
+            "status": "ok",
+            "bytes": 103428,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/JP/2023-07-25_JP_Decision_to_Grant_a_Patent_123368514_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2023-07-18",
+            "status": "ok",
+            "bytes": 174705,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/JP/2023-07-18_JP_Search_Report_by_Registered_Search_Organization_823093758_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2021-03-04",
+            "status": "ok",
+            "bytes": 106911,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/JP/2021-03-04_JP_Claims_100478187_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "出願審査請求書",
+            "family": "other",
+            "date": "2023-01-30",
+            "status": "ok",
+            "bytes": 79888,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/JP/2023-01-30_JP_Request_for_Examination_300195255_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-03-04）未取到文书，已降级使用上一代（2021-03-04）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210205909.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20220014821.A",
+        "status": "ok",
+        "doc_total": 7,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-10-21",
+            "status": "ok",
+            "bytes": 65291,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/KR/2026-10-21_KR_Written_Decision_on_Registration_097488549_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2026-05-26",
+            "status": "ok",
+            "bytes": 170205,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/KR/2026-05-26_KR_Request_for_the_Submission_of_an_Opinion_047217128_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2026-09-18",
+            "status": "ok",
+            "bytes": 78625,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/KR/2026-09-18_KR_Written_Opinion_116336316_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-09-18",
+            "status": "ok",
+            "bytes": 47921,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/137/CN115032977A/KR/2026-09-18_KR_Amendment_including_Specification_etc_116336451_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-03-04）未取到文书，已降级使用上一代（2022-02-04）"
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.111106386.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-03T07:12:16+00:00"
+}
