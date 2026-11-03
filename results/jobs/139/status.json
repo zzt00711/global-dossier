@@ -1,0 +1,254 @@
+{
+  "state": "done",
+  "issue": 139,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-03T07:30:07+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116420119A（4 篇/局）",
+    "    OK  JP 国際調査報告  67 KB",
+    "    OK  JP 上申書（出願人・請求人）  97 KB",
+    "    OK  JP 請求の範囲  139 KB",
+    "    OK  JP 通知書（再提出通知）  97 KB",
+    "    OK  EP Text intended for grant (clean copy)  2922 KB",
+    "    OPD 暂未返回数据，2s 后重试（1/3）",
+    "    OK  EP Communication from the Legal Division  116 KB",
+    "    OK  EP Communication from the Legal Division  56 KB",
+    "    OK  EP Copy of the international search report  70 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  413 KB",
+    "    OK  US Search information including classification, databases and other search related notes  21 KB",
+    "    OK  US Examiner's search strategy and results  60 KB",
+    "    OK  US Response - Re:  Informal Power of Attorney (PTOL-308)  43 KB",
+    "    OK  KR Amendment to Bibliographic Information  38 KB",
+    "    OK  KR Report on Change of Applicant  39 KB",
+    "    OK  KR Request for Examination  37 KB",
+    "    OK  KR [Patent Application] Paper according to the Article 203 of Patent Act  698 KB"
+  ],
+  "query": "CN116420119A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN116420119A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-03T07:30:10+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023527729.A",
+        "status": "ok",
+        "doc_total": 22,
+        "picked": [
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2023-07-24",
+            "status": "ok",
+            "bytes": 68976,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/JP/2023-07-24_JP_International_Search_Report_312511163_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "上申書（出願人・請求人）",
+            "family": "applicant",
+            "date": "2025-05-01",
+            "status": "ok",
+            "bytes": 99417,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/JP/2025-05-01_JP_Written_Statement_%28applicant_demandant%29_500961704_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2023-05-09",
+            "status": "ok",
+            "bytes": 142107,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/JP/2023-05-09_JP_Claims_300982978_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "通知書（再提出通知）",
+            "family": "other",
+            "date": "2025-06-30",
+            "status": "ok",
+            "bytes": 99524,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/JP/2025-06-30_JP_Written_Notice_%28Notice_of_Re-Submission%29_125198030_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202118037785.A",
+        "status": "ok",
+        "doc_total": 42,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-07-24",
+            "status": "ok",
+            "bytes": 422986,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/US/2025-07-24_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_YXP46X151X19.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-07-24",
+            "status": "ok",
+            "bytes": 21251,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/US/2025-07-24_US_Search_information_including_classification%2C_databases_and_o_YXP4JX151X19.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-07-24",
+            "status": "ok",
+            "bytes": 61407,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/US/2025-07-24_US_Examiner%27s_search_strategy_and_results_YXP4MX151X19.pdf",
+            "error": null
+          },
+          {
+            "name": "Response - Re:  Informal Power of Attorney (PTOL-308)",
+            "family": "applicant",
+            "date": "2025-02-11",
+            "status": "ok",
+            "bytes": 43965,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/US/2025-02-11_US_Response_-_Re__Informal_Power_of_Attorney_%28PTOL-308%29_1PEDFWFYBX97.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21811513.A",
+        "status": "ok",
+        "doc_total": 40,
+        "picked": [
+          {
+            "name": "Text intended for grant (clean copy)",
+            "family": "final_grant",
+            "date": "2025-05-02",
+            "status": "ok",
+            "bytes": 2992192,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/EP/2025-05-02_EP_Text_intended_for_grant_%28clean_copy%29_J7E1N8EIAMSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Communication from the Legal Division",
+            "family": "rejection",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 118280,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/EP/2026-01-30_EP_Communication_from_the_Legal_Division_9KXG0SU6V79E.pdf",
+            "error": null
+          },
+          {
+            "name": "Communication from the Legal Division",
+            "family": "rejection",
+            "date": "2025-08-08",
+            "status": "ok",
+            "bytes": 57587,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/EP/2025-08-08_EP_Communication_from_the_Legal_Division_H0CAYUREYOD4.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-05-27",
+            "status": "ok",
+            "bytes": 71634,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/EP/2022-05-27_EP_Copy_of_the_international_search_report_JVROT9RPZK4M.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180075202.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237011942.A",
+        "status": "ok",
+        "doc_total": 4,
+        "picked": [
+          {
+            "name": "Amendment to Bibliographic Information",
+            "family": "applicant",
+            "date": "2024-11-19",
+            "status": "ok",
+            "bytes": 38756,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/KR/2024-11-19_KR_Amendment_to_Bibliographic_Information_126899937_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Report on Change of Applicant",
+            "family": "other",
+            "date": "2025-03-19",
+            "status": "ok",
+            "bytes": 40093,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/KR/2025-03-19_KR_Report_on_Change_of_Applicant_031048906_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2024-11-15",
+            "status": "ok",
+            "bytes": 37521,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/KR/2024-11-15_KR_Request_for_Examination_125750369_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+            "family": "other",
+            "date": "2023-04-07",
+            "status": "ok",
+            "bytes": 714668,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/139/CN116420119A/KR/2023-04-07_KR_%5BPatent_Application%5D_Paper_according_to_the_Article_203_of_P_039203714_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "WO",
+        "app_num": "IB.2021060612.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-03T07:31:51+00:00"
+}
