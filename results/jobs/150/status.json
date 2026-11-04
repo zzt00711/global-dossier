@@ -1,0 +1,141 @@
+{
+  "state": "done",
+  "issue": 150,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-04T02:16:20+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116907639A（4 篇/局）",
+    "    OK  JP 特許査定  104 KB",
+    "    OK  JP 拒絶理由通知書  171 KB",
+    "    OK  JP 手続補正書（自発・内容）  117 KB",
+    "    OK  JP 意見書  157 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  753 KB",
+    "    OK  US Non-Final Rejection  790 KB",
+    "    OK  US Search information including classification, databases and other search related notes  42 KB",
+    "    OK  US Examiner's search strategy and results  721 KB"
+  ],
+  "query": "CN116907639A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN116907639A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-04T02:16:22+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022189938.A",
+        "status": "ok",
+        "doc_total": 10,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-07-14",
+            "status": "ok",
+            "bytes": 106142,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/JP/2026-07-14_JP_Decision_to_Grant_a_Patent_126314651_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-05-19",
+            "status": "ok",
+            "bytes": 175006,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/JP/2026-05-19_JP_Notice_of_Reasons_for_Refusal_126204351_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-06-17",
+            "status": "ok",
+            "bytes": 119435,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/JP/2026-06-17_JP_Written_Amendment_%28voluntary-content%29_601315101_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2026-06-17",
+            "status": "ok",
+            "bytes": 160453,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/JP/2026-06-17_JP_Written_Opinion_601315100_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2023-04-14）未取到文书，已降级使用上一代（2022-11-29）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318133639.A",
+        "status": "ok",
+        "doc_total": 41,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-02-12",
+            "status": "ok",
+            "bytes": 770673,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/US/2026-02-12_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_A0CMCX210X15.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-08-25",
+            "status": "ok",
+            "bytes": 808578,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/US/2025-08-25_US_Non-Final_Rejection_U9QAZX205X73.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-02-12",
+            "status": "ok",
+            "bytes": 42731,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/US/2026-02-12_US_Search_information_including_classification%2C_databases_and_o_A0CMKX210X15.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-02-12",
+            "status": "ok",
+            "bytes": 738045,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/150/CN116907639A/US/2026-02-12_US_Examiner%27s_search_strategy_and_results_A0CMMX210X15.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2023-04-14）未取到文书，已降级使用上一代（2023-04-12）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310400764.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-04T02:17:12+00:00"
+}
