@@ -1,0 +1,90 @@
+{
+  "state": "done",
+  "issue": 146,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-04T01:50:02+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN114967087A（4 篇/局）",
+    "    OK  JP 特許査定  106 KB",
+    "    OK  JP 拒絶理由通知書  175 KB",
+    "    OK  JP 拒絶理由通知書  189 KB",
+    "    OK  JP 検索報告書  166 KB"
+  ],
+  "query": "CN114967087A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN114967087A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-04T01:50:05+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2021023883.A",
+        "status": "ok",
+        "doc_total": 15,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-05-12",
+            "status": "ok",
+            "bytes": 108368,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/146/CN114967087A/JP/2025-05-12_JP_Decision_to_Grant_a_Patent_125184567_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-03-13",
+            "status": "ok",
+            "bytes": 179549,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/146/CN114967087A/JP/2025-03-13_JP_Notice_of_Reasons_for_Refusal_125095343_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-10-28",
+            "status": "ok",
+            "bytes": 193997,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/146/CN114967087A/JP/2024-10-28_JP_Notice_of_Reasons_for_Refusal_124514101_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2024-09-30",
+            "status": "ok",
+            "bytes": 169973,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/146/CN114967087A/JP/2024-09-30_JP_Search_Report_by_Registered_Search_Organization_824125557_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2021-09-18）未取到文书，已降级使用上一代（2021-02-18）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202111095681.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-04T01:50:23+00:00"
+}
