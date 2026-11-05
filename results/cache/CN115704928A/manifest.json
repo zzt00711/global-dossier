@@ -1,0 +1,186 @@
+{
+  "query": "CN115704928A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "115704928",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-05T09:19:04+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "CN": 1,
+    "TW": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2022110547.A",
+      "app_date": "2022-07-08",
+      "family_id": "85204126",
+      "pub_nums": [
+        "JP.2023024297.A"
+      ],
+      "status": "ok",
+      "doc_total": 9,
+      "picked": [
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126319574_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2026-07-21",
+          "family": "rejection",
+          "tender_date": "2026-07-21",
+          "file": "JP/2026-07-21_JP_Notice_of_Reasons_for_Refusal_126319574_JP.pdf",
+          "bytes": 148754,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96826081578_JP",
+          "name": "検索報告書",
+          "name_en": "Search Report by Registered Search Organization",
+          "date": "2026-07-13",
+          "family": "citation",
+          "tender_date": "2026-07-13",
+          "file": "JP/2026-07-13_JP_Search_Report_by_Registered_Search_Organization_826081578_JP.pdf",
+          "bytes": 198590,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52602059150_JP",
+          "name": "手続補正書（自発・内容）",
+          "name_en": "Written Amendment (voluntary-content)",
+          "date": "2026-09-11",
+          "family": "applicant",
+          "tender_date": "2026-09-11",
+          "file": "JP/2026-09-11_JP_Written_Amendment_(voluntary-content)_602059150_JP.pdf",
+          "bytes": 136295,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_52602059151_JP",
+          "name": "意見書",
+          "name_en": "Written Opinion",
+          "date": "2026-09-11",
+          "family": "applicant",
+          "tender_date": "2026-09-11",
+          "file": "JP/2026-09-11_JP_Written_Opinion_602059151_JP.pdf",
+          "bytes": 192401,
+          "status": "ok"
+        }
+      ],
+      "title": "CURED FILM FOR INFORMATION DISPLAY DEVICE, COMPOSITION FOR TRANSPARENT CURED FILM, AND INFORMATION DISPLAY DEVICE",
+      "documents": [
+        {
+          "doc_id": "Claims_52201609707_JP",
+          "name": "請求の範囲",
+          "date": "2022-07-08",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_52201609707_JP",
+          "name": "明細書",
+          "date": "2022-07-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_a_Patent_52201609707_JP",
+          "name": "特許願",
+          "date": "2022-07-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_52201609707_JP",
+          "name": "要約書",
+          "date": "2022-07-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52501212127_JP",
+          "name": "出願審査請求書",
+          "date": "2025-06-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96826081578_JP",
+          "name": "検索報告書",
+          "date": "2026-07-13",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126319574_JP",
+          "name": "拒絶理由通知書",
+          "date": "2026-07-21",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52602059150_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-09-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_52602059151_JP",
+          "name": "意見書",
+          "date": "2026-09-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2022-08-04）未取到文书，已降级使用上一代（2022-07-08）"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202210931166.A",
+      "app_date": "2022-08-04",
+      "family_id": "85181449",
+      "pub_nums": [
+        "CN.115704928.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "TW",
+      "app_num": "TW.111129380.A",
+      "app_date": "2022-08-04",
+      "family_id": "85181449",
+      "pub_nums": [
+        "TW.202307479.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202210931166.A",
+    "app_date": "2022-08-04",
+    "family_id": "85181449"
+  }
+}

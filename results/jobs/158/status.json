@@ -1,0 +1,100 @@
+{
+  "state": "done",
+  "issue": 158,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-05T09:19:02+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115704928A（4 篇/局）",
+    "    OK  JP 拒絶理由通知書  145 KB",
+    "    OK  JP 検索報告書  194 KB",
+    "    OK  JP 手続補正書（自発・内容）  133 KB",
+    "    OK  JP 意見書  188 KB"
+  ],
+  "query": "CN115704928A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115704928A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-05T09:19:04+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2022110547.A",
+        "status": "ok",
+        "doc_total": 9,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-07-21",
+            "status": "ok",
+            "bytes": 148754,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/158/CN115704928A/JP/2026-07-21_JP_Notice_of_Reasons_for_Refusal_126319574_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-07-13",
+            "status": "ok",
+            "bytes": 198590,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/158/CN115704928A/JP/2026-07-13_JP_Search_Report_by_Registered_Search_Organization_826081578_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 136295,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/158/CN115704928A/JP/2026-09-11_JP_Written_Amendment_%28voluntary-content%29_602059150_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 192401,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/158/CN115704928A/JP/2026-09-11_JP_Written_Opinion_602059151_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-08-04）未取到文书，已降级使用上一代（2022-07-08）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210931166.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.111129380.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-05T09:19:22+00:00"
+}
