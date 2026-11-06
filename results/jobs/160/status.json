@@ -1,0 +1,141 @@
+{
+  "state": "done",
+  "issue": 160,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-06T05:15:27+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115704891A（4 篇/局）",
+    "    OK  EP Communication from the Examining Division  106 KB",
+    "    OK  EP European search opinion  347 KB",
+    "    OK  EP European search report  105 KB",
+    "    OK  EP Partial European search report  71 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  13 KB",
+    "    OK  US Final Rejection  533 KB",
+    "    OK  US Non-Final Rejection  985 KB",
+    "    OK  US Search information including classification, databases and other search related notes  39 KB"
+  ],
+  "query": "CN115704891A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115704891A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-06T05:15:29+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202117396032.A",
+        "status": "ok",
+        "doc_total": 105,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2025-03-07",
+            "status": "ok",
+            "bytes": 13230,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/US/2025-03-07_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_7AL9YWFYGX57.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-10-23",
+            "status": "ok",
+            "bytes": 546150,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/US/2024-10-23_US_Final_Rejection_3LLUFWFYGX55.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-06-28",
+            "status": "ok",
+            "bytes": 1008921,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/US/2024-06-28_US_Non-Final_Rejection_3GOQQBLUEX12.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-01-27",
+            "status": "ok",
+            "bytes": 39760,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/US/2025-01-27_US_Search_information_including_classification%2C_databases_and_o_LT0OGWFYGX61.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-08-05）未取到文书，已降级使用上一代（2021-08-06）"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22188672.A",
+        "status": "ok",
+        "doc_total": 32,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2025-12-02",
+            "status": "ok",
+            "bytes": 108714,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/EP/2025-12-02_EP_Communication_from_the_Examining_Division_13KLK16J6DVG.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-04-17",
+            "status": "ok",
+            "bytes": 355798,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/EP/2023-04-17_EP_European_search_opinion_XEIS619PBQQ6.pdf",
+            "error": null
+          },
+          {
+            "name": "European search report",
+            "family": "citation",
+            "date": "2023-04-17",
+            "status": "ok",
+            "bytes": 107092,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/EP/2023-04-17_EP_European_search_report_XG36IUX3S70L.pdf",
+            "error": null
+          },
+          {
+            "name": "Partial European search report",
+            "family": "citation",
+            "date": "2023-01-05",
+            "status": "ok",
+            "bytes": 72654,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/160/CN115704891A/EP/2023-01-05_EP_Partial_European_search_report_7VT10EBPWHFR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-08-05）未取到文书，已降级使用上一代（2022-08-04）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210937009.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-06T05:16:12+00:00"
+}
