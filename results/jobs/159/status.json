@@ -1,0 +1,201 @@
+{
+  "state": "done",
+  "issue": 159,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-06T04:24:50+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115077641A（4 篇/局）",
+    "    OK  JP 特許査定  105 KB",
+    "    OK  JP 検索報告書  186 KB",
+    "    OK  JP 手続補正書（自発・内容）  95 KB",
+    "    OK  JP 請求の範囲  116 KB",
+    "    OK  EP European search opinion  319 KB",
+    "    OK  EP European search report  52 KB",
+    "    OK  EP Information on Search Strategy  22 KB",
+    "    OK  EP Application deemed to be withdrawn (non-payment of examination fee/designation fee/non-reply to Written Opinion)  73 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  1377 KB",
+    "    OK  US Search information including classification, databases and other search related notes  95 KB",
+    "    OK  US Examiner's search strategy and results  1576 KB",
+    "    OK  US Response to Election / Restriction Filed  40 KB"
+  ],
+  "query": "CN115077641A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115077641A",
+    "family_counts": {
+      "JP": 1,
+      "US": 2,
+      "EP": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-06T04:24:53+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2021039435.A",
+        "status": "ok",
+        "doc_total": 11,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-10-29",
+            "status": "ok",
+            "bytes": 107665,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/JP/2024-10-29_JP_Decision_to_Grant_a_Patent_124517147_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2024-10-16",
+            "status": "ok",
+            "bytes": 190317,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/JP/2024-10-16_JP_Search_Report_by_Registered_Search_Organization_824131376_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2022-01-21",
+            "status": "ok",
+            "bytes": 97424,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/JP/2022-01-21_JP_Written_Amendment_%28voluntary-content%29_200145844_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2021-03-11",
+            "status": "ok",
+            "bytes": 119047,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/JP/2021-03-11_JP_Claims_100549217_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-03-11）未取到文书，已降级使用上一代（2021-03-11）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202217653705.A",
+        "status": "ok",
+        "doc_total": 38,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-12-11",
+            "status": "ok",
+            "bytes": 1410432,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/US/2023-12-11_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_66ZNWGREENX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-12-11",
+            "status": "ok",
+            "bytes": 97453,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/US/2023-12-11_US_Search_information_including_classification%2C_databases_and_o_66ZO1GREENX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2023-12-11",
+            "status": "ok",
+            "bytes": 1613785,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/US/2023-12-11_US_Examiner%27s_search_strategy_and_results_66ZO5GREENX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Response to Election / Restriction Filed",
+            "family": "applicant",
+            "date": "2023-10-16",
+            "status": "ok",
+            "bytes": 41088,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/US/2023-10-16_US_Response_to_Election___Restriction_Filed_754TVXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2022-03-11）未取到文书，已降级使用上一代（2022-03-07）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418598469.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2022-03-07 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22160798.A",
+        "status": "ok",
+        "doc_total": 16,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2022-07-29",
+            "status": "ok",
+            "bytes": 326927,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/EP/2022-07-29_EP_European_search_opinion_EBZCM19F28X7.pdf",
+            "error": null
+          },
+          {
+            "name": "European search report",
+            "family": "citation",
+            "date": "2022-07-29",
+            "status": "ok",
+            "bytes": 53163,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/EP/2022-07-29_EP_European_search_report_E6760VV92KI8.pdf",
+            "error": null
+          },
+          {
+            "name": "Information on Search Strategy",
+            "family": "citation",
+            "date": "2022-07-29",
+            "status": "ok",
+            "bytes": 22590,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/EP/2022-07-29_EP_Information_on_Search_Strategy_E676B1FAJGSN.pdf",
+            "error": null
+          },
+          {
+            "name": "Application deemed to be withdrawn (non-payment of examination fee/designation fee/non-reply to Written Opinion)",
+            "family": "applicant",
+            "date": "2023-04-11",
+            "status": "ok",
+            "bytes": 74551,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/159/CN115077641A/EP/2023-04-11_EP_Application_deemed_to_be_withdrawn_%28non-payment_of_examinati_IMKP0Z2PPJAL.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-03-11）未取到文书，已降级使用上一代（2022-03-08）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210235356.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-06T04:26:08+00:00"
+}
