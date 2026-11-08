@@ -1,0 +1,283 @@
+{
+  "state": "done",
+  "issue": 176,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-08T15:37:07+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117460953A（4 篇/局）",
+    "    OK  JP 拒絶理由通知書  199 KB",
+    "    OK  JP 拒絶理由通知書  272 KB",
+    "    OK  JP 検索報告書  1726 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  EP Communication from the Examining Division  40 KB",
+    "    OK  EP Copy of the international search report  80 KB",
+    "    OK  EP Reply to communication from the Examining Division  716 KB",
+    "    OK  EP Amended claims with annotations  356 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  566 KB",
+    "    OK  US Non-Final Rejection  960 KB",
+    "    OK  US Search information including classification, databases and other search related notes  37 KB",
+    "    OK  US Examiner's search strategy and results  916 KB",
+    "    OK  KR Amendment including Specification etc.  63 KB",
+    "    OK  KR Amendment to Bibliographic Information  37 KB",
+    "    OK  KR Request for Examination  35 KB",
+    "    OK  KR [Patent Application] Paper according to the Article 203 of Patent Act  44 KB"
+  ],
+  "query": "CN117460953A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117460953A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1,
+      "BR": 1
+    },
+    "generated_at": "2026-11-08T15:37:11+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023566533.A",
+        "status": "ok",
+        "doc_total": 28,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-09-08",
+            "status": "ok",
+            "bytes": 203355,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/JP/2026-09-08_JP_Notice_of_Reasons_for_Refusal_126414794_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-03-03",
+            "status": "ok",
+            "bytes": 278215,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/JP/2026-03-03_JP_Notice_of_Reasons_for_Refusal_126088772_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-02-13",
+            "status": "ok",
+            "bytes": 1767907,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/JP/2026-02-13_JP_Search_Report_by_Registered_Search_Organization_826018271_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2024-01-09",
+            "status": "ok",
+            "bytes": 69473,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/JP/2024-01-09_JP_International_Search_Report_410021413_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218557529.A",
+        "status": "ok",
+        "doc_total": 61,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-10-23",
+            "status": "ok",
+            "bytes": 579739,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/US/2026-10-23_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_HHZX74X68X58.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-18",
+            "status": "ok",
+            "bytes": 982730,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/US/2026-06-18_US_Non-Final_Rejection_0SEUB245X214.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-10-23",
+            "status": "ok",
+            "bytes": 38344,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/US/2026-10-23_US_Search_information_including_classification%2C_databases_and_o_HHZXC4X68X58.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-10-23",
+            "status": "ok",
+            "bytes": 937943,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/US/2026-10-23_US_Examiner%27s_search_strategy_and_results_HHZXD4X68X58.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22727010.A",
+        "status": "ok",
+        "doc_total": 37,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2025-04-09",
+            "status": "ok",
+            "bytes": 41259,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/EP/2025-04-09_EP_Communication_from_the_Examining_Division_QT87H18UWJCC.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-11-03",
+            "status": "ok",
+            "bytes": 82316,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/EP/2022-11-03_EP_Copy_of_the_international_search_report_LSVY9R75QQWE.pdf",
+            "error": null
+          },
+          {
+            "name": "Reply to communication from the Examining Division",
+            "family": "applicant",
+            "date": "2025-10-08",
+            "status": "ok",
+            "bytes": 733393,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/EP/2025-10-08_EP_Reply_to_communication_from_the_Examining_Division_5DI74S0GHIR6.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims with annotations",
+            "family": "applicant",
+            "date": "2025-10-08",
+            "status": "ok",
+            "bytes": 364614,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/EP/2025-10-08_EP_Amended_claims_with_annotations_5DJCVHK8ZMEH.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280041483.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237040523.A",
+        "status": "ok",
+        "doc_total": 4,
+        "picked": [
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2025-04-25",
+            "status": "ok",
+            "bytes": 64906,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/KR/2025-04-25_KR_Amendment_including_Specification_etc_047269559_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment to Bibliographic Information",
+            "family": "applicant",
+            "date": "2023-12-26",
+            "status": "ok",
+            "bytes": 37736,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/KR/2023-12-26_KR_Amendment_to_Bibliographic_Information_145563913_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2025-04-25",
+            "status": "ok",
+            "bytes": 35741,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/KR/2025-04-25_KR_Request_for_Examination_047269605_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+            "family": "other",
+            "date": "2023-11-23",
+            "status": "ok",
+            "bytes": 44991,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/176/CN117460953A/KR/2023-11-23_KR_%5BPatent_Application%5D_Paper_according_to_the_Article_203_of_P_131230852_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3216733.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2022265529.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2022061385.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "BR",
+        "app_num": "BR.112023022529.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-08T15:38:44+00:00"
+}
