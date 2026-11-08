@@ -1,0 +1,1227 @@
+{
+  "query": "CN117255948A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117255948",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-08T14:49:40+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 2,
+    "US": 1,
+    "EP": 1,
+    "CN": 1,
+    "WO": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2023563982.A",
+      "app_date": "2022-04-29",
+      "family_id": "75746441",
+      "pub_nums": [
+        "JP.2024514676.A"
+      ],
+      "status": "ok",
+      "doc_total": 30,
+      "picked": [
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06125516622_JP",
+          "name": "特許査定",
+          "name_en": "Decision to Grant a Patent",
+          "date": "2025-11-07",
+          "family": "final_grant",
+          "tender_date": "2025-11-07",
+          "file": "JP/2025-11-07_JP_Decision_to_Grant_a_Patent_125516622_JP.pdf",
+          "bytes": 126989,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125189667_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2025-05-02",
+          "family": "rejection",
+          "tender_date": "2025-05-02",
+          "file": "JP/2025-05-02_JP_Notice_of_Reasons_for_Refusal_125189667_JP.pdf",
+          "bytes": 173042,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124377715_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2024-08-14",
+          "family": "rejection",
+          "tender_date": "2024-08-14",
+          "file": "JP/2024-08-14_JP_Notice_of_Reasons_for_Refusal_124377715_JP.pdf",
+          "bytes": 242939,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96824091733_JP",
+          "name": "検索報告書",
+          "name_en": "Search Report by Registered Search Organization",
+          "date": "2024-07-19",
+          "family": "citation",
+          "tender_date": "2024-07-19",
+          "file": "JP/2024-07-19_JP_Search_Report_by_Registered_Search_Organization_824091733_JP.pdf",
+          "bytes": 228064,
+          "status": "ok"
+        }
+      ],
+      "title": "PCT marker panel for early detection of sepsis",
+      "documents": [
+        {
+          "doc_id": "Abstract_52302252189_JP",
+          "name": "要約書",
+          "date": "2023-10-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_52302252189_JP",
+          "name": "明細書",
+          "date": "2023-10-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52302257066_JP",
+          "name": "出願審査請求書",
+          "date": "2023-10-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_52302252189_JP",
+          "name": "請求の範囲",
+          "date": "2023-10-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "National_Entry_Form_52302252189_JP",
+          "name": "国内書面",
+          "date": "2023-10-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62361120433_JP",
+          "name": "添付書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report_62314521883_JP",
+          "name": "国際調査報告",
+          "date": "2023-12-25",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings_62374260185_JP",
+          "name": "外国語国際公開要約図（職権）",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62314441851_JP",
+          "name": "添付書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62343630580_JP",
+          "name": "添付書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62314521881_JP",
+          "name": "添付書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62314441851_JP",
+          "name": "国際公開",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_62361120433_JP",
+          "name": "優先権書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62343630580_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62374260185_JP",
+          "name": "図面",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications-_Corrections_62314521881_JP",
+          "name": "訂正／国際公開",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62314521883_JP",
+          "name": "添付書類",
+          "date": "2023-12-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notification_of_Determination_of_Application_Number_02124039416_JP",
+          "name": "出願番号特定通知書",
+          "date": "2024-03-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96824091733_JP",
+          "name": "検索報告書",
+          "date": "2024-07-19",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124377715_JP",
+          "name": "拒絶理由通知書",
+          "date": "2024-08-14",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52402502254_JP",
+          "name": "期間延長請求書",
+          "date": "2024-11-14",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52500077453_JP",
+          "name": "意見書",
+          "date": "2025-01-14",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52500077455_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2025-01-14",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125189667_JP",
+          "name": "拒絶理由通知書",
+          "date": "2025-05-02",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Record_of_Communication_96825053335_JP",
+          "name": "応対記録",
+          "date": "2025-05-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52501462416_JP",
+          "name": "期間延長請求書",
+          "date": "2025-07-04",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52501462415_JP",
+          "name": "期間延長請求書",
+          "date": "2025-07-04",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52502378349_JP",
+          "name": "意見書",
+          "date": "2025-10-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52502378351_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2025-10-31",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06125516622_JP",
+          "name": "特許査定",
+          "date": "2025-11-07",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 2 个，使用本代原申请"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025234637.A",
+      "app_date": "2025-12-05",
+      "family_id": "75746441",
+      "pub_nums": [
+        "JP.2026048754.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 2 个，已取到 2022-04-29 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202218557953.A",
+      "app_date": "2022-04-29",
+      "family_id": "75746441",
+      "pub_nums": [
+        "US.20240221958.A1"
+      ],
+      "status": "ok",
+      "doc_total": 58,
+      "picked": [
+        {
+          "doc_id": "LWSP5C6DBLUEX12",
+          "name": "Applicant Response to Pre-Exam Formalities Notice",
+          "name_en": "",
+          "date": "2024-05-29",
+          "family": "applicant",
+          "tender_date": "2024-05-29",
+          "file": "US/2024-05-29_US_Applicant_Response_to_Pre-Exam_Formalities_Notice_P5C6DBLUEX12.pdf",
+          "bytes": 85357,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LWZDPM5PBLUEM20",
+          "name": "Preliminary Amendment",
+          "name_en": "",
+          "date": "2024-05-29",
+          "family": "applicant",
+          "tender_date": "2024-05-29",
+          "file": "US/2024-05-29_US_Preliminary_Amendment_DPM5PBLUEM20.pdf",
+          "bytes": 55067,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LWZDPM5SBLUEM20",
+          "name": "Claims",
+          "name_en": "",
+          "date": "2024-05-29",
+          "family": "claims",
+          "tender_date": "2024-05-29",
+          "file": "US/2024-05-29_US_Claims_DPM5SBLUEM20.pdf",
+          "bytes": 474000,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MVQRP7TW138X215",
+          "name": "Requirement for Restriction/Election",
+          "name_en": "",
+          "date": "2026-10-28",
+          "family": "other",
+          "tender_date": "2026-10-28",
+          "file": "US/2026-10-28_US_Requirement_for_Restriction_Election_RP7TW138X215.pdf",
+          "bytes": 345067,
+          "status": "ok"
+        }
+      ],
+      "title": "PCT MARKER PANELS FOR EARLY DETECTION OF SEPSIS",
+      "documents": [
+        {
+          "doc_id": "LOCC9Y61XBLUEX5",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y63XBLUEX5",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y65XBLUEX5",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y66XBLUEX5",
+          "name": "Claims",
+          "date": "2023-10-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y67XBLUEX5",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y69XBLUEX5",
+          "name": "Foreign Reference",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6BXBLUEX5",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6CXBLUEX5",
+          "name": "Preliminary Amendment",
+          "date": "2023-10-29",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6DXBLUEX5",
+          "name": "Abstract",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6EXBLUEX5",
+          "name": "Specification",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6FXBLUEX5",
+          "name": "Claims",
+          "date": "2023-10-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6GXBLUEX5",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2023-10-29",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6HXBLUEX5",
+          "name": "Power of Attorney",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6IXBLUEX5",
+          "name": "Transmittal of New Application",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6PXBLUEX5",
+          "name": "Foreign Reference",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOCC9Y6QXBLUEX5",
+          "name": "Electronic Fee Payment",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOU4G2XBLUEX0",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOU9YEXBLUEX1",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOUDR5XBLUEX4",
+          "name": "Documents submitted with 371 (National Stage) Applications",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOUK1WXBLUEX5",
+          "name": "Certified Copy of Foreign Priority Application",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOUNULXBLUEX5",
+          "name": "PCT/RO/101 - Request form for new International Application - Conventional",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOWVVAXBLUEX5",
+          "name": "Abstract",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOX2S8XBLUEX0",
+          "name": "Specification",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOX5W7XBLUEX4",
+          "name": "Claims",
+          "date": "2023-10-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LODOX93EXBLUEX5",
+          "name": "Abstract",
+          "date": "2023-10-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB5YTTCXBLUEX5",
+          "name": "Claims Worksheet (PTO-2022)",
+          "date": "2024-03-29",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB5YTTDXBLUEX5",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2024-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB5YTTEXBLUEX5",
+          "name": "Filing Receipt",
+          "date": "2024-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB5YTTFXBLUEX5",
+          "name": "371 (National Stage) Supplemental Fees Missing - Form M923",
+          "date": "2024-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUB5YTTGXBLUEX5",
+          "name": "Welcome Letter from USPTO Director and Deputy Director",
+          "date": "2024-03-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWSP5C6DBLUEX12",
+          "name": "Applicant Response to Pre-Exam Formalities Notice",
+          "date": "2024-05-29",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LWSP5C6FBLUEX12",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-05-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWZDPM5PBLUEM20",
+          "name": "Preliminary Amendment",
+          "date": "2024-05-29",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LWZDPM5SBLUEM20",
+          "name": "Claims",
+          "date": "2024-05-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LWZDPM5VBLUEM20",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2024-05-29",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LYIIWNGVBLUEX10",
+          "name": "Notice of Publication",
+          "date": "2024-07-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8OLWFYBX90",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8OTWFYBX90",
+          "name": "Foreign Reference",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8P6WFYBX90",
+          "name": "Foreign Reference",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8P7WFYBX90",
+          "name": "Foreign Reference",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8PBWFYBX90",
+          "name": "Foreign Reference",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8PHWFYBX90",
+          "name": "Foreign Reference",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0E5M8PIWFYBX90",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM797WFYGX55",
+          "name": "Foreign Reference",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM79HWFYGX55",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM7A6WFYGX55",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM7AAWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM7ADWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M4VXM7ATWFYGX55",
+          "name": "Foreign Reference",
+          "date": "2024-12-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6S2KZ9LWFYBX92",
+          "name": "Notice of Designated Office (DO) / Elected Office (EO) Acceptance Mailed",
+          "date": "2025-02-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6S2KZ9MWFYBX92",
+          "name": "Claims Worksheet (PTO-2022)",
+          "date": "2025-02-06",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M6S2KZ9NWFYBX92",
+          "name": "Filing Receipt",
+          "date": "2025-02-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6S2KZ9OWFYBX92",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2025-02-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6T36DOUWFYBX90",
+          "name": "Priority Documents electronically retrieved by USPTO from a participating IP Office",
+          "date": "2025-02-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M7XENBEPWFYGX51",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-03-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M7XENBF3WFYGX51",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-03-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M7XENBFHWFYGX51",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2025-03-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVQRP7TW138X215",
+          "name": "Requirement for Restriction/Election",
+          "date": "2026-10-28",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22726673.A",
+      "app_date": "2022-04-29",
+      "family_id": "75746441",
+      "pub_nums": [
+        "EP.4330688.A2"
+      ],
+      "status": "ok",
+      "doc_total": 34,
+      "picked": [
+        {
+          "doc_id": "LBAILAGP1QRSWGS",
+          "name": "Copy of the international search report",
+          "name_en": "",
+          "date": "2022-12-01",
+          "family": "citation",
+          "tender_date": "2022-12-01",
+          "file": "EP/2022-12-01_EP_Copy_of_the_international_search_report_ILAGP1QRSWGS.pdf",
+          "bytes": 166101,
+          "status": "ok"
+        },
+        {
+          "doc_id": "L7QURJ2NOMLFZYM",
+          "name": "Partial International Search Report",
+          "name_en": "",
+          "date": "2022-09-12",
+          "family": "citation",
+          "tender_date": "2022-09-12",
+          "file": "EP/2022-09-12_EP_Partial_International_Search_Report_URJ2NOMLFZYM.pdf",
+          "bytes": 157778,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LX4RCUY1183OP2Z",
+          "name": "Amendments received before examination",
+          "name_en": "",
+          "date": "2024-06-07",
+          "family": "applicant",
+          "tender_date": "2024-06-07",
+          "file": "EP/2024-06-07_EP_Amendments_received_before_examination_RCUY1183OP2Z.pdf",
+          "bytes": 126544,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LX4RCVFKG6VEI7O",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "name_en": "",
+          "date": "2024-06-07",
+          "family": "applicant",
+          "tender_date": "2024-06-07",
+          "file": "EP/2024-06-07_EP_Amended_claims_filed_after_receipt_of_(European)_search_repo_RCVFKG6VEI7O.pdf",
+          "bytes": 229722,
+          "status": "ok"
+        }
+      ],
+      "title": "PCT MARKER PANELS FOR EARLY DETECTION OF SEPSIS",
+      "documents": [
+        {
+          "doc_id": "L2KHI6SIBXG8W7A",
+          "name": "Description",
+          "date": "2022-04-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2KHI6SK12S60RF",
+          "name": "Claims",
+          "date": "2022-04-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2KHI6SLOUEHZYN",
+          "name": "Abstract",
+          "date": "2022-04-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2KHIAU49XKCG9E",
+          "name": "Electronic request for grant of an International application",
+          "date": "2022-04-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2KHIBOIV9VOOKJ",
+          "name": "Document concerning fees and payments",
+          "date": "2022-04-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2KHICZBORZ0FDX",
+          "name": "(Electronic) Receipt",
+          "date": "2022-04-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L466TLG21OO6X8N",
+          "name": "Request form for international application (copy for ISA/EP)",
+          "date": "2022-06-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L45DDGVZ7V2GZ2B",
+          "name": "Notification of the international application number and of the international filing date",
+          "date": "2022-06-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L47MLBVR13E2C04",
+          "name": "Notification of receipt of Search copy",
+          "date": "2022-06-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6F13F931S08NJX",
+          "name": "Incoming letter related to PCT RO",
+          "date": "2022-08-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6F13FLZ16KEN5R",
+          "name": "RO101 Declaration",
+          "date": "2022-08-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6F13G5VU9M173L",
+          "name": "(Electronic) Receipt",
+          "date": "2022-08-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6YU1ZYW6GHMY30",
+          "name": "Incoming letter related to PCT RO",
+          "date": "2022-08-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6YU209JHITPY09",
+          "name": "RO101 Declaration",
+          "date": "2022-08-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L6YU20WTH3YYH0P",
+          "name": "(Electronic) Receipt",
+          "date": "2022-08-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L76DM277MD8B3FQ",
+          "name": "Notification relating to declaration under Rule 4.17 PCT (copy for ISA/EP)",
+          "date": "2022-08-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7QUPY8N1BC0E00",
+          "name": "Provisional opinion accompanying the partial search results",
+          "date": "2022-09-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L7QURJ2NOMLFZYM",
+          "name": "Partial International Search Report",
+          "date": "2022-09-12",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LA6LT1C8ZHJAPVM",
+          "name": "Published international application - A2",
+          "date": "2022-11-03",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAQIX74ITJI669T",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2022-11-21",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LBAILAGMJYH3D5J",
+          "name": "International publication of the international search report",
+          "date": "2022-12-01",
+          "family": "citation",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LBAILAGP1QRSWGS",
+          "name": "Copy of the international search report",
+          "date": "2022-12-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LM5GCZTPBT4QQOP",
+          "name": "Information on entry into European phase",
+          "date": "2023-09-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOWKGWW01PC2DYZ",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2023-11-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LOZWPZYQPHRTS53",
+          "name": "Request for entry into the European phase",
+          "date": "2023-11-15",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LOZWQ0Z39OCJ8S9",
+          "name": "(Electronic) Receipt",
+          "date": "2023-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LPNL8KTI1TXVSEB",
+          "name": "Priority search results copy provided by EPO",
+          "date": "2023-12-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LPN8OS0V1WQNVBR",
+          "name": "Communication concerning correction of deficiencies in written opinion/amendment of application/payment of claims fee",
+          "date": "2023-12-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LS3XMKKE1PQVD7T",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2024-02-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LX4RCUM4Z9ITAVG",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2024-06-07",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LX4RCUY1183OP2Z",
+          "name": "Amendments received before examination",
+          "date": "2024-06-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LX4RCVFKG6VEI7O",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2024-06-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LX4RCVW1MUZ39QC",
+          "name": "Amended claims with annotations",
+          "date": "2024-06-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LX4RCWI81IU7EOY",
+          "name": "(Electronic) Receipt",
+          "date": "2024-06-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280030902.A",
+      "app_date": "2022-04-29",
+      "family_id": "75746441",
+      "pub_nums": [
+        "CN.117255948.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "EP.2022061593.W",
+      "app_date": "2022-04-29",
+      "family_id": "75746441",
+      "pub_nums": [
+        "WO.2022229444.A2",
+        "WO.2022229444.A3"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280030902.A",
+    "app_date": "2022-04-29",
+    "family_id": "75746441"
+  }
+}
