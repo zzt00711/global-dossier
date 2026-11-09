@@ -1,0 +1,251 @@
+{
+  "state": "done",
+  "issue": 183,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-09T00:15:17+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117355751A（4 篇/局）",
+    "    OK  JP 特許査定  115 KB",
+    "    OK  JP 拒絶理由通知書  161 KB",
+    "    OK  JP 検索報告書  331 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  EP European search opinion  366 KB",
+    "    OK  EP Supplementary European search report  119 KB",
+    "    OK  EP Copy of the international search report  157 KB",
+    "    OK  EP Amended claims with annotations  641 KB",
+    "    OK  US Amendment after Notice of Allowance (Rule 312)  43 KB",
+    "    OK  US Search information including classification, databases and other search related notes  46 KB",
+    "    OK  US Examiner's search strategy and results  35 KB",
+    "    OK  US Response to Election / Restriction Filed  48 KB"
+  ],
+  "query": "CN117355751A",
+  "offices": [
+    "JP",
+    "EP",
+    "US"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117355751A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1,
+      "IL": 1,
+      "MX": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-09T00:15:19+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023558376.A",
+        "status": "ok",
+        "doc_total": 32,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-09-01",
+            "status": "ok",
+            "bytes": 117814,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/JP/2026-09-01_JP_Decision_to_Grant_a_Patent_126391946_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-03-03",
+            "status": "ok",
+            "bytes": 165274,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/JP/2026-03-03_JP_Notice_of_Reasons_for_Refusal_126085131_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-02-16",
+            "status": "ok",
+            "bytes": 338916,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/JP/2026-02-16_JP_Search_Report_by_Registered_Search_Organization_826018915_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2023-11-27",
+            "status": "ok",
+            "bytes": 69230,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/JP/2023-11-27_JP_International_Search_Report_314111433_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218283694.A",
+        "status": "ok",
+        "doc_total": 72,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2026-07-21",
+            "status": "ok",
+            "bytes": 44495,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/US/2026-07-21_US_Amendment_after_Notice_of_Allowance_%28Rule_312%29_VQLF9X247X24.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-06-04",
+            "status": "ok",
+            "bytes": 46968,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/US/2026-06-04_US_Search_information_including_classification%2C_databases_and_o_45VF64X26X55.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-06-04",
+            "status": "ok",
+            "bytes": 35698,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/US/2026-06-04_US_Examiner%27s_search_strategy_and_results_45VFB4X26X55.pdf",
+            "error": null
+          },
+          {
+            "name": "Response to Election / Restriction Filed",
+            "family": "applicant",
+            "date": "2026-05-04",
+            "status": "ok",
+            "bytes": 48690,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/US/2026-05-04_US_Response_to_Election___Restriction_Filed_DM12DX81X226.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22776438.A",
+        "status": "ok",
+        "doc_total": 27,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2025-08-25",
+            "status": "ok",
+            "bytes": 374859,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/EP/2025-08-25_EP_European_search_opinion_6VYV211RUIPO.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2025-08-25",
+            "status": "ok",
+            "bytes": 121954,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/EP/2025-08-25_EP_Supplementary_European_search_report_6OEDSI7IBXJD.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-09-29",
+            "status": "ok",
+            "bytes": 160440,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/EP/2022-09-29_EP_Copy_of_the_international_search_report_S5SB1V788ZXE.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims with annotations",
+            "family": "applicant",
+            "date": "2026-03-11",
+            "status": "ok",
+            "bytes": 655874,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/183/CN117355751A/EP/2026-03-11_EP_Amended_claims_with_annotations_T6ZY61UEMRNR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280037157.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3214061.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2022242756.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022021289.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "IL",
+        "app_num": "IL.306087.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "MX",
+        "app_num": "MX.2023011271.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.111110617.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-09T00:16:20+00:00"
+}
