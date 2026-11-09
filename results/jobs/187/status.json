@@ -1,0 +1,177 @@
+{
+  "state": "done",
+  "issue": 187,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-09T14:04:42+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117015554A（5 篇/局）",
+    "    OK  US Non-Final Rejection  1570 KB",
+    "    OK  US Non-Final Rejection  519 KB",
+    "    OK  US Search information including classification, databases and other search related notes  68 KB",
+    "    OK  US Examiner's search strategy and results  24 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  26 KB"
+  ],
+  "query": "CN117015554A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117015554A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "AU": 1,
+      "WO": 1,
+      "AR": 1,
+      "CO": 1,
+      "MX": 1,
+      "PE": 1
+    },
+    "generated_at": "2026-11-09T14:04:43+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023535818.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202117548314.A",
+        "status": "ok",
+        "doc_total": 102,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-05-05",
+            "status": "ok",
+            "bytes": 1607647,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/187/CN117015554A/US/2026-05-05_US_Non-Final_Rejection_76D39X77X223.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-12-23",
+            "status": "ok",
+            "bytes": 531810,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/187/CN117015554A/US/2024-12-23_US_Non-Final_Rejection_JBHQKWFYGX51.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-05-05",
+            "status": "ok",
+            "bytes": 69705,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/187/CN117015554A/US/2026-05-05_US_Search_information_including_classification%2C_databases_and_o_76D3FX77X223.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-05-05",
+            "status": "ok",
+            "bytes": 24217,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/187/CN117015554A/US/2026-05-05_US_Examiner%27s_search_strategy_and_results_76D3NX77X223.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2026-11-05",
+            "status": "ok",
+            "bytes": 26182,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/187/CN117015554A/US/2026-11-05_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_ZCL9VX128X80.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21836300.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180083402.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2021394888.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2021062801.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AR",
+        "app_num": "AR.P210103452.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CO",
+        "app_num": "CO.2023008678.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "MX",
+        "app_num": "MX.2023006922.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "PE",
+        "app_num": "PE.2023001849.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-09T14:05:19+00:00"
+}
