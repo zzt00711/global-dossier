@@ -1,0 +1,251 @@
+{
+  "state": "done",
+  "issue": 181,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-09T00:06:28+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116847875A（4 篇/局）",
+    "    OK  EP European search opinion  171 KB",
+    "    OK  EP Supplementary European search report  60 KB",
+    "    OK  EP Copy of the international search report  312 KB",
+    "    OK  EP Amended claims filed after receipt of (European) search report  49 KB",
+    "    OK  US Non-Final Rejection  1154 KB",
+    "    OK  US Search information including classification, databases and other search related notes  39 KB",
+    "    OK  US Examiner's search strategy and results  163 KB",
+    "    OK  US Applicant Response to Pre-Exam Formalities Notice  52 KB",
+    "    OK  KR Request for the Submission of an Opinion  142 KB",
+    "    OK  KR Amendment including Specification etc.  71 KB",
+    "    OK  KR Request for Examination  36 KB",
+    "    OK  KR [Patent Application] Paper according to the Article 203 of Patent Act  4881 KB"
+  ],
+  "query": "CN116847875A",
+  "offices": [
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN116847875A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1,
+      "IL": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-09T00:06:32+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023530188.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "US",
+        "app_num": "US.202118253576.A",
+        "status": "ok",
+        "doc_total": 190,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 1181435,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/US/2026-01-30_US_Non-Final_Rejection_TQN3B161X130.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 39902,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/US/2026-01-30_US_Search_information_including_classification%2C_databases_and_o_TQN3J161X130.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 166713,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/US/2026-01-30_US_Examiner%27s_search_strategy_and_results_TQN3R161X130.pdf",
+            "error": null
+          },
+          {
+            "name": "Applicant Response to Pre-Exam Formalities Notice",
+            "family": "applicant",
+            "date": "2023-11-17",
+            "status": "ok",
+            "bytes": 52901,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/US/2023-11-17_US_Applicant_Response_to_Pre-Exam_Formalities_Notice_BRYUNGREENX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21895893.A",
+        "status": "ok",
+        "doc_total": 31,
+        "picked": [
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2024-06-06",
+            "status": "ok",
+            "bytes": 175142,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/EP/2024-06-06_EP_European_search_opinion_ICXUN1FE1YQ7.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2024-06-06",
+            "status": "ok",
+            "bytes": 61690,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/EP/2024-06-06_EP_Supplementary_European_search_report_I3X8P12L8OI1.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2022-05-27",
+            "status": "ok",
+            "bytes": 319734,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/EP/2022-05-27_EP_Copy_of_the_international_search_report_N390D1FKQ0H2.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2024-12-12",
+            "status": "ok",
+            "bytes": 49844,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/EP/2024-12-12_EP_Amended_claims_filed_after_receipt_of_%28European%29_search_repo_I5OGR18PVZLZ.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180077703.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237018262.A",
+        "status": "ok",
+        "doc_total": 4,
+        "picked": [
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2026-09-17",
+            "status": "ok",
+            "bytes": 145255,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/KR/2026-09-17_KR_Request_for_the_Submission_of_an_Opinion_086180782_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2024-11-15",
+            "status": "ok",
+            "bytes": 72828,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/KR/2024-11-15_KR_Amendment_including_Specification_etc_125964962_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Examination",
+            "family": "other",
+            "date": "2024-11-15",
+            "status": "ok",
+            "bytes": 36779,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/KR/2024-11-15_KR_Request_for_Examination_125968078_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+            "family": "other",
+            "date": "2023-05-30",
+            "status": "ok",
+            "bytes": 4997944,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/181/CN116847875A/KR/2023-05-30_KR_%5BPatent_Application%5D_Paper_according_to_the_Article_203_of_P_059470396_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3200572.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2021382807.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2021072513.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "IL",
+        "app_num": "IL.302947.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.110143101.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-09T00:07:59+00:00"
+}
