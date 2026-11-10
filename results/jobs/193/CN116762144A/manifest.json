@@ -1,0 +1,1812 @@
+{
+  "query": "CN116762144A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116762144",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-10T07:38:13+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "US": 1,
+    "EP": 1,
+    "CN": 1,
+    "KR": 1,
+    "CA": 1,
+    "AU": 1,
+    "WO": 1,
+    "IL": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2023537933.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "JP.2024502265.A"
+      ],
+      "status": "ok",
+      "doc_total": 30,
+      "picked": [
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126179605_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2026-05-12",
+          "family": "rejection",
+          "tender_date": "2026-05-12",
+          "file": "JP/2026-05-12_JP_Notice_of_Reasons_for_Refusal_126179605_JP.pdf",
+          "bytes": 213033,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125553618_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2025-12-02",
+          "family": "rejection",
+          "tender_date": "2025-12-02",
+          "file": "JP/2025-12-02_JP_Notice_of_Reasons_for_Refusal_125553618_JP.pdf",
+          "bytes": 200817,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96825135362_JP",
+          "name": "検索報告書",
+          "name_en": "Search Report by Registered Search Organization",
+          "date": "2025-11-14",
+          "family": "citation",
+          "tender_date": "2025-11-14",
+          "file": "JP/2025-11-14_JP_Search_Report_by_Registered_Search_Organization_825135362_JP.pdf",
+          "bytes": 270939,
+          "status": "ok"
+        },
+        {
+          "doc_id": "International_Search_Report_62312870283_JP",
+          "name": "国際調査報告",
+          "name_en": "International Search Report",
+          "date": "2023-08-21",
+          "family": "citation",
+          "tender_date": "2023-08-21",
+          "file": "JP/2023-08-21_JP_International_Search_Report_312870283_JP.pdf",
+          "bytes": 69195,
+          "status": "ok"
+        }
+      ],
+      "title": "Method and system for generation and analysis of biomechanical data",
+      "documents": [
+        {
+          "doc_id": "National_Entry_Form_52301312223_JP",
+          "name": "国内書面",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_52301747393_JP",
+          "name": "図面",
+          "date": "2023-08-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Submission_of_Translation_of_International_Application_52301747393_JP",
+          "name": "国際出願翻訳文提出書",
+          "date": "2023-08-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_52301747393_JP",
+          "name": "明細書",
+          "date": "2023-08-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_52301747393_JP",
+          "name": "請求の範囲",
+          "date": "2023-08-16",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_52301747393_JP",
+          "name": "要約書",
+          "date": "2023-08-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62312870281_JP",
+          "name": "添付書類",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62312870281_JP",
+          "name": "国際公開",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report_62312870283_JP",
+          "name": "国際調査報告",
+          "date": "2023-08-21",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Attached_Document_62312870283_JP",
+          "name": "添付書類",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62343040036_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62343040036_JP",
+          "name": "添付書類",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_%2528Communication_of_International_Applications_in_Foreign_Language%2529_62322870285_JP",
+          "name": "外国語国際公開図面（職権）",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62322870285_JP",
+          "name": "図面",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_62360730033_JP",
+          "name": "優先権書類",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62360730033_JP",
+          "name": "添付書類",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62372750028_JP",
+          "name": "図面",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings_62372750028_JP",
+          "name": "外国語国際公開要約図（職権）",
+          "date": "2023-08-21",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52402795049_JP",
+          "name": "出願審査請求書",
+          "date": "2024-12-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notification_of_Appointment_of_Agent_%2528applicant%252Fdemandant%2529_52501438169_JP",
+          "name": "代理人選任届（出願人・請求人）",
+          "date": "2025-07-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notification_of_Change_of_Applicant_52501502581_JP",
+          "name": "出願人名義変更届",
+          "date": "2025-07-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96825135362_JP",
+          "name": "検索報告書",
+          "date": "2025-11-14",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125553618_JP",
+          "name": "拒絶理由通知書",
+          "date": "2025-12-02",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_52600455047_JP",
+          "name": "意見書",
+          "date": "2026-03-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52600455049_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-03-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126179605_JP",
+          "name": "拒絶理由通知書",
+          "date": "2026-05-12",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_52601755895_JP",
+          "name": "意見書",
+          "date": "2026-08-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52601755896_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-08-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_of_Dismissal_of_Amendment_06126409146_JP",
+          "name": "補正の却下の決定",
+          "date": "2026-09-08",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_of_Refusal_06126409150_JP",
+          "name": "拒絶査定",
+          "date": "2026-09-08",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202118268823.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "US.20240296957.A1"
+      ],
+      "status": "ok",
+      "doc_total": 108,
+      "picked": [
+        {
+          "doc_id": "MR1ELUAVX87X131",
+          "name": "Final Rejection",
+          "name_en": "",
+          "date": "2026-07-01",
+          "family": "rejection",
+          "tender_date": "2026-07-01",
+          "file": "US/2026-07-01_US_Final_Rejection_ELUAVX87X131.pdf",
+          "bytes": 1196418,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MMDTYOW55X15X96",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2026-03-06",
+          "family": "rejection",
+          "tender_date": "2026-03-06",
+          "file": "US/2026-03-06_US_Non-Final_Rejection_TYOW55X15X96.pdf",
+          "bytes": 1149325,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MR1ELUB3X87X131",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2026-07-01",
+          "family": "citation",
+          "tender_date": "2026-07-01",
+          "file": "US/2026-07-01_US_Search_information_including_classification,_databases_and_o_ELUB3X87X131.pdf",
+          "bytes": 43641,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MR1ELUB5X87X131",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2026-07-01",
+          "family": "citation",
+          "tender_date": "2026-07-01",
+          "file": "US/2026-07-01_US_Examiner's_search_strategy_and_results_ELUB5X87X131.pdf",
+          "bytes": 626209,
+          "status": "ok"
+        }
+      ],
+      "title": "METHOD AND SYSTEM FOR THE GENERATION AND ANALYSIS OF BIOMECHANICAL DATA",
+      "documents": [
+        {
+          "doc_id": "LJ64DPRTXBLUEX5",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ64DPRVXBLUEX5",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ64DPS1XBLUEX5",
+          "name": "Transmittal of New Application",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SDXGUXBLUEX2",
+          "name": "Certified Copy of Foreign Priority Application",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SDYI4XBLUEX5",
+          "name": "PCT/RO/101 - Request form for new International Application - Conventional",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SE512XBLUEX0",
+          "name": "Abstract",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SE7NMXBLUEX2",
+          "name": "Specification",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SE98BXBLUEX2",
+          "name": "Claims",
+          "date": "2023-06-21",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6SEAOIXBLUEX2",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2023-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJFS0R54GREENM0",
+          "name": "Preliminary Amendment",
+          "date": "2023-06-21",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJFS0R55GREENM0",
+          "name": "Claims",
+          "date": "2023-06-21",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJFS0R56GREENM0",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2023-06-21",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWRUAH6FXBLUEX9",
+          "name": "Claims Worksheet (PTO-2022)",
+          "date": "2024-05-30",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LWRUAH6GXBLUEX9",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2024-05-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWRUAH6IXBLUEX9",
+          "name": "Filing Receipt",
+          "date": "2024-05-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWRUAH6JXBLUEX9",
+          "name": "371 (National Stage) Supplemental Fees Missing - Form M923",
+          "date": "2024-05-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LWRUAH6LXBLUEX9",
+          "name": "Welcome Letter from USPTO Director and Deputy Director",
+          "date": "2024-05-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZ1WX5I8XBLUEX9",
+          "name": "Electronic Fee Payment",
+          "date": "2024-07-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZ1WX5IBXBLUEX9",
+          "name": "Applicant Response to Pre-Exam Formalities Notice",
+          "date": "2024-07-25",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZ1WX5IEXBLUEX9",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-07-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZSFD1KEWFYGX57",
+          "name": "Claims Worksheet (PTO-2022)",
+          "date": "2024-08-14",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LZSFD1KHWFYGX57",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2024-08-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZSFD1KKWFYGX57",
+          "name": "Filing Receipt",
+          "date": "2024-08-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LZSFD1KOWFYGX57",
+          "name": "Notice of Designated Office (DO) / Elected Office (EO) Acceptance Mailed",
+          "date": "2024-08-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M0ONYRTVWFYBX97",
+          "name": "Notice of Publication",
+          "date": "2024-09-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7O9WFYBX98",
+          "name": "Non-Final Rejection",
+          "date": "2025-02-04",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OBWFYBX98",
+          "name": "List of references cited by examiner",
+          "date": "2025-02-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OCWFYBX98",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2025-02-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OEWFYBX98",
+          "name": "Index of Claims",
+          "date": "2025-02-04",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OGWFYBX98",
+          "name": "Bibliographic Data Sheet",
+          "date": "2025-02-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OIWFYBX98",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-02-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6KUH7OKWFYBX98",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-02-04",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDSSJ00LX117X92",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-08-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDSSJ00QX117X92",
+          "name": "Electronic Fee Payment",
+          "date": "2025-08-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDSSJ00RX117X92",
+          "name": "Extension of Time",
+          "date": "2025-08-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ME05386G168X173",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2025-08-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MECT8009X47X240",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2025-08-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MECT800CX47X240",
+          "name": "Claims",
+          "date": "2025-08-01",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MECT800DX47X240",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2025-08-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQWAYS1X205X73",
+          "name": "Foreign Reference",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQWAYS2X205X73",
+          "name": "Transmittal Letter",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQWAYS3X205X73",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQWAYS4X205X73",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQWAYS5X205X73",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQZGPM1X205X73",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQZGPM2X205X73",
+          "name": "Power of Attorney",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFQZGPM4X205X73",
+          "name": "Power of Attorney",
+          "date": "2025-09-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MFWL6Q8R195X217",
+          "name": "Communication - Re:  Power of Attorney (PTOL-308)",
+          "date": "2025-09-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VHY166X241",
+          "name": "Final Rejection",
+          "date": "2025-10-24",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VI1166X241",
+          "name": "Index of Claims",
+          "date": "2025-10-24",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VI3166X241",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2025-10-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VI5166X241",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-10-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VI7166X241",
+          "name": "Examiner's search strategy and results",
+          "date": "2025-10-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MH3F6VI8166X241",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2025-10-24",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MIJDFJ5C174X193",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2025-11-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMN7X23X166",
+          "name": "Foreign Reference",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNCX23X166",
+          "name": "Foreign Reference",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNDX23X166",
+          "name": "Request for Continued Examination (RCE)",
+          "date": "2026-01-12",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNFX23X166",
+          "name": "Transmittal Letter",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNGX23X166",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNKX23X166",
+          "name": "Foreign Reference",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNLX23X166",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MKBWGMNMX23X166",
+          "name": "Electronic Fee Payment",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MLJZZA37X89X136",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2026-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MLQR6W6Z185X117",
+          "name": "Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)",
+          "date": "2026-01-12",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MLQR6W73185X117",
+          "name": "Claims",
+          "date": "2026-01-12",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MLQR6W76185X117",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2026-01-12",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ML8MRPFJX149X67",
+          "name": "Change of Address",
+          "date": "2026-02-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "ML8MRPFMX149X67",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-02-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOW55X15X96",
+          "name": "Non-Final Rejection",
+          "date": "2026-03-06",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MMDTYOW85X15X96",
+          "name": "List of references cited by examiner",
+          "date": "2026-03-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOWA5X15X96",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2026-03-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOWC5X15X96",
+          "name": "Index of Claims",
+          "date": "2026-03-06",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOWE5X15X96",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2026-03-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOWG5X15X96",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-03-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MMDTYOWI5X15X96",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-03-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MOALPR37X138X73",
+          "name": "Electronic Request for Interview with Examiner",
+          "date": "2026-04-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MOLLVAIQ65X42X3",
+          "name": "Examiner Interview Summary Record (PTOL - 413)",
+          "date": "2026-05-01",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MOLLVAIS65X42X3",
+          "name": "Office Action Appendix",
+          "date": "2026-05-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MPZNL5GVX57X147",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-06-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQH0V4RLX253X83",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2026-06-04",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQH0V4RPX253X83",
+          "name": "Claims",
+          "date": "2026-06-04",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MQH0V4RTX253X83",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2026-06-04",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MR1ELUAVX87X131",
+          "name": "Final Rejection",
+          "date": "2026-07-01",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MR1ELUAYX87X131",
+          "name": "List of references cited by examiner",
+          "date": "2026-07-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MR1ELUB0X87X131",
+          "name": "Index of Claims",
+          "date": "2026-07-01",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MR1ELUB3X87X131",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2026-07-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MR1ELUB5X87X131",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-07-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MR1ELUB7X87X131",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-07-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT46A0SE146X152",
+          "name": "Request for Continued Examination (RCE)",
+          "date": "2026-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT46A0SF146X152",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT46A0SG146X152",
+          "name": "Electronic Fee Payment",
+          "date": "2026-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT925DOV168X110",
+          "name": "Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)",
+          "date": "2026-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT925DOY168X110",
+          "name": "Claims",
+          "date": "2026-08-22",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT925DP1168X110",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2026-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT926DP1168X110",
+          "name": "Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)",
+          "date": "2026-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT926DP3168X110",
+          "name": "Claims",
+          "date": "2026-08-22",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT926DP5168X110",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2026-08-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MT92EF9PX157X52",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2026-08-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDL148X102",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDO148X102",
+          "name": "Transmittal Letter",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDQ148X102",
+          "name": "Foreign Reference",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDS148X102",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDT148X102",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MTD7WFDU148X102",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-08-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MULUVWZMX247X37",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-09-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MULUVWZQX247X37",
+          "name": "Request under 37CFR1.46(c) to correct, update, change applicant",
+          "date": "2026-09-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MULUVWZRX247X37",
+          "name": "Assignee showing of ownership per 37 CFR 3.73",
+          "date": "2026-09-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.21908202.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "EP.4266998.A1",
+        "EP.4266998.A4"
+      ],
+      "status": "ok",
+      "doc_total": 38,
+      "picked": [
+        {
+          "doc_id": "MDQLZM1KF1788MF",
+          "name": "European search opinion",
+          "name_en": "",
+          "date": "2025-08-05",
+          "family": "rejection",
+          "tender_date": "2025-08-05",
+          "file": "EP/2025-08-05_EP_European_search_opinion_LZM1KF1788MF.pdf",
+          "bytes": 203353,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MDQLSSCZJ0ASQNP",
+          "name": "Supplementary European search report",
+          "name_en": "",
+          "date": "2025-08-05",
+          "family": "citation",
+          "tender_date": "2025-08-05",
+          "file": "EP/2025-08-05_EP_Supplementary_European_search_report_LSSCZJ0ASQNP.pdf",
+          "bytes": 40523,
+          "status": "ok"
+        },
+        {
+          "doc_id": "L57S08FCUXHA1QO",
+          "name": "Copy of the international search report",
+          "name_en": "",
+          "date": "2022-06-30",
+          "family": "citation",
+          "tender_date": "2022-06-30",
+          "file": "EP/2022-06-30_EP_Copy_of_the_international_search_report_S08FCUXHA1QO.pdf",
+          "bytes": 83903,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MHM4D2HO1S9Z4IS",
+          "name": "Amended claims with annotations",
+          "name_en": "",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "tender_date": "2025-11-05",
+          "file": "EP/2025-11-05_EP_Amended_claims_with_annotations_4D2HO1S9Z4IS.pdf",
+          "bytes": 423796,
+          "status": "ok"
+        }
+      ],
+      "title": "METHOD AND SYSTEM FOR THE GENERATION AND ANALYSIS OF BIOMECHANICAL DATA",
+      "documents": [
+        {
+          "doc_id": "L57S08FA198AU17",
+          "name": "Published international application - A1",
+          "date": "2022-06-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L57S08FCUXHA1QO",
+          "name": "Copy of the international search report",
+          "date": "2022-06-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "L5QH5GCUSSH38KZ",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2022-07-18",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LH5ELNCGPEJG79W",
+          "name": "Information on entry into European phase",
+          "date": "2023-05-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJWGST161DH7MBJ",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LK9LW02Z1UVRVPD",
+          "name": "Request for entry into the European phase",
+          "date": "2023-07-19",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LK9LW0P119T7Y5M",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2023-07-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LK9LW18Y1GX2PLR",
+          "name": "Amended claims with annotations",
+          "date": "2023-07-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LK9LW1X7QL41F91",
+          "name": "(Electronic) Receipt",
+          "date": "2023-07-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LKHFRBR22E89FLZ",
+          "name": "Communication regarding possible amendment of the application/payment of claims fee",
+          "date": "2023-08-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LN3SA1QJ1DP4ZT4",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2023-10-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LS2F6E5N6UJNCS1",
+          "name": "Notice drawing attention to the payment of the renewal fee and additional fee",
+          "date": "2024-02-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "M6LVF2CRTQOVU0E",
+          "name": "Notice drawing attention to the payment of the renewal fee and additional fee",
+          "date": "2025-02-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC91NV6219A0KWT",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2025-06-19",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MC91NV7M1CSZ10N",
+          "name": "Submission concerning change of applicant's representative",
+          "date": "2025-06-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC91NV9Q11IOI9Q",
+          "name": "Authorisation",
+          "date": "2025-06-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC4M2GLR1TK73SO",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2025-06-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MC4M2GXX18LNMA2",
+          "name": "Authorisation",
+          "date": "2025-06-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC4M2HI1OCRX5IZ",
+          "name": "Submission concerning change of applicant's representative",
+          "date": "2025-06-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC4M2I5J1V2SOM5",
+          "name": "(Electronic) Receipt",
+          "date": "2025-06-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC91OC8F3IT5XEZ",
+          "name": "Communication  concerning the filing of a power of attorney",
+          "date": "2025-06-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MC91R9NWNFOYGB7",
+          "name": "Communication of amended entries concerning the representative",
+          "date": "2025-06-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MCEM7QV0A2AVHLS",
+          "name": "Search started",
+          "date": "2025-06-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MCVYAA2M14YJ777",
+          "name": "Annexes in respect of a client data request",
+          "date": "2025-06-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MCVYAA3N96L4H1V",
+          "name": "Submission concerning a transfer of rights (applicant)",
+          "date": "2025-06-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MCVYI9RCJNKT3H9",
+          "name": "Communication of the registration of a transfer or change of name and/or address",
+          "date": "2025-07-14",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQITKY311LDDBO",
+          "name": "Communication regarding the transmission of the European search report",
+          "date": "2025-08-05",
+          "family": "citation",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQLSSCZJ0ASQNP",
+          "name": "Supplementary European search report",
+          "date": "2025-08-05",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MDQLSSNPOYU7SGC",
+          "name": "Information on Search Strategy",
+          "date": "2025-08-05",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MDQLZM1KF1788MF",
+          "name": "European search opinion",
+          "date": "2025-08-05",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MEHONBCCWS5LHHE",
+          "name": "Invitation to declare maintenance of the application and to correct deficiencies in the Written Opinion/amend application",
+          "date": "2025-08-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4CRYBAD9UQ6H",
+          "name": "(Electronic) Receipt",
+          "date": "2025-11-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4D2HO1S9Z4IS",
+          "name": "Amended claims with annotations",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MHM4D36SNSKD114",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4D49GTEN8QU0",
+          "name": "Summary of subsequently filed documents",
+          "date": "2025-11-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4D4QH10306QB",
+          "name": "Amended description with annotations",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4D5TN1NLVRHD",
+          "name": "Amendments received before examination",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MHM4D6TA1XOMM40",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2025-11-05",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202180086349.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "CN.116762144.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20237024831.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "KR.20230161935.A"
+      ],
+      "status": "ok",
+      "doc_total": 8,
+      "picked": [
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952026069332535_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2026-07-31",
+          "family": "rejection",
+          "tender_date": "2026-07-31",
+          "file": "KR/2026-07-31_KR_Request_for_the_Submission_of_an_Opinion_069332535_KR.pdf",
+          "bytes": 93505,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_112026125437228_KR",
+          "name": "Written Opinion",
+          "name_en": "Written Opinion",
+          "date": "2026-10-12",
+          "family": "applicant",
+          "tender_date": "2026-10-12",
+          "file": "KR/2026-10-12_KR_Written_Opinion_125437228_KR.pdf",
+          "bytes": 73566,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Amendment_to_Bibliographic_Information_112023119075518_KR",
+          "name": "Amendment to Bibliographic Information",
+          "name_en": "Amendment to Bibliographic Information",
+          "date": "2023-10-30",
+          "family": "applicant",
+          "tender_date": "2023-10-30",
+          "file": "KR/2023-10-30_KR_Amendment_to_Bibliographic_Information_119075518_KR.pdf",
+          "bytes": 39138,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Report_on_Change_of_Applicant_112025100369516_KR",
+          "name": "Report on Change of Applicant",
+          "name_en": "Report on Change of Applicant",
+          "date": "2025-09-01",
+          "family": "other",
+          "tender_date": "2025-09-01",
+          "file": "KR/2025-09-01_KR_Report_on_Change_of_Applicant_100369516_KR.pdf",
+          "bytes": 44058,
+          "status": "ok"
+        }
+      ],
+      "title": "METHOD AND SYSTEM FOR THE GENERATION AND ANALYSIS OF BIOMECHANICAL DATA",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112023079880382_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2023-07-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Amendment_152023012292661_KR",
+          "name": "Request for Amendment",
+          "date": "2023-08-01",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Designated_Period_112023107532243_KR",
+          "name": "Request for Extension of Designated Period",
+          "date": "2023-09-27",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_to_Bibliographic_Information_112023119075518_KR",
+          "name": "Amendment to Bibliographic Information",
+          "date": "2023-10-30",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Examination_112024141775612_KR",
+          "name": "Request for Examination",
+          "date": "2024-12-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Report_on_Change_of_Applicant_112025100369516_KR",
+          "name": "Report on Change of Applicant",
+          "date": "2025-09-01",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952026069332535_KR",
+          "name": "Request for the Submission of an Opinion",
+          "date": "2026-07-31",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_112026125437228_KR",
+          "name": "Written Opinion",
+          "date": "2026-10-12",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.3206026.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "CA.3206026.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2021407415.A",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "AU.2021407415.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "CA.2021051866.W",
+      "app_date": "2021-12-21",
+      "family_id": "82157328",
+      "pub_nums": [
+        "WO.2022133601.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "IL",
+      "app_num": "IL.303736.A",
+      "app_date": "2023-06-14",
+      "family_id": "82157328",
+      "pub_nums": [
+        "IL.303736.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202180086349.A",
+    "app_date": "2021-12-21",
+    "family_id": "82157328"
+  }
+}
