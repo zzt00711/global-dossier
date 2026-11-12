@@ -1,0 +1,386 @@
+{
+  "query": "CN117999501A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117999501",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-12T02:01:10+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "CN": 1,
+    "KR": 1,
+    "WO": 1,
+    "TW": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2023550465.A",
+      "app_date": "2022-08-24",
+      "family_id": "85780618",
+      "pub_nums": [
+        "JP.WO2023053798.A1"
+      ],
+      "status": "ok",
+      "doc_total": 23,
+      "picked": [
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126234070_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2026-06-02",
+          "family": "rejection",
+          "tender_date": "2026-06-02",
+          "file": "JP/2026-06-02_JP_Notice_of_Reasons_for_Refusal_126234070_JP.pdf",
+          "bytes": 199442,
+          "status": "ok"
+        },
+        {
+          "doc_id": "International_Search_Report%2528in_Japanese%2529_62312321194_JP",
+          "name": "国際調査報告（日本語）",
+          "name_en": "International Search Report(in Japanese)",
+          "date": "2023-07-10",
+          "family": "citation",
+          "tender_date": "2023-07-10",
+          "file": "JP/2023-07-10_JP_International_Search_Report(in_Japanese)_312321194_JP.pdf",
+          "bytes": 70445,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_52602157478_JP",
+          "name": "意見書",
+          "name_en": "Written Opinion",
+          "date": "2026-09-28",
+          "family": "applicant",
+          "tender_date": "2026-09-28",
+          "file": "JP/2026-09-28_JP_Written_Opinion_602157478_JP.pdf",
+          "bytes": 328849,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52602157481_JP",
+          "name": "手続補正書（自発・内容）",
+          "name_en": "Written Amendment (voluntary-content)",
+          "date": "2026-09-28",
+          "family": "applicant",
+          "tender_date": "2026-09-28",
+          "file": "JP/2026-09-28_JP_Written_Amendment_(voluntary-content)_602157481_JP.pdf",
+          "bytes": 153701,
+          "status": "ok"
+        }
+      ],
+      "title": "POLARIZING FILM, IMAGE DISPLAY DEVICE, AND METHOD FOR PRODUCING POLARIZING FILM",
+      "documents": [
+        {
+          "doc_id": "Priority_Document_62360590394_JP",
+          "name": "優先権書類",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62360590394_JP",
+          "name": "添付書類",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings__62372210119_JP",
+          "name": "日本語国際公開要約図（職権）",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62372210119_JP",
+          "name": "図面",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62312321194_JP",
+          "name": "添付書類",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report%2528in_Japanese%2529_62312321194_JP",
+          "name": "国際調査報告（日本語）",
+          "date": "2023-07-10",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Attached_Document_62312321191_JP",
+          "name": "添付書類",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62312321191_JP",
+          "name": "国際公開",
+          "date": "2023-07-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "National_Entry_Form_52400177842_JP",
+          "name": "国内書面",
+          "date": "2024-01-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Applications_%2528Communication_of_International_Applications_in_Japanese%2529_62439901998_JP",
+          "name": "日本語国際公開（職権）",
+          "date": "2024-01-29",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_62439901998_JP",
+          "name": "請求の範囲",
+          "date": "2024-01-29",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_62439901998_JP",
+          "name": "明細書",
+          "date": "2024-01-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62439901998_JP",
+          "name": "図面",
+          "date": "2024-01-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_62439901998_JP",
+          "name": "要約書",
+          "date": "2024-01-29",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62442480873_JP",
+          "name": "添付書類",
+          "date": "2024-04-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62442480873_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2024-04-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62442480872_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2024-04-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62442480872_JP",
+          "name": "添付書類",
+          "date": "2024-04-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52501218764_JP",
+          "name": "出願審査請求書",
+          "date": "2025-06-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06126234070_JP",
+          "name": "拒絶理由通知書",
+          "date": "2026-06-02",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52601653208_JP",
+          "name": "期間延長請求書",
+          "date": "2026-07-23",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_52602157478_JP",
+          "name": "意見書",
+          "date": "2026-09-28",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52602157481_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-09-28",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280063382.A",
+      "app_date": "2022-08-24",
+      "family_id": "85780618",
+      "pub_nums": [
+        "CN.117999501.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20247010108.A",
+      "app_date": "2022-08-24",
+      "family_id": "85780618",
+      "pub_nums": [
+        "KR.20240088752.A"
+      ],
+      "status": "ok",
+      "doc_total": 3,
+      "picked": [
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952026091374457_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2026-10-02",
+          "family": "rejection",
+          "tender_date": "2026-10-02",
+          "file": "KR/2026-10-02_KR_Request_for_the_Submission_of_an_Opinion_091374457_KR.pdf",
+          "bytes": 57601,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_Examination_112025066714623_KR",
+          "name": "Request for Examination",
+          "name_en": "Request for Examination",
+          "date": "2025-06-16",
+          "family": "other",
+          "tender_date": "2025-06-16",
+          "file": "KR/2025-06-16_KR_Request_for_Examination_066714623_KR.pdf",
+          "bytes": 37543,
+          "status": "ok"
+        },
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112024033727956_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "name_en": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2024-03-26",
+          "family": "other",
+          "tender_date": "2024-03-26",
+          "file": "KR/2024-03-26_KR_[Patent_Application]_Paper_according_to_the_Article_203_of_P_033727956_KR.pdf",
+          "bytes": 776625,
+          "status": "ok"
+        }
+      ],
+      "title": "POLARIZATION FILM, IMAGE DISPLAY DEVICE, AND METHOD FOR PRODUCING POLARIZATION FILM",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112024033727956_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2024-03-26",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Examination_112025066714623_KR",
+          "name": "Request for Examination",
+          "date": "2025-06-16",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952026091374457_KR",
+          "name": "Request for the Submission of an Opinion",
+          "date": "2026-10-02",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "WO",
+      "app_num": "JP.2022031958.W",
+      "app_date": "2022-08-24",
+      "family_id": "85780618",
+      "pub_nums": [
+        "WO.2023053798.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "TW",
+      "app_num": "TW.111132517.A",
+      "app_date": "2022-08-29",
+      "family_id": "85780618",
+      "pub_nums": [
+        "TW.202313345.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280063382.A",
+    "app_date": "2022-08-24",
+    "family_id": "85780618"
+  }
+}
