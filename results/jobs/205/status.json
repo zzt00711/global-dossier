@@ -1,0 +1,191 @@
+{
+  "state": "done",
+  "issue": 205,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-12T06:35:40+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115791223A（4 篇/局）",
+    "    OK  EP Decision to grant a European patent  89 KB",
+    "    OK  EP European search opinion  141 KB",
+    "    OK  EP European search report  48 KB",
+    "    OK  EP Information on Search Strategy  14 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  503 KB",
+    "    OK  US Non-Final Rejection  412 KB",
+    "    OK  US Search information including classification, databases and other search related notes  38 KB",
+    "    OK  US Examiner's search strategy and results  649 KB"
+  ],
+  "query": "CN115791223A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115791223A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "BR": 1,
+      "ES": 1,
+      "FI": 1,
+      "PL": 1,
+      "PT": 1
+    },
+    "generated_at": "2026-11-12T06:35:43+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217930759.A",
+        "status": "ok",
+        "doc_total": 56,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-11-05",
+            "status": "ok",
+            "bytes": 514788,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/US/2025-11-05_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_WP9UT168X179.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-06-23",
+            "status": "ok",
+            "bytes": 422258,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/US/2025-06-23_US_Non-Final_Rejection_72KKA182X243.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-11-05",
+            "status": "ok",
+            "bytes": 38875,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/US/2025-11-05_US_Search_information_including_classification%2C_databases_and_o_WP9UZ168X179.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-11-05",
+            "status": "ok",
+            "bytes": 664178,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/US/2025-11-05_US_Examiner%27s_search_strategy_and_results_WP9V0168X179.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-08-24）未取到文书，已改用更新一代（2022-09-09）"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22193889.A",
+        "status": "ok",
+        "doc_total": 46,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2026-06-05",
+            "status": "ok",
+            "bytes": 91355,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/EP/2026-06-05_EP_Decision_to_grant_a_European_patent_838I416SKHRS.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2023-02-13",
+            "status": "ok",
+            "bytes": 144397,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/EP/2023-02-13_EP_European_search_opinion_YK29E1W5RZCA.pdf",
+            "error": null
+          },
+          {
+            "name": "European search report",
+            "family": "citation",
+            "date": "2023-02-13",
+            "status": "ok",
+            "bytes": 49089,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/EP/2023-02-13_EP_European_search_report_XYI6C1BK6FZP.pdf",
+            "error": null
+          },
+          {
+            "name": "Information on Search Strategy",
+            "family": "citation",
+            "date": "2023-02-13",
+            "status": "ok",
+            "bytes": 14005,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/205/CN115791223A/EP/2023-02-13_EP_Information_on_Search_Strategy_XYIMKUKA1WV6.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-08-24）未取到文书，已改用更新一代（2022-09-05）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202211021557.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "BR",
+        "app_num": "BR.102022018144.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "ES",
+        "app_num": "ES.22193889.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "FI",
+        "app_num": "FI.22193889.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "PL",
+        "app_num": "PL.43892921.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "PT",
+        "app_num": "PT.22193889.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-12T06:36:31+00:00"
+}
