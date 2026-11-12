@@ -1,0 +1,161 @@
+{
+  "state": "done",
+  "issue": 206,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-12T09:48:51+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN113168761A（4 篇/局）",
+    "    OK  JP 特許査定  108 KB",
+    "    OK  JP 拒絶理由通知書  182 KB",
+    "    OK  JP 手続補正書（自発・内容）  145 KB",
+    "    OK  JP 意見書  202 KB",
+    "    OK  US Non-Final Rejection  1389 KB",
+    "    OK  US Final Rejection  1645 KB",
+    "    OK  US Search information including classification, databases and other search related notes  109 KB",
+    "    OK  US Examiner's search strategy and results  3413 KB"
+  ],
+  "query": "CN113168761A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN113168761A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "WO": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-11-12T09:48:54+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2018223105.A",
+        "status": "ok",
+        "doc_total": 10,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2022-08-02",
+            "status": "ok",
+            "bytes": 110506,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/JP/2022-08-02_JP_Decision_to_Grant_a_Patent_122376056_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2022-02-22",
+            "status": "ok",
+            "bytes": 186326,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/JP/2022-02-22_JP_Notice_of_Reasons_for_Refusal_122045202_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2022-04-08",
+            "status": "ok",
+            "bytes": 148325,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/JP/2022-04-08_JP_Written_Amendment_%28voluntary-content%29_200980774_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2022-04-08",
+            "status": "ok",
+            "bytes": 206341,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/JP/2022-04-08_JP_Written_Opinion_200980771_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2019-11-22）未取到文书，已降级使用上一代（2018-11-29）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.201917298208.A",
+        "status": "ok",
+        "doc_total": 78,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-09-29",
+            "status": "ok",
+            "bytes": 1422298,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/US/2024-09-29_US_Non-Final_Rejection_4N4B7WFYBX90.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-05-10",
+            "status": "ok",
+            "bytes": 1684649,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/US/2024-05-10_US_Final_Rejection_ROGKRBLUEX12.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-09-29",
+            "status": "ok",
+            "bytes": 111532,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/US/2024-09-29_US_Search_information_including_classification%2C_databases_and_o_4N4BBWFYBX90.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2024-09-29",
+            "status": "ok",
+            "bytes": 3495109,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/206/CN113168761A/US/2024-09-29_US_Examiner%27s_search_strategy_and_results_4N4BHWFYBX90.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201980078279.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2019045763.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.112019005978.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-12T09:50:00+00:00"
+}
