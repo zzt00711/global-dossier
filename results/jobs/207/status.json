@@ -1,0 +1,189 @@
+{
+  "state": "done",
+  "issue": 207,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-13T01:15:33+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118465886A（5 篇/局）",
+    "    OK  US Final Rejection  432 KB",
+    "    OK  US Non-Final Rejection  384 KB",
+    "    OK  US Search information including classification, databases and other search related notes  20 KB",
+    "    OK  US Examiner's search strategy and results  2094 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  18 KB",
+    "    OK  KR Written Decision on Registration  65 KB",
+    "    OK  KR Request for the Submission of an Opinion  90 KB",
+    "    OK  KR Notice of Final Rejection  68 KB",
+    "    OK  KR Written Opinion  228 KB",
+    "    OK  KR Amendment including Specification etc.  45 KB"
+  ],
+  "query": "CN118465886A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 5,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118465886A",
+    "family_counts": {
+      "US": 1,
+      "CN": 2,
+      "KR": 1,
+      "TW": 2
+    },
+    "generated_at": "2026-11-13T01:15:34+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202318522775.A",
+        "status": "ok",
+        "doc_total": 74,
+        "picked": [
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-08-31",
+            "status": "ok",
+            "bytes": 442142,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/US/2026-08-31_US_Final_Rejection_271FT163X253.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-04-01",
+            "status": "ok",
+            "bytes": 392937,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/US/2026-04-01_US_Non-Final_Rejection_R87MBX121X16.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-08-31",
+            "status": "ok",
+            "bytes": 20452,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/US/2026-08-31_US_Search_information_including_classification%2C_databases_and_o_271FW163X253.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-08-31",
+            "status": "ok",
+            "bytes": 2143922,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/US/2026-08-31_US_Examiner%27s_search_strategy_and_results_271FY163X253.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2026-06-14",
+            "status": "ok",
+            "bytes": 17978,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/US/2026-06-14_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_27YEFX163X72.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-01-26）未取到文书，已降级使用上一代（2023-11-29）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202410112721.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202420196105.U",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20230017625.A",
+        "status": "ok",
+        "doc_total": 8,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-03-11",
+            "status": "ok",
+            "bytes": 66170,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/KR/2026-03-11_KR_Written_Decision_on_Registration_023859359_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-01-15",
+            "status": "ok",
+            "bytes": 92539,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/KR/2025-01-15_KR_Request_for_the_Submission_of_an_Opinion_005287050_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Notice of Final Rejection",
+            "family": "rejection",
+            "date": "2025-09-12",
+            "status": "ok",
+            "bytes": 70114,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/KR/2025-09-12_KR_Notice_of_Final_Rejection_088477210_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2025-11-20",
+            "status": "ok",
+            "bytes": 233923,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/KR/2025-11-20_KR_Written_Opinion_130419098_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2025-11-20",
+            "status": "ok",
+            "bytes": 45718,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/207/CN118465886A/KR/2025-11-20_KR_Amendment_including_Specification_etc_130419133_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-01-26）未取到文书，已降级使用上一代（2023-02-09）"
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.112148586.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.112213636.U",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-13T01:16:35+00:00"
+}
