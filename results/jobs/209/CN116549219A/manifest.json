@@ -1,0 +1,2952 @@
+{
+  "query": "CN116549219A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116549219",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-13T06:45:49+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 11,
+    "US": 14,
+    "EP": 3,
+    "CN": 7,
+    "KR": 2,
+    "CA": 3,
+    "AU": 10,
+    "WO": 2,
+    "NZ": 3,
+    "BR": 2,
+    "HK": 2,
+    "MX": 4,
+    "TW": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2016523899.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "JP.2016527941.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2016524240.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2016526445.A"
+      ],
+      "status": "ok",
+      "doc_total": 43,
+      "picked": [
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06119440048_JP",
+          "name": "特許査定",
+          "name_en": "Decision to Grant a Patent",
+          "date": "2019-10-21",
+          "family": "final_grant",
+          "tender_date": "2019-10-21",
+          "file": "JP/2019-10-21_JP_Decision_to_Grant_a_Patent_119440048_JP.pdf",
+          "bytes": 110393,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06119080356_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2019-02-27",
+          "family": "rejection",
+          "tender_date": "2019-02-27",
+          "file": "JP/2019-02-27_JP_Notice_of_Reasons_for_Refusal_119080356_JP.pdf",
+          "bytes": 149147,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06118100590_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2018-03-07",
+          "family": "rejection",
+          "tender_date": "2018-03-07",
+          "file": "JP/2018-03-07_JP_Notice_of_Reasons_for_Refusal_118100590_JP.pdf",
+          "bytes": 169042,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96518081665_JP",
+          "name": "検索報告書",
+          "name_en": "Search Report by Registered Search Organization",
+          "date": "2018-03-07",
+          "family": "citation",
+          "tender_date": "2018-03-07",
+          "file": "JP/2018-03-07_JP_Search_Report_by_Registered_Search_Organization_518081665_JP.pdf",
+          "bytes": 184020,
+          "status": "ok"
+        }
+      ],
+      "title": "Ear canal pressure regulation system",
+      "documents": [
+        {
+          "doc_id": "National_Entry_Form_51502540195_JP",
+          "name": "国内書面",
+          "date": "2015-12-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_51502540195_JP",
+          "name": "明細書",
+          "date": "2015-12-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_51502540195_JP",
+          "name": "図面",
+          "date": "2015-12-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_51502540195_JP",
+          "name": "請求の範囲",
+          "date": "2015-12-18",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Abstract_51502540195_JP",
+          "name": "要約書",
+          "date": "2015-12-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_61660190005_JP",
+          "name": "優先権書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_61670580072_JP",
+          "name": "図面",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_61660190002_JP",
+          "name": "優先権書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61660190002_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61660190003_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_61660190003_JP",
+          "name": "優先権書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61660190004_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_61660190004_JP",
+          "name": "優先権書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61660190005_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings_61670580072_JP",
+          "name": "外国語国際公開要約図（職権）",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_61642110343_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61610620723_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications-_Corrections_61610631801_JP",
+          "name": "訂正／国際公開",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61642110343_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report_61610620723_JP",
+          "name": "国際調査報告",
+          "date": "2016-03-10",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61610631801_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_61620620725_JP",
+          "name": "図面",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_%2528Communication_of_International_Applications_in_Foreign_Language%2529_61620620725_JP",
+          "name": "外国語国際公開図面（職権）",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61610620721_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_61610620721_JP",
+          "name": "国際公開",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Amendment_under_Article_19_of_the_Patent_Cooperation_Treaty_61610631802_JP",
+          "name": "条約１９条補正",
+          "date": "2016-03-10",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_61610631802_JP",
+          "name": "添付書類",
+          "date": "2016-03-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Statement_%2528applicant%252Fdemandant%2529_51701112327_JP",
+          "name": "上申書（出願人・請求人）",
+          "date": "2017-05-25",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_51701112326_JP",
+          "name": "出願審査請求書",
+          "date": "2017-05-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_51701112323_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2017-05-25",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06118100590_JP",
+          "name": "拒絶理由通知書",
+          "date": "2018-03-07",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96518081665_JP",
+          "name": "検索報告書",
+          "date": "2018-03-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_51801051112_JP",
+          "name": "期間延長請求書",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_51801051113_JP",
+          "name": "期間延長請求書",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_51801837157_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2018-09-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_51801837156_JP",
+          "name": "意見書",
+          "date": "2018-09-07",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06119080356_JP",
+          "name": "拒絶理由通知書",
+          "date": "2019-02-27",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_51901095288_JP",
+          "name": "期間延長請求書",
+          "date": "2019-05-24",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_51901095290_JP",
+          "name": "期間延長請求書",
+          "date": "2019-05-24",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_51901803007_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2019-08-27",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Opinion_51901803006_JP",
+          "name": "意見書",
+          "date": "2019-08-27",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06119440048_JP",
+          "name": "特許査定",
+          "date": "2019-10-21",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_51902430037_JP",
+          "name": "期間延長請求書",
+          "date": "2019-11-19",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 11 个，使用本代原申请"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2017103558.A",
+      "app_date": "2017-05-25",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2017140505.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2019224229.A",
+      "app_date": "2019-12-12",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2020044371.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2020046046.A",
+      "app_date": "2020-03-17",
+      "family_id": "52114391",
+      "pub_nums": [
+        "JP.2020093136.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2021143833.A",
+      "app_date": "2021-09-03",
+      "family_id": "52114391",
+      "pub_nums": [
+        "JP.2021191453.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2021172260.A",
+      "app_date": "2021-10-21",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2022009341.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2024021103.A",
+      "app_date": "2024-02-15",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2024040461.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2024032036.A",
+      "app_date": "2024-03-04",
+      "family_id": "52114391",
+      "pub_nums": [
+        "JP.2024051171.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2025142049.A",
+      "app_date": "2025-08-28",
+      "family_id": "52114391",
+      "pub_nums": [
+        "JP.2025170033.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "JP",
+      "app_num": "JP.2026093369.A",
+      "app_date": "2026-06-03",
+      "family_id": "52115622",
+      "pub_nums": [
+        "JP.2026131741.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 11 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201414292469.A",
+      "app_date": "2014-05-30",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.2015000678.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201414900607.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.2016151206.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201414316668.A",
+      "app_date": "2014-06-26",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.2015003644.A1"
+      ],
+      "status": "ok",
+      "doc_total": 107,
+      "picked": [
+        {
+          "doc_id": "I81UKUKAPXXIFW4",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "name_en": "",
+          "date": "2015-04-06",
+          "family": "final_grant",
+          "tender_date": "2015-04-06",
+          "file": "US/2015-04-06_US_Notice_of_Allowance_and_Fees_Due_(PTOL-85)_UKUKAPXXIFW4.pdf",
+          "bytes": 522653,
+          "status": "ok"
+        },
+        {
+          "doc_id": "I419DMKUPXXIFW4",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2014-12-23",
+          "family": "rejection",
+          "tender_date": "2014-12-23",
+          "file": "US/2014-12-23_US_Non-Final_Rejection_9DMKUPXXIFW4.pdf",
+          "bytes": 676919,
+          "status": "ok"
+        },
+        {
+          "doc_id": "I81UKUNJPXXIFW4",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2015-04-06",
+          "family": "citation",
+          "tender_date": "2015-04-06",
+          "file": "US/2015-04-06_US_Search_information_including_classification,_databases_and_o_UKUNJPXXIFW4.pdf",
+          "bytes": 22092,
+          "status": "ok"
+        },
+        {
+          "doc_id": "I81UKUO1PXXIFW4",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2015-04-06",
+          "family": "citation",
+          "tender_date": "2015-04-06",
+          "file": "US/2015-04-06_US_Examiner's_search_strategy_and_results_UKUO1PXXIFW4.pdf",
+          "bytes": 314532,
+          "status": "ok"
+        }
+      ],
+      "title": "External Ear Canal Pressure Regulation System",
+      "documents": [
+        {
+          "doc_id": "HWWQS56ZPXXIFW3",
+          "name": "Preliminary Amendment",
+          "date": "2014-06-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HX33NRNXPXXIFW2",
+          "name": "Claims",
+          "date": "2014-06-26",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HX33NRPNPXXIFW2",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2014-06-26",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5C4PXXIFW3",
+          "name": "Track One Request",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5CIPXXIFW3",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5CRPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5D5PXXIFW3",
+          "name": "Transmittal of New Application",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5KPPXXIFW3",
+          "name": "Power of Attorney",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5L8PXXIFW3",
+          "name": "Assertion of entitlement to small entity status",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5T4PXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5TEPXXIFW3",
+          "name": "Foreign Reference",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5TOPXXIFW3",
+          "name": "Foreign Reference",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS5U0PXXIFW3",
+          "name": "Foreign Reference",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS62HPXXIFW3",
+          "name": "Power of Attorney",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS62PPXXIFW3",
+          "name": "Assignee showing of ownership per 37 CFR 3.73",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS63GPXXIFW3",
+          "name": "Assertion of entitlement to small entity status",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS63QPXXIFW3",
+          "name": "Specification",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HX33S87APXXIFW2",
+          "name": "Claims",
+          "date": "2014-06-26",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HX33S87RPXXIFW2",
+          "name": "Abstract",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS640PXXIFW3",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS731PXXIFW3",
+          "name": "Power of Attorney",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS73EPXXIFW3",
+          "name": "Assertion of entitlement to small entity status",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS82BPXXIFW3",
+          "name": "Power of Attorney",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HWWQS82OPXXIFW3",
+          "name": "Assertion of entitlement to small entity status",
+          "date": "2014-06-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HXEQJB0BPXXIFW4",
+          "name": "Filing Receipt",
+          "date": "2014-07-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HXEQJMY1PXXIFW4",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2014-07-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HXVWLSYJPXXIFW4",
+          "name": "Track One Request Denied",
+          "date": "2014-07-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY0F7S0QPXXIFW3",
+          "name": "Petition for review by the Office of Petitions",
+          "date": "2014-07-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY0F7S0YPXXIFW3",
+          "name": "Supplemental Response or Supplemental Amendment",
+          "date": "2014-07-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY5YPX0CPXXIFW2",
+          "name": "Claims",
+          "date": "2014-07-24",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY5YPX0YPXXIFW2",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2014-07-24",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY0F7S1QPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2014-07-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HY0F7S21PXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-07-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYKENYICPXXIFW4",
+          "name": "Track One request Granted",
+          "date": "2014-07-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYQAN8Y8PXXIFW3",
+          "name": "Preliminary Amendment",
+          "date": "2014-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYSQCBDIPXXIFW1",
+          "name": "Specification",
+          "date": "2014-08-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYSQCBF3PXXIFW1",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2014-08-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYQAN8YQPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2014-08-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "HYQAN8YYPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-08-11",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I2JEAERWPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I2JEAEU7PXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2014-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I2JEAEUGPXXIFW3",
+          "name": "Foreign Reference",
+          "date": "2014-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I2JEAEUPPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2014-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I2JEAEW2PXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-11-15",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I3GJXECZPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-12-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I3GJXEFCPXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2014-12-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I3GJXEFKPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2014-12-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I3GJXEFRPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2014-12-08",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMKUPXXIFW4",
+          "name": "Non-Final Rejection",
+          "date": "2014-12-23",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "I419DMM1PXXIFW4",
+          "name": "List of references cited by examiner",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMMHPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMMOPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMMYPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMN7PXXIFW4",
+          "name": "Examiner's search strategy and results",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMNFPXXIFW4",
+          "name": "Index of Claims",
+          "date": "2014-12-23",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "I419DMNNPXXIFW4",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2014-12-23",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I4E8GBCXPXXIFW4",
+          "name": "Notice of Publication",
+          "date": "2015-01-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I4PX2QQXPXXIFW4",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2015-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I4PX2QRUPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2015-01-12",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I57GAJ32PXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I57GAJASPXXIFW3",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2015-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I57GAJB0PXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2015-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I57GAJBCPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I57GAJGLPXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2015-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I5ABLUCLPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-01-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I5ABLUFHPXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2015-01-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I5ABLUFPPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2015-01-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I5ABLUFXPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-01-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I5PDX82YPXXIFW4",
+          "name": "Applicant Initiated Interview Summary (PTOL-413)",
+          "date": "2015-02-03",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7GGMQT6PXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-03-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7GGMQW3PXXIFW3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2015-03-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7GGMQWJPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2015-03-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7GGMQWQPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-03-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7IAL9GMPXXIFW3",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2015-03-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7N62L4SPXXIFW2",
+          "name": "Claims",
+          "date": "2015-03-20",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7N62L7DPXXIFW2",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2015-03-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7IAL9IVPXXIFW3",
+          "name": "Terminal Disclaimer",
+          "date": "2015-03-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7IAL9J3PXXIFW3",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2015-03-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7IAL9JAPXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2015-03-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7IAL9JWPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-03-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7OT81NUPXXIFW4",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2015-03-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I7WAE9SVPXXIFW4",
+          "name": "Terminal Disclaimer review decision",
+          "date": "2015-03-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKUKAPXXIFW4",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2015-04-06",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "I81UKULAPXXIFW4",
+          "name": "Examiner initiated interview summary (PTOL-413B)",
+          "date": "2015-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKULIPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2015-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKULQPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2015-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKULYPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2015-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKUM7PXXIFW4",
+          "name": "Bibliographic Data Sheet",
+          "date": "2015-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKUNJPXXIFW4",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2015-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "I81UKUNSPXXIFW4",
+          "name": "Issue Information including classification, examiner, name, claim, renumbering, etc.",
+          "date": "2015-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I81UKUO1PXXIFW4",
+          "name": "Examiner's search strategy and results",
+          "date": "2015-04-06",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "I8MZB56TPXXIFW3",
+          "name": "Issue Fee Payment (PTO-85B)",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I8RJR4JLPXXIFW1",
+          "name": "Miscellaneous Incoming Letter",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I8MZB57YPXXIFW3",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I8MZB587PXXIFW3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I8MZB58HPXXIFW3",
+          "name": "Transmittal Letter",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I8MZB58UPXXIFW3",
+          "name": "Maintenance Fee Address Change",
+          "date": "2015-04-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I95G1SHRPXXIFW4",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2015-05-01",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "I9DHEH6MPXXIFW4",
+          "name": "Issue Notification",
+          "date": "2015-05-06",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "J16HWPGSRXEAPX3",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2016-07-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCI8D2S4RXEAPX3",
+          "name": "Power of Attorney",
+          "date": "2018-01-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCI8D3D4RXEAPX0",
+          "name": "Maintenance Fee Address Change",
+          "date": "2018-01-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCI8D3D5RXEAPX0",
+          "name": "Assignee showing of ownership per 37 CFR 3.73",
+          "date": "2018-01-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCI8D3D6RXEAPX0",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2018-01-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCI9FNNRRXEAPX3",
+          "name": "Change of Address",
+          "date": "2018-01-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCKV5S28RXEAPX5",
+          "name": "Communication - Re:  Power of Attorney (PTOL-308)",
+          "date": "2018-01-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "JCKVHUFYRXEAPX3",
+          "name": "Communication - Re:  Power of Attorney (PTOL-308)",
+          "date": "2018-01-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 14 个，本代（2014-06-27）未取到文书，已降级使用上一代（2014-06-26）"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201514702428.A",
+      "app_date": "2015-05-01",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.2015230989.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201514936332.A",
+      "app_date": "2015-11-09",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.2016058620.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201514980226.A",
+      "app_date": "2015-12-28",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.2016128897.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201715691668.A",
+      "app_date": "2017-08-30",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.2018000686.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.201916377928.A",
+      "app_date": "2019-04-08",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.2019231597.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202017018157.A",
+      "app_date": "2020-09-11",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.2021228414.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117401733.A",
+      "app_date": "2021-08-13",
+      "family_id": "82120030",
+      "pub_nums": [
+        "US.20220202617.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202117407503.A",
+      "app_date": "2021-08-20",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.20220226158.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418818229.A",
+      "app_date": "2024-08-28",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.20250262096.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519294832.A",
+      "app_date": "2025-08-08",
+      "family_id": "52114391",
+      "pub_nums": [
+        "US.20260199136.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202519298045.A",
+      "app_date": "2025-08-12",
+      "family_id": "52115622",
+      "pub_nums": [
+        "US.20260199137.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 14 个，已取到 2014-06-26 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.14826160.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "EP.3013293.A1",
+        "EP.3013293.A4"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 3 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.14816984.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "EP.3013396.A4",
+        "EP.3013396.A1"
+      ],
+      "status": "ok",
+      "doc_total": 90,
+      "picked": [
+        {
+          "doc_id": "L488TFKRIQG6676",
+          "name": "Decision to grant a European patent",
+          "name_en": "",
+          "date": "2022-06-17",
+          "family": "final_grant",
+          "tender_date": "2022-06-17",
+          "file": "EP/2022-06-17_EP_Decision_to_grant_a_European_patent_8TFKRIQG6676.pdf",
+          "bytes": 103285,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E5M7R09K8330DSU",
+          "name": "Communication from the Examining Division",
+          "name_en": "",
+          "date": "2020-12-22",
+          "family": "rejection",
+          "tender_date": "2020-12-22",
+          "file": "EP/2020-12-22_EP_Communication_from_the_Examining_Division_7R09K8330DSU.pdf",
+          "bytes": 38465,
+          "status": "ok"
+        },
+        {
+          "doc_id": "E39W0JVJ8585DSU",
+          "name": "Communication from the Examining Division",
+          "name_en": "",
+          "date": "2020-01-10",
+          "family": "rejection",
+          "tender_date": "2020-01-10",
+          "file": "EP/2020-01-10_EP_Communication_from_the_Examining_Division_W0JVJ8585DSU.pdf",
+          "bytes": 37815,
+          "status": "ok"
+        },
+        {
+          "doc_id": "EZSPR6YG5502DSU",
+          "name": "Supplementary European search report",
+          "name_en": "",
+          "date": "2016-12-08",
+          "family": "citation",
+          "tender_date": "2016-12-08",
+          "file": "EP/2016-12-08_EP_Supplementary_European_search_report_PR6YG5502DSU.pdf",
+          "bytes": 68845,
+          "status": "ok"
+        }
+      ],
+      "title": "EXTERNAL EAR CANAL PRESSURE REGULATION SYSTEM",
+      "documents": [
+        {
+          "doc_id": "EW0Z7FIO1384FI4",
+          "name": "Published international application - A1",
+          "date": "2014-12-31",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EW0Z7FIQ0602FI4",
+          "name": "Copy of the international search report",
+          "date": "2014-12-31",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EW2V4JNB7792FI4",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2015-01-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EW2V4JO83278FI4",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2015-01-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EW2V4JPQ0183FI4",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2015-01-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EW2V4JPV3989FI4",
+          "name": "Priority document (electronically transmitted)",
+          "date": "2015-01-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EW86CGIC7579FI4",
+          "name": "Published international application - A4",
+          "date": "2015-02-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EX7DWKZD5993DSU",
+          "name": "Information on entry into European phase",
+          "date": "2015-11-04",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYGQ2YBV0267783",
+          "name": "Payment of fees and costs",
+          "date": "2015-12-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYGU3PLL8770228",
+          "name": "Request for entry into the European phase",
+          "date": "2015-12-22",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EYGU3PLP0494228",
+          "name": "Amended description filed after receipt of (European) search report",
+          "date": "2015-12-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYGU3PLQ3002228",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "date": "2015-12-22",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYGU3PLS6130228",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2015-12-22",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EYHW9Z2X9850DSU",
+          "name": "Copy of the international preliminary report on patentability",
+          "date": "2016-01-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYJ3N3JH7044DSU",
+          "name": "Communication to designated inventor",
+          "date": "2016-02-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYJ3OA926793DSU",
+          "name": "Communication to designated inventor",
+          "date": "2016-02-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYJ3OEGL8897DSU",
+          "name": "Communication to designated inventor",
+          "date": "2016-02-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYJ3OMHG7130DSU",
+          "name": "Communication regarding possible amendment of the application/payment of claims fee",
+          "date": "2016-02-04",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EYS9G4P82086DSU",
+          "name": "Notification on forthcoming publication of bibliographic data",
+          "date": "2016-04-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EY5BQ8KB4959936",
+          "name": "Payment of fees and costs",
+          "date": "2016-06-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZRQZDH09389DSU",
+          "name": "Search started",
+          "date": "2016-11-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZSEABNC8047DSU",
+          "name": "Communication regarding the transmission of the European search report",
+          "date": "2016-12-08",
+          "family": "citation",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "EZSPR6YG5502DSU",
+          "name": "Supplementary European search report",
+          "date": "2016-12-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "EZSPR6YI9353DSU",
+          "name": "Information on Search Strategy",
+          "date": "2016-12-08",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZSPR73V4957DSU",
+          "name": "European search opinion",
+          "date": "2016-12-08",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "EZUTRMAP1153DSU",
+          "name": "Invitation to declare maintenance of the application and to correct deficiencies in the Written Opinion/amend application",
+          "date": "2017-01-03",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E0LBOOLI5825192",
+          "name": "Payment of fees and costs",
+          "date": "2017-06-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E0N5SWXD0086936",
+          "name": "Reply to Written Opinion prepared by the EPO",
+          "date": "2017-07-11",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E06CP0EW6659DSU",
+          "name": "Examination started",
+          "date": "2017-11-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E06V7EG49246DSU",
+          "name": "Communication from the Examining Division",
+          "date": "2017-11-24",
+          "family": "rejection",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E06V7EK72675DSU",
+          "name": "Annex to the communication",
+          "date": "2017-11-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1P1WFTT0403754",
+          "name": "Request for extension of time limit to communication from the Examining Division",
+          "date": "2018-03-29",
+          "family": "rejection",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E1RTVJAQ7188DSU",
+          "name": "Grant of extension of time limit (examination procedure)",
+          "date": "2018-04-19",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E1USN3K62823DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2018-05-07",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E1USN3NR0138DSU",
+          "name": "Submission concerning change of applicant's name",
+          "date": "2018-05-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1USN3TG6687DSU",
+          "name": "Annexes in respect of a client data request",
+          "date": "2018-05-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1USN3XO6152DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2018-05-07",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1VQV5UA9190DSU",
+          "name": "Communication of the registration of a transfer or change of name and/or address",
+          "date": "2018-05-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1XR76JS4787171",
+          "name": "Submission concerning representation",
+          "date": "2018-05-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1WEY26M6774DSU",
+          "name": "Refund of fees",
+          "date": "2018-05-24",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1YXCC6N0781235",
+          "name": "Reply to communication from the Examining Division",
+          "date": "2018-06-04",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1YXCC6Q1896235",
+          "name": "Amended claims with annotations",
+          "date": "2018-06-04",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E1YXCC6R0582235",
+          "name": "Claims",
+          "date": "2018-06-04",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E16UIHY78000DSU",
+          "name": "Notice drawing attention to the payment of the renewal fee and additional fee",
+          "date": "2018-08-03",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2WFCC4V9261DSU",
+          "name": "Refund of fees",
+          "date": "2019-01-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2WFCC422952DSU",
+          "name": "Refund of fees",
+          "date": "2019-01-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2Z2DNW44864DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2019-02-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E2Z2DNZ59319DSU",
+          "name": "Submission concerning change of applicant's representative",
+          "date": "2019-02-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2Z2DN5I4575DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2019-02-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E20RX5LI2519936",
+          "name": "Submission concerning change of applicant's representative",
+          "date": "2019-02-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E2162K3Q9915DSU",
+          "name": "Communication confirming withdrawal from representation",
+          "date": "2019-03-13",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E21623NG1005DSU",
+          "name": "Communication of amended entries concerning the representative",
+          "date": "2019-03-13",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E39W0JVJ8585DSU",
+          "name": "Communication from the Examining Division",
+          "date": "2020-01-10",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E39W0J1Z1506DSU",
+          "name": "Annex to the communication",
+          "date": "2020-01-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4O69BEB1816DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2020-04-23",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E4O69BF14926DSU",
+          "name": "Request for extension of time limit to communication from the Examining Division",
+          "date": "2020-04-23",
+          "family": "rejection",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E4O69BH71669DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2020-04-23",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E4O95JAE4275DSU",
+          "name": "Grant of extension of time limit (examination procedure)",
+          "date": "2020-04-29",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TID335140DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2020-07-20",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TID470728DSU",
+          "name": "Description",
+          "date": "2020-07-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TIEJS1971DSU",
+          "name": "Amended description with annotations",
+          "date": "2020-07-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TIEX48442DSU",
+          "name": "Claims",
+          "date": "2020-07-20",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TIEZ16989DSU",
+          "name": "Amended claims with annotations",
+          "date": "2020-07-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TIE2L8908DSU",
+          "name": "Reply to communication from the Examining Division",
+          "date": "2020-07-20",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E41TIE784373DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2020-07-20",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E5M7R09K8330DSU",
+          "name": "Communication from the Examining Division",
+          "date": "2020-12-22",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "E5M7R1BW6725DSU",
+          "name": "Annex to the communication",
+          "date": "2020-12-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E53I133T6805DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2021-04-10",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E53I135Y4618DSU",
+          "name": "Request for extension of time limit to communication from the Examining Division",
+          "date": "2021-04-10",
+          "family": "rejection",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E53I13919018DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2021-04-10",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E53U77SW8735DSU",
+          "name": "Grant of extension of time limit (examination procedure)",
+          "date": "2021-04-15",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E6EUBSNU7815DSU",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2021-06-28",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "E6EUBSQX6854DSU",
+          "name": "Reply to communication from the Examining Division",
+          "date": "2021-06-28",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E6EUBSU21186DSU",
+          "name": "Amended claims with annotations",
+          "date": "2021-06-28",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E6EUBSW22511DSU",
+          "name": "Claims",
+          "date": "2021-06-28",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "E6EUBS1J4398DSU",
+          "name": "(Electronic) Receipt",
+          "date": "2021-06-28",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KX8X97DQU07YQ3U",
+          "name": "Communication about intention to grant a European patent",
+          "date": "2022-01-03",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KX8X97XP18G13A7",
+          "name": "Bibliographic data of the European patent application",
+          "date": "2022-01-03",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KX8X9Y3Y54GP4NG",
+          "name": "Intention to grant (signatures)",
+          "date": "2022-01-03",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KX9L3M6Y1HE2T6V",
+          "name": "Text intended for grant (clean copy)",
+          "date": "2022-01-03",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "KX9L3ROFHHNDUEO",
+          "name": "Text intended for grant (version for approval)",
+          "date": "2022-01-03",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2UNMRPC1JB7V6H",
+          "name": "Letter accompanying subsequently filed items",
+          "date": "2022-05-06",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "L2UNMS471BRF1BL",
+          "name": "Filing of the translations of the claims",
+          "date": "2022-05-06",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2UNMSQ71I7STDS",
+          "name": "German translation of the claims",
+          "date": "2022-05-06",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2UNMT8W1WFFKLZ",
+          "name": "French translation of claims",
+          "date": "2022-05-06",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L2UNMTYT1L556MA",
+          "name": "(Electronic) Receipt",
+          "date": "2022-05-06",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L488TFKRIQG6676",
+          "name": "Decision to grant a European patent",
+          "date": "2022-06-17",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "L5R3KC50YLNMG7D",
+          "name": "Transmission of the certificate for a European patent pursuant to Rule 74 EPC",
+          "date": "2022-07-26",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LBZ1WJ9L1QW9GML",
+          "name": "Communication of amended entries concerning the representative",
+          "date": "2023-01-03",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LHL3WII81D4DXI3",
+          "name": "Communication regarding the expiry of opposition period",
+          "date": "2023-05-17",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 3 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22184233.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "EP.4162917.A2",
+        "EP.4162917.A3"
+      ],
+      "status": "sibling",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 3 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201480042665.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CN.105431115.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201810441770.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CN.108498296.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202210310578.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CN.114712084.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202510083940.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CN.120078584.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201480036210.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "CN.105555344.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.201911285332.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "CN.110934685.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202310336541.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "CN.116549219.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20167001442.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "KR.20160027003.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 2 个，已取到 2014-06-27 代的文书，不再重复下载"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20167001787.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "KR.20160027013.A"
+      ],
+      "status": "ok",
+      "doc_total": 2,
+      "picked": [
+        {
+          "doc_id": "Amendment_including_Specification_etc._112016010929956_KR",
+          "name": "Amendment including Specification etc.",
+          "name_en": "Amendment including Specification etc.",
+          "date": "2016-02-02",
+          "family": "applicant",
+          "tender_date": "2016-02-02",
+          "file": "KR/2016-02-02_KR_Amendment_including_Specification_etc_010929956_KR.pdf",
+          "bytes": 61036,
+          "status": "ok"
+        },
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112016006881510_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "name_en": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2016-01-21",
+          "family": "other",
+          "tender_date": "2016-01-21",
+          "file": "KR/2016-01-21_KR_[Patent_Application]_Paper_according_to_the_Article_203_of_P_006881510_KR.pdf",
+          "bytes": 1272590,
+          "status": "ok"
+        }
+      ],
+      "title": "EXTERNAL EAR CANAL PRESSURE REGULATION SYSTEM",
+      "documents": [
+        {
+          "doc_id": "%255BPatent_Application%255D_Paper_according_to_the_Article_203_of_Patent_Act_112016006881510_KR",
+          "name": "[Patent Application] Paper according to the Article 203 of Patent Act",
+          "date": "2016-01-21",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112016010929956_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2016-02-02",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 2 个，使用本代原申请"
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.2915821.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CA.2915821.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.3168418.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "CA.3168418.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.2894410.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "CA.2894410.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2014290684.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "AU.2014290684.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2014302187.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "AU.2014302187.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2018203016.A",
+      "app_date": "2018-05-01",
+      "family_id": "52115622",
+      "pub_nums": [
+        "AU.2018203016.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2019204160.A",
+      "app_date": "2019-06-13",
+      "family_id": "52114391",
+      "pub_nums": [
+        "AU.2019204160.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2020226989.A",
+      "app_date": "2020-08-31",
+      "family_id": "52115622",
+      "pub_nums": [
+        "AU.2020226989.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2020257086.A",
+      "app_date": "2020-10-21",
+      "family_id": "52114391",
+      "pub_nums": [
+        "AU.2020257086.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2022204935.A",
+      "app_date": "2022-07-11",
+      "family_id": "52114391",
+      "pub_nums": [
+        "AU.2022204935.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2022221552.A",
+      "app_date": "2022-08-26",
+      "family_id": "52115622",
+      "pub_nums": [
+        "AU.2022221552.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2024259848.A",
+      "app_date": "2024-11-08",
+      "family_id": "52115622",
+      "pub_nums": [
+        "AU.2024259848.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2025204885.A",
+      "app_date": "2025-06-27",
+      "family_id": "52114391",
+      "pub_nums": [
+        "AU.2025204885.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2014044159.W",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "WO.2015009421.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2014044574.W",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "WO.2014210457.A1",
+        "WO.2014210457.A4"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "NZ",
+      "app_num": "NZ.71541214.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "NZ.715412.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "NZ",
+      "app_num": "NZ.71388714.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "NZ.713887.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "NZ",
+      "app_num": "NZ.73340414.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "NZ.733404.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "BR",
+      "app_num": "BR.112015032181.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "BR.112015032181.A2",
+        "BR.112015032181.B1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "BR",
+      "app_num": "BR.112015031671.A",
+      "app_date": "2014-06-27",
+      "family_id": "52115622",
+      "pub_nums": [
+        "BR.112015031671.B1",
+        "BR.112015031671.A2",
+        "BR.112015031671.A8"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "HK",
+      "app_num": "HK.16106474.A",
+      "app_date": "2016-06-07",
+      "family_id": "52115622",
+      "pub_nums": [
+        "HK.1218404.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "HK",
+      "app_num": "HK.16106719.A",
+      "app_date": "2016-06-12",
+      "family_id": "52114391",
+      "pub_nums": [
+        "HK.1218705.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "MX",
+      "app_num": "MX.2015017554.A",
+      "app_date": "2014-06-25",
+      "family_id": "52114391",
+      "pub_nums": [
+        "MX.2015017554.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "MX",
+      "app_num": "MX.2022007903.A",
+      "app_date": "2015-12-17",
+      "family_id": "52114391",
+      "pub_nums": [
+        "MX.2022007903.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "MX",
+      "app_num": "MX.2015018043.A",
+      "app_date": "2015-12-21",
+      "family_id": "52115622",
+      "pub_nums": [
+        "MX.2015018043.A",
+        "MX.372680.B"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "MX",
+      "app_num": "MX.2020005111.A",
+      "app_date": "2015-12-21",
+      "family_id": "52115622",
+      "pub_nums": [
+        "MX.2020005111.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "TW",
+      "app_num": "TW.103122468.A",
+      "app_date": "2014-06-30",
+      "family_id": "52114391",
+      "pub_nums": [
+        "TW.I630905.B",
+        "TW.201517884.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202310336541.A",
+    "app_date": "2014-06-27",
+    "family_id": "52115622"
+  }
+}
