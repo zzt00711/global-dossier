@@ -1,0 +1,170 @@
+{
+  "state": "done",
+  "issue": 210,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-13T10:55:32+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115129042A（4 篇/局）",
+    "    OK  EP Decision to grant a European patent  89 KB",
+    "    OK  EP European search opinion  90 KB",
+    "    OK  EP European search report  44 KB",
+    "    OK  EP Information on Search Strategy  18 KB",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  492 KB",
+    "    OK  US Final Rejection  1362 KB",
+    "    OK  US Non-Final Rejection  2147 KB",
+    "    OK  US Search information including classification, databases and other search related notes  63 KB"
+  ],
+  "query": "CN115129042A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115129042A",
+    "family_counts": {
+      "US": 2,
+      "EP": 1,
+      "CN": 1,
+      "BR": 1,
+      "IL": 1
+    },
+    "generated_at": "2026-11-13T10:55:35+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217691475.A",
+        "status": "ok",
+        "doc_total": 83,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-04-09",
+            "status": "ok",
+            "bytes": 504137,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/US/2025-04-09_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_388MNWFYBX90.pdf",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2025-02-04",
+            "status": "ok",
+            "bytes": 1394340,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/US/2025-02-04_US_Final_Rejection_SIXBEWFYBX98.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-08-21",
+            "status": "ok",
+            "bytes": 2198958,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/US/2024-08-21_US_Non-Final_Rejection_KVG02WFYBX98.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-04-09",
+            "status": "ok",
+            "bytes": 64794,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/US/2025-04-09_US_Search_information_including_classification%2C_databases_and_o_388MRWFYBX90.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2022-03-22）未取到文书，已降级使用上一代（2022-03-10）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202519261166.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2022-03-10 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22162835.A",
+        "status": "ok",
+        "doc_total": 44,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2025-07-10",
+            "status": "ok",
+            "bytes": 91268,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/EP/2025-07-10_EP_Decision_to_grant_a_European_patent_35JQE15TGN4T.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2022-08-22",
+            "status": "ok",
+            "bytes": 91659,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/EP/2022-08-22_EP_European_search_opinion_TS7X11KNQTIT.pdf",
+            "error": null
+          },
+          {
+            "name": "European search report",
+            "family": "citation",
+            "date": "2022-08-22",
+            "status": "ok",
+            "bytes": 44915,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/EP/2022-08-22_EP_European_search_report_TLV7V1RJUALR.pdf",
+            "error": null
+          },
+          {
+            "name": "Information on Search Strategy",
+            "family": "citation",
+            "date": "2022-08-22",
+            "status": "ok",
+            "bytes": 18665,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/210/CN115129042A/EP/2022-08-22_EP_Information_on_Search_Strategy_TLV879PU8N5V.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-03-22）未取到文书，已降级使用上一代（2022-03-17）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210285054.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "BR",
+        "app_num": "BR.102022005287.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "IL",
+        "app_num": "IL.291549.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-13T10:56:35+00:00"
+}
