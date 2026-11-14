@@ -1,0 +1,151 @@
+{
+  "state": "done",
+  "issue": 211,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-14T02:28:30+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118140153A（4 篇/局）",
+    "    OK  JP 特許査定  105 KB",
+    "    OK  JP 請求の範囲  136 KB",
+    "    OK  JP 出願審査請求書  82 KB",
+    "    OK  JP 要約書  97 KB",
+    "    OK  US Non-Final Rejection  765 KB",
+    "    OK  US Search information including classification, databases and other search related notes  32 KB",
+    "    OK  US Examiner's search strategy and results  349 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  23 KB"
+  ],
+  "query": "CN118140153A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118140153A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "CN": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-14T02:28:33+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2021173995.A",
+        "status": "ok",
+        "doc_total": 7,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2025-02-25",
+            "status": "ok",
+            "bytes": 107317,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/JP/2025-02-25_JP_Decision_to_Grant_a_Patent_125071148_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2021-10-25",
+            "status": "ok",
+            "bytes": 139662,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/JP/2021-10-25_JP_Claims_102283789_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "出願審査請求書",
+            "family": "other",
+            "date": "2024-04-16",
+            "status": "ok",
+            "bytes": 84159,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/JP/2024-04-16_JP_Request_for_Examination_400844593_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "要約書",
+            "family": "other",
+            "date": "2021-10-25",
+            "status": "ok",
+            "bytes": 99490,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/JP/2021-10-25_JP_Abstract_102283789_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-10-14）未取到文书，已降级使用上一代（2021-10-25）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418627662.A",
+        "status": "ok",
+        "doc_total": 32,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-07-30",
+            "status": "ok",
+            "bytes": 782956,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/US/2026-07-30_US_Non-Final_Rejection_56SSLX46X128.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-07-30",
+            "status": "ok",
+            "bytes": 32448,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/US/2026-07-30_US_Search_information_including_classification%2C_databases_and_o_56STEX46X128.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-07-30",
+            "status": "ok",
+            "bytes": 357410,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/US/2026-07-30_US_Examiner%27s_search_strategy_and_results_56STLX46X128.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2026-10-19",
+            "status": "ok",
+            "bytes": 23492,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/211/CN118140153A/US/2026-10-19_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_L5M9R173X176.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-10-14）未取到文书，已改用更新一代（2024-04-05）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280071149.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "JP.2022038354.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-14T02:29:17+00:00"
+}

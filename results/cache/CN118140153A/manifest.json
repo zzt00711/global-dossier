@@ -1,0 +1,488 @@
+{
+  "query": "CN118140153A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "118140153",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-14T02:28:33+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "US": 1,
+    "CN": 1,
+    "WO": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2021173995.A",
+      "app_date": "2021-10-25",
+      "family_id": "86157976",
+      "pub_nums": [
+        "JP.2023063915.A"
+      ],
+      "status": "ok",
+      "doc_total": 7,
+      "picked": [
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06125071148_JP",
+          "name": "特許査定",
+          "name_en": "Decision to Grant a Patent",
+          "date": "2025-02-25",
+          "family": "final_grant",
+          "tender_date": "2025-02-25",
+          "file": "JP/2025-02-25_JP_Decision_to_Grant_a_Patent_125071148_JP.pdf",
+          "bytes": 107317,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Claims_52102283789_JP",
+          "name": "請求の範囲",
+          "name_en": "Claims",
+          "date": "2021-10-25",
+          "family": "claims",
+          "tender_date": "2021-10-25",
+          "file": "JP/2021-10-25_JP_Claims_102283789_JP.pdf",
+          "bytes": 139662,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_Examination_52400844593_JP",
+          "name": "出願審査請求書",
+          "name_en": "Request for Examination",
+          "date": "2024-04-16",
+          "family": "other",
+          "tender_date": "2024-04-16",
+          "file": "JP/2024-04-16_JP_Request_for_Examination_400844593_JP.pdf",
+          "bytes": 84159,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Abstract_52102283789_JP",
+          "name": "要約書",
+          "name_en": "Abstract",
+          "date": "2021-10-25",
+          "family": "other",
+          "tender_date": "2021-10-25",
+          "file": "JP/2021-10-25_JP_Abstract_102283789_JP.pdf",
+          "bytes": 99490,
+          "status": "ok"
+        }
+      ],
+      "title": "Optical distance measuring device",
+      "documents": [
+        {
+          "doc_id": "Abstract_52102283789_JP",
+          "name": "要約書",
+          "date": "2021-10-25",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Description_52102283789_JP",
+          "name": "明細書",
+          "date": "2021-10-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_52102283789_JP",
+          "name": "請求の範囲",
+          "date": "2021-10-25",
+          "family": "claims",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Drawings_52102283789_JP",
+          "name": "図面",
+          "date": "2021-10-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_a_Patent_52102283789_JP",
+          "name": "特許願",
+          "date": "2021-10-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52400844593_JP",
+          "name": "出願審査請求書",
+          "date": "2024-04-16",
+          "family": "other",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Decision_to_Grant_a_Patent_06125071148_JP",
+          "name": "特許査定",
+          "date": "2025-02-25",
+          "family": "final_grant",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2022-10-14）未取到文书，已降级使用上一代（2021-10-25）"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418627662.A",
+      "app_date": "2024-04-05",
+      "family_id": "86157976",
+      "pub_nums": [
+        "US.20240248183.A1"
+      ],
+      "status": "ok",
+      "doc_total": 32,
+      "picked": [
+        {
+          "doc_id": "MS656SSLX46X128",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2026-07-30",
+          "family": "rejection",
+          "tender_date": "2026-07-30",
+          "file": "US/2026-07-30_US_Non-Final_Rejection_56SSLX46X128.pdf",
+          "bytes": 782956,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MS656STEX46X128",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2026-07-30",
+          "family": "citation",
+          "tender_date": "2026-07-30",
+          "file": "US/2026-07-30_US_Search_information_including_classification,_databases_and_o_56STEX46X128.pdf",
+          "bytes": 32448,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MS656STLX46X128",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2026-07-30",
+          "family": "citation",
+          "tender_date": "2026-07-30",
+          "file": "US/2026-07-30_US_Examiner's_search_strategy_and_results_56STLX46X128.pdf",
+          "bytes": 357410,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MVFL5M9R173X176",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "name_en": "",
+          "date": "2026-10-19",
+          "family": "applicant",
+          "tender_date": "2026-10-19",
+          "file": "US/2026-10-19_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_L5M9R173X176.pdf",
+          "bytes": 23492,
+          "status": "ok"
+        }
+      ],
+      "title": "LIGHT DISTANCE MEASUREMENT DEVICE",
+      "documents": [
+        {
+          "doc_id": "LUMXICBOXBLUEX3",
+          "name": "Power of Attorney",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBQXBLUEX3",
+          "name": "Specification",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBRXBLUEX3",
+          "name": "Claims",
+          "date": "2024-04-05",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBSXBLUEX3",
+          "name": "Abstract",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBTXBLUEX3",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBVXBLUEX3",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBWXBLUEX3",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICBYXBLUEX3",
+          "name": "Electronic Fee Payment",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LUMXICC1XBLUEX3",
+          "name": "Foreign Reference",
+          "date": "2024-04-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LV3RPSDCXBLUEX5",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2024-04-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LV3RPSDDXBLUEX5",
+          "name": "Filing Receipt",
+          "date": "2024-04-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LV3RPSDFXBLUEX5",
+          "name": "Welcome Letter from USPTO Director and Deputy Director",
+          "date": "2024-04-18",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LVHDYJKMXBLUEX1",
+          "name": "Priority Documents electronically retrieved by USPTO from a participating IP Office",
+          "date": "2024-04-26",
+          "family": "other",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LZ0M9GGUXBLUEX6",
+          "name": "Notice of Publication",
+          "date": "2024-07-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656SSLX46X128",
+          "name": "Non-Final Rejection",
+          "date": "2026-07-30",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MS656STCX46X128",
+          "name": "List of references cited by examiner",
+          "date": "2026-07-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656STEX46X128",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2026-07-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MS656STGX46X128",
+          "name": "Foreign Reference",
+          "date": "2026-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656STJX46X128",
+          "name": "Foreign Reference",
+          "date": "2026-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656STLX46X128",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-07-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MS656STNX46X128",
+          "name": "Foreign Reference",
+          "date": "2026-07-30",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656STQX46X128",
+          "name": "Examiner's search strategy and results",
+          "date": "2026-07-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MS656STSX46X128",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2026-07-30",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MUVI3VWQX59X207",
+          "name": "Electronic Request for Interview with Examiner",
+          "date": "2026-10-05",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MV9PMPY34X51X45",
+          "name": "Examiner Interview Summary Record (PTOL - 413)",
+          "date": "2026-10-16",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MV9PMPY64X51X45",
+          "name": "Office Action Appendix",
+          "date": "2026-10-16",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVFL5M9R173X176",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "date": "2026-10-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "MVFL5M9T173X176",
+          "name": "Claims",
+          "date": "2026-10-19",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVFL5M9U173X176",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
+          "date": "2026-10-19",
+          "family": "applicant",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVFL5M9V173X176",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2026-10-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVFL5M9W173X176",
+          "name": "Electronic Fee Payment",
+          "date": "2026-10-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "MVSD198U5X161X6",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2026-10-19",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2022-10-14）未取到文书，已改用更新一代（2024-04-05）"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280071149.A",
+      "app_date": "2022-10-14",
+      "family_id": "86157976",
+      "pub_nums": [
+        "CN.118140153.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "JP.2022038354.W",
+      "app_date": "2022-10-14",
+      "family_id": "86157976",
+      "pub_nums": [
+        "WO.2023074407.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280071149.A",
+    "app_date": "2022-10-14",
+    "family_id": "86157976"
+  }
+}
