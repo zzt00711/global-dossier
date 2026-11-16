@@ -1,0 +1,303 @@
+{
+  "state": "done",
+  "issue": 215,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-16T06:43:06+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117616266A（4 篇/局）",
+    "    OK  JP 特許査定  112 KB",
+    "    OK  JP 拒絶理由通知書  161 KB",
+    "    OK  JP 検索報告書  235 KB",
+    "    OK  JP 国際調査報告  68 KB",
+    "    OK  EP Decision to grant a European patent  88 KB",
+    "    OK  EP Letter relating to the revocation of the automatic debiting procedure  11 KB",
+    "    OK  EP Copy of the international search report  103 KB",
+    "    OK  EP Amendments received before examination  82 KB",
+    "    OK  US Non-Final Rejection  722 KB",
+    "    OK  US Non-Final Rejection  597 KB",
+    "    OK  US Search information including classification, databases and other search related notes  33 KB",
+    "    OK  US Examiner's search strategy and results  489 KB"
+  ],
+  "query": "CN117616266A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117616266A",
+    "family_counts": {
+      "JP": 2,
+      "US": 2,
+      "EP": 4,
+      "CN": 2,
+      "WO": 2,
+      "ES": 2,
+      "PL": 2
+    },
+    "generated_at": "2026-11-16T06:43:10+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2024500658.A",
+        "status": "ok",
+        "doc_total": 27,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2026-07-31",
+            "status": "ok",
+            "bytes": 114759,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/JP/2026-07-31_JP_Decision_to_Grant_a_Patent_126349182_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-04-30",
+            "status": "ok",
+            "bytes": 164524,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/JP/2026-04-30_JP_Notice_of_Reasons_for_Refusal_126180761_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2026-04-22",
+            "status": "ok",
+            "bytes": 240519,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/JP/2026-04-22_JP_Search_Report_by_Registered_Search_Organization_826047778_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "国際調査報告",
+            "family": "citation",
+            "date": "2024-03-11",
+            "status": "ok",
+            "bytes": 69255,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/JP/2024-03-11_JP_International_Search_Report_410901153_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，使用本代原申请"
+      },
+      {
+        "country": "JP",
+        "app_num": "JP.2024500659.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2022-07-05 代的文书，不再重复下载"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218570252.A",
+        "status": "ok",
+        "doc_total": 81,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-11-05",
+            "status": "ok",
+            "bytes": 738899,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/US/2026-11-05_US_Non-Final_Rejection_53GIKX166X97.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-02",
+            "status": "ok",
+            "bytes": 611619,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/US/2026-06-02_US_Non-Final_Rejection_E3V79X110X23.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-11-05",
+            "status": "ok",
+            "bytes": 33358,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/US/2026-11-05_US_Search_information_including_classification%2C_databases_and_o_53GIPX166X97.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-11-05",
+            "status": "ok",
+            "bytes": 500954,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/US/2026-11-05_US_Examiner%27s_search_strategy_and_results_53GIRX166X97.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218570280.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2022-07-05 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22735484.A",
+        "status": "ok",
+        "doc_total": 76,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2025-06-05",
+            "status": "ok",
+            "bytes": 89766,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/EP/2025-06-05_EP_Decision_to_grant_a_European_patent_YA3AA1B8RHD5.pdf",
+            "error": null
+          },
+          {
+            "name": "Letter relating to the revocation of the automatic debiting procedure",
+            "family": "rejection",
+            "date": "2024-06-20",
+            "status": "ok",
+            "bytes": 11023,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/EP/2024-06-20_EP_Letter_relating_to_the_revocation_of_the_automatic_debiting__IW6F89DSD1C0.pdf",
+            "error": null
+          },
+          {
+            "name": "Copy of the international search report",
+            "family": "citation",
+            "date": "2023-02-09",
+            "status": "ok",
+            "bytes": 105441,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/EP/2023-02-09_EP_Copy_of_the_international_search_report_NAW011X3BEWU.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2024-08-14",
+            "status": "ok",
+            "bytes": 84411,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/215/CN117616266A/EP/2024-08-14_EP_Amendments_received_before_examination_R840S1RMNEH4.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 4 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22737498.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 4 个，已取到 2022-07-05 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.25179142.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 4 个，已取到 2022-07-05 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.25179896.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 4 个，已取到 2022-07-05 代的文书，不再重复下载"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280047149.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280047161.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2022068587.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2022068588.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "ES",
+        "app_num": "ES.22735484.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "ES",
+        "app_num": "ES.22737498.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "PL",
+        "app_num": "PL.22735484.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "PL",
+        "app_num": "PL.22737498.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-16T06:44:14+00:00"
+}
