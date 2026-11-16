@@ -1,0 +1,110 @@
+{
+  "state": "done",
+  "issue": 212,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-16T01:10:19+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118435086A（4 篇/局）",
+    "    OK  US Non-Final Rejection  608 KB",
+    "    OK  US Search information including classification, databases and other search related notes  50 KB",
+    "    OK  US Examiner's search strategy and results  253 KB",
+    "    OK  US Response to Election / Restriction Filed  62 KB"
+  ],
+  "query": "CN118435086A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118435086A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "WO": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-16T01:10:22+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217983944.A",
+        "status": "ok",
+        "doc_total": 28,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2023-07-07",
+            "status": "ok",
+            "bytes": 622816,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/212/CN118435086A/US/2023-07-07_US_Non-Final_Rejection_X7PY3GREENX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-07-07",
+            "status": "ok",
+            "bytes": 51519,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/212/CN118435086A/US/2023-07-07_US_Search_information_including_classification%2C_databases_and_o_X7PY6GREENX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2023-07-07",
+            "status": "ok",
+            "bytes": 258730,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/212/CN118435086A/US/2023-07-07_US_Examiner%27s_search_strategy_and_results_X7PY7GREENX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Response to Election / Restriction Filed",
+            "family": "applicant",
+            "date": "2023-03-27",
+            "status": "ok",
+            "bytes": 63470,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/212/CN118435086A/US/2023-03-27_US_Response_to_Election___Restriction_Filed_DC9SNXBLUEX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-12-21）未取到文书，已降级使用上一代（2022-11-09）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280084566.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2022053575.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.111146029.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-16T01:10:43+00:00"
+}

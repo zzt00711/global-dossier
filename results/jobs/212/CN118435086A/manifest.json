@@ -1,0 +1,351 @@
+{
+  "query": "CN118435086A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "118435086",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-16T01:10:22+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "US": 1,
+    "CN": 1,
+    "WO": 1,
+    "TW": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.202217983944.A",
+      "app_date": "2022-11-09",
+      "family_id": "86767933",
+      "pub_nums": [
+        "US.20230194918.A1"
+      ],
+      "status": "ok",
+      "doc_total": 28,
+      "picked": [
+        {
+          "doc_id": "LJPX7PY3GREENX2",
+          "name": "Non-Final Rejection",
+          "name_en": "",
+          "date": "2023-07-07",
+          "family": "rejection",
+          "tender_date": "2023-07-07",
+          "file": "US/2023-07-07_US_Non-Final_Rejection_X7PY3GREENX2.pdf",
+          "bytes": 622816,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LJPX7PY6GREENX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2023-07-07",
+          "family": "citation",
+          "tender_date": "2023-07-07",
+          "file": "US/2023-07-07_US_Search_information_including_classification,_databases_and_o_X7PY6GREENX2.pdf",
+          "bytes": 51519,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LJPX7PY7GREENX2",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2023-07-07",
+          "family": "citation",
+          "tender_date": "2023-07-07",
+          "file": "US/2023-07-07_US_Examiner's_search_strategy_and_results_X7PY7GREENX2.pdf",
+          "bytes": 258730,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LFRDC9SNXBLUEX5",
+          "name": "Response to Election / Restriction Filed",
+          "name_en": "",
+          "date": "2023-03-27",
+          "family": "applicant",
+          "tender_date": "2023-03-27",
+          "file": "US/2023-03-27_US_Response_to_Election___Restriction_Filed_DC9SNXBLUEX5.pdf",
+          "bytes": 63470,
+          "status": "ok"
+        }
+      ],
+      "title": "OPTICAL DIMMING LENS AND FABRICATION METHOD THEREOF",
+      "documents": [
+        {
+          "doc_id": "LAA62QUYXBLUEX5",
+          "name": "Transmittal of New Application",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN2XBLUEX0",
+          "name": "Power of Attorney",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN4XBLUEX0",
+          "name": "Specification",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN5XBLUEX0",
+          "name": "Claims",
+          "date": "2022-11-09",
+          "family": "claims",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN6XBLUEX0",
+          "name": "Abstract",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN7XBLUEX0",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RN8XBLUEX0",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LAA62RNAXBLUEX0",
+          "name": "Drawings-other than black and white line drawings",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LB0U3O24XBLUEX1",
+          "name": "Placeholder sheet indicating presence of supplemental content in Supplemental Complex Repository for Examiners(SCORE)",
+          "date": "2022-11-09",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LATZO7ZUXBLUEX5",
+          "name": "Filing Receipt",
+          "date": "2022-11-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LATZO7ZVXBLUEX5",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-11-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LATZO7ZWXBLUEX5",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2022-11-25",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LE76CGQTGREENX4",
+          "name": "Requirement for Restriction/Election",
+          "date": "2023-02-21",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LE76CGQUGREENX4",
+          "name": "Index of Claims",
+          "date": "2023-02-21",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LER8XWM0XBLUEX3",
+          "name": "A courtesy postcard sent by USPTO to users who opt-in for e-Office Action",
+          "date": "2023-03-02",
+          "family": "rejection",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LFRDC9SNXBLUEX5",
+          "name": "Response to Election / Restriction Filed",
+          "date": "2023-03-27",
+          "family": "applicant",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LFRDC9SOXBLUEX5",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-03-27",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LIF0MU1SXBLUEX1",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2023-06-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LIF0MU1TXBLUEX1",
+          "name": "Foreign Reference",
+          "date": "2023-06-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LIF0MU1UXBLUEX1",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-06-02",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJ6I700WXBLUEX5",
+          "name": "Notice of Publication",
+          "date": "2023-06-22",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJPX7PY3GREENX2",
+          "name": "Non-Final Rejection",
+          "date": "2023-07-07",
+          "family": "rejection",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LJPX7PY4GREENX2",
+          "name": "List of references cited by examiner",
+          "date": "2023-07-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LJPX7PY5GREENX2",
+          "name": "Index of Claims",
+          "date": "2023-07-07",
+          "family": "claims",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LJPX7PY6GREENX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2023-07-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LJPX7PY7GREENX2",
+          "name": "Examiner's search strategy and results",
+          "date": "2023-07-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LJPX7PY8GREENX2",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2023-07-07",
+          "family": "citation",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LSDBPK2QGREENX3",
+          "name": "Abandonment",
+          "date": "2024-02-12",
+          "family": "other",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 1 个，本代（2022-12-21）未取到文书，已降级使用上一代（2022-11-09）"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280084566.A",
+      "app_date": "2022-12-21",
+      "family_id": "92323590",
+      "pub_nums": [
+        "CN.118435086.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2022053575.W",
+      "app_date": "2022-12-21",
+      "family_id": "85172659",
+      "pub_nums": [
+        "WO.2023122129.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "TW",
+      "app_num": "TW.111146029.A",
+      "app_date": "2022-11-30",
+      "family_id": "85172659",
+      "pub_nums": [
+        "TW.202326179.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280084566.A",
+    "app_date": "2022-12-21",
+    "family_id": "92323590"
+  }
+}
