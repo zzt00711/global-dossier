@@ -89,10 +89,11 @@ def parse_payload(body: str) -> tuple[str, list[str], int]:
         offices = list(ALLOWED_OFFICES)
 
     try:
-        max_docs = int(data.get("max_docs", 4))
+        max_docs = int(data.get("max_docs", 6))
     except (TypeError, ValueError):
-        max_docs = 4
-    max_docs = max(1, min(5, max_docs))
+        max_docs = 6
+    # 每局最多 8 份：正好能取满各类配额（1+2+2+1+2）
+    max_docs = max(1, min(8, max_docs))
     return query, offices, max_docs
 
 
