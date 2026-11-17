@@ -80,6 +80,15 @@ MAX_BACKOFF = 60.0
 # J-PlatPat 在临时无响应/限流时也会返回 STATUS_CD_A=1 + 这句话，
 # 与「号码确实没有数据」无法区分，只能靠重试兜住前一种情况。
 TRANSIENT_MSG = "情報が取得できませんでした"
+# 查不到该文献案卷时 J-PlatPat 不返回参数错误码，只给这一句日文。
+# 最常见原因是公开号位数或 kind code 有误（如 CN 公开号 9 位敲成 10 位），
+# 属永久错误，重试无意义，需转成用户看得懂的中文提示。
+NO_DOSSIER_MSG = "照会した文献の出願"
+NO_DOSSIER_HINT = (
+    "J-PlatPat 查不到该号码的申请/审查信息（案卷）。"
+    "常见原因是公开号位数或 kind code 有误，"
+    "请核对完整公开号（如 CN111316876A，CN 公开号为 9 位数字 + kind code）后重试"
+)
 # 入口同族查询的重试间隔（秒）；该接口失败即整单失败，值得等久一点。
 # 实测 J-PlatPat 的软失败可持续 2~3 分钟以上，故把窗口拉到约 10 分钟，
 # 仍在 job 的 30 分钟上限内；正常任务不会走到这里。
@@ -315,7 +324,10 @@ class OpdClient:
             mid = str(info.get("MSG_ID") or "").strip()
             if mid:
                 messages.append(f"{mid}：{MSG_HINTS[mid]}" if mid in MSG_HINTS else mid)
-        raise OpdError(code or "UNKNOWN", " / ".join(messages) or "OPD 返回失败")
+        joined = " / ".join(messages)
+        if NO_DOSSIER_MSG in joined:
+            raise OpdError("NOT_FOUND", NO_DOSSIER_HINT)
+        raise OpdError(code or "UNKNOWN", joined or "OPD 返回失败")
 
     def _post_with_retry(
         self, path: str, body: dict[str, Any], timeout: float = 60, kind: str = "family"
