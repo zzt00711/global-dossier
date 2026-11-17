@@ -1,0 +1,97 @@
+{
+  "state": "done",
+  "issue": 219,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-17T06:35:27+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117933310A（4 篇/局）",
+    "    OK  US Notice of Allowance and Fees Due (PTOL-85)  432 KB",
+    "    OK  US Non-Final Rejection  383 KB",
+    "    OK  US Search information including classification, databases and other search related notes  24 KB",
+    "    OK  US Examiner's search strategy and results  189 KB"
+  ],
+  "query": "CN117933310A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 4,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117933310A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-17T06:35:30+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202318316248.A",
+        "status": "ok",
+        "doc_total": 35,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 442832,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/219/CN117933310A/US/2025-09-23_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_18VMY108X148.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-05-20",
+            "status": "ok",
+            "bytes": 391964,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/219/CN117933310A/US/2025-05-20_US_Non-Final_Rejection_393HGWFYGX56.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 25080,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/219/CN117933310A/US/2025-09-23_US_Search_information_including_classification%2C_databases_and_o_18VN2108X148.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-09-23",
+            "status": "ok",
+            "bytes": 193381,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/219/CN117933310A/US/2025-09-23_US_Examiner%27s_search_strategy_and_results_18VN4108X148.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310534268.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.112117803.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-17T06:35:54+00:00"
+}
