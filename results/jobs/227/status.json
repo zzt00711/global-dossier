@@ -1,0 +1,85 @@
+{
+  "state": "done",
+  "issue": 227,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-17T08:47:29+00:00",
+  "logs": [
+    "命中缓存 CN115728871A（5 篇/局，JP,EP,US），跳过 OPD 抓取"
+  ],
+  "query": "CN115728871A",
+  "offices": [
+    "JP",
+    "EP",
+    "US"
+  ],
+  "max_docs": 4,
+  "cached": true,
+  "partial": false,
+  "result": {
+    "query": "CN115728871A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-17T08:46:11+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217822207.A",
+        "status": "ok",
+        "doc_total": 48,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-07-14",
+            "status": "ok",
+            "bytes": 461304,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/227/CN115728871A/US/2025-07-14_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_QZ5RY4X53X48.pdf",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2025-03-25",
+            "status": "ok",
+            "bytes": 596602,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/227/CN115728871A/US/2025-03-25_US_Non-Final_Rejection_4C1K0WFYGX53.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-07-14",
+            "status": "ok",
+            "bytes": 23814,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/227/CN115728871A/US/2025-07-14_US_Search_information_including_classification%2C_databases_and_o_QZ5S54X53X48.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2025-07-14",
+            "status": "ok",
+            "bytes": 523815,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/227/CN115728871A/US/2025-07-14_US_Examiner%27s_search_strategy_and_results_QZ5SC4X53X48.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-09-01）未取到文书，已降级使用上一代（2022-08-25）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202211071266.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-17T08:47:29+00:00"
+}
