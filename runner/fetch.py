@@ -99,6 +99,10 @@ RE_APPEAL_OFFICIAL = re.compile(
 RE_WO_PHASE = re.compile(
     r"international\s+search\s+report|international\s+preliminary\s+(report|examination)"
     r"|written\s+opinion\s+of\s+the\s+international|\bISA\b|\bIPEA\b|43bis"
+    # PCT 阶段表格（PCT/IB/318 优先权声明、PCT/ISA/210 检索报告、PCT/RO/101 受理等）
+    # 由国际局/受理局出具，不是国家局审查文书；且 "PCT/IB/318 ... Priority Claims"
+    # 含 claims 字样，早判为 other 才不会被 RE_CLAIMS 抢去占 claims 配额。
+    r"|\bPCT/[A-Z]{2}/\d+\b"
     r"|国際調査|書面による見解|国際予備報告|国際予備審査"
     r"|국제조사|국제예비",
     re.I,
@@ -169,8 +173,18 @@ def classify(name: str, group: str = "") -> str:
         return "applicant"
     if RE_APPEAL_OFFICIAL.search(name):
         return "rejection"
-    # EP 的「可能的修改/权利要求费」通知是审查员主动发的程序性通知，不是答复
-    if re.search(r"communication\s+regarding\s+possible\s+amendment", name, re.I):
+    # EP 审查员主动发出的程序性通知（可能的修改/权利要求费、补正缺陷、
+    # 维持申请声明邀请等）不是申请人答复。名称含 amendment / written opinion /
+    # claims fee，会被下面的 RE_APPLICANT 抢走；且 EP 约半数文书 DOC_GRP 为
+    # unknown，office 否决救不到，必须靠名称显式归 other。
+    # 锚定 communication / invitation 前缀，不会误伤 "Reply to communication
+    # from the Examining Division" 这类申请人答复（已在上面的 RE_APPEAL_APPLICANT 命中）。
+    if re.search(
+        r"communication\s+(regarding|concerning)"
+        r"|invitation\s+to\s+(declare|correct|file|pay|submit|complete|comment)"
+        r"|correction\s+of\s+deficiencies|correct\s+deficiencies"
+        r"|deficiencies\s+in\s+the\s+written\s+opinion",
+        name, re.I):
         return "other"
     # 答复类先于审查意见，避免 "Amendment after Non-Final Rejection" 被误判
     if RE_APPLICANT.search(name) and not office:
