@@ -50,6 +50,7 @@ EXCLUDE_NAME = re.compile(
     r"|courtesy\s+postcard|postcard"
     r"|claims\s+worksheet|index\s+of\s+claims|claims\s+listing"
     r"|letter\s+accompanying|communication\s+regarding\s+the\s+transmission"
+    r"|\(electronic\)\s+receipt|matter\s+concerning\s+the\s+application"
     r"|notification\s+of\s+forthcoming\s+publication|request\s+for\s+entry\s+into\s+the\s+european\s+phase"
     r"|request\s+for\s+extension|extension\s+of\s+time\s+limit"
     r"|国際公開|公表",
@@ -66,7 +67,7 @@ RE_FINAL_GRANT = re.compile(
 RE_APPLICANT = re.compile(
     r"amend(ed|ment)?|remarks|written\s+opinion|argument|reply|response"
     r"|request\s+for\s+(continued\s+examination|reconsideration)"
-    r"|意見書|補正書|手続補正書|答弁書|上申書|보정|의견서|陈述意见|修改",
+    r"|appeal|意見書|補正書|手続補正書|答弁書|上申書|審判請求|보정|의견서|심판청구|陈述意见|修改",
     re.I,
 )
 RE_REJECTION = re.compile(
@@ -93,6 +94,13 @@ def classify(name: str) -> str:
     # Office Action Appendix 是审查意见的引用文献附录，归入对比文件
     if re.search(r"office\s+action\s+appendix", name, re.I):
         return "citation"
+    # 口审传票/口审、上诉委员会决定是官方程序/结论文书，归审查意见侧；
+    # 必须先于 RE_APPLICANT 判断，否则 "board of appeal" 会被 appeal 抢进答复类
+    if re.search(r"board\s+of\s+appeal|decision\s+on\s+appeal|oral\s+proceedings|summons|審決|口審", name, re.I):
+        return "rejection"
+    # EP 的「可能的修改/权利要求费」通知是审查员主动发的程序性通知，不是答复
+    if re.search(r"communication\s+regarding\s+possible\s+amendment", name, re.I):
+        return "other"
     # 答复类先于审查意见，避免 "Amendment after Non-Final Rejection" 被误判
     if RE_APPLICANT.search(name):
         return "applicant"
@@ -131,6 +139,10 @@ def _family_rank(family: str, doc: dict[str, Any]) -> int:
             return 1
         return 0
     if family == "citation":
+        # WO 阶段的 ISR 副本在其他局的案卷里只是重复收录，价值低于本局自己的
+        # 检索策略/检索信息，降到与杂项同级，避免按日期最旧却抢走名额。
+        if "copy of the international search" in name:
+            return 2
         # 检索报告/检索意见的信息量远高于检索策略与引用清单
         if "search report" in name or "search opinion" in name or "international search" in name:
             return 0
