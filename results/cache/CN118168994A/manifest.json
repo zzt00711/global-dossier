@@ -5,14 +5,14 @@
     "NUM_PART": "118168994",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-11-17T01:01:22+00:00",
+  "generated_at": "2026-11-17T01:06:57+00:00",
   "offices": [
     "JP",
     "EP",
     "US",
     "KR"
   ],
-  "max_docs_per_office": 4,
+  "max_docs_per_office": 5,
   "download": true,
   "family_counts": {
     "US": 2,
@@ -84,6 +84,17 @@
           "tender_date": "2024-10-15",
           "file": "US/2024-10-15_US_Examiner's_search_strategy_and_results_J71MFWFYGX54.pdf",
           "bytes": 10573,
+          "status": "ok"
+        },
+        {
+          "doc_id": "M1PMP7IIWFYBX96",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "name_en": "",
+          "date": "2024-09-30",
+          "family": "applicant",
+          "tender_date": "2024-09-30",
+          "file": "US/2024-09-30_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_MP7IIWFYBX96.pdf",
+          "bytes": 53099,
           "status": "ok"
         }
       ],
@@ -287,7 +298,7 @@
           "date": "2024-09-30",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "M1PMP7IPWFYBX96",
