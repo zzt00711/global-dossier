@@ -5,13 +5,13 @@
     "NUM_PART": "115728871",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-11-17T08:46:11+00:00",
+  "generated_at": "2026-11-17T09:15:00+00:00",
   "offices": [
+    "US",
     "JP",
-    "EP",
-    "US"
+    "EP"
   ],
-  "max_docs_per_office": 5,
+  "max_docs_per_office": 6,
   "download": true,
   "family_counts": {
     "US": 1,
@@ -52,6 +52,28 @@
           "status": "ok"
         },
         {
+          "doc_id": "MCASHO1W198X138",
+          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "name_en": "",
+          "date": "2025-06-24",
+          "family": "applicant",
+          "tender_date": "2025-06-24",
+          "file": "US/2025-06-24_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_SHO1W198X138.pdf",
+          "bytes": 15679,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MCASHO20198X138",
+          "name": "Claims",
+          "name_en": "",
+          "date": "2025-06-24",
+          "family": "claims",
+          "tender_date": "2025-06-24",
+          "file": "US/2025-06-24_US_Claims_SHO20198X138.pdf",
+          "bytes": 146390,
+          "status": "ok"
+        },
+        {
           "doc_id": "MCYQZ5S54X53X48",
           "name": "Search information including classification, databases and other search related notes",
           "name_en": "",
@@ -63,25 +85,14 @@
           "status": "ok"
         },
         {
-          "doc_id": "MCYQZ5SC4X53X48",
-          "name": "Examiner's search strategy and results",
-          "name_en": "",
-          "date": "2025-07-14",
-          "family": "citation",
-          "tender_date": "2025-07-14",
-          "file": "US/2025-07-14_US_Examiner's_search_strategy_and_results_QZ5SC4X53X48.pdf",
-          "bytes": 523815,
-          "status": "ok"
-        },
-        {
-          "doc_id": "MCASHO1W198X138",
-          "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+          "doc_id": "MCASHO22198X138",
+          "name": "Applicant Arguments/Remarks Made in an Amendment",
           "name_en": "",
           "date": "2025-06-24",
           "family": "applicant",
           "tender_date": "2025-06-24",
-          "file": "US/2025-06-24_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_SHO1W198X138.pdf",
-          "bytes": 15679,
+          "file": "US/2025-06-24_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_SHO22198X138.pdf",
+          "bytes": 24393,
           "status": "ok"
         }
       ],
@@ -349,7 +360,7 @@
           "date": "2025-06-24",
           "family": "claims",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MCASHO22198X138",
@@ -357,7 +368,7 @@
           "date": "2025-06-24",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MCASHO25198X138",
@@ -429,7 +440,7 @@
           "date": "2025-07-14",
           "family": "citation",
           "excluded": false,
-          "picked": true
+          "picked": false
         },
         {
           "doc_id": "MGHZUONW185X243",
