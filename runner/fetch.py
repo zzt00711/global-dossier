@@ -124,7 +124,28 @@ RE_CITATION = re.compile(
 RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の範囲|청구범위|权利要求", re.I)
 
 
-def classify(name: str) -> str:
+def _is_office_issued(group: str) -> bool:
+    """DOC_GRP 是否含 token "2"（特許庁/官方发出）。
+
+    实测约 280 份文书（JP/EP/US/KR）无一例反证：
+      拒絶理由通知書=2,21,101,102  拒絶査定=2,23,101  審査前置移管通知=2
+      European search opinion=2,21  Decision to grant=2,23
+      Notice of Allowance=2,23      Reminder period for payment...=2
+
+    必须按逗号切分后精确比对 token，不能用子串：
+    国際調査報告的 group 是 "4,101,102"，其中 102 含字符 '2'，
+    子串判断会把它误判成官方文书。
+
+    注意 "4" 只表示「出願人提出侧的書類」，国際調査報告 / IPRP / 優先権書類
+    都带 4，所以不能用 4 反推「申请人实质答复」，这里只做官方侧的否决。
+    """
+    return "2" in {tok.strip() for tok in (group or "").split(",") if tok.strip()}
+
+
+def classify(name: str, group: str = "") -> str:
+    # group 含 token 2 = 官方发出，绝不可能是申请人答复。
+    # 用它否决名称启发式的 applicant 判定，其余情况仍靠名称。
+    office = _is_office_issued(group)
     if RE_FINAL_GRANT.search(name):
         return "final_grant"
     # 国际阶段文书（ISR / ISA 书面意见 / IPRP / 国际初审报告）不是国家局审查通知书，
@@ -144,7 +165,7 @@ def classify(name: str) -> str:
     # 上诉/口审：先判申请人侧，再判官方侧。顺序不能反——
     # "Reply to the summons to oral proceedings"、"Request for oral proceedings"
     # 同时含 summons / oral proceedings，若先判官方侧会把申请人答复误归 rejection
-    if RE_APPEAL_APPLICANT.search(name):
+    if RE_APPEAL_APPLICANT.search(name) and not office:
         return "applicant"
     if RE_APPEAL_OFFICIAL.search(name):
         return "rejection"
@@ -152,7 +173,7 @@ def classify(name: str) -> str:
     if re.search(r"communication\s+regarding\s+possible\s+amendment", name, re.I):
         return "other"
     # 答复类先于审查意见，避免 "Amendment after Non-Final Rejection" 被误判
-    if RE_APPLICANT.search(name):
+    if RE_APPLICANT.search(name) and not office:
         return "applicant"
     if RE_REJECTION.search(name):
         return "rejection"
@@ -216,7 +237,7 @@ def pick_docs(docs: list[dict[str, Any]], max_docs: int) -> list[dict[str, Any]]
     不会被排在前面的类别一次吃满。
     """
     for d in docs:
-        d["family"] = classify(f"{d.get('name', '')} {d.get('name_en', '')}")
+        d["family"] = classify(f"{d.get('name', '')} {d.get('name_en', '')}", d.get("group", ""))
 
     picked: list[dict[str, Any]] = []
     used: set[str] = set()
@@ -362,6 +383,8 @@ def _collect_member(
             "name": d.get("name") or d.get("name_en"),
             "date": d.get("date"),
             "family": d.get("family"),
+            # 保留 OPD 的 DOC_GRP，便于事后核对分类是否判错（含 token 2 = 官方发出）
+            "group": d.get("group", ""),
             "excluded": is_excluded(f"{d.get('name', '')} {d.get('name_en', '')}"),
             "picked": d["doc_id"] in picked_keys,
         }
