@@ -26,8 +26,13 @@ from opd import (
     parse_member_num,
 )
 
-# 中国审查员关注点排序与配额（沿用 gd_helper.pick_exam_docs）
-FAMILY_ORDER = ["final_grant", "rejection", "citation", "applicant", "claims", "other"]
+# 中国审查员关注点排序与配额。
+# 顺序即轮转顺序：每轮各类各取 1 份，而不是把某类配额一次吃满。
+# 这样 max_docs=4 时拿到的是「授权结论 + 审查意见 + 答复/修改 + 修改后权利要求」，
+# 而不是被两份检索报告挤掉申请人的答复与修改。
+# citation 放在 applicant / claims 之后：检索报告只是辅助佐证，
+# 名额富余（max_docs>=6）时才会补入。
+FAMILY_ORDER = ["final_grant", "rejection", "applicant", "claims", "citation", "other"]
 FAMILY_QUOTA = {"final_grant": 1, "rejection": 2, "citation": 2, "applicant": 2, "claims": 1, "other": 0}
 
 # 大族（如 CN117425921A 有 118 个成员、其中 US 69 个）如果逐个成员下载，
@@ -138,7 +143,12 @@ def _family_rank(family: str, doc: dict[str, Any]) -> int:
 
 
 def pick_docs(docs: list[dict[str, Any]], max_docs: int) -> list[dict[str, Any]]:
-    """按类别配额挑选；同类按日期倒序。"""
+    """按类别配额轮转挑选；同类按日期倒序。
+
+    每轮从每个类别各取 1 份，直到达到 max_docs 或所有配额用尽。
+    这样在名额紧张（如 max_docs=4）时，每个有文书的类别都能分到至少 1 份，
+    不会被排在前面的类别一次吃满。
+    """
     for d in docs:
         d["family"] = classify(f"{d.get('name', '')} {d.get('name_en', '')}")
 
@@ -159,18 +169,36 @@ def pick_docs(docs: list[dict[str, Any]], max_docs: int) -> list[dict[str, Any]]
         if not is_excluded(f"{d.get('name', '')} {d.get('name_en', '')}"):
             buckets[d["family"]].append(d)
 
-    for family in FAMILY_ORDER:
-        quota = FAMILY_QUOTA[family]
-        if quota <= 0:
-            continue
-        for d in ordered(buckets[family], family):
-            if len(picked) >= max_docs or quota <= 0:
-                break
+    queues = {f: ordered(buckets[f], f) for f in FAMILY_ORDER}
+    pos = {f: 0 for f in FAMILY_ORDER}
+    quota = dict(FAMILY_QUOTA)
+
+    def take(family: str) -> bool:
+        """从该类别取下一份未用过的文书；取到返回 True。"""
+        items = queues[family]
+        while pos[family] < len(items):
+            d = items[pos[family]]
+            pos[family] += 1
             if key(d) in used:
                 continue
             used.add(key(d))
             picked.append(d)
-            quota -= 1
+            quota[family] -= 1
+            return True
+        return False
+
+    # 轮转：一轮内每个类别最多取 1 份
+    while len(picked) < max_docs:
+        progressed = False
+        for family in FAMILY_ORDER:
+            if len(picked) >= max_docs:
+                break
+            if quota[family] <= 0:
+                continue
+            if take(family):
+                progressed = True
+        if not progressed:
+            break
 
     if len(picked) < max_docs:
         for d in ordered(docs, "other"):
