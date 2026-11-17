@@ -51,6 +51,10 @@ EXCLUDE_NAME = re.compile(
     r"|claims\s+worksheet|index\s+of\s+claims|claims\s+listing"
     r"|letter\s+accompanying|communication\s+regarding\s+the\s+transmission"
     r"|\(electronic\)\s+receipt|matter\s+concerning\s+the\s+application"
+    # 申请文件本身、审查请求、电子受理回执、年费地址变更：只是著录/程序性表格，
+    # 不含任何审查意见或申请人争辩，对实审过程分析无用。
+    r"|^\s*\[?patent\s+application\b|request\s+for\s+examination"
+    r"|electronic\s+filing\s+system|maintenance\s+fee"
     r"|notification\s+of\s+forthcoming\s+publication|request\s+for\s+entry\s+into\s+the\s+european\s+phase"
     r"|request\s+for\s+extension|extension\s+of\s+time\s+limit"
     r"|国際公開|公表",
@@ -82,7 +86,9 @@ RE_REJECTION = re.compile(
 RE_CITATION = re.compile(
     r"list\s+of\s+references|search\s+report|search\s+strategy|search\s+information"
     r"|citation|information\s+disclosure\s+statement|\bids\b"
-    r"|引用文献|先行技術|인용문헌|对比文件|检索报告",
+    # 日文检索报告：OPD 的日文名不含 "search report"，缺了这组只能靠 name_en 兜，
+    # 一旦 name_en 缺失就会落进 other（配额 0）而永远取不到。
+    r"|引用文献|先行技術|인용문헌|对比文件|检索报告|検索報告|国際調査報告",
     re.I,
 )
 RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の範囲|청구범위|权利要求", re.I)
@@ -212,10 +218,14 @@ def pick_docs(docs: list[dict[str, Any]], max_docs: int) -> list[dict[str, Any]]
         if not progressed:
             break
 
+    # 名额没取满时，只用其余实质文书（超出单类配额的审查意见/答复）补，
+    # 绝不用 other 类凑数：max_docs 是上限而非目标，宁可少取。
     if len(picked) < max_docs:
         for d in ordered(docs, "other"):
             if len(picked) >= max_docs:
                 break
+            if d.get("family") == "other":
+                continue
             if is_excluded(f"{d.get('name', '')} {d.get('name_en', '')}") or key(d) in used:
                 continue
             used.add(key(d))
@@ -312,6 +322,13 @@ def _collect_member(
 
     if not picked:
         entry["status"] = "no_doc"
+        # 区分「真的没有文书」与「有文书但全是申请文件/程序性表格」，
+        # 否则前端只显示一个 no_doc，看不出该局其实还没进入实审。
+        entry["error"] = (
+            f"该国 {len(docs)} 份文书均为申请文件或程序性表格，无实质审查文书可取"
+            if docs
+            else "该国文书列表为空"
+        )
         return False
 
     cdir = out_dir / country
