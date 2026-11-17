@@ -5,9 +5,12 @@
     "NUM_PART": "117933310",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-11-17T06:35:30+00:00",
+  "generated_at": "2026-11-17T06:57:55+00:00",
   "offices": [
-    "US"
+    "JP",
+    "EP",
+    "US",
+    "KR"
   ],
   "max_docs_per_office": 4,
   "download": true,
