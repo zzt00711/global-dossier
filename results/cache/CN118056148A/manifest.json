@@ -5,14 +5,14 @@
     "NUM_PART": "118056148",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-11-17T06:55:56+00:00",
+  "generated_at": "2026-11-17T09:06:41+00:00",
   "offices": [
+    "US",
     "JP",
     "EP",
-    "US",
     "KR"
   ],
-  "max_docs_per_office": 4,
+  "max_docs_per_office": 6,
   "download": true,
   "family_counts": {
     "JP": 1,
@@ -45,17 +45,6 @@
           "status": "ok"
         },
         {
-          "doc_id": "International_Search_Report%2528in_Japanese%2529_62312540094_JP",
-          "name": "国際調査報告（日本語）",
-          "name_en": "International Search Report(in Japanese)",
-          "date": "2023-07-24",
-          "family": "citation",
-          "tender_date": "2023-07-24",
-          "file": "JP/2023-07-24_JP_International_Search_Report(in_Japanese)_312540094_JP.pdf",
-          "bytes": 70259,
-          "status": "ok"
-        },
-        {
           "doc_id": "Written_Amendment_%2528voluntary-content%2529_52601933971_JP",
           "name": "手続補正書（自発・内容）",
           "name_en": "Written Amendment (voluntary-content)",
@@ -67,6 +56,28 @@
           "status": "ok"
         },
         {
+          "doc_id": "Claims_62439907674_JP",
+          "name": "請求の範囲",
+          "name_en": "Claims",
+          "date": "2024-04-02",
+          "family": "claims",
+          "tender_date": "2024-04-02",
+          "file": "JP/2024-04-02_JP_Claims_439907674_JP.pdf",
+          "bytes": 113494,
+          "status": "ok"
+        },
+        {
+          "doc_id": "International_Search_Report%2528in_Japanese%2529_62312540094_JP",
+          "name": "国際調査報告（日本語）",
+          "name_en": "International Search Report(in Japanese)",
+          "date": "2023-07-24",
+          "family": "citation",
+          "tender_date": "2023-07-24",
+          "file": "JP/2023-07-24_JP_International_Search_Report(in_Japanese)_312540094_JP.pdf",
+          "bytes": 70259,
+          "status": "ok"
+        },
+        {
           "doc_id": "Written_Opinion_52601933981_JP",
           "name": "意見書",
           "name_en": "Written Opinion",
@@ -75,6 +86,17 @@
           "tender_date": "2026-08-28",
           "file": "JP/2026-08-28_JP_Written_Opinion_601933981_JP.pdf",
           "bytes": 189167,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notification_of_Acceptance_to_Act_as_Agent_%2528applicant%252Fdemandant%2529_52601933973_JP",
+          "name": "代理人受任届（出願人・請求人）",
+          "name_en": "Notification of Acceptance to Act as Agent (applicant/demandant)",
+          "date": "2026-08-28",
+          "family": "other",
+          "tender_date": "2026-08-28",
+          "file": "JP/2026-08-28_JP_Notification_of_Acceptance_to_Act_as_Agent_(applicant_demand_601933973_JP.pdf",
+          "bytes": 85640,
           "status": "ok"
         }
       ],
@@ -190,7 +212,7 @@
           "date": "2024-04-02",
           "family": "claims",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "International_Applications_%2528Communication_of_International_Applications_in_Japanese%2529_62439907674_JP",
@@ -278,7 +300,7 @@
           "date": "2026-08-28",
           "family": "other",
           "excluded": false,
-          "picked": false
+          "picked": true
         }
       ],
       "note": "该局同族成员 1 个，使用本代原申请"
@@ -306,14 +328,25 @@
           "status": "ok"
         },
         {
-          "doc_id": "MQGXU5JO218X101",
-          "name": "Final Rejection",
+          "doc_id": "MTJ6LBZY148X102",
+          "name": "Request for Continued Examination (RCE)",
           "name_en": "",
-          "date": "2026-06-17",
-          "family": "rejection",
-          "tender_date": "2026-06-17",
-          "file": "US/2026-06-17_US_Final_Rejection_XU5JO218X101.pdf",
-          "bytes": 316047,
+          "date": "2026-09-01",
+          "family": "applicant",
+          "tender_date": "2026-09-01",
+          "file": "US/2026-09-01_US_Request_for_Continued_Examination_(RCE)_6LBZY148X102.pdf",
+          "bytes": 122842,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MSRMC39166X81X1",
+          "name": "Claims",
+          "name_en": "",
+          "date": "2026-08-12",
+          "family": "claims",
+          "tender_date": "2026-08-12",
+          "file": "US/2026-08-12_US_Claims_MC39166X81X1.pdf",
+          "bytes": 94030,
           "status": "ok"
         },
         {
@@ -328,14 +361,25 @@
           "status": "ok"
         },
         {
-          "doc_id": "MU6X2INUX86X209",
-          "name": "Examiner's search strategy and results",
+          "doc_id": "MQGXU5JO218X101",
+          "name": "Final Rejection",
           "name_en": "",
-          "date": "2026-09-21",
-          "family": "citation",
-          "tender_date": "2026-09-21",
-          "file": "US/2026-09-21_US_Examiner's_search_strategy_and_results_X2INUX86X209.pdf",
-          "bytes": 241428,
+          "date": "2026-06-17",
+          "family": "rejection",
+          "tender_date": "2026-06-17",
+          "file": "US/2026-06-17_US_Final_Rejection_XU5JO218X101.pdf",
+          "bytes": 316047,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MT1IQBNI247X115",
+          "name": "Amendment After Final or under 37CFR 1.312, initialed by the examiner.",
+          "name_en": "",
+          "date": "2026-08-21",
+          "family": "applicant",
+          "tender_date": "2026-08-21",
+          "file": "US/2026-08-21_US_Amendment_After_Final_or_under_37CFR_1.312,_initialed_by_the_IQBNI247X115.pdf",
+          "bytes": 16637,
           "status": "ok"
         }
       ],
@@ -867,7 +911,7 @@
           "date": "2026-08-12",
           "family": "claims",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MSRMC39366X81X1",
@@ -907,7 +951,7 @@
           "date": "2026-08-21",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MTJ6LBZY148X102",
@@ -915,7 +959,7 @@
           "date": "2026-09-01",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MTJ6LC00148X102",
@@ -971,7 +1015,7 @@
           "date": "2026-09-21",
           "family": "citation",
           "excluded": false,
-          "picked": true
+          "picked": false
         },
         {
           "doc_id": "MUL4Z8SY6X76X30",
@@ -1008,6 +1052,28 @@
           "status": "ok"
         },
         {
+          "doc_id": "MAWBV4TH191VTWV",
+          "name": "Amendments received before examination",
+          "name_en": "",
+          "date": "2025-05-20",
+          "family": "applicant",
+          "tender_date": "2025-05-20",
+          "file": "EP/2025-05-20_EP_Amendments_received_before_examination_BV4TH191VTWV.pdf",
+          "bytes": 155019,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LUL4GKS7EA4BSVN",
+          "name": "Claims",
+          "name_en": "",
+          "date": "2024-04-04",
+          "family": "claims",
+          "tender_date": "2024-04-04",
+          "file": "EP/2024-04-04_EP_Claims_4GKS7EA4BSVN.pdf",
+          "bytes": 78020,
+          "status": "ok"
+        },
+        {
           "doc_id": "M4KLNX4IB4W6KW1",
           "name": "Supplementary European search report",
           "name_en": "",
@@ -1019,6 +1085,17 @@
           "status": "ok"
         },
         {
+          "doc_id": "MAWBV59A11FUIHV",
+          "name": "Amended claims filed after receipt of (European) search report",
+          "name_en": "",
+          "date": "2025-05-20",
+          "family": "applicant",
+          "tender_date": "2025-05-20",
+          "file": "EP/2025-05-20_EP_Amended_claims_filed_after_receipt_of_(European)_search_repo_BV59A11FUIHV.pdf",
+          "bytes": 86225,
+          "status": "ok"
+        },
+        {
           "doc_id": "LGUM4ZVEHZ8SEGS",
           "name": "Copy of the translated international search report",
           "name_en": "",
@@ -1027,17 +1104,6 @@
           "tender_date": "2023-04-20",
           "file": "EP/2023-04-20_EP_Copy_of_the_translated_international_search_report_M4ZVEHZ8SEGS.pdf",
           "bytes": 78313,
-          "status": "ok"
-        },
-        {
-          "doc_id": "MAWBV4TH191VTWV",
-          "name": "Amendments received before examination",
-          "name_en": "",
-          "date": "2025-05-20",
-          "family": "applicant",
-          "tender_date": "2025-05-20",
-          "file": "EP/2025-05-20_EP_Amendments_received_before_examination_BV4TH191VTWV.pdf",
-          "bytes": 155019,
           "status": "ok"
         }
       ],
@@ -1105,7 +1171,7 @@
           "date": "2024-04-04",
           "family": "claims",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "LUL4GKS91C9PONG",
@@ -1241,7 +1307,7 @@
           "date": "2025-05-20",
           "family": "applicant",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MAWBV5NN1MIHWC2",
