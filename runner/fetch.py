@@ -71,7 +71,36 @@ RE_FINAL_GRANT = re.compile(
 RE_APPLICANT = re.compile(
     r"amend(ed|ment)?|remarks|written\s+opinion|argument|reply|response"
     r"|request\s+for\s+(continued\s+examination|reconsideration)"
-    r"|appeal|意見書|補正書|手続補正書|答弁書|上申書|審判請求|보정|의견서|심판청구|陈述意见|修改",
+    r"|意見書|補正書|手続補正書|答弁書|上申書|보정|의견서|陈述意见|修改",
+    re.I,
+)
+# 申请人提交的上诉/口审/审判请求类文书。
+# 与官方侧分开判：口审传票、上诉委员会决定由官方发出，
+# 而「对传票的答复」「口审请求」「上诉理由书」是申请人提交的，
+# 两者名称里都含 oral proceedings / summons / board of appeal，只能靠动作词区分。
+RE_APPEAL_APPLICANT = re.compile(
+    r"appeal\s+brief|notice\s+of\s+appeal|statement\s+of\s+(the\s+)?grounds\s+of\s+appeal"
+    r"|request\s+for\s+oral|reply\s+to|response\s+to|amendments?\s+filed"
+    r"|審判請求|심판\s*청구",
+    re.I,
+)
+# 官方侧：上诉委员会决定、口审传票/期日通知、审决。
+# 日文实名是「口頭審理通知書」「審判口頭審理期日通知書」，不含「口審」二字，
+# 故必须收 口頭審理；韩文「거절결정불복심판 청구서」中间有空格，故用 \s*。
+RE_APPEAL_OFFICIAL = re.compile(
+    r"board\s+of\s+appeal|decision\s+on\s+appeal|appeal\s+decision"
+    r"|oral\s+proceedings|oral\s+hearing|summons"
+    r"|審決|口頭審理|口審",
+    re.I,
+)
+# 国际阶段（PCT）文书：ISA 国际检索报告、ISA 书面意见、国际初步审查报告、IPRP。
+# 由国际检索/初审单位出具，属另一程序阶段，不是各国家局的审查通知书，
+# 归 other（配额 0 且不参与补位）即不会被取用。
+RE_WO_PHASE = re.compile(
+    r"international\s+search\s+report|international\s+preliminary\s+(report|examination)"
+    r"|written\s+opinion\s+of\s+the\s+international|\bISA\b|\bIPEA\b|43bis"
+    r"|国際調査|書面による見解|国際予備報告|国際予備審査"
+    r"|국제조사|국제예비",
     re.I,
 )
 RE_REJECTION = re.compile(
@@ -88,7 +117,8 @@ RE_CITATION = re.compile(
     r"|citation|information\s+disclosure\s+statement|\bids\b"
     # 日文检索报告：OPD 的日文名不含 "search report"，缺了这组只能靠 name_en 兜，
     # 一旦 name_en 缺失就会落进 other（配额 0）而永远取不到。
-    r"|引用文献|先行技術|인용문헌|对比文件|检索报告|検索報告|国際調査報告",
+    # 注意只收本国局的「検索報告」，国际阶段的「国際調査報告」由 RE_WO_PHASE 拦下。
+    r"|引用文献|先行技術|인용문헌|对比文件|检索报告|検索報告",
     re.I,
 )
 RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の範囲|청구범위|权利要求", re.I)
@@ -97,12 +127,26 @@ RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の�
 def classify(name: str) -> str:
     if RE_FINAL_GRANT.search(name):
         return "final_grant"
+    # 国际阶段文书（ISR / ISA 书面意见 / IPRP / 国际初审报告）不是国家局审查通知书，
+    # 必须早于所有国家局分支判断，否则会被 written opinion / search report 抢走
+    if RE_WO_PHASE.search(name):
+        return "other"
     # Office Action Appendix 是审查意见的引用文献附录，归入对比文件
     if re.search(r"office\s+action\s+appendix", name, re.I):
         return "citation"
-    # 口审传票/口审、上诉委员会决定是官方程序/结论文书，归审查意见侧；
-    # 必须先于 RE_APPLICANT 判断，否则 "board of appeal" 会被 appeal 抢进答复类
-    if re.search(r"board\s+of\s+appeal|decision\s+on\s+appeal|oral\s+proceedings|summons|審決|口審", name, re.I):
+    # 审查员针对上诉理由书的答辩是官方实质意见，归审查意见侧。
+    # 必须先判：名称里含 "Appeal Brief"，否则会被申请人侧的 appeal brief 抢走
+    if re.search(r"examiner'?s\s+answer", name, re.I):
+        return "rejection"
+    # 纯程序性的上诉转送/延期通知，无实质内容
+    if re.search(r"forwarding\s+of\s+appeal|appeal\s+forwarded|time\s+period\s+for\s+filing\s+appeal", name, re.I):
+        return "other"
+    # 上诉/口审：先判申请人侧，再判官方侧。顺序不能反——
+    # "Reply to the summons to oral proceedings"、"Request for oral proceedings"
+    # 同时含 summons / oral proceedings，若先判官方侧会把申请人答复误归 rejection
+    if RE_APPEAL_APPLICANT.search(name):
+        return "applicant"
+    if RE_APPEAL_OFFICIAL.search(name):
         return "rejection"
     # EP 的「可能的修改/权利要求费」通知是审查员主动发的程序性通知，不是答复
     if re.search(r"communication\s+regarding\s+possible\s+amendment", name, re.I):
@@ -141,16 +185,20 @@ def _family_rank(family: str, doc: dict[str, Any]) -> int:
     if family == "rejection":
         if "advisory action" in name:
             return 2
+        # 口审传票/期日通知只是排期，不含任何审查理由，最低优先，
+        # 否则会在 rejection 只有 2 个名额时挤掉实质审查意见
+        if re.search(r"summons|oral\s+proceedings|oral\s+hearing|口頭審理|口審", name):
+            return 2
+        # 上诉委员会决定/审决是结论性文书，次于承载审查理由的通知书
+        if re.search(r"board\s+of\s+appeal|decision\s+on\s+appeal|appeal\s+decision|審決", name):
+            return 1
         if "final rejection" in name or "拒絶査定" in name:
             return 1
         return 0
     if family == "citation":
-        # WO 阶段的 ISR 副本在其他局的案卷里只是重复收录，价值低于本局自己的
-        # 检索策略/检索信息，降到与杂项同级，避免按日期最旧却抢走名额。
-        if "copy of the international search" in name:
-            return 2
+        # 国际阶段的 ISR 副本已由 RE_WO_PHASE 归入 other，这里只处理本国局检索文书：
         # 检索报告/检索意见的信息量远高于检索策略与引用清单
-        if "search report" in name or "search opinion" in name or "international search" in name:
+        if "search report" in name or "search opinion" in name:
             return 0
         if "search strategy" in name or "information on search" in name or "search information" in name:
             return 1
