@@ -1,0 +1,19 @@
+{
+  "state": "error",
+  "issue": 241,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-18T08:24:24+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118260642A（6 篇/局）",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 323, in main\n    full = collect(\n           ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 487, in collect\n    input_parts, members = family_by_publication(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 660, in family_by_publication\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 488, in family\n    data = self._post_with_retry(\"/app/opdgw/wsh0701\", body, kind=\"family\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 354, in _post_with_retry\n    return self._post(path, body, timeout=timeout, kind=kind)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 270, in _post\n    self._check(data)\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 341, in _check\n    raise OpdError(code or \"UNKNOWN\", joined or STATUS_HINTS.get(code) or \"OPD 返回失败\")\nopd.OpdError: [8] J-PlatPat 要求验证码（STATUS_CD_A=8，出口 IP 被判定可疑），请稍后重试\n"
+  ],
+  "query": "CN118260642A",
+  "offices": [
+    "EP",
+    "US"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "error": "OpdError: [8] J-PlatPat 要求验证码（STATUS_CD_A=8，出口 IP 被判定可疑），请稍后重试",
+  "finished_at": "2026-11-18T08:24:26+00:00"
+}
