@@ -123,7 +123,7 @@
     <div class="row">
       <label class="field">
         <b>CN 公开号</b>
-        <input type="text" id="query" value="CN118056148A" placeholder="完整公开号，如 CN116887720A" autocomplete="off">
+        <input type="text" id="query" value="" placeholder="完整公开号，如 CN116887720A" autocomplete="off">
       </label>
       <div class="field">
         <b>局别</b>
@@ -207,6 +207,10 @@ let startedAt = 0;
 let pollJob = null;
 let pollDelay = 2000;
 let pollStopped = true;
+// 打开 ?job= 或点历史任务时，表单要跟随该任务的真实参数，
+// 否则会出现「输入框写着 A，日志和结果却是 B」的错位。
+let formDirty = false;
+let formSyncedJob = 0;
 
 function token() { return (localStorage.getItem(TOKEN_KEY) || "").trim(); }
 
@@ -909,6 +913,18 @@ async function fetchStatus(job) {
   }
 }
 
+// 把任务参数回填到表单；用户已经手动改过表单时不覆盖。
+function applyJobForm(data) {
+  if (formDirty || !data || !data.query) return;
+  $("query").value = data.query;
+  if (Array.isArray(data.offices) && data.offices.length) {
+    document.querySelectorAll(".offices input").forEach((x) => {
+      x.checked = data.offices.indexOf(x.value) >= 0;
+    });
+  }
+  if (data.max_docs) $("maxDocs").value = data.max_docs;
+}
+
 async function poll(job) {
   if (pollStopped || pollJob !== job) {
     pollJob = job;
@@ -925,6 +941,10 @@ async function poll(job) {
   if (pollStopped || pollJob !== job) return;
 
   if (data) {
+    if (formSyncedJob !== job) {
+      applyJobForm(data);
+      formSyncedJob = job;
+    }
     renderLogs(data.logs || []);
     if (data.state === "done") {
       setStatus("完成（" + elapsed() + "s）");
@@ -957,6 +977,8 @@ async function poll(job) {
 
 function track(job, startTs, msg) {
   startedAt = startTs;
+  formDirty = false;
+  formSyncedJob = job;
   $("run").disabled = true;
   $("resultCard").style.display = "none";
   $("reportCard").style.display = "none";
@@ -1042,6 +1064,8 @@ async function submit() {
       throw new Error(msg + (r.status === 401 || r.status === 403 ? "（检查 Token 权限：Issues 读写）" : ""));
     }
     startedAt = Date.now();
+    formDirty = false;
+    formSyncedJob = data.number;
     try { localStorage.setItem(LAST_SUBMIT_KEY, JSON.stringify({ key: key, job: data.number, at: startedAt })); } catch (e) {}
     saveHistory(data.number, query);
     setStatus("已提交 #" + data.number + "，等待 Actions 启动…");
@@ -1074,6 +1098,10 @@ $("clearToken").addEventListener("click", () => {
   renderTokenState();
   setStatus("Token 已清除", false);
 });
+
+// 用户一旦手动改过表单，就不再被任务参数回填覆盖。
+["query", "maxDocs"].forEach((id) => $(id).addEventListener("input", () => { formDirty = true; }));
+document.querySelectorAll(".offices input").forEach((x) => x.addEventListener("change", () => { formDirty = true; }));
 
 $("regen").addEventListener("click", () => {
   const job = parseInt(new URLSearchParams(location.search).get("job") || "0", 10);
