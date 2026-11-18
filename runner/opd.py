@@ -119,6 +119,13 @@ MSG_HINTS = {
     "C10132-E": "J-PlatPat 同一 IP 验证码次数超限，请稍后重试",
 }
 
+# MSG_LIST 为空壳（STATUS_CD_A=8 时常见 [{}] 或 MSG_ID==""）时，
+# 只能按状态码补一句人话，否则前端会看到毫无意义的 "[8] {}"。
+STATUS_HINTS = {
+    "2": "J-PlatPat 要求授权（STATUS_CD_A=2），请稍后重试",
+    "8": "J-PlatPat 要求验证码（STATUS_CD_A=8，出口 IP 被判定可疑），请稍后重试",
+}
+
 # 人类化节奏：按「上一个动作 → 下一个动作」分段取对数正态分布（秒）。
 # 真实用户是「看一眼再点」，间隔天然右偏、偶尔很长，固定间隔反而像脚本。
 DELAY_RANGES = {
@@ -316,7 +323,11 @@ class OpdClient:
                 text = item.get("MSG") or item.get("MESSAGE") or item.get("MSG_TXT")
                 if not text:
                     mid = str(item.get("ID") or "").strip()
-                    text = f"{mid}：{MSG_HINTS[mid]}" if mid in MSG_HINTS else str(item)
+                    # 空壳条目（STATUS_CD_A=8 的 [{}]）没有任何可用信息，
+                    # 直接 str(item) 会得到 "{}"，不如跳过交给状态码兜底。
+                    if not mid:
+                        continue
+                    text = f"{mid}：{MSG_HINTS[mid]}" if mid in MSG_HINTS else mid
                 messages.append(str(text))
             else:
                 messages.append(str(item))
@@ -327,7 +338,7 @@ class OpdClient:
         joined = " / ".join(messages)
         if NO_DOSSIER_MSG in joined:
             raise OpdError("NOT_FOUND", NO_DOSSIER_HINT)
-        raise OpdError(code or "UNKNOWN", joined or "OPD 返回失败")
+        raise OpdError(code or "UNKNOWN", joined or STATUS_HINTS.get(code) or "OPD 返回失败")
 
     def _post_with_retry(
         self, path: str, body: dict[str, Any], timeout: float = 60, kind: str = "family"
