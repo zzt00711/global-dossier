@@ -1,0 +1,21 @@
+{
+  "state": "error",
+  "issue": 239,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-18T08:05:27+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN1185677044A（6 篇/局）",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 323, in main\n    full = collect(\n           ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 487, in collect\n    input_parts, members = family_by_publication(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 660, in family_by_publication\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 488, in family\n    data = self._post_with_retry(\"/app/opdgw/wsh0701\", body, kind=\"family\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 354, in _post_with_retry\n    return self._post(path, body, timeout=timeout, kind=kind)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 270, in _post\n    self._check(data)\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 340, in _check\n    raise OpdError(\"NOT_FOUND\", NO_DOSSIER_HINT)\nopd.OpdError: [NOT_FOUND] J-PlatPat 查不到该号码的申请/审查信息（案卷）。常见原因是公开号位数或 kind code 有误，请核对完整公开号（如 CN111316876A，CN 公开号为 9 位数字 + kind code）后重试\n"
+  ],
+  "query": "CN1185677044A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "error": "OpdError: [NOT_FOUND] J-PlatPat 查不到该号码的申请/审查信息（案卷）。常见原因是公开号位数或 kind code 有误，请核对完整公开号（如 CN111316876A，CN 公开号为 9 位数字 + kind code）后重试",
+  "finished_at": "2026-11-18T08:05:32+00:00"
+}
