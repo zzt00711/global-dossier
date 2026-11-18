@@ -324,6 +324,12 @@ function renderResult(data) {
   const pickedMembers = members.filter(m => m.picked && m.picked.length);
   const totalDocs = pickedMembers.reduce((s, m) => s + m.picked.length, 0);
   const omitted = members.filter(m => !(m.picked && m.picked.length) && NOISE_STATUS[m.status]).length;
+  // 提交时勾选的局在族里一个都没有（如 2023 年后申请只在 CN/TW 布局）：
+  // 这不算抓取失败，必须单独说明，否则页面看起来像什么都没做。
+  const wanted = (data.offices || []).filter(o => /^(JP|EP|US|KR)$/i.test(o));
+  const present = new Set((r.members || []).map(m => String(m.country || "").toUpperCase()));
+  const absent = wanted.filter(o => !present.has(o.toUpperCase()));
+  const noneInFamily = wanted.length > 0 && absent.length === wanted.length;
 
   let summary = "同族成员：" + (counts || "—") + "　|　生成时间：" + (r.generated_at || "");
   if (pickedMembers.length) {
@@ -335,7 +341,20 @@ function renderResult(data) {
     summary += '<div class="muted" style="margin-top:2px">其余 ' + omitted
       + " 个同族成员（其他代 / 超出每局上限）未取用，不在下表展示</div>";
   }
+  if (noneInFamily) {
+    summary += '<div style="margin-top:6px;color:#b45309">该号同族中没有 '
+      + absent.join(" / ") + " 成员（同族仅 " + (counts || "—")
+      + "），没有可抓取的国外局审查文书。</div>";
+  }
   $("summary").innerHTML = summary;
+
+  if (noneInFamily) {
+    $("result").innerHTML = '<div class="muted" style="padding:2px 0">J-PlatPat 返回的同族成员只有 '
+      + esc(counts || "—") + "。若号码无误，说明该件尚未在 " + esc(absent.join(" / "))
+      + " 布局，或尚未公开审查过程文书；可换一个有海外同族的号码重试。</div>";
+    $("resultCard").style.display = "block";
+    return;
+  }
 
   const rows = [];
   for (const m of members) {
@@ -802,6 +821,17 @@ async function startAnalysis(job, data, force) {
   }
   if (!data || !data.result) { setReportState("没有可分析的数据", true); return; }
 
+  // 目标局在族里一个都没有时，下载/OCR 全是白跑，直接给出结论。
+  const wanted = (data.offices || []).filter(o => /^(JP|EP|US|KR)$/i.test(o));
+  const present = new Set((data.result.members || []).map(m => String(m.country || "").toUpperCase()));
+  const absent = wanted.filter(o => !present.has(o.toUpperCase()));
+  if (wanted.length && absent.length === wanted.length) {
+    const counts = Object.entries(data.result.family_counts || {}).map(([k, v]) => k + " " + v).join(" · ");
+    setReportState("该号同族中没有 " + absent.join(" / ") + " 成员（同族仅 "
+      + (counts || "—") + "），没有国外局审查过程可分析。", true);
+    return;
+  }
+
   analysisRunning = true;
   analysisLogLines = [];
   $("analysisLog").textContent = "";
@@ -831,7 +861,9 @@ async function startAnalysis(job, data, force) {
         .map(m => m.country + "：" + (m.error || m.status || "未取到文书"));
       throw new Error(anyDoc
         ? "未能从 PDF 中提取到可用文本"
-        : "本次未取到任何文书，无法分析。" + (errs.join("；") || "各局均未返回可用文书"));
+        : "本次未取到任何文书，无法分析。"
+          + (errs.join("；") || "各局均未返回可用文书")
+          + (absent.length ? "；族中无 " + absent.join(" / ") + " 成员" : ""));
     }
     setReportState("正在调用大模型生成报告（流式）…");
     const md = await streamReport(bundle, (chars) => {
