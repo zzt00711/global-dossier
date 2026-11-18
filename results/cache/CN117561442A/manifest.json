@@ -5,14 +5,14 @@
     "NUM_PART": "117561442",
     "KIND_CD_PART": "A"
   },
-  "generated_at": "2026-11-18T01:00:49+00:00",
+  "generated_at": "2026-11-18T03:01:09+00:00",
   "offices": [
     "JP",
     "EP",
     "US",
     "KR"
   ],
-  "max_docs_per_office": 4,
+  "max_docs_per_office": 6,
   "download": true,
   "family_counts": {
     "JP": 1,
@@ -75,6 +75,28 @@
           "tender_date": "2021-07-07",
           "file": "JP/2021-07-07_JP_Claims_101448666_JP.pdf",
           "bytes": 116176,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06124438116_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2024-09-10",
+          "family": "rejection",
+          "tender_date": "2024-09-10",
+          "file": "JP/2024-09-10_JP_Notice_of_Reasons_for_Refusal_124438116_JP.pdf",
+          "bytes": 173468,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52402643689_JP",
+          "name": "手続補正書（自発・内容）",
+          "name_en": "Written Amendment (voluntary-content)",
+          "date": "2024-12-03",
+          "family": "applicant",
+          "tender_date": "2024-12-03",
+          "file": "JP/2024-12-03_JP_Written_Amendment_(voluntary-content)_402643689_JP.pdf",
+          "bytes": 125828,
           "status": "ok"
         }
       ],
@@ -141,7 +163,7 @@
           "family": "rejection",
           "group": "2,21,101,102",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Written_Opinion_52402268992_JP",
@@ -186,7 +208,7 @@
           "family": "applicant",
           "group": "4",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Decision_to_Grant_a_Patent_06124613532_JP",
@@ -254,6 +276,28 @@
           "tender_date": "2023-11-21",
           "file": "EP/2023-11-21_EP_Claims_52PF915QBL61.pdf",
           "bytes": 255529,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MAX6104B130OERH",
+          "name": "Supplementary European search report",
+          "name_en": "",
+          "date": "2025-05-26",
+          "family": "citation",
+          "tender_date": "2025-05-26",
+          "file": "EP/2025-05-26_EP_Supplementary_European_search_report_6104B130OERH.pdf",
+          "bytes": 43797,
+          "status": "ok"
+        },
+        {
+          "doc_id": "MEX8YMP91BK8G7Y",
+          "name": "Amended description filed after receipt of (European) search report",
+          "name_en": "",
+          "date": "2025-08-29",
+          "family": "applicant",
+          "tender_date": "2025-08-29",
+          "file": "EP/2025-08-29_EP_Amended_description_filed_after_receipt_of_(European)_search_8YMP91BK8G7Y.pdf",
+          "bytes": 366114,
           "status": "ok"
         }
       ],
@@ -419,7 +463,7 @@
           "family": "citation",
           "group": "2,5,101,102",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MAX610ETVP7J45F",
@@ -473,7 +517,7 @@
           "family": "applicant",
           "group": "unknown",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "MEX8YMPE1EDT0I7",
@@ -643,6 +687,17 @@
           "file": "KR/2026-01-14_KR_Amendment_including_Specification_etc_005234444_KR.pdf",
           "bytes": 49761,
           "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_112026005235883_KR",
+          "name": "Written Opinion",
+          "name_en": "Written Opinion",
+          "date": "2026-01-14",
+          "family": "applicant",
+          "tender_date": "2026-01-14",
+          "file": "KR/2026-01-14_KR_Written_Opinion_005235883_KR.pdf",
+          "bytes": 239432,
+          "status": "ok"
         }
       ],
       "title": "PHOTOACOUSTIC PHYSICAL PROPERTY MEASURING DEVICE AND MEASURING METHOD",
@@ -681,7 +736,7 @@
           "family": "applicant",
           "group": "4",
           "excluded": false,
-          "picked": false
+          "picked": true
         },
         {
           "doc_id": "Written_Decision_on_Registration_952026069207165_KR",
