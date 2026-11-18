@@ -822,7 +822,17 @@ async function startAnalysis(job, data, force) {
       saveBundle(job, bundle);
     }
     const usable = bundle.members.some(m => m.documents.some(d => d.text && !d.text.startsWith("[")));
-    if (!usable) throw new Error("未能从 PDF 中提取到可用文本");
+    if (!usable) {
+      // 区分两种失败：压根没取到文书（抓取阶段失败，如 J-PlatPat 拒绝出口 IP），
+      // 与取到了文书但文本层/OCR 都没抽出字。两者的排查方向完全不同。
+      const anyDoc = bundle.members.some(m => m.documents.length);
+      const errs = (data.result.members || [])
+        .filter(m => /^(JP|EP|US|KR)$/i.test(m.country || "") && !(m.picked && m.picked.length))
+        .map(m => m.country + "：" + (m.error || m.status || "未取到文书"));
+      throw new Error(anyDoc
+        ? "未能从 PDF 中提取到可用文本"
+        : "本次未取到任何文书，无法分析。" + (errs.join("；") || "各局均未返回可用文书"));
+    }
     setReportState("正在调用大模型生成报告（流式）…");
     const md = await streamReport(bundle, (chars) => {
       setReportState("正在调用大模型生成报告… 已生成约 " + chars + " 字");
