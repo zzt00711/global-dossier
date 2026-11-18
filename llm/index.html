@@ -328,12 +328,13 @@ function renderResult(data) {
   const pickedMembers = members.filter(m => m.picked && m.picked.length);
   const totalDocs = pickedMembers.reduce((s, m) => s + m.picked.length, 0);
   const omitted = members.filter(m => !(m.picked && m.picked.length) && NOISE_STATUS[m.status]).length;
-  // 提交时勾选的局在族里一个都没有（如 2023 年后申请只在 CN/TW 布局）：
-  // 这不算抓取失败，必须单独说明，否则页面看起来像什么都没做。
-  const wanted = (data.offices || []).filter(o => /^(JP|EP|US|KR)$/i.test(o));
+  // 提交时勾选的局与族里实际存在的局是两回事：
+  // 判断「族里有没有海外成员」必须看四局整体，文案也要列全四局，
+  // 否则只勾 EP/US 时会说成「没有 EP / US 成员」，与事实不符。
+  const TARGET = ["JP", "EP", "US", "KR"];
   const present = new Set((r.members || []).map(m => String(m.country || "").toUpperCase()));
-  const absent = wanted.filter(o => !present.has(o.toUpperCase()));
-  const noneInFamily = wanted.length > 0 && absent.length === wanted.length;
+  const absentAll = TARGET.filter(o => !present.has(o));
+  const noneInFamily = absentAll.length === TARGET.length;
 
   let summary = "同族成员：" + (counts || "—") + "　|　生成时间：" + (r.generated_at || "");
   if (pickedMembers.length) {
@@ -347,14 +348,14 @@ function renderResult(data) {
   }
   if (noneInFamily) {
     summary += '<div style="margin-top:6px;color:#b45309">该号同族中没有 '
-      + absent.join(" / ") + " 成员（同族仅 " + (counts || "—")
+      + absentAll.join(" / ") + " 成员（同族仅 " + (counts || "—")
       + "），没有可抓取的国外局审查文书。</div>";
   }
   $("summary").innerHTML = summary;
 
   if (noneInFamily) {
     $("result").innerHTML = '<div class="muted" style="padding:2px 0">J-PlatPat 返回的同族成员只有 '
-      + esc(counts || "—") + "。若号码无误，说明该件尚未在 " + esc(absent.join(" / "))
+      + esc(counts || "—") + "。若号码无误，说明该件尚未在 " + esc(absentAll.join(" / "))
       + " 布局，或尚未公开审查过程文书；可换一个有海外同族的号码重试。</div>";
     $("resultCard").style.display = "block";
     return;
@@ -825,13 +826,16 @@ async function startAnalysis(job, data, force) {
   }
   if (!data || !data.result) { setReportState("没有可分析的数据", true); return; }
 
-  // 目标局在族里一个都没有时，下载/OCR 全是白跑，直接给出结论。
+  // 族里四局一个都没有时，下载/OCR 全是白跑，直接给出结论。
+  // 注意按四局整体判断并全部列出，不能只按本次勾选的局。
+  const TARGET = ["JP", "EP", "US", "KR"];
   const wanted = (data.offices || []).filter(o => /^(JP|EP|US|KR)$/i.test(o));
   const present = new Set((data.result.members || []).map(m => String(m.country || "").toUpperCase()));
   const absent = wanted.filter(o => !present.has(o.toUpperCase()));
-  if (wanted.length && absent.length === wanted.length) {
+  const absentAll = TARGET.filter(o => !present.has(o));
+  if (absentAll.length === TARGET.length) {
     const counts = Object.entries(data.result.family_counts || {}).map(([k, v]) => k + " " + v).join(" · ");
-    setReportState("该号同族中没有 " + absent.join(" / ") + " 成员（同族仅 "
+    setReportState("该号同族中没有 " + absentAll.join(" / ") + " 成员（同族仅 "
       + (counts || "—") + "），没有国外局审查过程可分析。", true);
     return;
   }
