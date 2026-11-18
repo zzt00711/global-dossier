@@ -1,0 +1,51 @@
+{
+  "query": "CN118260642A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "118260642",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-18T08:38:10+00:00",
+  "offices": [
+    "EP",
+    "US"
+  ],
+  "max_docs_per_office": 6,
+  "download": true,
+  "family_counts": {
+    "CN": 1,
+    "TW": 1
+  },
+  "members": [
+    {
+      "country": "CN",
+      "app_num": "CN.202311814007.A",
+      "app_date": "2023-12-26",
+      "family_id": "91603395",
+      "pub_nums": [
+        "CN.118260642.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "TW",
+      "app_num": "TW.112147307.A",
+      "app_date": "2023-12-05",
+      "family_id": "91603395",
+      "pub_nums": [
+        "TW.202427279.A",
+        "TW.I881579.B"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202311814007.A",
+    "app_date": "2023-12-26",
+    "family_id": "91603395"
+  }
+}

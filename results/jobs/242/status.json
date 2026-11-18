@@ -1,0 +1,47 @@
+{
+  "state": "done",
+  "issue": 242,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-18T08:38:07+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118260642A（6 篇/局）"
+  ],
+  "query": "CN118260642A",
+  "offices": [
+    "EP",
+    "US"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118260642A",
+    "family_counts": {
+      "CN": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-18T08:38:10+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "CN",
+        "app_num": "CN.202311814007.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.112147307.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-18T08:38:10+00:00"
+}
