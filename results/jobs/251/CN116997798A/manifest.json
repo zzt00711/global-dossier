@@ -1,0 +1,497 @@
+{
+  "query": "CN116997798A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116997798",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-19T07:13:54+00:00",
+  "offices": [
+    "JP"
+  ],
+  "max_docs_per_office": 6,
+  "download": true,
+  "family_counts": {
+    "JP": 1,
+    "US": 1,
+    "EP": 1,
+    "CN": 1,
+    "KR": 1,
+    "CA": 1,
+    "AU": 1,
+    "WO": 1,
+    "IL": 1
+  },
+  "members": [
+    {
+      "country": "JP",
+      "app_num": "JP.2023543101.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "JP.2024503710.A"
+      ],
+      "status": "ok",
+      "doc_total": 31,
+      "picked": [
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125594128_JP",
+          "name": "拒絶理由通知書",
+          "name_en": "Notice of Reasons for Refusal",
+          "date": "2026-01-06",
+          "family": "rejection",
+          "tender_date": "2026-01-06",
+          "file": "JP/2026-01-06_JP_Notice_of_Reasons_for_Refusal_125594128_JP.pdf",
+          "bytes": 212345,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52601487327_JP",
+          "name": "手続補正書（自発・内容）",
+          "name_en": "Written Amendment (voluntary-content)",
+          "date": "2026-07-06",
+          "family": "applicant",
+          "tender_date": "2026-07-06",
+          "file": "JP/2026-07-06_JP_Written_Amendment_(voluntary-content)_601487327_JP.pdf",
+          "bytes": 148191,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Claims_52301669432_JP",
+          "name": "請求の範囲",
+          "name_en": "Claims",
+          "date": "2023-08-04",
+          "family": "claims",
+          "tender_date": "2023-08-04",
+          "file": "JP/2023-08-04_JP_Claims_301669432_JP.pdf",
+          "bytes": 135894,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96825150045_JP",
+          "name": "検索報告書",
+          "name_en": "Search Report by Registered Search Organization",
+          "date": "2025-12-15",
+          "family": "citation",
+          "tender_date": "2025-12-15",
+          "file": "JP/2025-12-15_JP_Search_Report_by_Registered_Search_Organization_825150045_JP.pdf",
+          "bytes": 624811,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Decision_of_Refusal_06126431908_JP",
+          "name": "拒絶査定",
+          "name_en": "Decision of Refusal",
+          "date": "2026-09-29",
+          "family": "rejection",
+          "tender_date": "2026-09-29",
+          "file": "JP/2026-09-29_JP_Decision_of_Refusal_126431908_JP.pdf",
+          "bytes": 169714,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_52601487319_JP",
+          "name": "意見書",
+          "name_en": "Written Opinion",
+          "date": "2026-07-06",
+          "family": "applicant",
+          "tender_date": "2026-07-06",
+          "file": "JP/2026-07-06_JP_Written_Opinion_601487319_JP.pdf",
+          "bytes": 20375293,
+          "status": "ok"
+        }
+      ],
+      "title": "BIOLOGICAL MARKERS OF INTESTINAL DYSBIOSIS USEFUL FOR PREDICTING THE RESPONSE OF PD1 PATIENTS TO ANTI-CANCER DRUGS",
+      "documents": [
+        {
+          "doc_id": "National_Entry_Form_52301512911_JP",
+          "name": "国内書面",
+          "date": "2023-07-14",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Description_52301669432_JP",
+          "name": "明細書",
+          "date": "2023-08-04",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Sequence_Listing_52301669432_JP",
+          "name": "配列表",
+          "date": "2023-08-04",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_52301669432_JP",
+          "name": "図面",
+          "date": "2023-08-04",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Submission_of_Translation_of_International_Application_52301669432_JP",
+          "name": "国際出願翻訳文提出書",
+          "date": "2023-08-04",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Claims_52301669432_JP",
+          "name": "請求の範囲",
+          "date": "2023-08-04",
+          "family": "claims",
+          "group": "1,4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Abstract_52301669432_JP",
+          "name": "要約書",
+          "date": "2023-08-04",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_62360820318_JP",
+          "name": "優先権書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62360820318_JP",
+          "name": "添付書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62323241405_JP",
+          "name": "図面",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62360820319_JP",
+          "name": "添付書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Priority_Document_62360820319_JP",
+          "name": "優先権書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_62373110140_JP",
+          "name": "図面",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Front_Page_Drawings_62373110140_JP",
+          "name": "外国語国際公開要約図（職権）",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Preliminary_Report_on_Patentability_%2528Chapter_I_of_the_Patent_Cooperation_Treaty%2529_62343170430_JP",
+          "name": "特許性に関する国際予備報告（第Ｉ章）",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62343170430_JP",
+          "name": "添付書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "International_Search_Report_62313241403_JP",
+          "name": "国際調査報告",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4,101,102",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62313241403_JP",
+          "name": "添付書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "4,101,102",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Communication_of_International_Applications_62313241401_JP",
+          "name": "国際公開",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4,102",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Attached_Document_62313241401_JP",
+          "name": "添付書類",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4,102",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Sequence_Listings_%2528Communication_of_International_Applications_in_Foreign_Language%2529_62323241406_JP",
+          "name": "外国語国際公開配列表（職権）",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Sequence_Listing_62323241406_JP",
+          "name": "配列表",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Drawings_%2528Communication_of_International_Applications_in_Foreign_Language%2529_62323241405_JP",
+          "name": "外国語国際公開図面（職権）",
+          "date": "2023-09-19",
+          "family": "other",
+          "group": "1,4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_52402842438_JP",
+          "name": "出願審査請求書",
+          "date": "2024-12-25",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Search_Report_by_Registered_Search_Organization_96825150045_JP",
+          "name": "検索報告書",
+          "date": "2025-12-15",
+          "family": "citation",
+          "group": "5",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Notice_of_Reasons_for_Refusal_06125594128_JP",
+          "name": "拒絶理由通知書",
+          "date": "2026-01-06",
+          "family": "rejection",
+          "group": "2,21,101,102",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52600729973_JP",
+          "name": "期間延長請求書",
+          "date": "2026-04-02",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Extension_of_Time_Limits_52600729971_JP",
+          "name": "期間延長請求書",
+          "date": "2026-04-02",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Written_Amendment_%2528voluntary-content%2529_52601487327_JP",
+          "name": "手続補正書（自発・内容）",
+          "date": "2026-07-06",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_52601487319_JP",
+          "name": "意見書",
+          "date": "2026-07-06",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Decision_of_Refusal_06126431908_JP",
+          "name": "拒絶査定",
+          "date": "2026-09-29",
+          "family": "rejection",
+          "group": "2,23,101",
+          "excluded": false,
+          "picked": true
+        }
+      ],
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202218261598.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "US.20240398876.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 63,
+      "picked": [],
+      "title": "BIOLOGICAL MARKER OF INTESTINAL DYSBIOSIS, USEFUL FOR PREDICTING THE RESPONSE OF A CANCER PATIENT TO AN ANTI-PDI DRUG",
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "EP",
+      "app_num": "EP.22702191.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "EP.4281777.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 48,
+      "picked": [],
+      "title": "BIOLOGICAL MARKER OF INTESTINAL DYSBIOSIS, USEFUL FOR PREDICTING THE RESPONSE OF A CANCER PATIENT TO AN ANTI-PD1 DRUG",
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202280021533.A",
+      "app_date": "2022-01-19",
+      "family_id": "74553771",
+      "pub_nums": [
+        "CN.116997798.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20237028121.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "KR.20230160233.A"
+      ],
+      "status": "skipped",
+      "doc_total": 8,
+      "picked": [],
+      "title": "BIOLOGICAL MARKER OF INTESTINAL DYSBIOSIS, USEFUL FOR PREDICTING THE RESPONSE OF A CANCER PATIENT TO AN ANTI-PD1 DRUG",
+      "note": "该局同族成员 1 个，使用本代原申请"
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.3204949.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "CA.3204949.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2022210807.A",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "AU.2022210807.A9",
+        "AU.2022210807.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "EP.2022051155.W",
+      "app_date": "2022-01-19",
+      "family_id": "80168255",
+      "pub_nums": [
+        "WO.2022157207.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "IL",
+      "app_num": "IL.304335.A",
+      "app_date": "2023-07-09",
+      "family_id": "80168255",
+      "pub_nums": [
+        "IL.304335.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202280021533.A",
+    "app_date": "2022-01-19",
+    "family_id": "74553771"
+  }
+}

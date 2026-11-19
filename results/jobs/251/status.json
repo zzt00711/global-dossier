@@ -1,0 +1,171 @@
+{
+  "state": "done",
+  "issue": 251,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-19T07:17:15+00:00",
+  "logs": [
+    "命中缓存 CN116997798A（6 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
+  ],
+  "query": "CN116997798A",
+  "offices": [
+    "JP"
+  ],
+  "max_docs": 6,
+  "cached": true,
+  "partial": false,
+  "result": {
+    "query": "CN116997798A",
+    "family_counts": {
+      "JP": 1,
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1,
+      "IL": 1
+    },
+    "generated_at": "2026-11-19T07:13:54+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023543101.A",
+        "status": "ok",
+        "doc_total": 31,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2026-01-06",
+            "status": "ok",
+            "bytes": 212345,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2026-01-06_JP_Notice_of_Reasons_for_Refusal_125594128_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-07-06",
+            "status": "ok",
+            "bytes": 148191,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2026-07-06_JP_Written_Amendment_%28voluntary-content%29_601487327_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2023-08-04",
+            "status": "ok",
+            "bytes": 135894,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2023-08-04_JP_Claims_301669432_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2025-12-15",
+            "status": "ok",
+            "bytes": 624811,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2025-12-15_JP_Search_Report_by_Registered_Search_Organization_825150045_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶査定",
+            "family": "rejection",
+            "date": "2026-09-29",
+            "status": "ok",
+            "bytes": 169714,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2026-09-29_JP_Decision_of_Refusal_126431908_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2026-07-06",
+            "status": "ok",
+            "bytes": 20375293,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/251/CN116997798A/JP/2026-07-06_JP_Written_Opinion_601487319_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202218261598.A",
+        "status": "skipped",
+        "doc_total": 63,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.22702191.A",
+        "status": "skipped",
+        "doc_total": 48,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202280021533.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237028121.A",
+        "status": "skipped",
+        "doc_total": 8,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3204949.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2022210807.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "EP.2022051155.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "IL",
+        "app_num": "IL.304335.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-19T07:17:15+00:00"
+}
