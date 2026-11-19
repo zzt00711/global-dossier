@@ -1,0 +1,39 @@
+{
+  "query": "CN117652727A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117652727",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-19T08:16:18+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 4,
+  "download": true,
+  "family_counts": {
+    "CN": 1
+  },
+  "members": [
+    {
+      "country": "CN",
+      "app_num": "CN.202211026700.A",
+      "app_date": "2022-08-25",
+      "family_id": "90066711",
+      "pub_nums": [
+        "CN.117652727.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202211026700.A",
+    "app_date": "2022-08-25",
+    "family_id": "90066711"
+  }
+}
