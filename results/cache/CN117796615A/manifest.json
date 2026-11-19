@@ -1,0 +1,238 @@
+{
+  "query": "CN117796615A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117796615",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-19T02:50:54+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 6,
+  "download": true,
+  "family_counts": {
+    "CN": 2,
+    "KR": 2
+  },
+  "members": [
+    {
+      "country": "CN",
+      "app_num": "CN.202010771895.A",
+      "app_date": "2020-08-04",
+      "family_id": "74832832",
+      "pub_nums": [
+        "CN.112451422.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202311681573.A",
+      "app_date": "2020-08-04",
+      "family_id": "74832832",
+      "pub_nums": [
+        "CN.117796615.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20190111355.A",
+      "app_date": "2019-09-09",
+      "family_id": "74832832",
+      "pub_nums": [
+        "KR.20210030530.A"
+      ],
+      "status": "ok",
+      "doc_total": 10,
+      "picked": [
+        {
+          "doc_id": "Written_Decision_on_Registration_952025124184520_KR",
+          "name": "Written Decision on Registration",
+          "name_en": "Written Decision on Registration",
+          "date": "2025-12-22",
+          "family": "final_grant",
+          "tender_date": "2025-12-22",
+          "file": "KR/2025-12-22_KR_Written_Decision_on_Registration_124184520_KR.pdf",
+          "bytes": 65377,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952025038522216_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2025-04-21",
+          "family": "rejection",
+          "tender_date": "2025-04-21",
+          "file": "KR/2025-04-21_KR_Request_for_the_Submission_of_an_Opinion_038522216_KR.pdf",
+          "bytes": 57058,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_112025048025662_KR",
+          "name": "Written Opinion",
+          "name_en": "Written Opinion",
+          "date": "2025-04-28",
+          "family": "applicant",
+          "tender_date": "2025-04-28",
+          "file": "KR/2025-04-28_KR_Written_Opinion_048025662_KR.pdf",
+          "bytes": 241633,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952024063319521_KR",
+          "name": "Request for the Submission of an Opinion",
+          "name_en": "Request for the Submission of an Opinion",
+          "date": "2024-07-29",
+          "family": "rejection",
+          "tender_date": "2024-07-29",
+          "file": "KR/2024-07-29_KR_Request_for_the_Submission_of_an_Opinion_063319521_KR.pdf",
+          "bytes": 106187,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112025048028104_KR",
+          "name": "Amendment including Specification etc.",
+          "name_en": "Amendment including Specification etc.",
+          "date": "2025-04-28",
+          "family": "applicant",
+          "tender_date": "2025-04-28",
+          "file": "KR/2025-04-28_KR_Amendment_including_Specification_etc_048028104_KR.pdf",
+          "bytes": 46131,
+          "status": "ok"
+        },
+        {
+          "doc_id": "Written_Opinion_112024102859016_KR",
+          "name": "Written Opinion",
+          "name_en": "Written Opinion",
+          "date": "2024-09-20",
+          "family": "applicant",
+          "tender_date": "2024-09-20",
+          "file": "KR/2024-09-20_KR_Written_Opinion_102859016_KR.pdf",
+          "bytes": 150044,
+          "status": "ok"
+        }
+      ],
+      "title": "COSMETIC COMPOSITION WITH VARIABLE VISCOSITY AND  COSMETIC COMPRISING THE SAME",
+      "documents": [
+        {
+          "doc_id": "Patent_Application_112019092490963_KR",
+          "name": "Patent Application",
+          "date": "2019-09-09",
+          "family": "other",
+          "group": "1",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_Examination_112022050118351_KR",
+          "name": "Request for Examination",
+          "date": "2022-05-11",
+          "family": "other",
+          "group": "4",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952024063319521_KR",
+          "name": "Request for the Submission of an Opinion",
+          "date": "2024-07-29",
+          "family": "rejection",
+          "group": "2,21,101",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_112024102859016_KR",
+          "name": "Written Opinion",
+          "date": "2024-09-20",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112024102860513_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2024-09-20",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "Request_for_the_Submission_of_an_Opinion_952025038522216_KR",
+          "name": "Request for the Submission of an Opinion",
+          "date": "2025-04-21",
+          "family": "rejection",
+          "group": "2,22,101",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Opinion_112025048025662_KR",
+          "name": "Written Opinion",
+          "date": "2025-04-28",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Amendment_including_Specification_etc._112025048028104_KR",
+          "name": "Amendment including Specification etc.",
+          "date": "2025-04-28",
+          "family": "applicant",
+          "group": "4",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Written_Decision_on_Registration_952025124184520_KR",
+          "name": "Written Decision on Registration",
+          "date": "2025-12-22",
+          "family": "final_grant",
+          "group": "2,23,101",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "Request_for_Divisional_Application_for_Patent_112026030309973_KR",
+          "name": "Request for Divisional Application for Patent",
+          "date": "2026-03-12",
+          "family": "other",
+          "group": "1",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 2 个，本代（2020-08-04）未取到文书，已降级使用上一代（2019-09-09）"
+    },
+    {
+      "country": "KR",
+      "app_num": "KR.20260044798.A",
+      "app_date": "2026-03-12",
+      "family_id": "74832832",
+      "pub_nums": [
+        "KR.20260042413.A"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 2 个，已取到 2019-09-09 代的文书，不再重复下载"
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202311681573.A",
+    "app_date": "2020-08-04",
+    "family_id": "74832832"
+  }
+}
