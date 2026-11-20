@@ -127,6 +127,18 @@ RE_CITATION = re.compile(
 )
 RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の範囲|청구범위|权利要求", re.I)
 
+# 只凭文件名就能判定事实、正文没有任何分析价值的文书：登记元数据，不下载 PDF。
+# 授权类（PTOL-85、特許査定、등록결정…）正文是固定格式表格，读不读都不影响结论；
+# 其余是公开通知、缴费提醒、送达封面这类程式化公文。
+META_ONLY_NAME = re.compile(
+    r"notice\s+of\s+publication|notification\s+of\s+publication"
+    r"|information\s+about\s+publication|publication\s+of\s+the\s+application"
+    r"|reminder\s+(period\s+for\s+)?payment|payment\s+of\s+(the\s+)?designation\s+fee"
+    r"|fee\s*(\(s\))?\s*transmittal"
+    r"|notice\s+of\s+withdrawal|withdrawal\s+of\s+the\s+application",
+    re.I,
+)
+
 
 def _is_office_issued(group: str) -> bool:
     """DOC_GRP 是否含 token "2"（特許庁/官方发出）。
@@ -203,6 +215,11 @@ def classify(name: str, group: str = "") -> str:
 
 def is_excluded(name: str) -> bool:
     return bool(EXCLUDE_NAME.search(name))
+
+
+def is_meta_only(family: str, name: str) -> bool:
+    """是否只登记元数据、不下载 PDF：授权类 + 公开/缴费类程式化通知。"""
+    return family == "final_grant" or bool(META_ONLY_NAME.search(name or ""))
 
 
 def _date_key(value: str) -> str:
@@ -435,6 +452,22 @@ def _collect_member(
             item.update({"status": "timeout", "error": "任务时间预算用尽，未下载"})
             entry["picked"].append(item)
             continue
+        if is_meta_only(d.get("family", ""), f"{d.get('name') or ''} {d.get('name_en') or ''}"):
+            # 不取正文；仍问一次直链，用响应头的 Content-Length 填「大小」列，
+            # 代价只是一次几百字节的请求，而不是整份扫描件。
+            item["status"] = "meta_only"
+            try:
+                content = client.doc_content(input_parts, app_parts, d["doc_id"])
+                item["tender_date"] = content.get("tender_date")
+                size = client.probe_size(content.get("doc_url") or "")
+                if size:
+                    item["bytes"] = size
+            except (OpdError, OSError, KeyError):
+                pass
+            print(f"    META {country} {item['name']}  仅登记元数据（不下载 PDF）")
+            entry["picked"].append(item)
+            time.sleep(0.3)
+            continue
         try:
             content = client.doc_content(input_parts, app_parts, d["doc_id"])
             item["tender_date"] = content.get("tender_date")
@@ -458,7 +491,7 @@ def _collect_member(
         entry["picked"].append(item)
         time.sleep(0.3)
 
-    ok = [p for p in entry["picked"] if p.get("status") in {"ok", "dry_run"}]
+    ok = [p for p in entry["picked"] if p.get("status") in {"ok", "dry_run", "meta_only"}]
     if ok:
         entry["status"] = "ok"
     elif any(p.get("status") == "timeout" for p in entry["picked"]):
