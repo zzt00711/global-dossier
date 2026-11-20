@@ -201,6 +201,11 @@ def classify(name: str, group: str = "") -> str:
         r"|deficiencies\s+in\s+the\s+written\s+opinion",
         name, re.I):
         return "other"
+    # US 官方发出的「答复未被认定为完全响应」通知：名称含 amendment，
+    # 会被下面的 RE_APPLICANT 抢走并占掉申请人类配额，挤掉真正的答复/修改。
+    # 它本身只是一张期限提醒，同期真正的驳回/Quayle 通知仍会单独出现。
+    if re.search(r"non-?responsive\s+amendment", name, re.I):
+        return "other"
     # 答复类先于审查意见，避免 "Amendment after Non-Final Rejection" 被误判
     if RE_APPLICANT.search(name) and not office:
         return "applicant"
