@@ -650,6 +650,24 @@ class OpdClient:
         part.unlink(missing_ok=True)
         raise OpdError("DOWNLOAD", f"PDF 下载失败: {last}")
 
+    def probe_size(self, doc_url: str, timeout: float = 30) -> int | None:
+        """只读响应头里的 Content-Length，不下载正文。
+
+        授权类等「只登记元数据」的文书用它填「大小」列：
+        一次几百字节的请求，比整份扫描件省得多。
+        """
+        if not doc_url:
+            return None
+        url = doc_url if doc_url.startswith("http") else BASE + doc_url
+        try:
+            with self.session.get(url, headers=PDF_HEADERS, stream=True, timeout=timeout) as r:
+                if not r.ok:
+                    return None
+                raw = (r.headers.get("Content-Length") or "").strip()
+                return int(raw) if raw.isdigit() else None
+        except (requests.RequestException, ValueError):
+            return None
+
 
 def family_by_publication(
     client: OpdClient, raw: str, bul_type: str = "publication"
