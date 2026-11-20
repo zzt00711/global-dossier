@@ -80,6 +80,8 @@
   tr:last-child td { border-bottom: 0; }
   td.country { font-weight: 700; width: 150px; }
   td.muted, .muted { color: var(--muted); }
+  /* 局与局之间加一条更粗的分隔线 + 额外留白，避免多个局的文书连成一片 */
+  table.data tr.grp-start td { border-top: 2px solid #dfe3e9; padding-top: 16px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; }
@@ -361,22 +363,34 @@ function renderResult(data) {
   }
 
   const rows = [];
+  // 每个局的第一行加 grp-start，画出更明显的分隔线
+  let firstGroup = true;
   for (const m of members) {
     const total = (r.family_counts || {})[m.country];
     const noteText = m.note || (total ? "该局同族成员 " + total + " 个" : "");
     const note = noteText ? '<div class="muted" style="font-weight:400;font-size:11px;line-height:1.45">' + esc(noteText) + "</div>" : "";
+    const cls = firstGroup ? "" : ' class="grp-start"';
     if (!m.picked || !m.picked.length) {
       if (NOISE_STATUS[m.status]) continue;
-      rows.push('<tr><td class="country">' + m.country + note + '</td><td colspan="4" class="muted">'
+      rows.push("<tr" + cls + '><td class="country">' + m.country + note + '</td><td colspan="4" class="muted">'
         + esc(m.error || m.status || "未取到文书") + "</td></tr>");
+      firstGroup = false;
       continue;
     }
-    m.picked.forEach((p, i) => {
+    // 局内按日期倒序（最新的在最上面）；无日期的排最后，同日期保持后端顺序
+    const docs = m.picked.slice().sort((a, b) => {
+      const da = a.date || "", db = b.date || "";
+      if (!da && !db) return 0;
+      if (!da) return 1;
+      if (!db) return -1;
+      return db.localeCompare(da);
+    });
+    docs.forEach((p, i) => {
       const size = p.bytes ? (p.bytes / 1024).toFixed(0) + " KB" : "";
       const label = esc(p.name || "");
       const name = p.url ? '<a href="' + p.url + '" target="_blank">' + label + "</a>" : label;
-      rows.push("<tr>"
-        + (i === 0 ? '<td class="country" rowspan="' + m.picked.length + '">' + m.country
+      rows.push("<tr" + (i === 0 ? cls : "") + ">"
+        + (i === 0 ? '<td class="country" rowspan="' + docs.length + '">' + m.country
             + '<div class="muted" style="font-weight:400;font-size:11.5px">' + (m.app_num || "")
             + "<br>文书 " + m.doc_total + "</div>" + note + "</td>" : "")
         + '<td><span class="' + tagClass(p.family) + '">' + (p.family || "other") + "</span></td>"
@@ -384,8 +398,9 @@ function renderResult(data) {
         + '<td class="muted">' + (p.date || "") + "</td>"
         + '<td class="muted">' + size + "</td></tr>");
     });
+    firstGroup = false;
   }
-  $("result").innerHTML = '<table><thead><tr><th>局</th><th>类别</th><th>文书</th><th>日期</th><th>大小</th></tr></thead><tbody>'
+  $("result").innerHTML = '<table class="data"><thead><tr><th>局</th><th>类别</th><th>文书</th><th>日期</th><th>大小</th></tr></thead><tbody>'
     + rows.join("") + "</tbody></table>";
   $("resultCard").style.display = rows.length ? "block" : "none";
 }
