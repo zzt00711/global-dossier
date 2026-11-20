@@ -130,11 +130,14 @@ RE_CLAIMS = re.compile(r"\bclaims\b|claim\s+set|特許請求の範囲|請求の�
 # 只凭文件名就能判定事实、正文没有任何分析价值的文书：登记元数据，不下载 PDF。
 # 授权类（PTOL-85、特許査定、등록결정…）正文是固定格式表格，读不读都不影响结论；
 # 其余是公开通知、缴费提醒、送达封面这类程式化公文。
+# "Search information including classification, databases and other search related notes"
+# 是检索范围说明的固定表格，检索式价值低；Examiner's search strategy and results 保留下载。
 META_ONLY_NAME = re.compile(
     r"notice\s+of\s+publication|notification\s+of\s+publication"
     r"|information\s+about\s+publication|publication\s+of\s+the\s+application"
     r"|reminder\s+(period\s+for\s+)?payment|payment\s+of\s+(the\s+)?designation\s+fee"
     r"|fee\s*(\(s\))?\s*transmittal"
+    r"|search\s+information\s+including"
     r"|notice\s+of\s+withdrawal|withdrawal\s+of\s+the\s+application",
     re.I,
 )
