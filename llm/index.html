@@ -388,7 +388,11 @@ function renderResult(data) {
     docs.forEach((p, i) => {
       const size = p.bytes ? (p.bytes / 1024).toFixed(0) + " KB" : "";
       const label = esc(p.name || "");
-      const name = p.url ? '<a href="' + p.url + '" target="_blank">' + label + "</a>" : label;
+      let name = p.url ? '<a href="' + p.url + '" target="_blank">' + label + "</a>" : label;
+      // 授权类等只登记元数据、未下载正文的文书：明确标注，避免被当成下载失败或漏抓
+      if (p.status === "meta_only") {
+        name += '<div class="muted" style="font-size:11.5px">仅登记元数据（不下载 PDF）</div>';
+      }
       rows.push("<tr" + (i === 0 ? cls : "") + ">"
         + (i === 0 ? '<td class="country" rowspan="' + docs.length + '">' + m.country
             + '<div class="muted" style="font-weight:400;font-size:11.5px">' + (m.app_num || "")
@@ -647,6 +651,15 @@ async function extractBundle(data) {
         documents.push({ date: p.date || "", name, family: p.family || "",
           type: GDX.detectDocType(name), text: "", claims: [], citations: [],
           conclusion: "授权", text_note: "授权类文书正文无分析价值，未下载" });
+        continue;
+      }
+      if (p.status === "meta_only") {
+        // 后端只登记了元数据、没有下载 PDF：不报错，按文件名判定性质即可
+        alog("  · " + name + " → 仅登记元数据（据文件名判定，不下载正文）");
+        documents.push({ date: p.date || "", name, family: p.family || "",
+          type: GDX.detectDocType(name), text: "", claims: [], citations: [],
+          conclusion: GDX.isGrantName(name) ? "授权" : "",
+          text_note: "仅登记元数据，未下载正文" });
         continue;
       }
       if (!p.url) {
