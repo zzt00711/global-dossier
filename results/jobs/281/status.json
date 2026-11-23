@@ -1,0 +1,123 @@
+{
+  "state": "done",
+  "issue": 281,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-23T02:21:15+00:00",
+  "logs": [
+    "命中缓存 CN112889068A（6 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
+  ],
+  "query": "CN112889068A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": true,
+  "partial": false,
+  "result": {
+    "query": "CN112889068A",
+    "family_counts": {
+      "US": 1,
+      "CN": 2,
+      "WO": 1
+    },
+    "generated_at": "2026-11-20T07:52:32+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.201817053720.A",
+        "status": "ok",
+        "doc_total": 48,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-08-18",
+            "status": "ok",
+            "bytes": 691693,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2022-08-18_US_Notice_of_Allowance_and_Fees_Due_%28PTOL-85%29_J4RDPGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Applicant Arguments/Remarks Made in an Amendment",
+            "family": "applicant",
+            "date": "2020-11-06",
+            "status": "ok",
+            "bytes": 39081,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2020-11-06_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_X8FL1LDFLYX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2020-11-06",
+            "status": "ok",
+            "bytes": 248214,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2020-11-06_US_Claims_X8FL2LDFLYX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2022-08-18",
+            "status": "ok",
+            "bytes": 57623,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2022-08-18_US_Search_information_including_classification%2C_databases_and_o_J4RDSGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Preliminary Amendment",
+            "family": "applicant",
+            "date": "2020-11-06",
+            "status": "ok",
+            "bytes": 16655,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2020-11-06_US_Preliminary_Amendment_X8FL5LDFLYX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2022-08-18",
+            "status": "ok",
+            "bytes": 325511,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/281/CN112889068A/US/2022-08-18_US_Examiner%27s_search_strategy_and_results_J4RDUGREENX0.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201880094093.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202610368159.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "CN.2018112233.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-23T02:21:15+00:00"
+}
