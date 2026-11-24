@@ -1,0 +1,256 @@
+{
+  "state": "done",
+  "issue": 303,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-24T06:53:36+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118141344A（6 篇/局）",
+    "    OK  EP Communication from the Examining Division  41 KB",
+    "    OK  EP Amended description with annotations  99 KB",
+    "    OK  EP Claims  115 KB",
+    "    OK  EP Supplementary European search report  54 KB",
+    "    OK  EP European search opinion  101 KB",
+    "    OK  EP Amended claims with annotations  414 KB",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Non-Final Rejection  1695 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  16 KB",
+    "    OK  US Claims  187 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Final Rejection  1220 KB"
+  ],
+  "query": "CN118141344A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118141344A",
+    "family_counts": {
+      "US": 2,
+      "EP": 2,
+      "CN": 2,
+      "CA": 2,
+      "AU": 2,
+      "WO": 1
+    },
+    "generated_at": "2026-11-24T06:53:38+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.201816759502.A",
+        "status": "ok",
+        "doc_total": 89,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-07-31",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2022-11-29",
+            "status": "ok",
+            "bytes": 1735911,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/US/2022-11-29_US_Non-Final_Rejection_ZKIQVXBLUEX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2023-05-01",
+            "status": "ok",
+            "bytes": 16886,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/US/2023-05-01_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_HCEV0XBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2023-05-01",
+            "status": "ok",
+            "bytes": 191277,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/US/2023-05-01_US_Claims_HCEV1XBLUEX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-05-22",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2022-05-13",
+            "status": "ok",
+            "bytes": 1249486,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/US/2022-05-13_US_Final_Rejection_3X31LXBLUEX5.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318479766.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2018-10-29 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.18870393.A",
+        "status": "ok",
+        "doc_total": 66,
+        "picked": [
+          {
+            "name": "Communication from the Examining Division",
+            "family": "rejection",
+            "date": "2023-05-04",
+            "status": "ok",
+            "bytes": 41704,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2023-05-04_EP_Communication_from_the_Examining_Division_OKEDUSLL4D82.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended description with annotations",
+            "family": "applicant",
+            "date": "2025-01-17",
+            "status": "ok",
+            "bytes": 101409,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2025-01-17_EP_Amended_description_with_annotations_UMT6L1JND7G2.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2025-01-17",
+            "status": "ok",
+            "bytes": 117926,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2025-01-17_EP_Claims_UMU9JDHKY8XJ.pdf",
+            "error": null
+          },
+          {
+            "name": "Supplementary European search report",
+            "family": "citation",
+            "date": "2021-06-30",
+            "status": "ok",
+            "bytes": 55218,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2021-06-30_EP_Supplementary_European_search_report_B71B10630DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "European search opinion",
+            "family": "rejection",
+            "date": "2021-06-30",
+            "status": "ok",
+            "bytes": 103591,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2021-06-30_EP_European_search_opinion_B74CC6018DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims with annotations",
+            "family": "applicant",
+            "date": "2025-01-17",
+            "status": "ok",
+            "bytes": 423446,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/303/CN118141344A/EP/2025-01-17_EP_Amended_claims_with_annotations_UMTMJ1IK7V04.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.25171618.A",
+        "status": "sibling",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2018-10-29 代的文书，不再重复下载"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201880075556.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202410184727.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3079917.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3253819.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2018354718.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2024219465.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "CA.2018051369.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-24T06:54:43+00:00"
+}
