@@ -1,0 +1,107 @@
+{
+  "state": "done",
+  "issue": 298,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-24T01:58:21+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118051679A（6 篇/局）",
+    "    OK  US Non-Final Rejection  568 KB",
+    "    OK  US Claims  160 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Examiner's search strategy and results  1451 KB",
+    "    OK  US List of references cited by examiner  22 KB"
+  ],
+  "query": "CN118051679A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118051679A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-11-24T01:58:22+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202218056448.A",
+        "status": "ok",
+        "doc_total": 19,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-02-13",
+            "status": "ok",
+            "bytes": 581266,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/298/CN118051679A/US/2026-02-13_US_Non-Final_Rejection_FZT2J5X79X15.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2022-11-17",
+            "status": "ok",
+            "bytes": 163846,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/298/CN118051679A/US/2022-11-17_US_Claims_ITOCFGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-02-13",
+            "status": "meta_only",
+            "bytes": 16967,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2026-02-13",
+            "status": "ok",
+            "bytes": 1485688,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/298/CN118051679A/US/2026-02-13_US_Examiner%27s_search_strategy_and_results_FZT2X5X79X15.pdf",
+            "error": null
+          },
+          {
+            "name": "List of references cited by examiner",
+            "family": "citation",
+            "date": "2026-02-13",
+            "status": "ok",
+            "bytes": 22882,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/298/CN118051679A/US/2026-02-13_US_List_of_references_cited_by_examiner_FZT2P5X79X15.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2023-08-15）未取到文书，已降级使用上一代（2022-11-17）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202311024917.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102023122501.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-24T01:58:55+00:00"
+}
