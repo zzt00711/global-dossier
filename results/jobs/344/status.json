@@ -1,0 +1,120 @@
+{
+  "state": "done",
+  "issue": 344,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T13:30:40+00:00",
+  "logs": [
+    "命中缓存 CN116736195A（6 篇/局，JP,EP,US,KR），跳过 OPD 抓取"
+  ],
+  "query": "CN116736195A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 6,
+  "cached": true,
+  "partial": false,
+  "result": {
+    "query": "CN116736195A",
+    "family_counts": {
+      "US": 2,
+      "CN": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-11-26T10:12:03+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202318179700.A",
+        "status": "ok",
+        "doc_total": 61,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2026-04-27",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-01-30",
+            "status": "ok",
+            "bytes": 898535,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/344/CN116736195A/US/2026-01-30_US_Non-Final_Rejection_GPZL9X137X95.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 12026,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/344/CN116736195A/US/2026-03-18_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_9VGXHX158X88.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 78959,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/344/CN116736195A/US/2026-03-18_US_Claims_9VGXMX158X88.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-04-27",
+            "status": "meta_only",
+            "bytes": 33257,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Applicant Arguments/Remarks Made in an Amendment",
+            "family": "applicant",
+            "date": "2026-03-18",
+            "status": "ok",
+            "bytes": 73462,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/344/CN116736195A/US/2026-03-18_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_9VGXQX158X88.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2023-03-09）未取到文书，已降级使用上一代（2023-03-07）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202619754373.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2023-03-07 代的文书，不再重复下载"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310221021.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102022105706.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T13:30:40+00:00"
+}
