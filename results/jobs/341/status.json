@@ -1,0 +1,171 @@
+{
+  "state": "done",
+  "issue": 341,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T10:58:38+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN118604927A（6 篇/局）",
+    "    OK  US Non-Final Rejection  469 KB",
+    "    OK  US Request for Continued Examination (RCE)  142 KB",
+    "    OK  US Claims  72 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Final Rejection  428 KB",
+    "    OK  US Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)  18 KB",
+    "    META KR Written Decision on Registration  仅登记元数据（不下载 PDF）",
+    "    OK  KR Request for the Submission of an Opinion  87 KB",
+    "    OK  KR Written Opinion  47 KB",
+    "    OK  KR Amendment including Specification etc.  45 KB"
+  ],
+  "query": "CN118604927A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN118604927A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "KR": 1,
+      "TW": 1
+    },
+    "generated_at": "2026-11-26T10:58:41+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202418442635.A",
+        "status": "ok",
+        "doc_total": 57,
+        "picked": [
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2026-09-11",
+            "status": "ok",
+            "bytes": 479780,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/US/2026-09-11_US_Non-Final_Rejection_JP46IX247X49.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Continued Examination (RCE)",
+            "family": "applicant",
+            "date": "2026-09-01",
+            "status": "ok",
+            "bytes": 145217,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/US/2026-09-01_US_Request_for_Continued_Examination_%28RCE%29_T6VX25X19X20.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2026-09-01",
+            "status": "ok",
+            "bytes": 73921,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/US/2026-09-01_US_Claims_T6VX55X19X20.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2026-09-11",
+            "status": "meta_only",
+            "bytes": 16108,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2026-06-01",
+            "status": "ok",
+            "bytes": 438117,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/US/2026-06-01_US_Final_Rejection_VLLY5X110X23.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment Submitted/Entered with Filing of Continued Prosecution Application (CPA)/Request for Continued Examination(RCE)",
+            "family": "applicant",
+            "date": "2026-09-01",
+            "status": "ok",
+            "bytes": 18091,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/US/2026-09-01_US_Amendment_Submitted_Entered_with_Filing_of_Continued_Prosecu_T6VX45X19X20.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-03-06）未取到文书，已降级使用上一代（2024-02-15）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202410252427.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20230029463.A",
+        "status": "ok",
+        "doc_total": 5,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2024-09-25",
+            "status": "meta_only",
+            "bytes": 53655,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2024-02-05",
+            "status": "ok",
+            "bytes": 89380,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/KR/2024-02-05_KR_Request_for_the_Submission_of_an_Opinion_011420853_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2024-04-04",
+            "status": "ok",
+            "bytes": 47638,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/KR/2024-04-04_KR_Written_Opinion_037683782_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2024-04-04",
+            "status": "ok",
+            "bytes": 46515,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/341/CN118604927A/KR/2024-04-04_KR_Amendment_including_Specification_etc_037686369_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2024-03-06）未取到文书，已降级使用上一代（2023-03-06）"
+      },
+      {
+        "country": "TW",
+        "app_num": "TW.113106001.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T10:59:25+00:00"
+}
