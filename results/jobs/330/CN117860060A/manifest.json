@@ -1,0 +1,443 @@
+{
+  "query": "CN117860060A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "117860060",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-26T05:24:47+00:00",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs_per_office": 6,
+  "download": true,
+  "family_counts": {
+    "US": 2,
+    "CN": 1,
+    "CA": 1,
+    "AU": 1,
+    "WO": 1,
+    "GB": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.202217964515.A",
+      "app_date": "2022-10-12",
+      "family_id": "89908208",
+      "pub_nums": [],
+      "status": "ok",
+      "doc_total": 29,
+      "picked": [
+        {
+          "doc_id": "LRHXXL7OGREENX7",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "name_en": "",
+          "date": "2024-01-19",
+          "family": "final_grant",
+          "status": "meta_only",
+          "tender_date": "2024-01-19"
+        },
+        {
+          "doc_id": "L962DTDUGREENX0",
+          "name": "Claims",
+          "name_en": "",
+          "date": "2022-10-12",
+          "family": "claims",
+          "tender_date": "2022-10-12",
+          "file": "US/2022-10-12_US_Claims_2DTDUGREENX0.pdf",
+          "bytes": 232220,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LNBS6AGEGREENX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "name_en": "",
+          "date": "2023-10-06",
+          "family": "citation",
+          "status": "meta_only",
+          "tender_date": "2023-10-06",
+          "bytes": 32277
+        },
+        {
+          "doc_id": "LNBS6AGUGREENX2",
+          "name": "Examiner's search strategy and results",
+          "name_en": "",
+          "date": "2023-10-06",
+          "family": "citation",
+          "tender_date": "2023-10-06",
+          "file": "US/2023-10-06_US_Examiner's_search_strategy_and_results_S6AGUGREENX2.pdf",
+          "bytes": 192711,
+          "status": "ok"
+        },
+        {
+          "doc_id": "LS26WVQ4XBLUEX2",
+          "name": "Issue Notification",
+          "name_en": "",
+          "date": "2024-01-31",
+          "family": "final_grant",
+          "status": "meta_only",
+          "tender_date": "2024-01-31"
+        },
+        {
+          "doc_id": "LRHXXL7PGREENX7",
+          "name": "List of References cited by applicant and considered by examiner",
+          "name_en": "",
+          "date": "2024-01-19",
+          "family": "citation",
+          "tender_date": "2024-01-19",
+          "file": "US/2024-01-19_US_List_of_References_cited_by_applicant_and_considered_by_exam_XXL7PGREENX7.pdf",
+          "bytes": 424576,
+          "status": "ok"
+        }
+      ],
+      "title": "LIFT CHAIR MECHANISM WITH ZERO-GRAVITY POSITION OPTIONS",
+      "documents": [
+        {
+          "doc_id": "L962DTDPGREENX0",
+          "name": "Power of Attorney",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L962DTDQGREENX0",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "5",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L962DTDRGREENX0",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "2",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "L962DTDTGREENX0",
+          "name": "Specification",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "1",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L962DTDUGREENX0",
+          "name": "Claims",
+          "date": "2022-10-12",
+          "family": "claims",
+          "group": "1",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "L962DTDVGREENX0",
+          "name": "Abstract",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "1",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L962DTDXGREENX0",
+          "name": "Drawings-only black and white line drawings",
+          "date": "2022-10-12",
+          "family": "other",
+          "group": "1",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9PM2P2HXBLUEX2",
+          "name": "Miscellaneous Communication to Applicant - No Action Count",
+          "date": "2022-10-27",
+          "family": "other",
+          "group": "2",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9PM2P2IXBLUEX2",
+          "name": "Fee Worksheet (SB06)",
+          "date": "2022-10-27",
+          "family": "other",
+          "group": "5",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9PM2P2JXBLUEX2",
+          "name": "Filing Receipt",
+          "date": "2022-10-27",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "L9R3J1QSXBLUEX5",
+          "name": "Notice of New or Revised Publication Date",
+          "date": "2022-10-27",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LLH0IUEHXBLUEX4",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2023-08-18",
+          "family": "other",
+          "group": "2",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LNBS6AFZGREENX2",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2023-10-06",
+          "family": "final_grant",
+          "group": "2,23",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LNBS6AG7GREENX2",
+          "name": "List of references cited by examiner",
+          "date": "2023-10-06",
+          "family": "citation",
+          "group": "101",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LNBS6AGEGREENX2",
+          "name": "Search information including classification, databases and other search related notes",
+          "date": "2023-10-06",
+          "family": "citation",
+          "group": "102",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LNBS6AGMGREENX2",
+          "name": "Issue Information including classification, examiner, name, claim, renumbering, etc.",
+          "date": "2023-10-06",
+          "family": "other",
+          "group": "102",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LNBS6AGUGREENX2",
+          "name": "Examiner's search strategy and results",
+          "date": "2023-10-06",
+          "family": "citation",
+          "group": "5",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LNBS6AH1GREENX2",
+          "name": "Bibliographic Data Sheet",
+          "date": "2023-10-06",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LQXYA58PGREENX6",
+          "name": "Information Disclosure Statement (IDS) Form (SB08)",
+          "date": "2024-01-03",
+          "family": "other",
+          "group": "3",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LQXYA58QGREENX6",
+          "name": "Electronic Fee Payment",
+          "date": "2024-01-03",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LQXYA58RGREENX6",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-01-03",
+          "family": "other",
+          "group": "2",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LQXYA58SGREENX6",
+          "name": "Other reference-Patent/Application/Search Documents",
+          "date": "2024-01-03",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LR58RKTNGREENX7",
+          "name": "Issue Fee Payment (PTO-85B)",
+          "date": "2024-01-08",
+          "family": "other",
+          "group": "4",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LR58RKTOGREENX7",
+          "name": "Electronic Filing System Acknowledgment Receipt",
+          "date": "2024-01-08",
+          "family": "other",
+          "group": "2",
+          "excluded": true,
+          "picked": false
+        },
+        {
+          "doc_id": "LR58RKTPGREENX7",
+          "name": "Electronic Fee Payment",
+          "date": "2024-01-08",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        },
+        {
+          "doc_id": "LRHXXL7OGREENX7",
+          "name": "Notice of Allowance and Fees Due (PTOL-85)",
+          "date": "2024-01-19",
+          "family": "final_grant",
+          "group": "2,23",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LRHXXL7PGREENX7",
+          "name": "List of References cited by applicant and considered by examiner",
+          "date": "2024-01-19",
+          "family": "citation",
+          "group": "101",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LS26WVQ4XBLUEX2",
+          "name": "Issue Notification",
+          "date": "2024-01-31",
+          "family": "final_grant",
+          "group": "unknown",
+          "excluded": false,
+          "picked": true
+        },
+        {
+          "doc_id": "LSTYGC3JBLUEX10",
+          "name": "eGrant day-of Notification",
+          "date": "2024-02-20",
+          "family": "other",
+          "group": "unknown",
+          "excluded": false,
+          "picked": false
+        }
+      ],
+      "note": "该局同族成员 2 个，本代（2023-10-12）未取到文书，已降级使用上一代（2022-10-12）"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202418406502.A",
+      "app_date": "2024-01-08",
+      "family_id": "89908208",
+      "pub_nums": [
+        "US.20240225289.A1"
+      ],
+      "status": "other_generation",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 2 个，已取到 2022-10-12 代的文书，不再重复下载"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202311319977.A",
+      "app_date": "2023-10-12",
+      "family_id": "89908208",
+      "pub_nums": [
+        "CN.117860060.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "CA",
+      "app_num": "CA.3270178.A",
+      "app_date": "2023-10-05",
+      "family_id": "89908208",
+      "pub_nums": [
+        "CA.3270178.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "AU",
+      "app_num": "AU.2023360605.A",
+      "app_date": "2023-10-05",
+      "family_id": "89908208",
+      "pub_nums": [
+        "AU.2023360605.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "WO",
+      "app_num": "US.2023076050.W",
+      "app_date": "2023-10-05",
+      "family_id": "89908208",
+      "pub_nums": [
+        "WO.2024081534.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "GB",
+      "app_num": "GB.202505266.A",
+      "app_date": "2023-10-05",
+      "family_id": "89908208",
+      "pub_nums": [
+        "GB.202505266.D0",
+        "GB.2636676.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202311319977.A",
+    "app_date": "2023-10-12",
+    "family_id": "89908208"
+  }
+}

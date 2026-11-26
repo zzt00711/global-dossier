@@ -1,0 +1,159 @@
+{
+  "state": "done",
+  "issue": 330,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T05:24:45+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117860060A（6 篇/局）",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Claims  227 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Examiner's search strategy and results  188 KB",
+    "    META US Issue Notification  仅登记元数据（不下载 PDF）",
+    "    OK  US List of References cited by applicant and considered by examiner  415 KB"
+  ],
+  "query": "CN117860060A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117860060A",
+    "family_counts": {
+      "US": 2,
+      "CN": 1,
+      "CA": 1,
+      "AU": 1,
+      "WO": 1,
+      "GB": 1
+    },
+    "generated_at": "2026-11-26T05:24:47+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217964515.A",
+        "status": "ok",
+        "doc_total": 29,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-01-19",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2022-10-12",
+            "status": "ok",
+            "bytes": 232220,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/330/CN117860060A/US/2022-10-12_US_Claims_2DTDUGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-10-06",
+            "status": "meta_only",
+            "bytes": 32277,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2023-10-06",
+            "status": "ok",
+            "bytes": 192711,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/330/CN117860060A/US/2023-10-06_US_Examiner%27s_search_strategy_and_results_S6AGUGREENX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2024-01-31",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "List of References cited by applicant and considered by examiner",
+            "family": "citation",
+            "date": "2024-01-19",
+            "status": "ok",
+            "bytes": 424576,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/330/CN117860060A/US/2024-01-19_US_List_of_References_cited_by_applicant_and_considered_by_exam_XXL7PGREENX7.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2023-10-12）未取到文书，已降级使用上一代（2022-10-12）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202418406502.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2022-10-12 代的文书，不再重复下载"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202311319977.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CA",
+        "app_num": "CA.3270178.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2023360605.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2023076050.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "GB",
+        "app_num": "GB.202505266.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T05:25:12+00:00"
+}
