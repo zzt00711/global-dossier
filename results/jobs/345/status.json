@@ -1,0 +1,154 @@
+{
+  "state": "done",
+  "issue": 345,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T13:33:22+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN112672661A（6 篇/局）",
+    "    META US Amendment after Notice of Allowance (Rule 312)  仅登记元数据（不下载 PDF）",
+    "    OK  US Non-Final Rejection  267 KB",
+    "    OK  US Amendment After Final or under 37CFR 1.312, initialed by the examiner.  24 KB",
+    "    OK  US Claims  167 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Applicant Arguments/Remarks Made in an Amendment  24 KB"
+  ],
+  "query": "CN112672661A",
+  "offices": [
+    "US"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN112672661A",
+    "family_counts": {
+      "US": 2,
+      "CN": 3,
+      "KR": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-26T13:33:26+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.201916415649.A",
+        "status": "ok",
+        "doc_total": 54,
+        "picked": [
+          {
+            "name": "Amendment after Notice of Allowance (Rule 312)",
+            "family": "final_grant",
+            "date": "2020-02-12",
+            "status": "meta_only",
+            "bytes": 21297,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2019-10-10",
+            "status": "ok",
+            "bytes": 273878,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/345/CN112672661A/US/2019-10-10_US_Non-Final_Rejection_93ABIRXEAPX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment After Final or under 37CFR 1.312, initialed by the examiner.",
+            "family": "applicant",
+            "date": "2020-02-26",
+            "status": "ok",
+            "bytes": 24538,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/345/CN112672661A/US/2020-02-26_US_Amendment_After_Final_or_under_37CFR_1.312%2C_initialed_by_the_L4H2HRXEAPX5.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2020-02-12",
+            "status": "ok",
+            "bytes": 170993,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/345/CN112672661A/US/2020-02-12_US_Claims_LGJG6RXEAPX3.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2020-01-15",
+            "status": "meta_only",
+            "bytes": 18061,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Applicant Arguments/Remarks Made in an Amendment",
+            "family": "applicant",
+            "date": "2020-02-12",
+            "status": "ok",
+            "bytes": 24465,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/345/CN112672661A/US/2020-02-12_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_LGJG8RXEAPX3.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2019-05-23）未取到文书，已降级使用上一代（2019-05-17）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202016848335.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2019-05-17 代的文书，不再重复下载"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201980058967.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202211602731.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.201920936372.U",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20217006502.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2019033823.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T13:33:50+00:00"
+}
