@@ -1,0 +1,110 @@
+{
+  "state": "done",
+  "issue": 331,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T06:36:28+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115399587A（6 篇/局）",
+    "    META JP 特許査定  仅登记元数据（不下载 PDF）",
+    "    OK  JP 拒絶理由通知書  182 KB",
+    "    OK  JP 意見書  164 KB",
+    "    OK  JP 請求の範囲  110 KB",
+    "    OK  JP 検索報告書  169 KB",
+    "    OK  JP 手続補正書（自発・内容）  125 KB"
+  ],
+  "query": "CN115399587A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115399587A",
+    "family_counts": {
+      "JP": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-26T06:36:30+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2021088803.A",
+        "status": "ok",
+        "doc_total": 11,
+        "picked": [
+          {
+            "name": "特許査定",
+            "family": "final_grant",
+            "date": "2024-12-24",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2024-08-19",
+            "status": "ok",
+            "bytes": 185946,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/331/CN115399587A/JP/2024-08-19_JP_Notice_of_Reasons_for_Refusal_124387702_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2024-09-26",
+            "status": "ok",
+            "bytes": 167768,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/331/CN115399587A/JP/2024-09-26_JP_Written_Opinion_402099952_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2021-05-26",
+            "status": "ok",
+            "bytes": 112917,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/331/CN115399587A/JP/2021-05-26_JP_Claims_101127278_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2024-08-14",
+            "status": "ok",
+            "bytes": 173059,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/331/CN115399587A/JP/2024-08-14_JP_Search_Report_by_Registered_Search_Organization_824103189_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2024-09-26",
+            "status": "ok",
+            "bytes": 128257,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/331/CN115399587A/JP/2024-09-26_JP_Written_Amendment_%28voluntary-content%29_402099955_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2022-04-25）未取到文书，已降级使用上一代（2021-05-26）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202210440012.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T06:36:57+00:00"
+}
