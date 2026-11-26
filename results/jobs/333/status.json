@@ -1,0 +1,120 @@
+{
+  "state": "done",
+  "issue": 333,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T07:21:13+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117250689A（6 篇/局）",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Non-Final Rejection  325 KB",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  15 KB",
+    "    OK  US Claims  304 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Final Rejection  716 KB"
+  ],
+  "query": "CN117250689A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN117250689A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1,
+      "DE": 1
+    },
+    "generated_at": "2026-11-26T07:21:14+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202217807257.A",
+        "status": "ok",
+        "doc_total": 89,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2025-07-01",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-11-21",
+            "status": "ok",
+            "bytes": 332801,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/333/CN117250689A/US/2024-11-21_US_Non-Final_Rejection_L0663WFYGX53.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2025-01-24",
+            "status": "ok",
+            "bytes": 15459,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/333/CN117250689A/US/2025-01-24_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_0HNSHWFYBX90.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2025-01-24",
+            "status": "ok",
+            "bytes": 310820,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/333/CN117250689A/US/2025-01-24_US_Claims_0HNSIWFYBX90.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2025-07-01",
+            "status": "meta_only",
+            "bytes": 27893,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Final Rejection",
+            "family": "rejection",
+            "date": "2024-08-12",
+            "status": "ok",
+            "bytes": 732969,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/333/CN117250689A/US/2024-08-12_US_Final_Rejection_8M3XEWFYGX54.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2023-05-16）未取到文书，已降级使用上一代（2022-06-16）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202310548170.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "DE",
+        "app_num": "DE.102023112830.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T07:21:45+00:00"
+}
