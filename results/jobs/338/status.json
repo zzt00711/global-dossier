@@ -1,0 +1,110 @@
+{
+  "state": "done",
+  "issue": 338,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T10:10:53+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN114624642A（6 篇/局）",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Claims  382 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Examiner's search strategy and results  754 KB",
+    "    META US Issue Notification  仅登记元数据（不下载 PDF）",
+    "    OK  US List of references cited by examiner  33 KB"
+  ],
+  "query": "CN114624642A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN114624642A",
+    "family_counts": {
+      "US": 1,
+      "CN": 1
+    },
+    "generated_at": "2026-11-26T10:10:54+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202117389415.A",
+        "status": "ok",
+        "doc_total": 29,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2022-08-31",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2021-07-30",
+            "status": "ok",
+            "bytes": 390847,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/338/CN114624642A/US/2021-07-30_US_Claims_BV0MBDFLYX11.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2022-08-31",
+            "status": "meta_only",
+            "bytes": 30298,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2022-08-31",
+            "status": "ok",
+            "bytes": 772138,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/338/CN114624642A/US/2022-08-31_US_Examiner%27s_search_strategy_and_results_O00IXXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2022-12-07",
+            "status": "meta_only",
+            "bytes": 48746,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "List of references cited by examiner",
+            "family": "citation",
+            "date": "2022-08-31",
+            "status": "ok",
+            "bytes": 34290,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/338/CN114624642A/US/2022-08-31_US_List_of_references_cited_by_examiner_O00ISXBLUEX2.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，本代（2021-12-08）未取到文书，已降级使用上一代（2021-07-30）"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202111490688.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T10:11:24+00:00"
+}
