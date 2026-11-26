@@ -1,0 +1,77 @@
+{
+  "query": "CN116736195A",
+  "input": {
+    "CNTRY_CD_PART": "CN",
+    "NUM_PART": "116736195",
+    "KIND_CD_PART": "A"
+  },
+  "generated_at": "2026-11-26T10:12:03+00:00",
+  "offices": [
+    "JP"
+  ],
+  "max_docs_per_office": 6,
+  "download": true,
+  "family_counts": {
+    "US": 2,
+    "CN": 1,
+    "DE": 1
+  },
+  "members": [
+    {
+      "country": "US",
+      "app_num": "US.202318179700.A",
+      "app_date": "2023-03-07",
+      "family_id": "87760102",
+      "pub_nums": [
+        "US.20230292626.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 61,
+      "picked": [],
+      "title": "MAGNETIC FIELD SENSOR WITH MECHANICALLY PROTECTED PERMANENT MAGNET",
+      "note": "该局同族成员 2 个，本代（2023-03-09）未取到文书，已降级使用上一代（2023-03-07）"
+    },
+    {
+      "country": "US",
+      "app_num": "US.202619754373.A",
+      "app_date": "2026-07-27",
+      "family_id": "87760102",
+      "pub_nums": [
+        "US.20260371937.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": [],
+      "note": "该局同族成员 2 个，已取到 2023-03-07 代的文书，不再重复下载"
+    },
+    {
+      "country": "CN",
+      "app_num": "CN.202310221021.A",
+      "app_date": "2023-03-09",
+      "family_id": "87760102",
+      "pub_nums": [
+        "CN.116736195.A"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    },
+    {
+      "country": "DE",
+      "app_num": "DE.102022105706.A",
+      "app_date": "2022-03-10",
+      "family_id": "87760102",
+      "pub_nums": [
+        "DE.102022105706.A1"
+      ],
+      "status": "skipped",
+      "doc_total": 0,
+      "picked": []
+    }
+  ],
+  "anchor": {
+    "app_num": "CN.202310221021.A",
+    "app_date": "2023-03-09",
+    "family_id": "87760102"
+  }
+}
