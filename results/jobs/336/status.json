@@ -1,0 +1,241 @@
+{
+  "state": "done",
+  "issue": 336,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T08:29:02+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN115053272A（7 篇/局）",
+    "    META EP Decision to grant a European patent  仅登记元数据（不下载 PDF）",
+    "    OK  EP Amended claims filed after receipt of (European) search report  204 KB",
+    "    OK  EP Claims  249 KB",
+    "    OK  EP Amendments received before examination  115 KB",
+    "    OK  EP Filing of the translations of the claims  60 KB",
+    "    OK  EP French translation of claims  196 KB",
+    "    OK  EP German translation of the claims  206 KB",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Non-Final Rejection  1082 KB",
+    "    OK  US Applicant Arguments/Remarks Made in an Amendment  471 KB",
+    "    OK  US Claims  515 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  32 KB",
+    "    OK  US Examiner's search strategy and results  112 KB"
+  ],
+  "query": "CN115053272A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 7,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN115053272A",
+    "family_counts": {
+      "US": 1,
+      "EP": 1,
+      "CN": 1,
+      "AU": 1,
+      "WO": 1,
+      "ES": 1,
+      "IT": 1
+    },
+    "generated_at": "2026-11-26T08:29:04+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "US",
+        "app_num": "US.202117794927.A",
+        "status": "ok",
+        "doc_total": 60,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2024-10-09",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2024-03-22",
+            "status": "ok",
+            "bytes": 1108077,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/US/2024-03-22_US_Non-Final_Rejection_4ZV7UBLUEX10.pdf",
+            "error": null
+          },
+          {
+            "name": "Applicant Arguments/Remarks Made in an Amendment",
+            "family": "applicant",
+            "date": "2024-06-17",
+            "status": "ok",
+            "bytes": 482307,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/US/2024-06-17_US_Applicant_Arguments_Remarks_Made_in_an_Amendment_6HR6IXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2024-06-17",
+            "status": "ok",
+            "bytes": 527825,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/US/2024-06-17_US_Claims_6HR6KXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2024-10-09",
+            "status": "meta_only",
+            "bytes": 54349,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2024-06-17",
+            "status": "ok",
+            "bytes": 33034,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/US/2024-06-17_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_6HR6JXBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2024-10-09",
+            "status": "ok",
+            "bytes": 114388,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/US/2024-10-09_US_Examiner%27s_search_strategy_and_results_KQ7LIWFYBX50.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21707011.A",
+        "status": "ok",
+        "doc_total": 85,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2025-06-05",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Amended claims filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2022-08-05",
+            "status": "ok",
+            "bytes": 208513,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2022-08-05_EP_Amended_claims_filed_after_receipt_of_%28European%29_search_repo_9O8YCXRX2NM3.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2021-02-25",
+            "status": "ok",
+            "bytes": 254766,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2021-02-25_EP_Claims_AADPW7517DSU.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2022-08-05",
+            "status": "ok",
+            "bytes": 117502,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2022-08-05_EP_Amendments_received_before_examination_9O9DHVXTYCTC.pdf",
+            "error": null
+          },
+          {
+            "name": "Filing of the translations of the claims",
+            "family": "claims",
+            "date": "2025-05-23",
+            "status": "ok",
+            "bytes": 60951,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2025-05-23_EP_Filing_of_the_translations_of_the_claims_LS5ES1LEABPM.pdf",
+            "error": null
+          },
+          {
+            "name": "French translation of claims",
+            "family": "claims",
+            "date": "2025-05-23",
+            "status": "ok",
+            "bytes": 200773,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2025-05-23_EP_French_translation_of_claims_LS5TMREBRDSH.pdf",
+            "error": null
+          },
+          {
+            "name": "German translation of the claims",
+            "family": "claims",
+            "date": "2025-05-23",
+            "status": "ok",
+            "bytes": 211304,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/336/CN115053272A/EP/2025-05-23_EP_German_translation_of_the_claims_LS6FHDCOGZ7N.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180011623.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "AU",
+        "app_num": "AU.2021215061.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "WO",
+        "app_num": "IB.2021050615.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "ES",
+        "app_num": "ES.21707011.T",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "IT",
+        "app_num": "IT.202000001585.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T08:30:14+00:00"
+}
