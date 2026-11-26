@@ -1,0 +1,395 @@
+{
+  "state": "done",
+  "issue": 328,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-26T04:38:44+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN116194863A（8 篇/局）",
+    "    OK  JP 拒絶理由通知書  166 KB",
+    "    OK  JP 審判請求書  196 KB",
+    "    OK  JP 請求の範囲  98 KB",
+    "    OK  JP 検索報告書  187 KB",
+    "    OK  JP 拒絶査定  144 KB",
+    "    OK  JP 手続補正書（自発・内容）  118 KB",
+    "    OK  JP 手続補正書（自発・内容）  117 KB",
+    "    OK  JP 意見書  166 KB",
+    "    META EP Decision to grant a European patent  仅登记元数据（不下载 PDF）",
+    "    OK  EP Amendments received before examination  110 KB",
+    "    OK  EP Filing of the translations of the claims  36 KB",
+    "    OK  EP Amended claims filed after receipt of (European) search report  80 KB",
+    "    OK  EP French translation of claims  93 KB",
+    "    OK  EP German translation of the claims  91 KB",
+    "    META EP Text intended for grant (clean copy)  仅登记元数据（不下载 PDF）",
+    "    OPD 暂未返回数据，3s 后重试（1/3）",
+    "    OPD 暂未返回数据，5s 后重试（2/3）",
+    "    OPD 暂未返回数据，10s 后重试（3/3）",
+    "    META EP Text intended for grant (version for approval)  仅登记元数据（不下载 PDF）",
+    "    META US Notice of Allowance and Fees Due (PTOL-85)  仅登记元数据（不下载 PDF）",
+    "    OK  US Non-Final Rejection  546 KB",
+    "    OK  US Request for Continued Examination (RCE)  208 KB",
+    "    OK  US Claims  131 KB",
+    "    META US Search information including classification, databases and other search related notes  仅登记元数据（不下载 PDF）",
+    "    OK  US Amendment/Request for Reconsideration-After Non-Final Rejection  22 KB",
+    "    OK  US Examiner's search strategy and results  327 KB",
+    "    META US Issue Notification  仅登记元数据（不下载 PDF）",
+    "    META KR Written Decision on Registration  仅登记元数据（不下载 PDF）",
+    "    OK  KR Request for the Submission of an Opinion  63 KB",
+    "    OK  KR Amendment including Specification etc.  36 KB",
+    "    OK  KR Written Opinion  61 KB",
+    "    OK  KR Amendment including Specification etc.  51 KB"
+  ],
+  "query": "CN116194863A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 8,
+  "cached": false,
+  "partial": false,
+  "result": {
+    "query": "CN116194863A",
+    "family_counts": {
+      "JP": 1,
+      "US": 2,
+      "EP": 1,
+      "CN": 1,
+      "KR": 1,
+      "WO": 1
+    },
+    "generated_at": "2026-11-26T04:38:45+00:00",
+    "partial": false,
+    "members": [
+      {
+        "country": "JP",
+        "app_num": "JP.2023518236.A",
+        "status": "ok",
+        "doc_total": 31,
+        "picked": [
+          {
+            "name": "拒絶理由通知書",
+            "family": "rejection",
+            "date": "2025-10-28",
+            "status": "ok",
+            "bytes": 169990,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2025-10-28_JP_Notice_of_Reasons_for_Refusal_125485785_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "審判請求書",
+            "family": "applicant",
+            "date": "2026-08-18",
+            "status": "ok",
+            "bytes": 200691,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2026-08-18_JP_Written_Request_for_Trial_and_Appeal_601842399_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "請求の範囲",
+            "family": "claims",
+            "date": "2023-04-24",
+            "status": "ok",
+            "bytes": 100142,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2023-04-24_JP_Claims_300871881_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "検索報告書",
+            "family": "citation",
+            "date": "2025-09-03",
+            "status": "ok",
+            "bytes": 191924,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2025-09-03_JP_Search_Report_by_Registered_Search_Organization_825103412_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "拒絶査定",
+            "family": "rejection",
+            "date": "2026-04-21",
+            "status": "ok",
+            "bytes": 147892,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2026-04-21_JP_Decision_of_Refusal_126165498_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-08-18",
+            "status": "ok",
+            "bytes": 120716,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2026-08-18_JP_Written_Amendment_%28voluntary-content%29_601842398_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "手続補正書（自発・内容）",
+            "family": "applicant",
+            "date": "2026-01-19",
+            "status": "ok",
+            "bytes": 120273,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2026-01-19_JP_Written_Amendment_%28voluntary-content%29_600119452_JP.pdf",
+            "error": null
+          },
+          {
+            "name": "意見書",
+            "family": "applicant",
+            "date": "2026-01-19",
+            "status": "ok",
+            "bytes": 169695,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/JP/2026-01-19_JP_Written_Opinion_600119451_JP.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202017127681.A",
+        "status": "ok",
+        "doc_total": 58,
+        "picked": [
+          {
+            "name": "Notice of Allowance and Fees Due (PTOL-85)",
+            "family": "final_grant",
+            "date": "2023-07-21",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Non-Final Rejection",
+            "family": "rejection",
+            "date": "2022-10-06",
+            "status": "ok",
+            "bytes": 558637,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/US/2022-10-06_US_Non-Final_Rejection_RXQGNXBLUEX4.pdf",
+            "error": null
+          },
+          {
+            "name": "Request for Continued Examination (RCE)",
+            "family": "applicant",
+            "date": "2023-06-26",
+            "status": "ok",
+            "bytes": 213433,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/US/2023-06-26_US_Request_for_Continued_Examination_%28RCE%29_E0CLMGREENX1.pdf",
+            "error": null
+          },
+          {
+            "name": "Claims",
+            "family": "claims",
+            "date": "2023-02-13",
+            "status": "ok",
+            "bytes": 133979,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/US/2023-02-13_US_Claims_96KWLGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Search information including classification, databases and other search related notes",
+            "family": "citation",
+            "date": "2023-07-21",
+            "status": "meta_only",
+            "bytes": 52683,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Amendment/Request for Reconsideration-After Non-Final Rejection",
+            "family": "applicant",
+            "date": "2023-02-13",
+            "status": "ok",
+            "bytes": 22801,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/US/2023-02-13_US_Amendment_Request_for_Reconsideration-After_Non-Final_Reject_96KWKGREENX0.pdf",
+            "error": null
+          },
+          {
+            "name": "Examiner's search strategy and results",
+            "family": "citation",
+            "date": "2023-07-21",
+            "status": "ok",
+            "bytes": 334795,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/US/2023-07-21_US_Examiner%27s_search_strategy_and_results_MGFA2XBLUEX2.pdf",
+            "error": null
+          },
+          {
+            "name": "Issue Notification",
+            "family": "final_grant",
+            "date": "2023-11-08",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 2 个，本代（2021-09-27）未取到文书，已降级使用上一代（2020-12-18）"
+      },
+      {
+        "country": "US",
+        "app_num": "US.202318515131.A",
+        "status": "other_generation",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": "该局同族成员 2 个，已取到 2020-12-18 代的文书，不再重复下载"
+      },
+      {
+        "country": "EP",
+        "app_num": "EP.21801694.A",
+        "status": "ok",
+        "doc_total": 30,
+        "picked": [
+          {
+            "name": "Decision to grant a European patent",
+            "family": "final_grant",
+            "date": "2025-11-20",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Amendments received before examination",
+            "family": "applicant",
+            "date": "2023-11-09",
+            "status": "ok",
+            "bytes": 112610,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/EP/2023-11-09_EP_Amendments_received_before_examination_O9SYW1GLY2GR.pdf",
+            "error": null
+          },
+          {
+            "name": "Filing of the translations of the claims",
+            "family": "claims",
+            "date": "2025-11-11",
+            "status": "ok",
+            "bytes": 37186,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/EP/2025-11-11_EP_Filing_of_the_translations_of_the_claims_R9YXP4WQX6H8.pdf",
+            "error": null
+          },
+          {
+            "name": "Amended claims filed after receipt of (European) search report",
+            "family": "applicant",
+            "date": "2023-11-09",
+            "status": "ok",
+            "bytes": 82110,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/EP/2023-11-09_EP_Amended_claims_filed_after_receipt_of_%28European%29_search_repo_O9TG1LCKQP0O.pdf",
+            "error": null
+          },
+          {
+            "name": "French translation of claims",
+            "family": "claims",
+            "date": "2025-11-11",
+            "status": "ok",
+            "bytes": 94959,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/EP/2025-11-11_EP_French_translation_of_claims_R9ZBSLGDTS5S.pdf",
+            "error": null
+          },
+          {
+            "name": "German translation of the claims",
+            "family": "claims",
+            "date": "2025-11-11",
+            "status": "ok",
+            "bytes": 93376,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/EP/2025-11-11_EP_German_translation_of_the_claims_R9ZWA1FL7BMF.pdf",
+            "error": null
+          },
+          {
+            "name": "Text intended for grant (clean copy)",
+            "family": "final_grant",
+            "date": "2025-07-24",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Text intended for grant (version for approval)",
+            "family": "final_grant",
+            "date": "2025-07-24",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "CN",
+        "app_num": "CN.202180065327.A",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      },
+      {
+        "country": "KR",
+        "app_num": "KR.20237012042.A",
+        "status": "ok",
+        "doc_total": 7,
+        "picked": [
+          {
+            "name": "Written Decision on Registration",
+            "family": "final_grant",
+            "date": "2026-02-16",
+            "status": "meta_only",
+            "bytes": null,
+            "url": "",
+            "error": null
+          },
+          {
+            "name": "Request for the Submission of an Opinion",
+            "family": "rejection",
+            "date": "2025-07-04",
+            "status": "ok",
+            "bytes": 64718,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/KR/2025-07-04_KR_Request_for_the_Submission_of_an_Opinion_063870513_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2026-05-19",
+            "status": "ok",
+            "bytes": 37170,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/KR/2026-05-19_KR_Amendment_including_Specification_etc_501043566_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Written Opinion",
+            "family": "applicant",
+            "date": "2025-09-01",
+            "status": "ok",
+            "bytes": 62430,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/KR/2025-09-01_KR_Written_Opinion_100152134_KR.pdf",
+            "error": null
+          },
+          {
+            "name": "Amendment including Specification etc.",
+            "family": "applicant",
+            "date": "2025-09-01",
+            "status": "ok",
+            "bytes": 51925,
+            "url": "https://zzt00711.github.io/global-dossier/results/jobs/328/CN116194863A/KR/2025-09-01_KR_Amendment_including_Specification_etc_100152280_KR.pdf",
+            "error": null
+          }
+        ],
+        "error": null,
+        "note": "该局同族成员 1 个，使用本代原申请"
+      },
+      {
+        "country": "WO",
+        "app_num": "US.2021052145.W",
+        "status": "skipped",
+        "doc_total": 0,
+        "picked": [],
+        "error": null,
+        "note": null
+      }
+    ]
+  },
+  "finished_at": "2026-11-26T04:41:17+00:00"
+}
