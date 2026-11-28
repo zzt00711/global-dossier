@@ -1,0 +1,21 @@
+{
+  "state": "error",
+  "issue": 371,
+  "site": "https://zzt00711.github.io/global-dossier",
+  "started_at": "2026-11-28T05:58:26+00:00",
+  "logs": [
+    "未命中缓存，开始 OPD 抓取：CN117413230A（6 篇/局）",
+    "Traceback (most recent call last):\n  File \"/home/runner/work/global-dossier/global-dossier/runner/job.py\", line 323, in main\n    full = collect(\n           ^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/fetch.py\", line 528, in collect\n    input_parts, members = family_by_publication(client, query)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 678, in family_by_publication\n    members = client.family(parts, bul_type=bul_type)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 479, in family\n    self._cookie_hash(\"WSH0701\", _num_key(inqry), \"H0200\")\n  File \"/home/runner/work/global-dossier/global-dossier/runner/opd.py\", line 442, in _cookie_hash\n    raise OpdError(\"AUTH\", f\"Cookie 签名握手失败: {last}\")\nopd.OpdError: [AUTH] Cookie 签名握手失败: Expecting value: line 2 column 1 (char 2)\n"
+  ],
+  "query": "CN117413230A",
+  "offices": [
+    "JP",
+    "EP",
+    "US",
+    "KR"
+  ],
+  "max_docs": 6,
+  "cached": false,
+  "error": "OpdError: [AUTH] Cookie 签名握手失败: Expecting value: line 2 column 1 (char 2)",
+  "finished_at": "2026-11-28T05:58:32+00:00"
+}
